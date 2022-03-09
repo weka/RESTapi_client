@@ -8,11 +8,14 @@ Method | HTTP request | Description
 [**attach_obs_to_fs**](FileSystemApi.md#attach_obs_to_fs) | **POST** /fileSystems/{uid}/objectStores | Attach object store bucket to file system
 [**create_file_system**](FileSystemApi.md#create_file_system) | **POST** /fileSystems | Create file system
 [**delete_file_system**](FileSystemApi.md#delete_file_system) | **DELETE** /fileSystems/{uid} | Delete file system
+[**delete_file_systems_thin_provision_reserve**](FileSystemApi.md#delete_file_systems_thin_provision_reserve) | **DELETE** /fileSystems/thinProvisionReserve/{org_uid} | Unset filesystems thin provisioning reserve for Organization
 [**detach_obs_bucket_from_fs**](FileSystemApi.md#detach_obs_bucket_from_fs) | **DELETE** /fileSystems/{uid}/objectStoreBuckets/{obs_uid} | Detach object store bucket from file system
 [**detach_obs_from_fs**](FileSystemApi.md#detach_obs_from_fs) | **DELETE** /fileSystems/{uid}/objectStores/{obs_uid} | Detach object store bucket from file system
 [**download_fs**](FileSystemApi.md#download_fs) | **POST** /fileSystems/download | Download file system from object store
 [**get_file_system**](FileSystemApi.md#get_file_system) | **GET** /fileSystems/{uid} | Get file system
 [**get_file_systems**](FileSystemApi.md#get_file_systems) | **GET** /fileSystems | Get all file systems
+[**get_file_systems_thin_provision_reserve_status**](FileSystemApi.md#get_file_systems_thin_provision_reserve_status) | **GET** /fileSystems/thinProvisionReserve | Filesystems thin provisioning reserve status for Organization
+[**set_file_systems_thin_provision_reserve**](FileSystemApi.md#set_file_systems_thin_provision_reserve) | **PUT** /fileSystems/thinProvisionReserve/{org_uid} | Set filesystems thin provisioning reserve for Organization
 [**update_file_system**](FileSystemApi.md#update_file_system) | **PUT** /fileSystems/{uid} | Update file system
 
 # **attach_obs_bucket_to_fs**
@@ -114,7 +117,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_file_system**
-> InlineResponse20018 create_file_system(body)
+> InlineResponse20019 create_file_system(body)
 
 Create file system
 
@@ -147,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
@@ -209,8 +212,55 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **delete_file_systems_thin_provision_reserve**
+> float delete_file_systems_thin_provision_reserve(org_uid)
+
+Unset filesystems thin provisioning reserve for Organization
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+org_uid = 'org_uid_example' # str | Organization uid for which to set reserve
+
+try:
+    # Unset filesystems thin provisioning reserve for Organization
+    api_response = api_instance.delete_file_systems_thin_provision_reserve(org_uid)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling FileSystemApi->delete_file_systems_thin_provision_reserve: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **org_uid** | **str**| Organization uid for which to set reserve | 
+
+### Return type
+
+**float**
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **detach_obs_bucket_from_fs**
-> InlineResponse20019 detach_obs_bucket_from_fs(uid, obs_uid)
+> InlineResponse20020 detach_obs_bucket_from_fs(uid, obs_uid)
 
 Detach object store bucket from file system
 
@@ -245,7 +295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**InlineResponse20020**](InlineResponse20020.md)
 
 ### Authorization
 
@@ -259,7 +309,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **detach_obs_from_fs**
-> InlineResponse20019 detach_obs_from_fs(uid, obs_uid)
+> InlineResponse20020 detach_obs_from_fs(uid, obs_uid)
 
 Detach object store bucket from file system
 
@@ -294,7 +344,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**InlineResponse20020**](InlineResponse20020.md)
 
 ### Authorization
 
@@ -308,7 +358,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **download_fs**
-> InlineResponse20018 download_fs(body)
+> InlineResponse20019 download_fs(body)
 
 Download file system from object store
 
@@ -341,7 +391,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
@@ -355,7 +405,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_file_system**
-> InlineResponse20018 get_file_system(uid, force_fresh=force_fresh)
+> InlineResponse20019 get_file_system(uid, force_fresh=force_fresh)
 
 Get file system
 
@@ -390,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
@@ -404,7 +454,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_file_systems**
-> InlineResponse20017 get_file_systems(force_fresh=force_fresh)
+> InlineResponse20018 get_file_systems(force_fresh=force_fresh)
 
 Get all file systems
 
@@ -437,7 +487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20018**](InlineResponse20018.md)
 
 ### Authorization
 
@@ -450,8 +500,100 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_file_systems_thin_provision_reserve_status**
+> InlineResponse20025 get_file_systems_thin_provision_reserve_status()
+
+Filesystems thin provisioning reserve status for Organization
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+
+try:
+    # Filesystems thin provisioning reserve status for Organization
+    api_response = api_instance.get_file_systems_thin_provision_reserve_status()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling FileSystemApi->get_file_systems_thin_provision_reserve_status: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20025**](InlineResponse20025.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **set_file_systems_thin_provision_reserve**
+> float set_file_systems_thin_provision_reserve(body, org_uid)
+
+Set filesystems thin provisioning reserve for Organization
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+body = swagger_client.ThinProvisionReserveOrgUidBody() # ThinProvisionReserveOrgUidBody | 
+org_uid = 'org_uid_example' # str | Organization uid for which to set reserve
+
+try:
+    # Set filesystems thin provisioning reserve for Organization
+    api_response = api_instance.set_file_systems_thin_provision_reserve(body, org_uid)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling FileSystemApi->set_file_systems_thin_provision_reserve: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ThinProvisionReserveOrgUidBody**](ThinProvisionReserveOrgUidBody.md)|  | 
+ **org_uid** | **str**| Organization uid for which to set reserve | 
+
+### Return type
+
+**float**
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **update_file_system**
-> InlineResponse20018 update_file_system(body, uid)
+> InlineResponse20019 update_file_system(body, uid)
 
 Update file system
 
@@ -486,7 +628,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
