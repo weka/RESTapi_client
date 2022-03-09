@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**update_default_network**](DefaultNetworkApi.md#update_default_network) | **PUT** /defaultNet | Update default network
 
 # **get_default_network**
-> InlineResponse2009 get_default_network()
+> InlineResponse20010 get_default_network()
 
 Get default network
 
@@ -39,7 +39,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 

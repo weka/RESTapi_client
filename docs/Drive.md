@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **spares_remaining** | **float** |  | [optional] 
 **spares_threshold** | **float** |  | [optional] 
 **status** | **str** |  | [optional] 
+**state_change_time** | **str** |  | [optional] 
 **uid** | **str** |  | [optional] 
 **uuid** | **str** |  | [optional] 
 **vendor** | **str** |  | [optional] 

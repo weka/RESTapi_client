@@ -4,8 +4,56 @@ All URIs are relative to */api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**create_cluster**](ClusterApi.md#create_cluster) | **POST** /cluster | Create cluster
 [**get_cluster_status**](ClusterApi.md#get_cluster_status) | **GET** /cluster | Get cluster status
 [**update_cluster**](ClusterApi.md#update_cluster) | **PUT** /cluster | Update cluster
+
+# **create_cluster**
+> InlineResponse2009 create_cluster(body)
+
+Create cluster
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.ClusterApi(swagger_client.ApiClient(configuration))
+body = swagger_client.ClusterBody1() # ClusterBody1 | 
+
+try:
+    # Create cluster
+    api_response = api_instance.create_cluster(body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling ClusterApi->create_cluster: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ClusterBody1**](ClusterBody1.md)|  | 
+
+### Return type
+
+[**InlineResponse2009**](InlineResponse2009.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_cluster_status**
 > InlineResponse2008 get_cluster_status()
