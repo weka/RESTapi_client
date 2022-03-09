@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**get_host_network**](HostsApi.md#get_host_network) | **GET** /hosts/{uid}/netdevs | Get host network
 [**get_host_resources**](HostsApi.md#get_host_resources) | **GET** /hosts/{uid}/resources | Get host resources
 [**get_hosts**](HostsApi.md#get_hosts) | **GET** /hosts | Get all hosts
+[**get_hosts_info**](HostsApi.md#get_hosts_info) | **GET** /hosts/infos | get hosts infos from IPs
 [**get_single_host**](HostsApi.md#get_single_host) | **GET** /hosts/{uid} | Get single host
 [**remove_host**](HostsApi.md#remove_host) | **DELETE** /hosts/{uid} | Remove host from cluster
 [**remove_host_network**](HostsApi.md#remove_host_network) | **DELETE** /hosts/{uid}/netdevs/{netdev_uid} | Remove host network - Need to apply host after
@@ -117,7 +118,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **add_host**
-> InlineResponse20021 add_host(body)
+> InlineResponse20029 add_host(body)
 
 Add host to cluster
 
@@ -150,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20029**](InlineResponse20029.md)
 
 ### Authorization
 
@@ -448,7 +449,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_hosts_network**
-> InlineResponse20023 get_all_hosts_network()
+> InlineResponse20031 get_all_hosts_network()
 
 Get all hosts network
 
@@ -477,7 +478,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**InlineResponse20031**](InlineResponse20031.md)
 
 ### Authorization
 
@@ -491,7 +492,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_host_network**
-> InlineResponse20023 get_host_network(uid)
+> InlineResponse20031 get_host_network(uid)
 
 Get host network
 
@@ -524,7 +525,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**InlineResponse20031**](InlineResponse20031.md)
 
 ### Authorization
 
@@ -538,7 +539,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_host_resources**
-> InlineResponse20022 get_host_resources(uid, type=type)
+> InlineResponse20030 get_host_resources(uid, type=type)
 
 Get host resources
 
@@ -573,7 +574,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**InlineResponse20030**](InlineResponse20030.md)
 
 ### Authorization
 
@@ -587,7 +588,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_hosts**
-> InlineResponse20020 get_hosts()
+> InlineResponse20028 get_hosts()
 
 Get all hosts
 
@@ -616,7 +617,56 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**InlineResponse20028**](InlineResponse20028.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_hosts_info**
+> InlineResponse20032 get_hosts_info(hostnames_ips=hostnames_ips, info_types=info_types)
+
+get hosts infos from IPs
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+hostnames_ips = ['hostnames_ips_example'] # list[str] |  (optional)
+info_types = ['info_types_example'] # list[str] |  (optional)
+
+try:
+    # get hosts infos from IPs
+    api_response = api_instance.get_hosts_info(hostnames_ips=hostnames_ips, info_types=info_types)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling HostsApi->get_hosts_info: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hostnames_ips** | [**list[str]**](str.md)|  | [optional] 
+ **info_types** | [**list[str]**](str.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse20032**](InlineResponse20032.md)
 
 ### Authorization
 
@@ -630,7 +680,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_single_host**
-> InlineResponse20021 get_single_host(uid)
+> InlineResponse20029 get_single_host(uid)
 
 Get single host
 
@@ -663,7 +713,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20029**](InlineResponse20029.md)
 
 ### Authorization
 
