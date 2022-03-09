@@ -4,7 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **average_fill_level_ppm_min_since_last_event** | **float** |  | [optional] 
-**fill_level_alerts_percent** | **list[float]** |  | [optional] 
 **thin_provision_state** | [**InlineResponse2008DataBucketsInfoThinProvisionState**](InlineResponse2008DataBucketsInfoThinProvisionState.md) |  | [optional] 
 **average_fill_level_ppm** | **float** |  | [optional] 
 **shrunk_at_generation** | **str** |  | [optional] 

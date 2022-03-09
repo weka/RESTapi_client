@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **filesystem_id** | **str** |  | [optional] 
 **permission_type** | **str** |  | [optional] 
 **path** | **str** |  | [optional] 
-**root_squashing** | **bool** |  | [optional] 
+**squash_mode** | **str** |  | [optional] 
 **anon_gid** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**update_organization**](OrganizationApi.md#update_organization) | **PUT** /organizations/{uid} | update organization
 
 # **create_organization**
-> InlineResponse20044 create_organization(body)
+> InlineResponse20054 create_organization(body)
 
 Create organization
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_multiple_org_exist**
-> InlineResponse20042 get_multiple_org_exist()
+> InlineResponse20052 get_multiple_org_exist()
 
 Get if multiple Organizations Exist
 
@@ -136,7 +136,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20042**](InlineResponse20042.md)
+[**InlineResponse20052**](InlineResponse20052.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_organization**
-> InlineResponse20044 get_organization(uid)
+> InlineResponse20054 get_organization(uid)
 
 Get organization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_organizations**
-> InlineResponse20043 get_organizations()
+> InlineResponse20053 get_organizations()
 
 Get all organizations
 
@@ -226,7 +226,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20043**](InlineResponse20043.md)
+[**InlineResponse20053**](InlineResponse20053.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_organization_limit**
-> InlineResponse20044 set_organization_limit(uid, body=body)
+> InlineResponse20054 set_organization_limit(uid, body=body)
 
 Set organization capacity limits
 
@@ -275,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_organization**
-> InlineResponse20044 update_organization(uid, body=body)
+> InlineResponse20054 update_organization(uid, body=body)
 
 update organization
 
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](InlineResponse20044.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**update_obs_bucket**](ObjectStoreBucketApi.md#update_obs_bucket) | **PUT** /objectStoreBuckets/{uid} | Update object store bucket
 
 # **create_obs_bucket**
-> InlineResponse20038 create_obs_bucket(body=body)
+> InlineResponse20050 create_obs_bucket(body=body)
 
 Create object store bucket
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**InlineResponse20050**](InlineResponse20050.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_obs_buckets**
-> InlineResponse20037 get_all_obs_buckets()
+> InlineResponse20049 get_all_obs_buckets()
 
 Get all object store buckets
 
@@ -135,7 +135,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20037**](InlineResponse20037.md)
+[**InlineResponse20049**](InlineResponse20049.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_obs_buckets**
-> InlineResponse20038 get_obs_buckets(uid)
+> InlineResponse20050 get_obs_buckets(uid)
 
 Get object store bucket
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**InlineResponse20050**](InlineResponse20050.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_obs_operations**
-> InlineResponse20039 get_obs_operations(uid)
+> InlineResponse20051 get_obs_operations(uid)
 
 Get object store bucket operations
 
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20039**](InlineResponse20039.md)
+[**InlineResponse20051**](InlineResponse20051.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_obs_bucket**
-> InlineResponse20038 update_obs_bucket(uid, body=body)
+> InlineResponse20050 update_obs_bucket(uid, body=body)
 
 Update object store bucket
 
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**InlineResponse20050**](InlineResponse20050.md)
 
 ### Authorization
 

@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**delete_samba_share**](SMBApi.md#delete_samba_share) | **DELETE** /smb/shares/{uid} | Delete smb share
 [**delete_samba_user**](SMBApi.md#delete_samba_user) | **DELETE** /smb/users/{share_uid}/{user_type}/{user} | Delete smb user
 [**get_samba**](SMBApi.md#get_samba) | **GET** /smb | Get smb cluster info
+[**get_samba_containers_are_ready**](SMBApi.md#get_samba_containers_are_ready) | **GET** /smb/containersAreReady | Get Samba Hosts status
 [**reset_samba_users**](SMBApi.md#reset_samba_users) | **DELETE** /smb/users/reset/{share_uid}/{user_type} | Reset smb users
 [**set_samba**](SMBApi.md#set_samba) | **POST** /smb | Set smb cluster info
 [**set_samba_active_directory**](SMBApi.md#set_samba_active_directory) | **POST** /smb/activeDirectory | Join smb active directory
@@ -24,7 +25,7 @@ Method | HTTP request | Description
 [**update_samba_share**](SMBApi.md#update_samba_share) | **PUT** /smb/shares/{uid} | Update smb share
 
 # **add_samba_domain**
-> InlineResponse20053 add_samba_domain(body=body)
+> InlineResponse20064 add_samba_domain(body=body)
 
 Add trusted domain to smb
 
@@ -57,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20053**](InlineResponse20053.md)
+[**InlineResponse20064**](InlineResponse20064.md)
 
 ### Authorization
 
@@ -71,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **add_share_to_samba**
-> InlineResponse20056 add_share_to_samba(body=body)
+> InlineResponse20067 add_share_to_samba(body=body)
 
 add share to smb
 
@@ -104,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20067**](InlineResponse20067.md)
 
 ### Authorization
 
@@ -212,7 +213,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_samba_active_directory**
-> InlineResponse20057 delete_samba_active_directory(body=body)
+> InlineResponse20068 delete_samba_active_directory(body=body)
 
 Leave smb active directory
 
@@ -245,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20057**](InlineResponse20057.md)
+[**InlineResponse20068**](InlineResponse20068.md)
 
 ### Authorization
 
@@ -404,7 +405,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_samba**
-> InlineResponse20051 get_samba()
+> InlineResponse20062 get_samba()
 
 Get smb cluster info
 
@@ -433,7 +434,50 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20051**](InlineResponse20051.md)
+[**InlineResponse20062**](InlineResponse20062.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_samba_containers_are_ready**
+> InlineResponse20061 get_samba_containers_are_ready()
+
+Get Samba Hosts status
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+
+try:
+    # Get Samba Hosts status
+    api_response = api_instance.get_samba_containers_are_ready()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SMBApi->get_samba_containers_are_ready: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20061**](InlineResponse20061.md)
 
 ### Authorization
 
@@ -637,7 +681,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_domains**
-> InlineResponse20052 set_samba_domains()
+> InlineResponse20063 set_samba_domains()
 
 Get smb trusted domains
 
@@ -666,7 +710,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20052**](InlineResponse20052.md)
+[**InlineResponse20063**](InlineResponse20063.md)
 
 ### Authorization
 
@@ -680,7 +724,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_mount_options**
-> InlineResponse20054 set_samba_mount_options()
+> InlineResponse20065 set_samba_mount_options()
 
 Get smb mount options
 
@@ -709,7 +753,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20054**](InlineResponse20054.md)
+[**InlineResponse20065**](InlineResponse20065.md)
 
 ### Authorization
 
@@ -723,7 +767,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_shares**
-> InlineResponse20055 set_samba_shares()
+> InlineResponse20066 set_samba_shares()
 
 Get smb shares
 
@@ -752,7 +796,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20055**](InlineResponse20055.md)
+[**InlineResponse20066**](InlineResponse20066.md)
 
 ### Authorization
 
@@ -813,7 +857,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_samba_share**
-> InlineResponse20056 update_samba_share(uid, body=body)
+> InlineResponse20067 update_samba_share(uid, body=body)
 
 Update smb share
 
@@ -848,7 +892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20067**](InlineResponse20067.md)
 
 ### Authorization
 

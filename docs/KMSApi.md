@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_kms**
-> InlineResponse20026 get_kms()
+> InlineResponse20036 get_kms()
 
 Get kms configuration
 
@@ -87,7 +87,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**InlineResponse20036**](InlineResponse20036.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_kms_type**
-> InlineResponse20027 get_kms_type()
+> InlineResponse20037 get_kms_type()
 
 Get kms type
 
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**InlineResponse20037**](InlineResponse20037.md)
 
 ### Authorization
 

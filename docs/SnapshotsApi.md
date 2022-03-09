@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**upload_snapshot**](SnapshotsApi.md#upload_snapshot) | **POST** /snapshots/{uid}/upload | Upload snapshot to object store
 
 # **copy_snapshot**
-> InlineResponse20061 copy_snapshot(uid, body=body)
+> InlineResponse20073 copy_snapshot(uid, body=body)
 
 Copy snapshot from the same file system
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_snapshot**
-> InlineResponse20061 create_snapshot(body=body)
+> InlineResponse20073 create_snapshot(body=body)
 
 Create snapshot
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_snapshot**
-> InlineResponse20061 get_snapshot(uid)
+> InlineResponse20073 get_snapshot(uid)
 
 Get snapshot
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_snapshots**
-> InlineResponse20060 get_snapshots()
+> InlineResponse20072 get_snapshots()
 
 Get snapshots
 
@@ -233,7 +233,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **restore_file_system_from_snapshot**
-> InlineResponse20061 restore_file_system_from_snapshot(fs_uid, uid)
+> InlineResponse20073 restore_file_system_from_snapshot(fs_uid, uid)
 
 Restore file system from snapshot
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_snapshot**
-> InlineResponse20061 update_snapshot(uid, body=body)
+> InlineResponse20073 update_snapshot(uid, body=body)
 
 Update snapshot
 
@@ -331,7 +331,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_snapshot**
-> InlineResponse20062 upload_snapshot(uid)
+> InlineResponse20074 upload_snapshot(uid, body=body)
 
 Upload snapshot to object store
 
@@ -361,10 +361,11 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
 uid = 'uid_example' # str | snapshot uid
+body = swagger_client.UidUploadBody() # UidUploadBody |  (optional)
 
 try:
     # Upload snapshot to object store
-    api_response = api_instance.upload_snapshot(uid)
+    api_response = api_instance.upload_snapshot(uid, body=body)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SnapshotsApi->upload_snapshot: %s\n" % e)
@@ -375,10 +376,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uid** | **str**| snapshot uid | 
+ **body** | [**UidUploadBody**](UidUploadBody.md)|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20062**](InlineResponse20062.md)
+[**InlineResponse20074**](InlineResponse20074.md)
 
 ### Authorization
 
@@ -386,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

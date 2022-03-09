@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tls**
-> InlineResponse20071 get_tls()
+> InlineResponse20083 get_tls()
 
 Get TLS status
 
@@ -128,7 +128,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**InlineResponse20083**](InlineResponse20083.md)
 
 ### Authorization
 

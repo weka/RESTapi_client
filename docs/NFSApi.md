@@ -12,8 +12,10 @@ Method | HTTP request | Description
 [**delete_nfs_permission**](NFSApi.md#delete_nfs_permission) | **DELETE** /nfs/permissions/{uid} | Remove NFS permission
 [**get_client_group**](NFSApi.md#get_client_group) | **GET** /nfs/clientGroups/{uid} | Get nfs client group
 [**get_client_groups**](NFSApi.md#get_client_groups) | **GET** /nfs/clientGroups | Get all nfs client groups
+[**get_nfs_global_config**](NFSApi.md#get_nfs_global_config) | **GET** /nfs/globalConfig | Get NFS global configuration
 [**get_nfs_permission**](NFSApi.md#get_nfs_permission) | **GET** /nfs/permissions/{uid} | Get NFS permission
 [**get_nfs_permissions**](NFSApi.md#get_nfs_permissions) | **GET** /nfs/permissions | Get NFS permissions
+[**update_nfs_global_config**](NFSApi.md#update_nfs_global_config) | **PUT** /nfs/globalConfig | Update NFS global configuration
 [**update_nfs_permission**](NFSApi.md#update_nfs_permission) | **PUT** /nfs/permissions/{uid} | Update NFS permission
 
 # **add_client_group_rule**
@@ -66,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **add_nfs_permission**
-> InlineResponse20032 add_nfs_permission(body=body)
+> InlineResponse20043 add_nfs_permission(body=body)
 
 Add NFS permission
 
@@ -99,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](InlineResponse20032.md)
+[**InlineResponse20043**](InlineResponse20043.md)
 
 ### Authorization
 
@@ -113,7 +115,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_client_group**
-> InlineResponse20034 create_client_group(body)
+> InlineResponse20045 create_client_group(body)
 
 Create nfs client group
 
@@ -146,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**InlineResponse20045**](InlineResponse20045.md)
 
 ### Authorization
 
@@ -305,7 +307,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_client_group**
-> InlineResponse20035 get_client_group(uid)
+> InlineResponse20046 get_client_group(uid)
 
 Get nfs client group
 
@@ -338,7 +340,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20035**](InlineResponse20035.md)
+[**InlineResponse20046**](InlineResponse20046.md)
 
 ### Authorization
 
@@ -352,7 +354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_client_groups**
-> InlineResponse20033 get_client_groups()
+> InlineResponse20044 get_client_groups()
 
 Get all nfs client groups
 
@@ -381,7 +383,50 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**InlineResponse20044**](InlineResponse20044.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_nfs_global_config**
+> InlineResponse20047 get_nfs_global_config()
+
+Get NFS global configuration
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+
+try:
+    # Get NFS global configuration
+    api_response = api_instance.get_nfs_global_config()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling NFSApi->get_nfs_global_config: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20047**](InlineResponse20047.md)
 
 ### Authorization
 
@@ -395,7 +440,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_nfs_permission**
-> InlineResponse20032 get_nfs_permission(uid)
+> InlineResponse20043 get_nfs_permission(uid)
 
 Get NFS permission
 
@@ -428,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](InlineResponse20032.md)
+[**InlineResponse20043**](InlineResponse20043.md)
 
 ### Authorization
 
@@ -442,7 +487,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_nfs_permissions**
-> InlineResponse20031 get_nfs_permissions(fs_uid=fs_uid)
+> InlineResponse20042 get_nfs_permissions(fs_uid=fs_uid)
 
 Get NFS permissions
 
@@ -475,7 +520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**InlineResponse20042**](InlineResponse20042.md)
 
 ### Authorization
 
@@ -484,6 +529,53 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_nfs_global_config**
+> InlineResponse200 update_nfs_global_config(body)
+
+Update NFS global configuration
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+body = swagger_client.NfsGlobalConfigBody() # NfsGlobalConfigBody | 
+
+try:
+    # Update NFS global configuration
+    api_response = api_instance.update_nfs_global_config(body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling NFSApi->update_nfs_global_config: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**NfsGlobalConfigBody**](NfsGlobalConfigBody.md)|  | 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

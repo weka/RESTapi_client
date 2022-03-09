@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**stop_io**](SystemIOApi.md#stop_io) | **POST** /io/stop | Stop system IO
 
 # **start_io**
-> InlineResponse20067 start_io()
+> InlineResponse20079 start_io()
 
 Start system IO
 
@@ -37,7 +37,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20067**](InlineResponse20067.md)
+[**InlineResponse20079**](InlineResponse20079.md)
 
 ### Authorization
 
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **stop_io**
-> InlineResponse20068 stop_io(body=body)
+> InlineResponse20080 stop_io(body=body)
 
 Stop system IO
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20068**](InlineResponse20068.md)
+[**InlineResponse20080**](InlineResponse20080.md)
 
 ### Authorization
 

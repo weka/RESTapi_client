@@ -5,6 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **is_writable** | **bool** |  | [optional] 
 **filesystem_id** | **str** |  | [optional] 
+**filesystem_uid** | **str** |  | [optional] 
+**filesystem** | **str** |  | [optional] 
 **locator** | **str** |  | [optional] 
 **is_removing** | **bool** |  | [optional] 
 **name** | **str** |  | [optional] 

@@ -4,14 +4,62 @@ All URIs are relative to */api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**abort_tasks**](TasksApi.md#abort_tasks) | **POST** /tasks/{uid}/abort | Abort task
 [**get_tasks**](TasksApi.md#get_tasks) | **GET** /tasks | Get all cluster tasks
 [**get_tasks_limit**](TasksApi.md#get_tasks_limit) | **GET** /tasks/limits | Get cluster tasks limit
 [**pause_tasks**](TasksApi.md#pause_tasks) | **POST** /tasks/{uid}/pause | Pause task
 [**resume_task**](TasksApi.md#resume_task) | **POST** /tasks/{uid}/resume | Resume task
 [**set_tasks_limit**](TasksApi.md#set_tasks_limit) | **PUT** /tasks/limits | Set cluster tasks limit
 
+# **abort_tasks**
+> InlineResponse200 abort_tasks(uid)
+
+Abort task
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+uid = 'uid_example' # str | Task uid
+
+try:
+    # Abort task
+    api_response = api_instance.abort_tasks(uid)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling TasksApi->abort_tasks: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **uid** | **str**| Task uid | 
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_tasks**
-> InlineResponse20069 get_tasks()
+> InlineResponse20081 get_tasks()
 
 Get all cluster tasks
 
@@ -40,7 +88,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20069**](InlineResponse20069.md)
+[**InlineResponse20081**](InlineResponse20081.md)
 
 ### Authorization
 
@@ -54,7 +102,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tasks_limit**
-> InlineResponse20070 get_tasks_limit()
+> InlineResponse20082 get_tasks_limit()
 
 Get cluster tasks limit
 
@@ -83,7 +131,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20082**](InlineResponse20082.md)
 
 ### Authorization
 

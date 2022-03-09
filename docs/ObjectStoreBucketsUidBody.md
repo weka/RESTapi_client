@@ -4,7 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **new_name** | **str** | Name of the Object Store Bucket | [optional] 
-**obs_site** | **str** | Site of the Object Store Bucket (local/remote) | [optional] 
 **new_obs_name** | **str** | Name of the Object Store | [optional] 
 **protocol** | **str** | One of - HTTP (default), HTTPS, HTTPS_UNVERIFIED | [optional] 
 **hostname** | **str** | Hostname (or IP) of the entrypoint to the object store | [optional] 

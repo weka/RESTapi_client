@@ -30,6 +30,8 @@ Name | Type | Description | Notes
 **cpu_model** | **str** |  | [optional] 
 **dpdk_ip** | **str** |  | [optional] 
 **dataplane_transfer_mode** | **str** |  | [optional] 
+**rdma_mode** | **str** |  | [optional] 
+**gds_mode** | **str** |  | [optional] 
 **dpdk_socket_info** | **list[str]** |  | [optional] 
 **last_join_reject_reason** | **str** |  | [optional] 
 **is_dpdk** | **bool** |  | [optional] 

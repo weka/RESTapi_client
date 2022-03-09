@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**get_stats_retention**](StatsApi.md#get_stats_retention) | **POST** /stats/retention | Set stats retention
 
 # **get_real_time_stats**
-> InlineResponse20065 get_real_time_stats()
+> InlineResponse20077 get_real_time_stats()
 
 Get real time stats
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20065**](InlineResponse20065.md)
+[**InlineResponse20077**](InlineResponse20077.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_stats**
-> InlineResponse20063 get_stats(start_time=start_time, end_time=end_time, interval=interval, category=category, stat=stat, resolution_secs=resolution_secs, accumulated=accumulated, per_node=per_node, node_uids=node_uids, param_param_key=param_param_key, no_zeroes=no_zeroes, show_internal=show_internal)
+> InlineResponse20075 get_stats(start_time=start_time, end_time=end_time, interval=interval, category=category, stat=stat, resolution_secs=resolution_secs, accumulated=accumulated, per_node=per_node, node_uids=node_uids, param_param_key=param_param_key, no_zeroes=no_zeroes, show_internal=show_internal)
 
 Get stats
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20063**](InlineResponse20063.md)
+[**InlineResponse20075**](InlineResponse20075.md)
 
 ### Authorization
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_stats_description**
-> InlineResponse20064 get_stats_description()
+> InlineResponse20076 get_stats_description()
 
 Get stats description
 
@@ -152,7 +152,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20064**](InlineResponse20064.md)
+[**InlineResponse20076**](InlineResponse20076.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_stats_disk_usage**
-> InlineResponse20066 get_stats_disk_usage(retention_duration=retention_duration)
+> InlineResponse20078 get_stats_disk_usage(retention_duration=retention_duration)
 
 Get stats retention and estimated disk usage
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**InlineResponse20078**](InlineResponse20078.md)
 
 ### Authorization
 
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_stats_retention**
-> InlineResponse20066 get_stats_retention(body=body)
+> InlineResponse20078 get_stats_retention(body=body)
 
 Set stats retention
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**InlineResponse20078**](InlineResponse20078.md)
 
 ### Authorization
 
