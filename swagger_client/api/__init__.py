@@ -11,6 +11,7 @@ from swagger_client.api.drive_api import DriveApi
 from swagger_client.api.events_api import EventsApi
 from swagger_client.api.failure_domains_api import FailureDomainsApi
 from swagger_client.api.file_system_api import FileSystemApi
+from swagger_client.api.file_system_group_api import FileSystemGroupApi
 from swagger_client.api.health_api import HealthApi
 from swagger_client.api.hosts_api import HostsApi
 from swagger_client.api.interface_group_api import InterfaceGroupApi
@@ -18,6 +19,7 @@ from swagger_client.api.kms_api import KMSApi
 from swagger_client.api.ldap_api import LDAPApi
 from swagger_client.api.license_api import LicenseApi
 from swagger_client.api.login_api import LoginApi
+from swagger_client.api.machines_api import MachinesApi
 from swagger_client.api.nfs_api import NFSApi
 from swagger_client.api.nodes_api import NodesApi
 from swagger_client.api.object_store_api import ObjectStoreApi
