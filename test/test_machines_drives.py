@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.machines_drives import MachinesDrives  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.machines_drives import MachinesDrives  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestMachinesDrives(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMachinesDrives(unittest.TestCase):
     def testMachinesDrives(self):
         """Test MachinesDrives"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.machines_drives.MachinesDrives()  # noqa: E501
+        # model = wekarestapi.models.machines_drives.MachinesDrives()  # noqa: E501
         pass
 
 

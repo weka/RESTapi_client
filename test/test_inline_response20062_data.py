@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20062_data import InlineResponse20062Data  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.inline_response20062_data import InlineResponse20062Data  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInlineResponse20062Data(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20062Data(unittest.TestCase):
     def testInlineResponse20062Data(self):
         """Test InlineResponse20062Data"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20062_data.InlineResponse20062Data()  # noqa: E501
+        # model = wekarestapi.models.inline_response20062_data.InlineResponse20062Data()  # noqa: E501
         pass
 
 

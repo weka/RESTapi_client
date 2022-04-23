@@ -17,16 +17,17 @@ Method | HTTP request | Description
 Remove the quota from a directory
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 inode_context = 'inode_context_example' # str | directory's inode id
 path = 'path_example' # str |  (optional)
@@ -68,16 +69,17 @@ Name | Type | Description  | Notes
 Get the parameters of a specific directory quota
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 inode_context = 'inode_context_example' # str | directory's inode id
 
@@ -117,16 +119,17 @@ Name | Type | Description  | Notes
 Get file system quota
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 type = 'type_example' # str | Quota type
 uid = 'uid_example' # str | File system uid
 next_token = 'next_token_example' # str | Token to get the next page (optional)
@@ -168,16 +171,17 @@ Name | Type | Description  | Notes
 Get a list of quotas in the file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 next_token = 'next_token_example' # str | Token to get the next page (optional)
 
@@ -217,16 +221,17 @@ Name | Type | Description  | Notes
 Patch the parameters of a directory quota
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 inode_context = 'inode_context_example' # str | directory's inode id
 path = 'path_example' # str |  (optional)
@@ -276,16 +281,17 @@ Name | Type | Description  | Notes
 Set a quota on a directory
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.QuotaApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.QuotaApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 inode_context = 'inode_context_example' # str | directory's inode id
 hard_limit_bytes = 1.2 # float | 0 for unlimited

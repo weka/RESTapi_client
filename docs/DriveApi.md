@@ -17,17 +17,18 @@ Method | HTTP request | Description
 Activate drives
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DrivesActivateBody() # DrivesActivateBody |  (optional)
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.DrivesActivateBody() # DrivesActivateBody |  (optional)
 
 try:
     # Activate drives
@@ -64,17 +65,18 @@ Name | Type | Description  | Notes
 Deactivate drives
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DrivesDeactivateBody() # DrivesDeactivateBody |  (optional)
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.DrivesDeactivateBody() # DrivesDeactivateBody |  (optional)
 
 try:
     # Deactivate drives
@@ -111,16 +113,17 @@ Name | Type | Description  | Notes
 Remove drive
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Drive uid
 
 try:
@@ -158,16 +161,17 @@ Name | Type | Description  | Notes
 Get drives list
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
 show_removed = true # bool |  (optional)
 
 try:
@@ -205,16 +209,17 @@ Name | Type | Description  | Notes
 Get single drive
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Drive uid
 
 try:
@@ -252,17 +257,18 @@ Name | Type | Description  | Notes
 Provision drives
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DriveApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DrivesBody() # DrivesBody | 
+api_instance = wekarestapi.DriveApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.DrivesBody() # DrivesBody | 
 
 try:
     # Provision drives

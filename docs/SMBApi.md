@@ -30,17 +30,18 @@ Method | HTTP request | Description
 Add trusted domain to smb
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbDomainsBody() # SmbDomainsBody |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbDomainsBody() # SmbDomainsBody |  (optional)
 
 try:
     # Add trusted domain to smb
@@ -77,17 +78,18 @@ Name | Type | Description  | Notes
 add share to smb
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbSharesBody() # SmbSharesBody |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbSharesBody() # SmbSharesBody |  (optional)
 
 try:
     # add share to smb
@@ -124,19 +126,20 @@ Name | Type | Description  | Notes
 Add user to smb
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 share_uid = 'share_uid_example' # str | Share uid
 user_type = 'user_type_example' # str | read_only, read_write, valid, invalid
-body = swagger_client.ShareUidUserTypeBody() # ShareUidUserTypeBody |  (optional)
+body = wekarestapi.ShareUidUserTypeBody() # ShareUidUserTypeBody |  (optional)
 
 try:
     # Add user to smb
@@ -175,16 +178,17 @@ Name | Type | Description  | Notes
 Clear smb cluster info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Clear smb cluster info
@@ -218,17 +222,18 @@ This endpoint does not need any parameter.
 Leave smb active directory
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbActiveDirectoryBody() # SmbActiveDirectoryBody |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbActiveDirectoryBody() # SmbActiveDirectoryBody |  (optional)
 
 try:
     # Leave smb active directory
@@ -265,16 +270,17 @@ Name | Type | Description  | Notes
 Delete smb domain
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Domain uid
 
 try:
@@ -312,16 +318,17 @@ Name | Type | Description  | Notes
 Delete smb share
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Share uid
 
 try:
@@ -359,16 +366,17 @@ Name | Type | Description  | Notes
 Delete smb user
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 share_uid = 'share_uid_example' # str | Share uid
 user_type = 'user_type_example' # str | read_only, read_write, valid, invalid
 user = 'user_example' # str | 
@@ -410,16 +418,17 @@ Name | Type | Description  | Notes
 Get smb cluster info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get smb cluster info
@@ -453,16 +462,17 @@ This endpoint does not need any parameter.
 Get Samba Hosts status
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get Samba Hosts status
@@ -496,16 +506,17 @@ This endpoint does not need any parameter.
 Reset smb users
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 share_uid = 'share_uid_example' # str | Share uid
 user_type = 'user_type_example' # str | read_only, read_write, valid, invalid
 
@@ -545,17 +556,18 @@ Name | Type | Description  | Notes
 Set smb cluster info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbBody1() # SmbBody1 |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbBody1() # SmbBody1 |  (optional)
 
 try:
     # Set smb cluster info
@@ -592,17 +604,18 @@ Name | Type | Description  | Notes
 Join smb active directory
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbActiveDirectoryBody1() # SmbActiveDirectoryBody1 |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbActiveDirectoryBody1() # SmbActiveDirectoryBody1 |  (optional)
 
 try:
     # Join smb active directory
@@ -639,17 +652,18 @@ Name | Type | Description  | Notes
 Set smb debug level
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbDebugBody() # SmbDebugBody |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbDebugBody() # SmbDebugBody |  (optional)
 
 try:
     # Set smb debug level
@@ -686,16 +700,17 @@ Name | Type | Description  | Notes
 Get smb trusted domains
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get smb trusted domains
@@ -729,16 +744,17 @@ This endpoint does not need any parameter.
 Get smb mount options
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get smb mount options
@@ -772,16 +788,17 @@ This endpoint does not need any parameter.
 Get smb shares
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get smb shares
@@ -815,17 +832,18 @@ This endpoint does not need any parameter.
 Update smb cluster info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SmbBody() # SmbBody |  (optional)
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SmbBody() # SmbBody |  (optional)
 
 try:
     # Update smb cluster info
@@ -862,18 +880,19 @@ Name | Type | Description  | Notes
 Update smb share
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SMBApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SMBApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | share uid
-body = swagger_client.SharesUidBody() # SharesUidBody |  (optional)
+body = wekarestapi.SharesUidBody() # SharesUidBody |  (optional)
 
 try:
     # Update smb share

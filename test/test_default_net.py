@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.default_net import DefaultNet  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.default_net import DefaultNet  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestDefaultNet(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDefaultNet(unittest.TestCase):
     def testDefaultNet(self):
         """Test DefaultNet"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.default_net.DefaultNet()  # noqa: E501
+        # model = wekarestapi.models.default_net.DefaultNet()  # noqa: E501
         pass
 
 

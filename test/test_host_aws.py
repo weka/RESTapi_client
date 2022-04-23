@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.host_aws import HostAws  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.host_aws import HostAws  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestHostAws(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHostAws(unittest.TestCase):
     def testHostAws(self):
         """Test HostAws"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.host_aws.HostAws()  # noqa: E501
+        # model = wekarestapi.models.host_aws.HostAws()  # noqa: E501
         pass
 
 

@@ -12,18 +12,19 @@ Method | HTTP request | Description
 Update object store
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | object storage uid
-body = swagger_client.ObjectStoresUidBody() # ObjectStoresUidBody |  (optional)
+body = wekarestapi.ObjectStoresUidBody() # ObjectStoresUidBody |  (optional)
 
 try:
     # Update object store

@@ -16,16 +16,17 @@ Method | HTTP request | Description
 Delete kms configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.KMSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.KMSApi(wekarestapi.ApiClient(configuration))
 force_delete = true # bool |  (optional)
 
 try:
@@ -63,16 +64,17 @@ Name | Type | Description  | Notes
 Get kms configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.KMSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.KMSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get kms configuration
@@ -106,16 +108,17 @@ This endpoint does not need any parameter.
 Get kms type
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.KMSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.KMSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get kms type
@@ -149,17 +152,18 @@ This endpoint does not need any parameter.
 Rewrap KMS key
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.KMSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.KmsRewrapBody() # KmsRewrapBody | 
+api_instance = wekarestapi.KMSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.KmsRewrapBody() # KmsRewrapBody | 
 
 try:
     # Rewrap KMS key
@@ -195,17 +199,18 @@ void (empty response body)
 Set kms vault configuration (base_url,master_key_name,token) or set kms kmip configuration (server_endpoint, key_uid, client_cert_pem, client_key_pem, ca_cert_pem) 
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.KMSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.KmsBody() # KmsBody | 
+api_instance = wekarestapi.KMSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.KmsBody() # KmsBody | 
 
 try:
     # Set kms vault configuration (base_url,master_key_name,token) or set kms kmip configuration (server_endpoint, key_uid, client_cert_pem, client_key_pem, ca_cert_pem) 

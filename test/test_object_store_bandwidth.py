@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.object_store_bandwidth import ObjectStoreBandwidth  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.object_store_bandwidth import ObjectStoreBandwidth  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestObjectStoreBandwidth(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestObjectStoreBandwidth(unittest.TestCase):
     def testObjectStoreBandwidth(self):
         """Test ObjectStoreBandwidth"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.object_store_bandwidth.ObjectStoreBandwidth()  # noqa: E501
+        # model = wekarestapi.models.object_store_bandwidth.ObjectStoreBandwidth()  # noqa: E501
         pass
 
 

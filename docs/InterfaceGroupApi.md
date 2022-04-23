@@ -22,17 +22,18 @@ Method | HTTP request | Description
 Add port to interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PortsHostUidBody() # PortsHostUidBody | 
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.PortsHostUidBody() # PortsHostUidBody | 
 uid = 'uid_example' # str | Interface group uid
 host_uid = 'host_uid_example' # str | Host uid
 
@@ -73,17 +74,18 @@ Name | Type | Description  | Notes
 Add ip range to interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UidIpsBody() # UidIpsBody | 
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UidIpsBody() # UidIpsBody | 
 uid = 'uid_example' # str | Interface group uid
 
 try:
@@ -122,17 +124,18 @@ Name | Type | Description  | Notes
 Create interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InterfaceGroupsBody() # InterfaceGroupsBody | 
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.InterfaceGroupsBody() # InterfaceGroupsBody | 
 
 try:
     # Create interface group
@@ -169,16 +172,17 @@ Name | Type | Description  | Notes
 delete interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | interface group uid
 
 try:
@@ -216,16 +220,17 @@ Name | Type | Description  | Notes
 Delete ip range from interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | interface group uid
 ips = 'ips_example' # str | IP or IP range to delete
 
@@ -265,16 +270,17 @@ Name | Type | Description  | Notes
 Delete port from interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Interface group uid
 host_uid = 'host_uid_example' # str | Host uid
 port = 'port_example' # str | Host:Port to delete from Interface Group
@@ -316,16 +322,17 @@ Name | Type | Description  | Notes
 Get interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | interface group uid
 
 try:
@@ -363,16 +370,17 @@ Name | Type | Description  | Notes
 Get interface groups
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get interface groups
@@ -406,16 +414,17 @@ This endpoint does not need any parameter.
 Get All the floating IPs and their assignment
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get All the floating IPs and their assignment
@@ -449,17 +458,18 @@ This endpoint does not need any parameter.
 add port for interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InterfaceGroupsPortBody() # InterfaceGroupsPortBody | 
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.InterfaceGroupsPortBody() # InterfaceGroupsPortBody | 
 
 try:
     # add port for interface group
@@ -496,17 +506,18 @@ Name | Type | Description  | Notes
 Update interface group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.InterfaceGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.InterfaceGroupsUidBody() # InterfaceGroupsUidBody | 
+api_instance = wekarestapi.InterfaceGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.InterfaceGroupsUidBody() # InterfaceGroupsUidBody | 
 uid = 'uid_example' # str | interface group uid
 
 try:

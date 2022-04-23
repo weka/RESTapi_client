@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20051_data_info_extent_spec_extent_key import InlineResponse20051DataInfoExtentSpecExtentKey  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.inline_response20051_data_info_extent_spec_extent_key import InlineResponse20051DataInfoExtentSpecExtentKey  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInlineResponse20051DataInfoExtentSpecExtentKey(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20051DataInfoExtentSpecExtentKey(unittest.TestCase):
     def testInlineResponse20051DataInfoExtentSpecExtentKey(self):
         """Test InlineResponse20051DataInfoExtentSpecExtentKey"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20051_data_info_extent_spec_extent_key.InlineResponse20051DataInfoExtentSpecExtentKey()  # noqa: E501
+        # model = wekarestapi.models.inline_response20051_data_info_extent_spec_extent_key.InlineResponse20051DataInfoExtentSpecExtentKey()  # noqa: E501
         pass
 
 

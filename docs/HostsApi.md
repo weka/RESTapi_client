@@ -29,16 +29,17 @@ Method | HTTP request | Description
 Activate host
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -76,17 +77,18 @@ Name | Type | Description  | Notes
 Activate hosts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.HostsActivateBody() # HostsActivateBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.HostsActivateBody() # HostsActivateBody | 
 
 try:
     # Activate hosts
@@ -123,17 +125,18 @@ Name | Type | Description  | Notes
 Add host to cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.HostsBody() # HostsBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.HostsBody() # HostsBody | 
 
 try:
     # Add host to cluster
@@ -170,16 +173,17 @@ Name | Type | Description  | Notes
 Apply host
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -217,17 +221,18 @@ Name | Type | Description  | Notes
 Apply hosts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.HostsApplyBody() # HostsApplyBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.HostsApplyBody() # HostsApplyBody | 
 
 try:
     # Apply hosts
@@ -264,16 +269,17 @@ Name | Type | Description  | Notes
 Clear host last failure
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -311,17 +317,18 @@ Name | Type | Description  | Notes
 Create host network - Need to apply host after
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UidNetdevsBody() # UidNetdevsBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UidNetdevsBody() # UidNetdevsBody | 
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -360,16 +367,17 @@ Name | Type | Description  | Notes
 Deactivate host
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -407,17 +415,18 @@ Name | Type | Description  | Notes
 Deactivate hosts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.HostsDeactivateBody() # HostsDeactivateBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.HostsDeactivateBody() # HostsDeactivateBody | 
 
 try:
     # Deactivate hosts
@@ -454,16 +463,17 @@ Name | Type | Description  | Notes
 Get all hosts network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all hosts network
@@ -497,16 +507,17 @@ This endpoint does not need any parameter.
 Get host network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -544,16 +555,17 @@ Name | Type | Description  | Notes
 Get host resources
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 type = 'type_example' # str | resource type can be Staging or Stable (Staging if empty) (optional)
 
@@ -593,16 +605,17 @@ Name | Type | Description  | Notes
 Get all hosts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all hosts
@@ -636,16 +649,17 @@ This endpoint does not need any parameter.
 get hosts infos from IPs
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 hostnames_ips = ['hostnames_ips_example'] # list[str] |  (optional)
 info_types = ['info_types_example'] # list[str] |  (optional)
 
@@ -685,16 +699,17 @@ Name | Type | Description  | Notes
 Get single host
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -732,16 +747,17 @@ Name | Type | Description  | Notes
 Remove host from cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 
 try:
@@ -779,16 +795,17 @@ Name | Type | Description  | Notes
 Remove host network - Need to apply host after
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Host uid
 netdev_uid = 'netdev_uid_example' # str | network device uid
 apply_host = true # bool | Apply the host after this change (optional)
@@ -830,17 +847,18 @@ Name | Type | Description  | Notes
 Configure host - Need to apply host after
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HostsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.HostsUidBody() # HostsUidBody | 
+api_instance = wekarestapi.HostsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.HostsUidBody() # HostsUidBody | 
 uid = 'uid_example' # str | Host uid
 
 try:

@@ -13,16 +13,17 @@ Method | HTTP request | Description
 Check if API is alive
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HealthApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HealthApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Check if API is alive
@@ -56,16 +57,17 @@ This endpoint does not need any parameter.
 Check if UI is alive
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HealthApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.HealthApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Check if UI is alive

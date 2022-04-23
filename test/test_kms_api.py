@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.kms_api import KMSApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.kms_api import KMSApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestKMSApi(unittest.TestCase):

@@ -18,17 +18,18 @@ Method | HTTP request | Description
 Create user
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersBody() # UsersBody | 
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UsersBody() # UsersBody | 
 
 try:
     # Create user
@@ -65,16 +66,17 @@ Name | Type | Description  | Notes
 Delete user
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | User uid
 
 try:
@@ -112,16 +114,17 @@ Name | Type | Description  | Notes
 Get all users
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all users
@@ -155,16 +158,17 @@ This endpoint does not need any parameter.
 Revoke user tokens
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | User uid
 
 try:
@@ -202,17 +206,18 @@ Name | Type | Description  | Notes
 Update user
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersUidBody() # UsersUidBody | 
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UsersUidBody() # UsersUidBody | 
 uid = 'uid_example' # str | User uid
 
 try:
@@ -251,17 +256,18 @@ Name | Type | Description  | Notes
 Update user password
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersPasswordBody() # UsersPasswordBody | 
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UsersPasswordBody() # UsersPasswordBody | 
 
 try:
     # Update user password
@@ -298,16 +304,17 @@ Name | Type | Description  | Notes
 Get user info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.UserApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get user info

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tls_body import TlsBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.tls_body import TlsBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestTlsBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTlsBody(unittest.TestCase):
     def testTlsBody(self):
         """Test TlsBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tls_body.TlsBody()  # noqa: E501
+        # model = wekarestapi.models.tls_body.TlsBody()  # noqa: E501
         pass
 
 

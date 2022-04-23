@@ -20,16 +20,17 @@ Method | HTTP request | Description
 Disable login banner
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Disable login banner
@@ -63,16 +64,17 @@ This endpoint does not need any parameter.
 Enable login banner
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Enable login banner
@@ -106,16 +108,17 @@ This endpoint does not need any parameter.
 Get the login banner
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get the login banner
@@ -149,16 +152,17 @@ This endpoint does not need any parameter.
 Get tokens default expiry time
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get tokens default expiry time
@@ -192,16 +196,17 @@ This endpoint does not need any parameter.
 Get tokens default expiry time
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get tokens default expiry time
@@ -235,17 +240,18 @@ This endpoint does not need any parameter.
 Set a CA-Cert for the cluster (Vault)
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SecurityCaCertBody() # SecurityCaCertBody |  (optional)
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SecurityCaCertBody() # SecurityCaCertBody |  (optional)
 
 try:
     # Set a CA-Cert for the cluster (Vault)
@@ -282,17 +288,18 @@ Name | Type | Description  | Notes
 Set the login banner
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SecurityBannerBody() # SecurityBannerBody | 
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SecurityBannerBody() # SecurityBannerBody | 
 
 try:
     # Set the login banner
@@ -329,16 +336,17 @@ Name | Type | Description  | Notes
 Show the CA-Cert for the cluster (Vault)
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Show the CA-Cert for the cluster (Vault)
@@ -372,16 +380,17 @@ This endpoint does not need any parameter.
 Unset a CA-Cert for the cluster (Vault)
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SecurityApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SecurityApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Unset a CA-Cert for the cluster (Vault)

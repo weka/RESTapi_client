@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.snapshot import Snapshot  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.snapshot import Snapshot  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestSnapshot(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSnapshot(unittest.TestCase):
     def testSnapshot(self):
         """Test Snapshot"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.snapshot.Snapshot()  # noqa: E501
+        # model = wekarestapi.models.snapshot.Snapshot()  # noqa: E501
         pass
 
 

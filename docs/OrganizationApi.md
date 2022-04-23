@@ -18,17 +18,18 @@ Method | HTTP request | Description
 Create organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OrganizationsBody() # OrganizationsBody | 
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.OrganizationsBody() # OrganizationsBody | 
 
 try:
     # Create organization
@@ -65,16 +66,17 @@ Name | Type | Description  | Notes
 Delete organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | organization uid
 
 try:
@@ -112,16 +114,17 @@ Name | Type | Description  | Notes
 Get if multiple Organizations Exist
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get if multiple Organizations Exist
@@ -155,16 +158,17 @@ This endpoint does not need any parameter.
 Get organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | organization uid
 
 try:
@@ -202,16 +206,17 @@ Name | Type | Description  | Notes
 Get all organizations
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all organizations
@@ -245,18 +250,19 @@ This endpoint does not need any parameter.
 Set organization capacity limits
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | organization uid
-body = swagger_client.UidLimitsBody() # UidLimitsBody |  (optional)
+body = wekarestapi.UidLimitsBody() # UidLimitsBody |  (optional)
 
 try:
     # Set organization capacity limits
@@ -294,18 +300,19 @@ Name | Type | Description  | Notes
 update organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.OrganizationApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | organization uid
-body = swagger_client.OrganizationsUidBody() # OrganizationsUidBody |  (optional)
+body = wekarestapi.OrganizationsUidBody() # OrganizationsUidBody |  (optional)
 
 try:
     # update organization

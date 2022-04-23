@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.netdev_aws import NetdevAws  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.netdev_aws import NetdevAws  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestNetdevAws(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestNetdevAws(unittest.TestCase):
     def testNetdevAws(self):
         """Test NetdevAws"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.netdev_aws.NetdevAws()  # noqa: E501
+        # model = wekarestapi.models.netdev_aws.NetdevAws()  # noqa: E501
         pass
 
 

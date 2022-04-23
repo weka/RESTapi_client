@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.license_body import LicenseBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.license_body import LicenseBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestLicenseBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLicenseBody(unittest.TestCase):
     def testLicenseBody(self):
         """Test LicenseBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.license_body.LicenseBody()  # noqa: E501
+        # model = wekarestapi.models.license_body.LicenseBody()  # noqa: E501
         pass
 
 

@@ -22,8 +22,9 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
+
 ```python
-import swagger_client 
+import wekarestapi 
 ```
 
 ### Setuptools
@@ -36,8 +37,9 @@ python setup.py install --user
 (or `sudo python setup.py install` to install the package for all users)
 
 Then import the package:
+
 ```python
-import swagger_client
+import wekarestapi
 ```
 
 ## Getting Started
@@ -47,14 +49,14 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ActiveDirectoryApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ActiveDirectoryBody() # ActiveDirectoryBody | 
+api_instance = wekarestapi.ActiveDirectoryApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.ActiveDirectoryBody() # ActiveDirectoryBody | 
 
 try:
     # Update active directory

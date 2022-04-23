@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tasks_limits_body import TasksLimitsBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.tasks_limits_body import TasksLimitsBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestTasksLimitsBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTasksLimitsBody(unittest.TestCase):
     def testTasksLimitsBody(self):
         """Test TasksLimitsBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tasks_limits_body.TasksLimitsBody()  # noqa: E501
+        # model = wekarestapi.models.tasks_limits_body.TasksLimitsBody()  # noqa: E501
         pass
 
 

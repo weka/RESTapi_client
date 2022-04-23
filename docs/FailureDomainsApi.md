@@ -13,16 +13,17 @@ Method | HTTP request | Description
 Get failure domains
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FailureDomainsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FailureDomainsApi(wekarestapi.ApiClient(configuration))
 show_removed = true # bool |  (optional)
 
 try:
@@ -60,16 +61,17 @@ Name | Type | Description  | Notes
 Get single failure domain
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FailureDomainsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FailureDomainsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Domain uid
 
 try:

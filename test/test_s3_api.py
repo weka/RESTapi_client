@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.s3_api import S3Api  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.s3_api import S3Api  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestS3Api(unittest.TestCase):

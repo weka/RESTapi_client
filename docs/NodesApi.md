@@ -13,16 +13,17 @@ Method | HTTP request | Description
 Get node
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NodesApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NodesApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Node uid
 
 try:
@@ -60,16 +61,17 @@ Name | Type | Description  | Notes
 Get all nodes
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NodesApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NodesApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all nodes

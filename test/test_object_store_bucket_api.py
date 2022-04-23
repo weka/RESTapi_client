@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.object_store_bucket_api import ObjectStoreBucketApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.object_store_bucket_api import ObjectStoreBucketApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestObjectStoreBucketApi(unittest.TestCase):

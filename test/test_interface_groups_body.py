@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.interface_groups_body import InterfaceGroupsBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.interface_groups_body import InterfaceGroupsBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInterfaceGroupsBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInterfaceGroupsBody(unittest.TestCase):
     def testInterfaceGroupsBody(self):
         """Test InterfaceGroupsBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.interface_groups_body.InterfaceGroupsBody()  # noqa: E501
+        # model = wekarestapi.models.interface_groups_body.InterfaceGroupsBody()  # noqa: E501
         pass
 
 

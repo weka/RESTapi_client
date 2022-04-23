@@ -17,16 +17,17 @@ Method | HTTP request | Description
 Abort task
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Task uid
 
 try:
@@ -64,16 +65,17 @@ Name | Type | Description  | Notes
 Get all cluster tasks
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all cluster tasks
@@ -107,16 +109,17 @@ This endpoint does not need any parameter.
 Get cluster tasks limit
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cluster tasks limit
@@ -150,16 +153,17 @@ This endpoint does not need any parameter.
 Pause task
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Task uid
 
 try:
@@ -197,16 +201,17 @@ Name | Type | Description  | Notes
 Resume task
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Task uid
 
 try:
@@ -244,17 +249,18 @@ Name | Type | Description  | Notes
 Set cluster tasks limit
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TasksLimitsBody() # TasksLimitsBody | 
+api_instance = wekarestapi.TasksApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.TasksLimitsBody() # TasksLimitsBody | 
 
 try:
     # Set cluster tasks limit

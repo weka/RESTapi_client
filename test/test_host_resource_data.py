@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.host_resource_data import HostResourceData  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.host_resource_data import HostResourceData  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestHostResourceData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHostResourceData(unittest.TestCase):
     def testHostResourceData(self):
         """Test HostResourceData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.host_resource_data.HostResourceData()  # noqa: E501
+        # model = wekarestapi.models.host_resource_data.HostResourceData()  # noqa: E501
         pass
 
 

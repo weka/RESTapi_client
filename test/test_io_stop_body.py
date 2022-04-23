@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.io_stop_body import IoStopBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.io_stop_body import IoStopBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestIoStopBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestIoStopBody(unittest.TestCase):
     def testIoStopBody(self):
         """Test IoStopBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.io_stop_body.IoStopBody()  # noqa: E501
+        # model = wekarestapi.models.io_stop_body.IoStopBody()  # noqa: E501
         pass
 
 

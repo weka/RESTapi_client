@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.policies_attach_body import PoliciesAttachBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.policies_attach_body import PoliciesAttachBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestPoliciesAttachBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPoliciesAttachBody(unittest.TestCase):
     def testPoliciesAttachBody(self):
         """Test PoliciesAttachBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.policies_attach_body.PoliciesAttachBody()  # noqa: E501
+        # model = wekarestapi.models.policies_attach_body.PoliciesAttachBody()  # noqa: E501
         pass
 
 

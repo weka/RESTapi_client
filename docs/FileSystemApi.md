@@ -24,17 +24,18 @@ Method | HTTP request | Description
 Attach object store bucket to file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UidObjectStoreBucketsBody() # UidObjectStoreBucketsBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UidObjectStoreBucketsBody() # UidObjectStoreBucketsBody | 
 uid = 'uid_example' # str | File system uid
 
 try:
@@ -73,17 +74,18 @@ Name | Type | Description  | Notes
 Attach object store bucket to file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UidObjectStoresBody() # UidObjectStoresBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UidObjectStoresBody() # UidObjectStoresBody | 
 uid = 'uid_example' # str | File system uid
 
 try:
@@ -122,17 +124,18 @@ Name | Type | Description  | Notes
 Create file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileSystemsBody() # FileSystemsBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.FileSystemsBody() # FileSystemsBody | 
 
 try:
     # Create file system
@@ -169,16 +172,17 @@ Name | Type | Description  | Notes
 Delete file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | File system uid
 purge_from_obs = true # bool | Delete filesystem's objects from Object Storage, making all uploaded snapshots unusable (optional)
 
@@ -218,16 +222,17 @@ Name | Type | Description  | Notes
 Unset filesystems thin provisioning reserve for Organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 org_uid = 'org_uid_example' # str | Organization uid for which to set reserve
 
 try:
@@ -265,16 +270,17 @@ Name | Type | Description  | Notes
 Detach object store bucket from file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 obs_uid = 'obs_uid_example' # str | object store system uid
 
@@ -314,16 +320,17 @@ Name | Type | Description  | Notes
 Detach object store bucket from file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 obs_uid = 'obs_uid_example' # str | object store system uid
 
@@ -363,17 +370,18 @@ Name | Type | Description  | Notes
 Download file system from object store
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileSystemsDownloadBody() # FileSystemsDownloadBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.FileSystemsDownloadBody() # FileSystemsDownloadBody | 
 
 try:
     # Download file system from object store
@@ -410,16 +418,17 @@ Name | Type | Description  | Notes
 Get file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system uid
 force_fresh = true # bool | Refresh the capacities to make sure they are most updated (optional)
 
@@ -459,16 +468,17 @@ Name | Type | Description  | Notes
 Get all file systems
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 force_fresh = true # bool | Refresh the capacities to make sure they are most updated (optional)
 
 try:
@@ -506,16 +516,17 @@ Name | Type | Description  | Notes
 Filesystems thin provisioning reserve status for Organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Filesystems thin provisioning reserve status for Organization
@@ -549,17 +560,18 @@ This endpoint does not need any parameter.
 Set filesystems thin provisioning reserve for Organization
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ThinProvisionReserveOrgUidBody() # ThinProvisionReserveOrgUidBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.ThinProvisionReserveOrgUidBody() # ThinProvisionReserveOrgUidBody | 
 org_uid = 'org_uid_example' # str | Organization uid for which to set reserve
 
 try:
@@ -598,17 +610,18 @@ Name | Type | Description  | Notes
 Update file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileSystemsUidBody() # FileSystemsUidBody | 
+api_instance = wekarestapi.FileSystemApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.FileSystemsUidBody() # FileSystemsUidBody | 
 uid = 'uid_example' # str | File system uid
 
 try:

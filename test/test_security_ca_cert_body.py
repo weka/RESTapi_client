@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.security_ca_cert_body import SecurityCaCertBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.security_ca_cert_body import SecurityCaCertBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestSecurityCaCertBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSecurityCaCertBody(unittest.TestCase):
     def testSecurityCaCertBody(self):
         """Test SecurityCaCertBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.security_ca_cert_body.SecurityCaCertBody()  # noqa: E501
+        # model = wekarestapi.models.security_ca_cert_body.SecurityCaCertBody()  # noqa: E501
         pass
 
 

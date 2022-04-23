@@ -19,18 +19,19 @@ Method | HTTP request | Description
 Copy snapshot from the same file system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Snapshot uid
-body = swagger_client.UidCopyBody() # UidCopyBody |  (optional)
+body = wekarestapi.UidCopyBody() # UidCopyBody |  (optional)
 
 try:
     # Copy snapshot from the same file system
@@ -68,17 +69,18 @@ Name | Type | Description  | Notes
 Create snapshot
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SnapshotsBody() # SnapshotsBody |  (optional)
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.SnapshotsBody() # SnapshotsBody |  (optional)
 
 try:
     # Create snapshot
@@ -115,16 +117,17 @@ Name | Type | Description  | Notes
 Delete snapshot
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Snapshot uid
 
 try:
@@ -162,16 +165,17 @@ Name | Type | Description  | Notes
 Get snapshot
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Snapshot uid
 
 try:
@@ -209,16 +213,17 @@ Name | Type | Description  | Notes
 Get snapshots
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get snapshots
@@ -252,16 +257,17 @@ This endpoint does not need any parameter.
 Restore file system from snapshot
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 fs_uid = 'fs_uid_example' # str | 
 uid = 'uid_example' # str | snapshot uid
 
@@ -301,18 +307,19 @@ Name | Type | Description  | Notes
 Update snapshot
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | snapshot uid
-body = swagger_client.SnapshotsUidBody() # SnapshotsUidBody |  (optional)
+body = wekarestapi.SnapshotsUidBody() # SnapshotsUidBody |  (optional)
 
 try:
     # Update snapshot
@@ -350,18 +357,19 @@ Name | Type | Description  | Notes
 Upload snapshot to object store
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SnapshotsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SnapshotsApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | snapshot uid
-body = swagger_client.UidUploadBody() # UidUploadBody |  (optional)
+body = wekarestapi.UidUploadBody() # UidUploadBody |  (optional)
 
 try:
     # Upload snapshot to object store

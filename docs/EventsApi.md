@@ -14,16 +14,17 @@ Method | HTTP request | Description
 Get events
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.EventsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.EventsApi(wekarestapi.ApiClient(configuration))
 num_results = 1.2 # float |  (optional)
 start_time = 'start_time_example' # str |  (optional)
 end_time = 'end_time_example' # str |  (optional)
@@ -77,16 +78,17 @@ Name | Type | Description  | Notes
 Get events description
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.EventsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.EventsApi(wekarestapi.ApiClient(configuration))
 type = ['type_example'] # list[str] | list of categories (optional)
 category = ['category_example'] # list[str] | list of categories (optional)
 show_internal = true # bool |  (optional)
@@ -128,16 +130,17 @@ Name | Type | Description  | Notes
 Get events from the targeted host for the API call
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.EventsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.EventsApi(wekarestapi.ApiClient(configuration))
 start_time = 'start_time_example' # str |  (optional)
 end_time = 'end_time_example' # str |  (optional)
 stem_mode = true # bool |  (optional)

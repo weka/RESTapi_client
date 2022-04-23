@@ -16,17 +16,18 @@ Method | HTTP request | Description
 Create file system group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileSystemGroupsBody() # FileSystemGroupsBody | 
+api_instance = wekarestapi.FileSystemGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.FileSystemGroupsBody() # FileSystemGroupsBody | 
 
 try:
     # Create file system group
@@ -63,16 +64,17 @@ Name | Type | Description  | Notes
 Delete file system group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | File system group uid
 
 try:
@@ -110,16 +112,17 @@ Name | Type | Description  | Notes
 Get file system group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemGroupApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | file system group uid
 
 try:
@@ -157,16 +160,17 @@ Name | Type | Description  | Notes
 Get all file system groups
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemGroupApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.FileSystemGroupApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all file system groups
@@ -200,17 +204,18 @@ This endpoint does not need any parameter.
 Update file system group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FileSystemGroupApi(swagger_client.ApiClient(configuration))
-body = swagger_client.FileSystemGroupsUidBody() # FileSystemGroupsUidBody | 
+api_instance = wekarestapi.FileSystemGroupApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.FileSystemGroupsUidBody() # FileSystemGroupsUidBody | 
 uid = 'uid_example' # str | File system group uid
 
 try:

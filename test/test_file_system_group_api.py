@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.file_system_group_api import FileSystemGroupApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.file_system_group_api import FileSystemGroupApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestFileSystemGroupApi(unittest.TestCase):

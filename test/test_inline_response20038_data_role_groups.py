@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20038_data_role_groups import InlineResponse20038DataRoleGroups  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.inline_response20038_data_role_groups import InlineResponse20038DataRoleGroups  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInlineResponse20038DataRoleGroups(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20038DataRoleGroups(unittest.TestCase):
     def testInlineResponse20038DataRoleGroups(self):
         """Test InlineResponse20038DataRoleGroups"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20038_data_role_groups.InlineResponse20038DataRoleGroups()  # noqa: E501
+        # model = wekarestapi.models.inline_response20038_data_role_groups.InlineResponse20038DataRoleGroups()  # noqa: E501
         pass
 
 

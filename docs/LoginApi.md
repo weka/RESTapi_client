@@ -13,17 +13,18 @@ Method | HTTP request | Description
 login to system
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LoginApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LoginBody() # LoginBody | 
+api_instance = wekarestapi.LoginApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.LoginBody() # LoginBody | 
 
 try:
     # login to system
@@ -60,17 +61,18 @@ Name | Type | Description  | Notes
 get authentication tokens using refresh token
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LoginApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LoginRefreshBody() # LoginRefreshBody | 
+api_instance = wekarestapi.LoginApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.LoginRefreshBody() # LoginRefreshBody | 
 
 try:
     # get authentication tokens using refresh token

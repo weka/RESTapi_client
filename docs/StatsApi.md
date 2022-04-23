@@ -16,16 +16,17 @@ Method | HTTP request | Description
 Get real time stats
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StatsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.StatsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get real time stats
@@ -59,16 +60,17 @@ This endpoint does not need any parameter.
 Get stats
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StatsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.StatsApi(wekarestapi.ApiClient(configuration))
 start_time = 'start_time_example' # str |  (optional)
 end_time = 'end_time_example' # str |  (optional)
 interval = 'interval_example' # str |  (optional)
@@ -128,16 +130,17 @@ Name | Type | Description  | Notes
 Get stats description
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StatsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.StatsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get stats description
@@ -171,16 +174,17 @@ This endpoint does not need any parameter.
 Get stats retention and estimated disk usage
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StatsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.StatsApi(wekarestapi.ApiClient(configuration))
 retention_duration = 'retention_duration_example' # str | Duration (format - 1 minute 2 seconds, options - weeks, days, hours, minutes, seconds) (optional)
 
 try:
@@ -218,17 +222,18 @@ Name | Type | Description  | Notes
 Set stats retention
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StatsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.StatsRetentionBody() # StatsRetentionBody |  (optional)
+api_instance = wekarestapi.StatsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.StatsRetentionBody() # StatsRetentionBody |  (optional)
 
 try:
     # Set stats retention

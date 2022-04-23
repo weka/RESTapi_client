@@ -15,16 +15,17 @@ Method | HTTP request | Description
 Get default network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultNetworkApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.DefaultNetworkApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get default network
@@ -58,16 +59,17 @@ This endpoint does not need any parameter.
 Reset default network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultNetworkApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.DefaultNetworkApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Reset default network
@@ -101,17 +103,18 @@ This endpoint does not need any parameter.
 Set default network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultNetworkApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DefaultNet() # DefaultNet | 
+api_instance = wekarestapi.DefaultNetworkApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.DefaultNet() # DefaultNet | 
 
 try:
     # Set default network
@@ -148,17 +151,18 @@ Name | Type | Description  | Notes
 Update default network
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultNetworkApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DefaultNet() # DefaultNet | 
+api_instance = wekarestapi.DefaultNetworkApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.DefaultNet() # DefaultNet | 
 
 try:
     # Update default network

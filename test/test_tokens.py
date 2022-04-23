@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tokens import Tokens  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.tokens import Tokens  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestTokens(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTokens(unittest.TestCase):
     def testTokens(self):
         """Test Tokens"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tokens.Tokens()  # noqa: E501
+        # model = wekarestapi.models.tokens.Tokens()  # noqa: E501
         pass
 
 

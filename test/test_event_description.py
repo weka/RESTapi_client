@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.event_description import EventDescription  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.event_description import EventDescription  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestEventDescription(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestEventDescription(unittest.TestCase):
     def testEventDescription(self):
         """Test EventDescription"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.event_description.EventDescription()  # noqa: E501
+        # model = wekarestapi.models.event_description.EventDescription()  # noqa: E501
         pass
 
 

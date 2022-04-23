@@ -14,16 +14,17 @@ Method | HTTP request | Description
 Reset LDAP configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LDAPApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.LDAPApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Reset LDAP configuration
@@ -57,16 +58,17 @@ This endpoint does not need any parameter.
 Get LDAP configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LDAPApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.LDAPApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get LDAP configuration
@@ -100,17 +102,18 @@ This endpoint does not need any parameter.
 Update LDAP configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LDAPApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LdapBody() # LdapBody |  (optional)
+api_instance = wekarestapi.LDAPApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.LdapBody() # LdapBody |  (optional)
 
 try:
     # Update LDAP configuration

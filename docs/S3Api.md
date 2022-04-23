@@ -37,17 +37,18 @@ Method | HTTP request | Description
 Attach an S3 IAM policy to a user
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.PoliciesAttachBody() # PoliciesAttachBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.PoliciesAttachBody() # PoliciesAttachBody | 
 
 try:
     # Attach an S3 IAM policy to a user
@@ -84,17 +85,18 @@ Name | Type | Description  | Notes
 Create an S3 bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.S3BucketsBody() # S3BucketsBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.S3BucketsBody() # S3BucketsBody | 
 
 try:
     # Create an S3 bucket
@@ -131,17 +133,18 @@ Name | Type | Description  | Notes
 Create S3 cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.S3Body1() # S3Body1 | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.S3Body1() # S3Body1 | 
 
 try:
     # Create S3 cluster
@@ -178,17 +181,18 @@ Name | Type | Description  | Notes
 Create an S3 IAM policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.S3PoliciesBody() # S3PoliciesBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.S3PoliciesBody() # S3PoliciesBody | 
 
 try:
     # Create an S3 IAM policy
@@ -225,16 +229,17 @@ Name | Type | Description  | Notes
 Delete S3 cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 purge_config = true # bool | Purge the existing configuraion by default (optional)
 
 try:
@@ -272,16 +277,17 @@ Name | Type | Description  | Notes
 Delete an S3 IAM policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 policy = 'policy_example' # str | policy name
 
 try:
@@ -319,16 +325,17 @@ Name | Type | Description  | Notes
 Destroy an S3 bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 unlink = true # bool | unlinks the bucket, but leave the data directory in place (optional)
 
@@ -368,17 +375,18 @@ Name | Type | Description  | Notes
 Detach a user's policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.PoliciesDetachBody() # PoliciesDetachBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.PoliciesDetachBody() # PoliciesDetachBody | 
 
 try:
     # Detach a user's policy
@@ -415,16 +423,17 @@ Name | Type | Description  | Notes
 Get the disk usage of an S3 bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -462,16 +471,17 @@ Name | Type | Description  | Notes
 Get the S3 bucket policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -509,16 +519,17 @@ Name | Type | Description  | Notes
 Get the S3 bucket policy json
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -556,16 +567,17 @@ Name | Type | Description  | Notes
 Get S3 buckets list
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 
 try:
     # Get S3 buckets list
@@ -599,16 +611,17 @@ This endpoint does not need any parameter.
 Get S3 cluster info
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 
 try:
     # Get S3 cluster info
@@ -642,16 +655,17 @@ This endpoint does not need any parameter.
 Get S3 IAM policies list
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 
 try:
     # Get S3 IAM policies list
@@ -685,16 +699,17 @@ This endpoint does not need any parameter.
 Get the details of an S3 IAM policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 policy = 'policy_example' # str | policy name
 
 try:
@@ -732,16 +747,17 @@ Name | Type | Description  | Notes
 Get S3 Hosts status
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 
 try:
     # Get S3 Hosts status
@@ -775,17 +791,18 @@ This endpoint does not need any parameter.
 Create a new bucket lifecycle rule
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.LifecycleRulesBody() # LifecycleRulesBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.LifecycleRulesBody() # LifecycleRulesBody | 
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -824,16 +841,17 @@ Name | Type | Description  | Notes
 Delete all lifecycle rules of a specific bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -871,16 +889,17 @@ Name | Type | Description  | Notes
 Delete a bucket lifecycle rule
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 rule = 'rule_example' # str | rule ID
 
@@ -920,16 +939,17 @@ Name | Type | Description  | Notes
 List all lifecycle rules of a specific bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -967,17 +987,18 @@ Name | Type | Description  | Notes
 Create an s3 sts token with an assumend role
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.S3StsBody() # S3StsBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.S3StsBody() # S3StsBody | 
 
 try:
     # Create an s3 sts token with an assumend role
@@ -1014,17 +1035,18 @@ Name | Type | Description  | Notes
 Set S3 bucket policy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.BucketPolicyBody() # BucketPolicyBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.BucketPolicyBody() # BucketPolicyBody | 
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -1063,17 +1085,18 @@ Name | Type | Description  | Notes
 Set S3 bucket policy json
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.BucketPolicyJsonBody() # BucketPolicyJsonBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.BucketPolicyJsonBody() # BucketPolicyJsonBody | 
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -1112,17 +1135,18 @@ Name | Type | Description  | Notes
 Set S3 bucket quota
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.BucketQuotaBody() # BucketQuotaBody | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.BucketQuotaBody() # BucketQuotaBody | 
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -1161,16 +1185,17 @@ Name | Type | Description  | Notes
 Unset S3 bucket quota
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
 bucket = 'bucket_example' # str | bucket name
 
 try:
@@ -1208,17 +1233,18 @@ Name | Type | Description  | Notes
 Update S3 cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.S3Api(swagger_client.ApiClient(configuration))
-body = swagger_client.S3Body() # S3Body | 
+api_instance = wekarestapi.S3Api(wekarestapi.ApiClient(configuration))
+body = wekarestapi.S3Body() # S3Body | 
 
 try:
     # Update S3 cluster

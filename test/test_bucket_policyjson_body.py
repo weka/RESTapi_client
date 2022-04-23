@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.bucket_policyjson_body import BucketPolicyjsonBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.bucket_policyjson_body import BucketPolicyjsonBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestBucketPolicyjsonBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBucketPolicyjsonBody(unittest.TestCase):
     def testBucketPolicyjsonBody(self):
         """Test BucketPolicyjsonBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.bucket_policyjson_body.BucketPolicyjsonBody()  # noqa: E501
+        # model = wekarestapi.models.bucket_policyjson_body.BucketPolicyjsonBody()  # noqa: E501
         pass
 
 

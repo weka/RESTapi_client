@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.cluster_body1 import ClusterBody1  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.cluster_body1 import ClusterBody1  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestClusterBody1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestClusterBody1(unittest.TestCase):
     def testClusterBody1(self):
         """Test ClusterBody1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.cluster_body1.ClusterBody1()  # noqa: E501
+        # model = wekarestapi.models.cluster_body1.ClusterBody1()  # noqa: E501
         pass
 
 

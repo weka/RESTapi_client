@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.hosts_deactivate_body import HostsDeactivateBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.hosts_deactivate_body import HostsDeactivateBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestHostsDeactivateBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHostsDeactivateBody(unittest.TestCase):
     def testHostsDeactivateBody(self):
         """Test HostsDeactivateBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.hosts_deactivate_body.HostsDeactivateBody()  # noqa: E501
+        # model = wekarestapi.models.hosts_deactivate_body.HostsDeactivateBody()  # noqa: E501
         pass
 
 

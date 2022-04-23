@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.host_os_info_drivers import HostOsInfoDrivers  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.host_os_info_drivers import HostOsInfoDrivers  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestHostOsInfoDrivers(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHostOsInfoDrivers(unittest.TestCase):
     def testHostOsInfoDrivers(self):
         """Test HostOsInfoDrivers"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.host_os_info_drivers.HostOsInfoDrivers()  # noqa: E501
+        # model = wekarestapi.models.host_os_info_drivers.HostOsInfoDrivers()  # noqa: E501
         pass
 
 

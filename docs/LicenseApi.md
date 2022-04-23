@@ -14,16 +14,17 @@ Method | HTTP request | Description
 Get license
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LicenseApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.LicenseApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get license
@@ -57,16 +58,17 @@ This endpoint does not need any parameter.
 Reset license
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LicenseApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.LicenseApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Reset license
@@ -102,17 +104,18 @@ Set license
 Classic license (license) or PAYG license (plan_id,secret_key,[url])
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LicenseApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LicenseBody() # LicenseBody |  (optional)
+api_instance = wekarestapi.LicenseApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.LicenseBody() # LicenseBody |  (optional)
 
 try:
     # Set license

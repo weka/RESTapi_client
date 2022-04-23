@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.client_group import ClientGroup  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.client_group import ClientGroup  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestClientGroup(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestClientGroup(unittest.TestCase):
     def testClientGroup(self):
         """Test ClientGroup"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.client_group.ClientGroup()  # noqa: E501
+        # model = wekarestapi.models.client_group.ClientGroup()  # noqa: E501
         pass
 
 

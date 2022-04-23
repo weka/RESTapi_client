@@ -14,17 +14,18 @@ Method | HTTP request | Description
 Create cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ClusterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ClusterBody1() # ClusterBody1 | 
+api_instance = wekarestapi.ClusterApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.ClusterBody1() # ClusterBody1 | 
 
 try:
     # Create cluster
@@ -61,16 +62,17 @@ Name | Type | Description  | Notes
 Get cluster status
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ClusterApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ClusterApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cluster status
@@ -104,17 +106,18 @@ This endpoint does not need any parameter.
 Update cluster
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ClusterApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ClusterBody() # ClusterBody | 
+api_instance = wekarestapi.ClusterApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.ClusterBody() # ClusterBody | 
 
 try:
     # Update cluster

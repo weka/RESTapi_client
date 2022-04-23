@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.drive_api import DriveApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.drive_api import DriveApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestDriveApi(unittest.TestCase):

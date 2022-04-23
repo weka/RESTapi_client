@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response2008_data_buckets_info_thin_provision_state import InlineResponse2008DataBucketsInfoThinProvisionState  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.inline_response2008_data_buckets_info_thin_provision_state import InlineResponse2008DataBucketsInfoThinProvisionState  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInlineResponse2008DataBucketsInfoThinProvisionState(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2008DataBucketsInfoThinProvisionState(unittest.TestCase)
     def testInlineResponse2008DataBucketsInfoThinProvisionState(self):
         """Test InlineResponse2008DataBucketsInfoThinProvisionState"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response2008_data_buckets_info_thin_provision_state.InlineResponse2008DataBucketsInfoThinProvisionState()  # noqa: E501
+        # model = wekarestapi.models.inline_response2008_data_buckets_info_thin_provision_state.InlineResponse2008DataBucketsInfoThinProvisionState()  # noqa: E501
         pass
 
 

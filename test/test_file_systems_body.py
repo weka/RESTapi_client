@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.file_systems_body import FileSystemsBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.file_systems_body import FileSystemsBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestFileSystemsBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestFileSystemsBody(unittest.TestCase):
     def testFileSystemsBody(self):
         """Test FileSystemsBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.file_systems_body.FileSystemsBody()  # noqa: E501
+        # model = wekarestapi.models.file_systems_body.FileSystemsBody()  # noqa: E501
         pass
 
 

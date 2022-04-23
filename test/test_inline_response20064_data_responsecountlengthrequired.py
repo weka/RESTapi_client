@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.inline_response20064_data_responsecountlengthrequired import InlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.inline_response20064_data_responsecountlengthrequired import InlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestInlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED(unittest.TestCase):
     def testInlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED(self):
         """Test InlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.inline_response20064_data_responsecountlengthrequired.InlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED()  # noqa: E501
+        # model = wekarestapi.models.inline_response20064_data_responsecountlengthrequired.InlineResponse20064DataRESPONSECOUNTLENGTHREQUIRED()  # noqa: E501
         pass
 
 

@@ -13,16 +13,17 @@ Method | HTTP request | Description
 Start system IO
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SystemIOApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.SystemIOApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Start system IO
@@ -56,17 +57,18 @@ This endpoint does not need any parameter.
 Stop system IO
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SystemIOApi(swagger_client.ApiClient(configuration))
-body = swagger_client.IoStopBody() # IoStopBody |  (optional)
+api_instance = wekarestapi.SystemIOApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.IoStopBody() # IoStopBody |  (optional)
 
 try:
     # Stop system IO

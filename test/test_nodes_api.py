@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.nodes_api import NodesApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.nodes_api import NodesApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestNodesApi(unittest.TestCase):

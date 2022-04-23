@@ -24,17 +24,18 @@ Method | HTTP request | Description
 create rule for nfs client group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UidRulesBody() # UidRulesBody | 
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.UidRulesBody() # UidRulesBody | 
 uid = 'uid_example' # str | group uid
 
 try:
@@ -73,17 +74,18 @@ Name | Type | Description  | Notes
 Add NFS permission
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.NfsPermissionsBody() # NfsPermissionsBody |  (optional)
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.NfsPermissionsBody() # NfsPermissionsBody |  (optional)
 
 try:
     # Add NFS permission
@@ -120,17 +122,18 @@ Name | Type | Description  | Notes
 Create nfs client group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.NfsClientGroupsBody() # NfsClientGroupsBody | 
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.NfsClientGroupsBody() # NfsClientGroupsBody | 
 
 try:
     # Create nfs client group
@@ -167,16 +170,17 @@ Name | Type | Description  | Notes
 Delete nfs client group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | group uid
 
 try:
@@ -214,16 +218,17 @@ Name | Type | Description  | Notes
 Delete rule for nfs client group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | group uid
 rule_uid = 'rule_uid_example' # str | 
 
@@ -263,16 +268,17 @@ Name | Type | Description  | Notes
 Remove NFS permission
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Permission uid
 path = 'path_example' # str | Default \"/\" (optional)
 
@@ -312,16 +318,17 @@ Name | Type | Description  | Notes
 Get nfs client group
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | group uid
 
 try:
@@ -359,16 +366,17 @@ Name | Type | Description  | Notes
 Get all nfs client groups
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all nfs client groups
@@ -402,16 +410,17 @@ This endpoint does not need any parameter.
 Get NFS global configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get NFS global configuration
@@ -445,16 +454,17 @@ This endpoint does not need any parameter.
 Get NFS permission
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Permission uid
 
 try:
@@ -492,16 +502,17 @@ Name | Type | Description  | Notes
 Get NFS permissions
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 fs_uid = 'fs_uid_example' # str | File system uid (optional)
 
 try:
@@ -539,17 +550,18 @@ Name | Type | Description  | Notes
 Update NFS global configuration
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.NfsGlobalConfigBody() # NfsGlobalConfigBody | 
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.NfsGlobalConfigBody() # NfsGlobalConfigBody | 
 
 try:
     # Update NFS global configuration
@@ -586,18 +598,19 @@ Name | Type | Description  | Notes
 Update NFS permission
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.NFSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.NFSApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | Permission uid
-body = swagger_client.PermissionsUidBody() # PermissionsUidBody |  (optional)
+body = wekarestapi.PermissionsUidBody() # PermissionsUidBody |  (optional)
 
 try:
     # Update NFS permission

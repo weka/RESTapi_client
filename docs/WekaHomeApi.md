@@ -19,16 +19,17 @@ Method | HTTP request | Description
 Disable cloud
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Disable cloud
@@ -62,17 +63,18 @@ This endpoint does not need any parameter.
 Enable cloud
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
-body = swagger_client.WekaHomeEnableBody() # WekaHomeEnableBody | 
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.WekaHomeEnableBody() # WekaHomeEnableBody | 
 
 try:
     # Enable cloud
@@ -109,16 +111,17 @@ Name | Type | Description  | Notes
 Get cloud config
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cloud config
@@ -152,16 +155,17 @@ This endpoint does not need any parameter.
 Get cloud proxy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cloud proxy
@@ -195,16 +199,17 @@ This endpoint does not need any parameter.
 Get cloud upload rate
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cloud upload rate
@@ -238,16 +243,17 @@ This endpoint does not need any parameter.
 Get cloud url
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get cloud url
@@ -281,17 +287,18 @@ This endpoint does not need any parameter.
 Set cloud proxy
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
-body = swagger_client.WekaHomeProxyBody() # WekaHomeProxyBody | 
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.WekaHomeProxyBody() # WekaHomeProxyBody | 
 
 try:
     # Set cloud proxy
@@ -328,17 +335,18 @@ Name | Type | Description  | Notes
 Update cloud upload rate
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WekaHomeApi(swagger_client.ApiClient(configuration))
-body = swagger_client.WekaHomeUploadRateBody() # WekaHomeUploadRateBody | 
+api_instance = wekarestapi.WekaHomeApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.WekaHomeUploadRateBody() # WekaHomeUploadRateBody | 
 
 try:
     # Update cloud upload rate

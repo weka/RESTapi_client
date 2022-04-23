@@ -14,16 +14,17 @@ Method | HTTP request | Description
 Disable tls
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TLSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TLSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Disable tls
@@ -57,17 +58,18 @@ This endpoint does not need any parameter.
 Enable TLS
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TLSApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TlsBody() # TlsBody |  (optional)
+api_instance = wekarestapi.TLSApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.TlsBody() # TlsBody |  (optional)
 
 try:
     # Enable TLS
@@ -104,16 +106,17 @@ Name | Type | Description  | Notes
 Get TLS status
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TLSApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.TLSApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get TLS status

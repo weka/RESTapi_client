@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.weka_home_upload_rate_body import WekaHomeUploadRateBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.weka_home_upload_rate_body import WekaHomeUploadRateBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestWekaHomeUploadRateBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestWekaHomeUploadRateBody(unittest.TestCase):
     def testWekaHomeUploadRateBody(self):
         """Test WekaHomeUploadRateBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.weka_home_upload_rate_body.WekaHomeUploadRateBody()  # noqa: E501
+        # model = wekarestapi.models.weka_home_upload_rate_body.WekaHomeUploadRateBody()  # noqa: E501
         pass
 
 

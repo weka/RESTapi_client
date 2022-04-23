@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.bucket_quota_body import BucketQuotaBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.bucket_quota_body import BucketQuotaBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestBucketQuotaBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestBucketQuotaBody(unittest.TestCase):
     def testBucketQuotaBody(self):
         """Test BucketQuotaBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.bucket_quota_body.BucketQuotaBody()  # noqa: E501
+        # model = wekarestapi.models.bucket_quota_body.BucketQuotaBody()  # noqa: E501
         pass
 
 

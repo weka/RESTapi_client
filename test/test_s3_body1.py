@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.s3_body1 import S3Body1  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.s3_body1 import S3Body1  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestS3Body1(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestS3Body1(unittest.TestCase):
     def testS3Body1(self):
         """Test S3Body1"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.s3_body1.S3Body1()  # noqa: E501
+        # model = wekarestapi.models.s3_body1.S3Body1()  # noqa: E501
         pass
 
 

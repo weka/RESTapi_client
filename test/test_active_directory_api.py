@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.active_directory_api import ActiveDirectoryApi  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.api.active_directory_api import ActiveDirectoryApi  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestActiveDirectoryApi(unittest.TestCase):

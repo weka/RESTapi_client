@@ -16,16 +16,17 @@ Method | HTTP request | Description
 Get alerts description
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AlertsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.AlertsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get alerts description
@@ -59,16 +60,17 @@ This endpoint does not need any parameter.
 Get all alerts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AlertsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.AlertsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all alerts
@@ -102,16 +104,17 @@ This endpoint does not need any parameter.
 Get alerts types
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AlertsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.AlertsApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get alerts types
@@ -145,17 +148,18 @@ This endpoint does not need any parameter.
 Mute alerts by type
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AlertsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AlertTypeMuteBody() # AlertTypeMuteBody | 
+api_instance = wekarestapi.AlertsApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.AlertTypeMuteBody() # AlertTypeMuteBody | 
 alert_type = 'alert_type_example' # str | Alert type
 
 try:
@@ -194,16 +198,17 @@ Name | Type | Description  | Notes
 Unmute alerts by type
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AlertsApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.AlertsApi(wekarestapi.ApiClient(configuration))
 alert_type = 'alert_type_example' # str | Alert type
 
 try:

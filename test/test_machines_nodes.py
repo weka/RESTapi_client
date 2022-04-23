@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.machines_nodes import MachinesNodes  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.machines_nodes import MachinesNodes  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestMachinesNodes(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestMachinesNodes(unittest.TestCase):
     def testMachinesNodes(self):
         """Test MachinesNodes"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.machines_nodes.MachinesNodes()  # noqa: E501
+        # model = wekarestapi.models.machines_nodes.MachinesNodes()  # noqa: E501
         pass
 
 

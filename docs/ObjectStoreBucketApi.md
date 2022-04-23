@@ -17,17 +17,18 @@ Method | HTTP request | Description
 Create object store bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
-body = swagger_client.ObjectStoreBucketsBody() # ObjectStoreBucketsBody |  (optional)
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
+body = wekarestapi.ObjectStoreBucketsBody() # ObjectStoreBucketsBody |  (optional)
 
 try:
     # Create object store bucket
@@ -64,16 +65,17 @@ Name | Type | Description  | Notes
 Delete object store bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | object storage uid
 
 try:
@@ -111,16 +113,17 @@ Name | Type | Description  | Notes
 Get all object store buckets
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
 
 try:
     # Get all object store buckets
@@ -154,16 +157,17 @@ This endpoint does not need any parameter.
 Get object store bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | object storage uid
 
 try:
@@ -201,16 +205,17 @@ Name | Type | Description  | Notes
 Get object store bucket operations
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | object storage uid
 
 try:
@@ -248,18 +253,19 @@ Name | Type | Description  | Notes
 Update object store bucket
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ObjectStoreBucketApi(swagger_client.ApiClient(configuration))
+api_instance = wekarestapi.ObjectStoreBucketApi(wekarestapi.ApiClient(configuration))
 uid = 'uid_example' # str | object storage uid
-body = swagger_client.ObjectStoreBucketsUidBody() # ObjectStoreBucketsUidBody |  (optional)
+body = wekarestapi.ObjectStoreBucketsUidBody() # ObjectStoreBucketsUidBody |  (optional)
 
 try:
     # Update object store bucket

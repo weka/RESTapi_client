@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.kms_rewrap_body import KmsRewrapBody  # noqa: E501
-from swagger_client.rest import ApiException
+import wekarestapi
+from wekarestapi.models.kms_rewrap_body import KmsRewrapBody  # noqa: E501
+from wekarestapi.rest import ApiException
 
 
 class TestKmsRewrapBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestKmsRewrapBody(unittest.TestCase):
     def testKmsRewrapBody(self):
         """Test KmsRewrapBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.kms_rewrap_body.KmsRewrapBody()  # noqa: E501
+        # model = wekarestapi.models.kms_rewrap_body.KmsRewrapBody()  # noqa: E501
         pass
 
 
