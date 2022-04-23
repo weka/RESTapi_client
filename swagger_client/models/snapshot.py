@@ -28,110 +28,152 @@ class Snapshot(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'is_writable': 'bool',
+        'access_point': 'str',
+        'creation_time': 'str',
+        'filesystem': 'str',
         'filesystem_id': 'str',
         'filesystem_uid': 'str',
-        'filesystem': 'str',
-        'locator': 'str',
+        'id': 'str',
         'is_removing': 'bool',
+        'is_writable': 'bool',
+        'locator': 'str',
+        'multi_obs': 'bool',
         'name': 'str',
         'progress': 'float',
-        'uid': 'str',
-        'access_point': 'str',
         'stow_status': 'str',
-        'multi_obs': 'bool',
         'type': 'str',
-        'creation_time': 'str',
-        'id': 'str'
+        'uid': 'str'
     }
 
     attribute_map = {
-        'is_writable': 'isWritable',
+        'access_point': 'accessPoint',
+        'creation_time': 'creationTime',
+        'filesystem': 'filesystem',
         'filesystem_id': 'filesystemId',
         'filesystem_uid': 'filesystemUid',
-        'filesystem': 'filesystem',
-        'locator': 'locator',
+        'id': 'id',
         'is_removing': 'isRemoving',
+        'is_writable': 'isWritable',
+        'locator': 'locator',
+        'multi_obs': 'multiObs',
         'name': 'name',
         'progress': 'progress',
-        'uid': 'uid',
-        'access_point': 'accessPoint',
         'stow_status': 'stowStatus',
-        'multi_obs': 'multiObs',
         'type': 'type',
-        'creation_time': 'creationTime',
-        'id': 'id'
+        'uid': 'uid'
     }
 
-    def __init__(self, is_writable=None, filesystem_id=None, filesystem_uid=None, filesystem=None, locator=None, is_removing=None, name=None, progress=None, uid=None, access_point=None, stow_status=None, multi_obs=None, type=None, creation_time=None, id=None):  # noqa: E501
+    def __init__(self, access_point=None, creation_time=None, filesystem=None, filesystem_id=None, filesystem_uid=None, id=None, is_removing=None, is_writable=None, locator=None, multi_obs=None, name=None, progress=None, stow_status=None, type=None, uid=None):  # noqa: E501
         """Snapshot - a model defined in Swagger"""  # noqa: E501
-        self._is_writable = None
+        self._access_point = None
+        self._creation_time = None
+        self._filesystem = None
         self._filesystem_id = None
         self._filesystem_uid = None
-        self._filesystem = None
-        self._locator = None
+        self._id = None
         self._is_removing = None
+        self._is_writable = None
+        self._locator = None
+        self._multi_obs = None
         self._name = None
         self._progress = None
-        self._uid = None
-        self._access_point = None
         self._stow_status = None
-        self._multi_obs = None
         self._type = None
-        self._creation_time = None
-        self._id = None
+        self._uid = None
         self.discriminator = None
-        if is_writable is not None:
-            self.is_writable = is_writable
+        if access_point is not None:
+            self.access_point = access_point
+        if creation_time is not None:
+            self.creation_time = creation_time
+        if filesystem is not None:
+            self.filesystem = filesystem
         if filesystem_id is not None:
             self.filesystem_id = filesystem_id
         if filesystem_uid is not None:
             self.filesystem_uid = filesystem_uid
-        if filesystem is not None:
-            self.filesystem = filesystem
-        if locator is not None:
-            self.locator = locator
+        if id is not None:
+            self.id = id
         if is_removing is not None:
             self.is_removing = is_removing
+        if is_writable is not None:
+            self.is_writable = is_writable
+        if locator is not None:
+            self.locator = locator
+        if multi_obs is not None:
+            self.multi_obs = multi_obs
         if name is not None:
             self.name = name
         if progress is not None:
             self.progress = progress
-        if uid is not None:
-            self.uid = uid
-        if access_point is not None:
-            self.access_point = access_point
         if stow_status is not None:
             self.stow_status = stow_status
-        if multi_obs is not None:
-            self.multi_obs = multi_obs
         if type is not None:
             self.type = type
-        if creation_time is not None:
-            self.creation_time = creation_time
-        if id is not None:
-            self.id = id
+        if uid is not None:
+            self.uid = uid
 
     @property
-    def is_writable(self):
-        """Gets the is_writable of this Snapshot.  # noqa: E501
+    def access_point(self):
+        """Gets the access_point of this Snapshot.  # noqa: E501
 
 
-        :return: The is_writable of this Snapshot.  # noqa: E501
-        :rtype: bool
+        :return: The access_point of this Snapshot.  # noqa: E501
+        :rtype: str
         """
-        return self._is_writable
+        return self._access_point
 
-    @is_writable.setter
-    def is_writable(self, is_writable):
-        """Sets the is_writable of this Snapshot.
+    @access_point.setter
+    def access_point(self, access_point):
+        """Sets the access_point of this Snapshot.
 
 
-        :param is_writable: The is_writable of this Snapshot.  # noqa: E501
-        :type: bool
+        :param access_point: The access_point of this Snapshot.  # noqa: E501
+        :type: str
         """
 
-        self._is_writable = is_writable
+        self._access_point = access_point
+
+    @property
+    def creation_time(self):
+        """Gets the creation_time of this Snapshot.  # noqa: E501
+
+
+        :return: The creation_time of this Snapshot.  # noqa: E501
+        :rtype: str
+        """
+        return self._creation_time
+
+    @creation_time.setter
+    def creation_time(self, creation_time):
+        """Sets the creation_time of this Snapshot.
+
+
+        :param creation_time: The creation_time of this Snapshot.  # noqa: E501
+        :type: str
+        """
+
+        self._creation_time = creation_time
+
+    @property
+    def filesystem(self):
+        """Gets the filesystem of this Snapshot.  # noqa: E501
+
+
+        :return: The filesystem of this Snapshot.  # noqa: E501
+        :rtype: str
+        """
+        return self._filesystem
+
+    @filesystem.setter
+    def filesystem(self, filesystem):
+        """Sets the filesystem of this Snapshot.
+
+
+        :param filesystem: The filesystem of this Snapshot.  # noqa: E501
+        :type: str
+        """
+
+        self._filesystem = filesystem
 
     @property
     def filesystem_id(self):
@@ -176,25 +218,67 @@ class Snapshot(object):
         self._filesystem_uid = filesystem_uid
 
     @property
-    def filesystem(self):
-        """Gets the filesystem of this Snapshot.  # noqa: E501
+    def id(self):
+        """Gets the id of this Snapshot.  # noqa: E501
 
 
-        :return: The filesystem of this Snapshot.  # noqa: E501
+        :return: The id of this Snapshot.  # noqa: E501
         :rtype: str
         """
-        return self._filesystem
+        return self._id
 
-    @filesystem.setter
-    def filesystem(self, filesystem):
-        """Sets the filesystem of this Snapshot.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Snapshot.
 
 
-        :param filesystem: The filesystem of this Snapshot.  # noqa: E501
+        :param id: The id of this Snapshot.  # noqa: E501
         :type: str
         """
 
-        self._filesystem = filesystem
+        self._id = id
+
+    @property
+    def is_removing(self):
+        """Gets the is_removing of this Snapshot.  # noqa: E501
+
+
+        :return: The is_removing of this Snapshot.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_removing
+
+    @is_removing.setter
+    def is_removing(self, is_removing):
+        """Sets the is_removing of this Snapshot.
+
+
+        :param is_removing: The is_removing of this Snapshot.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_removing = is_removing
+
+    @property
+    def is_writable(self):
+        """Gets the is_writable of this Snapshot.  # noqa: E501
+
+
+        :return: The is_writable of this Snapshot.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_writable
+
+    @is_writable.setter
+    def is_writable(self, is_writable):
+        """Sets the is_writable of this Snapshot.
+
+
+        :param is_writable: The is_writable of this Snapshot.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_writable = is_writable
 
     @property
     def locator(self):
@@ -218,25 +302,25 @@ class Snapshot(object):
         self._locator = locator
 
     @property
-    def is_removing(self):
-        """Gets the is_removing of this Snapshot.  # noqa: E501
+    def multi_obs(self):
+        """Gets the multi_obs of this Snapshot.  # noqa: E501
 
 
-        :return: The is_removing of this Snapshot.  # noqa: E501
+        :return: The multi_obs of this Snapshot.  # noqa: E501
         :rtype: bool
         """
-        return self._is_removing
+        return self._multi_obs
 
-    @is_removing.setter
-    def is_removing(self, is_removing):
-        """Sets the is_removing of this Snapshot.
+    @multi_obs.setter
+    def multi_obs(self, multi_obs):
+        """Sets the multi_obs of this Snapshot.
 
 
-        :param is_removing: The is_removing of this Snapshot.  # noqa: E501
+        :param multi_obs: The multi_obs of this Snapshot.  # noqa: E501
         :type: bool
         """
 
-        self._is_removing = is_removing
+        self._multi_obs = multi_obs
 
     @property
     def name(self):
@@ -281,48 +365,6 @@ class Snapshot(object):
         self._progress = progress
 
     @property
-    def uid(self):
-        """Gets the uid of this Snapshot.  # noqa: E501
-
-
-        :return: The uid of this Snapshot.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this Snapshot.
-
-
-        :param uid: The uid of this Snapshot.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def access_point(self):
-        """Gets the access_point of this Snapshot.  # noqa: E501
-
-
-        :return: The access_point of this Snapshot.  # noqa: E501
-        :rtype: str
-        """
-        return self._access_point
-
-    @access_point.setter
-    def access_point(self, access_point):
-        """Sets the access_point of this Snapshot.
-
-
-        :param access_point: The access_point of this Snapshot.  # noqa: E501
-        :type: str
-        """
-
-        self._access_point = access_point
-
-    @property
     def stow_status(self):
         """Gets the stow_status of this Snapshot.  # noqa: E501
 
@@ -342,27 +384,6 @@ class Snapshot(object):
         """
 
         self._stow_status = stow_status
-
-    @property
-    def multi_obs(self):
-        """Gets the multi_obs of this Snapshot.  # noqa: E501
-
-
-        :return: The multi_obs of this Snapshot.  # noqa: E501
-        :rtype: bool
-        """
-        return self._multi_obs
-
-    @multi_obs.setter
-    def multi_obs(self, multi_obs):
-        """Sets the multi_obs of this Snapshot.
-
-
-        :param multi_obs: The multi_obs of this Snapshot.  # noqa: E501
-        :type: bool
-        """
-
-        self._multi_obs = multi_obs
 
     @property
     def type(self):
@@ -386,46 +407,25 @@ class Snapshot(object):
         self._type = type
 
     @property
-    def creation_time(self):
-        """Gets the creation_time of this Snapshot.  # noqa: E501
+    def uid(self):
+        """Gets the uid of this Snapshot.  # noqa: E501
 
 
-        :return: The creation_time of this Snapshot.  # noqa: E501
+        :return: The uid of this Snapshot.  # noqa: E501
         :rtype: str
         """
-        return self._creation_time
+        return self._uid
 
-    @creation_time.setter
-    def creation_time(self, creation_time):
-        """Sets the creation_time of this Snapshot.
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this Snapshot.
 
 
-        :param creation_time: The creation_time of this Snapshot.  # noqa: E501
+        :param uid: The uid of this Snapshot.  # noqa: E501
         :type: str
         """
 
-        self._creation_time = creation_time
-
-    @property
-    def id(self):
-        """Gets the id of this Snapshot.  # noqa: E501
-
-
-        :return: The id of this Snapshot.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Snapshot.
-
-
-        :param id: The id of this Snapshot.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

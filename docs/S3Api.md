@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_s3_bucket_policy**
-> InlineResponse20060 get_s3_bucket_policy(bucket)
+> InlineResponse20058 get_s3_bucket_policy(bucket)
 
 Get the S3 bucket policy
 
@@ -490,7 +490,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**InlineResponse20058**](InlineResponse20058.md)
 
 ### Authorization
 
@@ -504,7 +504,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_s3_bucket_policy_json**
-> InlineResponse20060 get_s3_bucket_policy_json(bucket)
+> InlineResponse20058 get_s3_bucket_policy_json(bucket)
 
 Get the S3 bucket policy json
 
@@ -537,7 +537,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20060**](InlineResponse20060.md)
+[**InlineResponse20058**](InlineResponse20058.md)
 
 ### Authorization
 
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_s3_buckets**
-> InlineResponse20056 get_s3_buckets()
+> InlineResponse20055 get_s3_buckets()
 
 Get S3 buckets list
 
@@ -580,7 +580,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20055**](InlineResponse20055.md)
 
 ### Authorization
 
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **gets3_containers_are_ready**
-> InlineResponse20061 gets3_containers_are_ready()
+> InlineResponse20059 gets3_containers_are_ready()
 
 Get S3 Hosts status
 
@@ -756,7 +756,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20059**](InlineResponse20059.md)
 
 ### Authorization
 
@@ -770,7 +770,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s3_create_lifecycle_rule**
-> InlineResponse20058 s3_create_lifecycle_rule(body, bucket)
+> InlineResponse20056 s3_create_lifecycle_rule(body, bucket)
 
 Create a new bucket lifecycle rule
 
@@ -805,7 +805,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20058**](InlineResponse20058.md)
+[**InlineResponse20056**](InlineResponse20056.md)
 
 ### Authorization
 
@@ -819,7 +819,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s3_delete_all_lifecycle_rules**
-> InlineResponse20059 s3_delete_all_lifecycle_rules(bucket)
+> InlineResponse20057 s3_delete_all_lifecycle_rules(bucket)
 
 Delete all lifecycle rules of a specific bucket
 
@@ -852,7 +852,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20059**](InlineResponse20059.md)
+[**InlineResponse20057**](InlineResponse20057.md)
 
 ### Authorization
 
@@ -866,7 +866,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s3_delete_lifecycle_rule**
-> InlineResponse20059 s3_delete_lifecycle_rule(bucket, rule)
+> InlineResponse20057 s3_delete_lifecycle_rule(bucket, rule)
 
 Delete a bucket lifecycle rule
 
@@ -901,7 +901,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20059**](InlineResponse20059.md)
+[**InlineResponse20057**](InlineResponse20057.md)
 
 ### Authorization
 
@@ -915,7 +915,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s3_list_all_lifecycle_rules**
-> InlineResponse20056 s3_list_all_lifecycle_rules(bucket)
+> InlineResponse20055 s3_list_all_lifecycle_rules(bucket)
 
 List all lifecycle rules of a specific bucket
 
@@ -948,7 +948,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20056**](InlineResponse20056.md)
+[**InlineResponse20055**](InlineResponse20055.md)
 
 ### Authorization
 
@@ -962,7 +962,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **s3_sts_create**
-> InlineResponse20057 s3_sts_create(body)
+> InlineResponse20060 s3_sts_create(body)
 
 Create an s3 sts token with an assumend role
 
@@ -995,7 +995,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20057**](InlineResponse20057.md)
+[**InlineResponse20060**](InlineResponse20060.md)
 
 ### Authorization
 

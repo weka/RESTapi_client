@@ -28,47 +28,24 @@ class InterfaceGroupsUidBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'subnet': 'str',
-        'gateway': 'str'
+        'gateway': 'str',
+        'subnet': 'str'
     }
 
     attribute_map = {
-        'subnet': 'subnet',
-        'gateway': 'gateway'
+        'gateway': 'gateway',
+        'subnet': 'subnet'
     }
 
-    def __init__(self, subnet=None, gateway=None):  # noqa: E501
+    def __init__(self, gateway=None, subnet=None):  # noqa: E501
         """InterfaceGroupsUidBody - a model defined in Swagger"""  # noqa: E501
-        self._subnet = None
         self._gateway = None
+        self._subnet = None
         self.discriminator = None
-        if subnet is not None:
-            self.subnet = subnet
         if gateway is not None:
             self.gateway = gateway
-
-    @property
-    def subnet(self):
-        """Gets the subnet of this InterfaceGroupsUidBody.  # noqa: E501
-
-        Subnet mask in the 255.255.0.0 format  # noqa: E501
-
-        :return: The subnet of this InterfaceGroupsUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._subnet
-
-    @subnet.setter
-    def subnet(self, subnet):
-        """Sets the subnet of this InterfaceGroupsUidBody.
-
-        Subnet mask in the 255.255.0.0 format  # noqa: E501
-
-        :param subnet: The subnet of this InterfaceGroupsUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._subnet = subnet
+        if subnet is not None:
+            self.subnet = subnet
 
     @property
     def gateway(self):
@@ -92,6 +69,29 @@ class InterfaceGroupsUidBody(object):
         """
 
         self._gateway = gateway
+
+    @property
+    def subnet(self):
+        """Gets the subnet of this InterfaceGroupsUidBody.  # noqa: E501
+
+        Subnet mask in the 255.255.0.0 format  # noqa: E501
+
+        :return: The subnet of this InterfaceGroupsUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._subnet
+
+    @subnet.setter
+    def subnet(self, subnet):
+        """Sets the subnet of this InterfaceGroupsUidBody.
+
+        Subnet mask in the 255.255.0.0 format  # noqa: E501
+
+        :param subnet: The subnet of this InterfaceGroupsUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._subnet = subnet
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**who_am_i**](UserApi.md#who_am_i) | **GET** /users/whoami | Get user info
 
 # **create_user**
-> InlineResponse20085 create_user(body)
+> InlineResponse20082 create_user(body)
 
 Create user
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20085**](InlineResponse20085.md)
+[**InlineResponse20082**](InlineResponse20082.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_users**
-> InlineResponse20084 get_users()
+> InlineResponse20081 get_users()
 
 Get all users
 
@@ -136,7 +136,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20084**](InlineResponse20084.md)
+[**InlineResponse20081**](InlineResponse20081.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user**
-> InlineResponse20085 update_user(body, uid)
+> InlineResponse20082 update_user(body, uid)
 
 Update user
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20085**](InlineResponse20085.md)
+[**InlineResponse20082**](InlineResponse20082.md)
 
 ### Authorization
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **who_am_i**
-> InlineResponse20086 who_am_i()
+> InlineResponse20083 who_am_i()
 
 Get user info
 
@@ -322,7 +322,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20086**](InlineResponse20086.md)
+[**InlineResponse20083**](InlineResponse20083.md)
 
 ### Authorization
 

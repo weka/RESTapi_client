@@ -28,7 +28,7 @@ class InlineResponse20024(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'InlineResponse20024Data'
+        'data': 'list[Host]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class InlineResponse20024(object):
 
 
         :return: The data of this InlineResponse20024.  # noqa: E501
-        :rtype: InlineResponse20024Data
+        :rtype: list[Host]
         """
         return self._data
 
@@ -58,7 +58,7 @@ class InlineResponse20024(object):
 
 
         :param data: The data of this InlineResponse20024.  # noqa: E501
-        :type: InlineResponse20024Data
+        :type: list[Host]
         """
 
         self._data = data

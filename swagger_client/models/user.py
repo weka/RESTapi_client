@@ -28,60 +28,39 @@ class User(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
         'org_id': 'float',
+        'role': 'str',
         'source': 'str',
-        'username': 'str',
-        'role': 'str'
+        'uid': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
         'org_id': 'org_id',
+        'role': 'role',
         'source': 'source',
-        'username': 'username',
-        'role': 'role'
+        'uid': 'uid',
+        'username': 'username'
     }
 
-    def __init__(self, uid=None, org_id=None, source=None, username=None, role=None):  # noqa: E501
+    def __init__(self, org_id=None, role=None, source=None, uid=None, username=None):  # noqa: E501
         """User - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
         self._org_id = None
-        self._source = None
-        self._username = None
         self._role = None
+        self._source = None
+        self._uid = None
+        self._username = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
         if org_id is not None:
             self.org_id = org_id
-        if source is not None:
-            self.source = source
-        if username is not None:
-            self.username = username
         if role is not None:
             self.role = role
-
-    @property
-    def uid(self):
-        """Gets the uid of this User.  # noqa: E501
-
-
-        :return: The uid of this User.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this User.
-
-
-        :param uid: The uid of this User.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
+        if source is not None:
+            self.source = source
+        if uid is not None:
+            self.uid = uid
+        if username is not None:
+            self.username = username
 
     @property
     def org_id(self):
@@ -105,6 +84,27 @@ class User(object):
         self._org_id = org_id
 
     @property
+    def role(self):
+        """Gets the role of this User.  # noqa: E501
+
+
+        :return: The role of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this User.
+
+
+        :param role: The role of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._role = role
+
+    @property
     def source(self):
         """Gets the source of this User.  # noqa: E501
 
@@ -126,6 +126,27 @@ class User(object):
         self._source = source
 
     @property
+    def uid(self):
+        """Gets the uid of this User.  # noqa: E501
+
+
+        :return: The uid of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this User.
+
+
+        :param uid: The uid of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
+
+    @property
     def username(self):
         """Gets the username of this User.  # noqa: E501
 
@@ -145,27 +166,6 @@ class User(object):
         """
 
         self._username = username
-
-    @property
-    def role(self):
-        """Gets the role of this User.  # noqa: E501
-
-
-        :return: The role of this User.  # noqa: E501
-        :rtype: str
-        """
-        return self._role
-
-    @role.setter
-    def role(self, role):
-        """Sets the role of this User.
-
-
-        :param role: The role of this User.  # noqa: E501
-        :type: str
-        """
-
-        self._role = role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

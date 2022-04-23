@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**get_local_events**](EventsApi.md#get_local_events) | **GET** /events/local | Get events from the targeted host for the API call
 
 # **get_events**
-> InlineResponse20013 get_events(num_results=num_results, start_time=start_time, end_time=end_time, severity=severity, type_list=type_list, category_list=category_list, sort_order=sort_order, show_internal=show_internal, next_token=next_token)
+> InlineResponse2009 get_events(num_results=num_results, start_time=start_time, end_time=end_time, severity=severity, type_list=type_list, category_list=category_list, sort_order=sort_order, show_internal=show_internal, next_token=next_token)
 
 Get events
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_events_description**
-> InlineResponse20014 get_events_description(type=type, category=category, show_internal=show_internal)
+> InlineResponse20010 get_events_description(type=type, category=category, show_internal=show_internal)
 
 Get events description
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_local_events**
-> InlineResponse20015 get_local_events(start_time=start_time, end_time=end_time, stem_mode=stem_mode, show_internal=show_internal, next_token=next_token)
+> InlineResponse20011 get_local_events(start_time=start_time, end_time=end_time, stem_mode=stem_mode, show_internal=show_internal, next_token=next_token)
 
 Get events from the targeted host for the API call
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 

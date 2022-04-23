@@ -28,66 +28,66 @@ class InlineResponse20055(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'InlineResponse20055Data',
-        'next_token': 'float'
+        'buckets': 'list[str]',
+        'session_id': 'str'
     }
 
     attribute_map = {
-        'data': 'data',
-        'next_token': 'next_token'
+        'buckets': 'buckets',
+        'session_id': 'session_id'
     }
 
-    def __init__(self, data=None, next_token=None):  # noqa: E501
+    def __init__(self, buckets=None, session_id=None):  # noqa: E501
         """InlineResponse20055 - a model defined in Swagger"""  # noqa: E501
-        self._data = None
-        self._next_token = None
+        self._buckets = None
+        self._session_id = None
         self.discriminator = None
-        if data is not None:
-            self.data = data
-        if next_token is not None:
-            self.next_token = next_token
+        if buckets is not None:
+            self.buckets = buckets
+        if session_id is not None:
+            self.session_id = session_id
 
     @property
-    def data(self):
-        """Gets the data of this InlineResponse20055.  # noqa: E501
+    def buckets(self):
+        """Gets the buckets of this InlineResponse20055.  # noqa: E501
 
 
-        :return: The data of this InlineResponse20055.  # noqa: E501
-        :rtype: InlineResponse20055Data
+        :return: The buckets of this InlineResponse20055.  # noqa: E501
+        :rtype: list[str]
         """
-        return self._data
+        return self._buckets
 
-    @data.setter
-    def data(self, data):
-        """Sets the data of this InlineResponse20055.
+    @buckets.setter
+    def buckets(self, buckets):
+        """Sets the buckets of this InlineResponse20055.
 
 
-        :param data: The data of this InlineResponse20055.  # noqa: E501
-        :type: InlineResponse20055Data
+        :param buckets: The buckets of this InlineResponse20055.  # noqa: E501
+        :type: list[str]
         """
 
-        self._data = data
+        self._buckets = buckets
 
     @property
-    def next_token(self):
-        """Gets the next_token of this InlineResponse20055.  # noqa: E501
+    def session_id(self):
+        """Gets the session_id of this InlineResponse20055.  # noqa: E501
 
 
-        :return: The next_token of this InlineResponse20055.  # noqa: E501
-        :rtype: float
+        :return: The session_id of this InlineResponse20055.  # noqa: E501
+        :rtype: str
         """
-        return self._next_token
+        return self._session_id
 
-    @next_token.setter
-    def next_token(self, next_token):
-        """Sets the next_token of this InlineResponse20055.
+    @session_id.setter
+    def session_id(self, session_id):
+        """Sets the session_id of this InlineResponse20055.
 
 
-        :param next_token: The next_token of this InlineResponse20055.  # noqa: E501
-        :type: float
+        :param session_id: The session_id of this InlineResponse20055.  # noqa: E501
+        :type: str
         """
 
-        self._next_token = next_token
+        self._session_id = session_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

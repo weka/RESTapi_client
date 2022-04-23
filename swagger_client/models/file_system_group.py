@@ -28,29 +28,31 @@ class FileSystemGroup(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'id': 'str',
         'name': 'str',
         'start_demote': 'float',
         'target_ssd_retention': 'float',
-        'uid': 'str',
-        'id': 'str'
+        'uid': 'str'
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'start_demote': 'start_demote',
         'target_ssd_retention': 'target_ssd_retention',
-        'uid': 'uid',
-        'id': 'id'
+        'uid': 'uid'
     }
 
-    def __init__(self, name=None, start_demote=None, target_ssd_retention=None, uid=None, id=None):  # noqa: E501
+    def __init__(self, id=None, name=None, start_demote=None, target_ssd_retention=None, uid=None):  # noqa: E501
         """FileSystemGroup - a model defined in Swagger"""  # noqa: E501
+        self._id = None
         self._name = None
         self._start_demote = None
         self._target_ssd_retention = None
         self._uid = None
-        self._id = None
         self.discriminator = None
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         if start_demote is not None:
@@ -59,8 +61,27 @@ class FileSystemGroup(object):
             self.target_ssd_retention = target_ssd_retention
         if uid is not None:
             self.uid = uid
-        if id is not None:
-            self.id = id
+
+    @property
+    def id(self):
+        """Gets the id of this FileSystemGroup.  # noqa: E501
+
+
+        :return: The id of this FileSystemGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this FileSystemGroup.
+
+
+        :param id: The id of this FileSystemGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     @property
     def name(self):
@@ -149,27 +170,6 @@ class FileSystemGroup(object):
         """
 
         self._uid = uid
-
-    @property
-    def id(self):
-        """Gets the id of this FileSystemGroup.  # noqa: E501
-
-
-        :return: The id of this FileSystemGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this FileSystemGroup.
-
-
-        :param id: The id of this FileSystemGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

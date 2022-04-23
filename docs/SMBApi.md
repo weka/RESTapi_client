@@ -25,7 +25,7 @@ Method | HTTP request | Description
 [**update_samba_share**](SMBApi.md#update_samba_share) | **PUT** /smb/shares/{uid} | Update smb share
 
 # **add_samba_domain**
-> InlineResponse20064 add_samba_domain(body=body)
+> InlineResponse20067 add_samba_domain(body=body)
 
 Add trusted domain to smb
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20064**](InlineResponse20064.md)
+[**InlineResponse20067**](InlineResponse20067.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **add_share_to_samba**
-> InlineResponse20067 add_share_to_samba(body=body)
+> InlineResponse20070 add_share_to_samba(body=body)
 
 add share to smb
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20067**](InlineResponse20067.md)
+[**InlineResponse20070**](InlineResponse20070.md)
 
 ### Authorization
 
@@ -213,7 +213,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_samba_active_directory**
-> InlineResponse20068 delete_samba_active_directory(body=body)
+> InlineResponse20065 delete_samba_active_directory(body=body)
 
 Leave smb active directory
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20068**](InlineResponse20068.md)
+[**InlineResponse20065**](InlineResponse20065.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_samba**
-> InlineResponse20062 get_samba()
+> InlineResponse20064 get_samba()
 
 Get smb cluster info
 
@@ -434,7 +434,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20062**](InlineResponse20062.md)
+[**InlineResponse20064**](InlineResponse20064.md)
 
 ### Authorization
 
@@ -448,7 +448,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_samba_containers_are_ready**
-> InlineResponse20061 get_samba_containers_are_ready()
+> InlineResponse20059 get_samba_containers_are_ready()
 
 Get Samba Hosts status
 
@@ -477,7 +477,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20061**](InlineResponse20061.md)
+[**InlineResponse20059**](InlineResponse20059.md)
 
 ### Authorization
 
@@ -681,7 +681,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_domains**
-> InlineResponse20063 set_samba_domains()
+> InlineResponse20066 set_samba_domains()
 
 Get smb trusted domains
 
@@ -710,7 +710,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20063**](InlineResponse20063.md)
+[**InlineResponse20066**](InlineResponse20066.md)
 
 ### Authorization
 
@@ -724,7 +724,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_mount_options**
-> InlineResponse20065 set_samba_mount_options()
+> InlineResponse20068 set_samba_mount_options()
 
 Get smb mount options
 
@@ -753,7 +753,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20065**](InlineResponse20065.md)
+[**InlineResponse20068**](InlineResponse20068.md)
 
 ### Authorization
 
@@ -767,7 +767,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **set_samba_shares**
-> InlineResponse20066 set_samba_shares()
+> InlineResponse20069 set_samba_shares()
 
 Get smb shares
 
@@ -796,7 +796,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20066**](InlineResponse20066.md)
+[**InlineResponse20069**](InlineResponse20069.md)
 
 ### Authorization
 
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_samba_share**
-> InlineResponse20067 update_samba_share(uid, body=body)
+> InlineResponse20070 update_samba_share(uid, body=body)
 
 Update smb share
 
@@ -892,7 +892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20067**](InlineResponse20067.md)
+[**InlineResponse20070**](InlineResponse20070.md)
 
 ### Authorization
 

@@ -260,7 +260,7 @@ class InterfaceGroupApi(object):
 
         :param async_req bool
         :param InterfaceGroupsBody body: (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -281,7 +281,7 @@ class InterfaceGroupApi(object):
 
         :param async_req bool
         :param InterfaceGroupsBody body: (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -339,7 +339,7 @@ class InterfaceGroupApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20034',  # noqa: E501
+            response_type='InlineResponse20030',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -660,7 +660,7 @@ class InterfaceGroupApi(object):
 
         :param async_req bool
         :param str uid: interface group uid (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -681,7 +681,7 @@ class InterfaceGroupApi(object):
 
         :param async_req bool
         :param str uid: interface group uid (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -735,7 +735,7 @@ class InterfaceGroupApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20034',  # noqa: E501
+            response_type='InlineResponse20030',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -752,7 +752,7 @@ class InterfaceGroupApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20033
+        :return: InlineResponse20029
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -772,7 +772,7 @@ class InterfaceGroupApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20033
+        :return: InlineResponse20029
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -820,7 +820,7 @@ class InterfaceGroupApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20033',  # noqa: E501
+            response_type='InlineResponse20029',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -837,7 +837,7 @@ class InterfaceGroupApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20035
+        :return: InlineResponse20031
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -857,7 +857,7 @@ class InterfaceGroupApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20035
+        :return: InlineResponse20031
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -905,7 +905,7 @@ class InterfaceGroupApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20035',  # noqa: E501
+            response_type='InlineResponse20031',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1021,7 +1021,7 @@ class InterfaceGroupApi(object):
         :param async_req bool
         :param InterfaceGroupsUidBody body: (required)
         :param str uid: interface group uid (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1043,7 +1043,7 @@ class InterfaceGroupApi(object):
         :param async_req bool
         :param InterfaceGroupsUidBody body: (required)
         :param str uid: interface group uid (required)
-        :return: InlineResponse20034
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1107,7 +1107,7 @@ class InterfaceGroupApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20034',  # noqa: E501
+            response_type='InlineResponse20030',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

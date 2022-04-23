@@ -28,62 +28,39 @@ class UsersBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'username': 'str',
         'password': 'str',
-        'role': 'str',
+        'posix_gid': 'float',
         'posix_uid': 'float',
-        'posix_gid': 'float'
+        'role': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
-        'username': 'username',
         'password': 'password',
-        'role': 'role',
+        'posix_gid': 'posix_gid',
         'posix_uid': 'posix_uid',
-        'posix_gid': 'posix_gid'
+        'role': 'role',
+        'username': 'username'
     }
 
-    def __init__(self, username=None, password=None, role=None, posix_uid=None, posix_gid=None):  # noqa: E501
+    def __init__(self, password=None, posix_gid=None, posix_uid=None, role=None, username=None):  # noqa: E501
         """UsersBody - a model defined in Swagger"""  # noqa: E501
-        self._username = None
         self._password = None
-        self._role = None
-        self._posix_uid = None
         self._posix_gid = None
+        self._posix_uid = None
+        self._role = None
+        self._username = None
         self.discriminator = None
-        if username is not None:
-            self.username = username
         if password is not None:
             self.password = password
-        if role is not None:
-            self.role = role
-        if posix_uid is not None:
-            self.posix_uid = posix_uid
         if posix_gid is not None:
             self.posix_gid = posix_gid
-
-    @property
-    def username(self):
-        """Gets the username of this UsersBody.  # noqa: E501
-
-        Username of the new user to create  # noqa: E501
-
-        :return: The username of this UsersBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._username
-
-    @username.setter
-    def username(self, username):
-        """Sets the username of this UsersBody.
-
-        Username of the new user to create  # noqa: E501
-
-        :param username: The username of this UsersBody.  # noqa: E501
-        :type: str
-        """
-
-        self._username = username
+        if posix_uid is not None:
+            self.posix_uid = posix_uid
+        if role is not None:
+            self.role = role
+        if username is not None:
+            self.username = username
 
     @property
     def password(self):
@@ -107,6 +84,52 @@ class UsersBody(object):
         """
 
         self._password = password
+
+    @property
+    def posix_gid(self):
+        """Gets the posix_gid of this UsersBody.  # noqa: E501
+
+        (S3 only) POSIX GID for this user's S3 files  # noqa: E501
+
+        :return: The posix_gid of this UsersBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._posix_gid
+
+    @posix_gid.setter
+    def posix_gid(self, posix_gid):
+        """Sets the posix_gid of this UsersBody.
+
+        (S3 only) POSIX GID for this user's S3 files  # noqa: E501
+
+        :param posix_gid: The posix_gid of this UsersBody.  # noqa: E501
+        :type: float
+        """
+
+        self._posix_gid = posix_gid
+
+    @property
+    def posix_uid(self):
+        """Gets the posix_uid of this UsersBody.  # noqa: E501
+
+        (S3 only) POSIX UID for this user's S3 files  # noqa: E501
+
+        :return: The posix_uid of this UsersBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._posix_uid
+
+    @posix_uid.setter
+    def posix_uid(self, posix_uid):
+        """Sets the posix_uid of this UsersBody.
+
+        (S3 only) POSIX UID for this user's S3 files  # noqa: E501
+
+        :param posix_uid: The posix_uid of this UsersBody.  # noqa: E501
+        :type: float
+        """
+
+        self._posix_uid = posix_uid
 
     @property
     def role(self):
@@ -138,50 +161,27 @@ class UsersBody(object):
         self._role = role
 
     @property
-    def posix_uid(self):
-        """Gets the posix_uid of this UsersBody.  # noqa: E501
+    def username(self):
+        """Gets the username of this UsersBody.  # noqa: E501
 
-        (S3 only) POSIX UID for this user's S3 files  # noqa: E501
+        Username of the new user to create  # noqa: E501
 
-        :return: The posix_uid of this UsersBody.  # noqa: E501
-        :rtype: float
+        :return: The username of this UsersBody.  # noqa: E501
+        :rtype: str
         """
-        return self._posix_uid
+        return self._username
 
-    @posix_uid.setter
-    def posix_uid(self, posix_uid):
-        """Sets the posix_uid of this UsersBody.
+    @username.setter
+    def username(self, username):
+        """Sets the username of this UsersBody.
 
-        (S3 only) POSIX UID for this user's S3 files  # noqa: E501
+        Username of the new user to create  # noqa: E501
 
-        :param posix_uid: The posix_uid of this UsersBody.  # noqa: E501
-        :type: float
-        """
-
-        self._posix_uid = posix_uid
-
-    @property
-    def posix_gid(self):
-        """Gets the posix_gid of this UsersBody.  # noqa: E501
-
-        (S3 only) POSIX GID for this user's S3 files  # noqa: E501
-
-        :return: The posix_gid of this UsersBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._posix_gid
-
-    @posix_gid.setter
-    def posix_gid(self, posix_gid):
-        """Sets the posix_gid of this UsersBody.
-
-        (S3 only) POSIX GID for this user's S3 files  # noqa: E501
-
-        :param posix_gid: The posix_gid of this UsersBody.  # noqa: E501
-        :type: float
+        :param username: The username of this UsersBody.  # noqa: E501
+        :type: str
         """
 
-        self._posix_gid = posix_gid
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

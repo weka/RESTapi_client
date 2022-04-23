@@ -28,66 +28,40 @@ class InlineResponse20074Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'extra': 'object',
-        'locator': 'str'
+        'all': 'InlineResponse20074DataAll'
     }
 
     attribute_map = {
-        'extra': 'extra',
-        'locator': 'locator'
+        'all': 'all'
     }
 
-    def __init__(self, extra=None, locator=None):  # noqa: E501
+    def __init__(self, all=None):  # noqa: E501
         """InlineResponse20074Data - a model defined in Swagger"""  # noqa: E501
-        self._extra = None
-        self._locator = None
+        self._all = None
         self.discriminator = None
-        if extra is not None:
-            self.extra = extra
-        if locator is not None:
-            self.locator = locator
+        if all is not None:
+            self.all = all
 
     @property
-    def extra(self):
-        """Gets the extra of this InlineResponse20074Data.  # noqa: E501
+    def all(self):
+        """Gets the all of this InlineResponse20074Data.  # noqa: E501
 
 
-        :return: The extra of this InlineResponse20074Data.  # noqa: E501
-        :rtype: object
+        :return: The all of this InlineResponse20074Data.  # noqa: E501
+        :rtype: InlineResponse20074DataAll
         """
-        return self._extra
+        return self._all
 
-    @extra.setter
-    def extra(self, extra):
-        """Sets the extra of this InlineResponse20074Data.
-
-
-        :param extra: The extra of this InlineResponse20074Data.  # noqa: E501
-        :type: object
-        """
-
-        self._extra = extra
-
-    @property
-    def locator(self):
-        """Gets the locator of this InlineResponse20074Data.  # noqa: E501
+    @all.setter
+    def all(self, all):
+        """Sets the all of this InlineResponse20074Data.
 
 
-        :return: The locator of this InlineResponse20074Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._locator
-
-    @locator.setter
-    def locator(self, locator):
-        """Sets the locator of this InlineResponse20074Data.
-
-
-        :param locator: The locator of this InlineResponse20074Data.  # noqa: E501
-        :type: str
+        :param all: The all of this InlineResponse20074Data.  # noqa: E501
+        :type: InlineResponse20074DataAll
         """
 
-        self._locator = locator
+        self._all = all
 
     def to_dict(self):
         """Returns the model properties as a dict"""

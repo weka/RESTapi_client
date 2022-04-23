@@ -28,65 +28,44 @@ class HostResourceDataNodes1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'roles': 'list[str]',
         'core_id': 'float',
-        'http_port': 'float',
         'dedicate_core': 'bool',
-        'rpc_port': 'float',
-        'dedicated_mode': 'str'
+        'dedicated_mode': 'str',
+        'http_port': 'float',
+        'roles': 'list[str]',
+        'rpc_port': 'float'
     }
 
     attribute_map = {
-        'roles': 'roles',
         'core_id': 'core_id',
-        'http_port': 'http_port',
         'dedicate_core': 'dedicate_core',
-        'rpc_port': 'rpc_port',
-        'dedicated_mode': 'dedicated_mode'
+        'dedicated_mode': 'dedicated_mode',
+        'http_port': 'http_port',
+        'roles': 'roles',
+        'rpc_port': 'rpc_port'
     }
 
-    def __init__(self, roles=None, core_id=None, http_port=None, dedicate_core=None, rpc_port=None, dedicated_mode=None):  # noqa: E501
+    def __init__(self, core_id=None, dedicate_core=None, dedicated_mode=None, http_port=None, roles=None, rpc_port=None):  # noqa: E501
         """HostResourceDataNodes1 - a model defined in Swagger"""  # noqa: E501
-        self._roles = None
         self._core_id = None
-        self._http_port = None
         self._dedicate_core = None
-        self._rpc_port = None
         self._dedicated_mode = None
+        self._http_port = None
+        self._roles = None
+        self._rpc_port = None
         self.discriminator = None
-        if roles is not None:
-            self.roles = roles
         if core_id is not None:
             self.core_id = core_id
-        if http_port is not None:
-            self.http_port = http_port
         if dedicate_core is not None:
             self.dedicate_core = dedicate_core
-        if rpc_port is not None:
-            self.rpc_port = rpc_port
         if dedicated_mode is not None:
             self.dedicated_mode = dedicated_mode
-
-    @property
-    def roles(self):
-        """Gets the roles of this HostResourceDataNodes1.  # noqa: E501
-
-
-        :return: The roles of this HostResourceDataNodes1.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._roles
-
-    @roles.setter
-    def roles(self, roles):
-        """Sets the roles of this HostResourceDataNodes1.
-
-
-        :param roles: The roles of this HostResourceDataNodes1.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._roles = roles
+        if http_port is not None:
+            self.http_port = http_port
+        if roles is not None:
+            self.roles = roles
+        if rpc_port is not None:
+            self.rpc_port = rpc_port
 
     @property
     def core_id(self):
@@ -110,27 +89,6 @@ class HostResourceDataNodes1(object):
         self._core_id = core_id
 
     @property
-    def http_port(self):
-        """Gets the http_port of this HostResourceDataNodes1.  # noqa: E501
-
-
-        :return: The http_port of this HostResourceDataNodes1.  # noqa: E501
-        :rtype: float
-        """
-        return self._http_port
-
-    @http_port.setter
-    def http_port(self, http_port):
-        """Sets the http_port of this HostResourceDataNodes1.
-
-
-        :param http_port: The http_port of this HostResourceDataNodes1.  # noqa: E501
-        :type: float
-        """
-
-        self._http_port = http_port
-
-    @property
     def dedicate_core(self):
         """Gets the dedicate_core of this HostResourceDataNodes1.  # noqa: E501
 
@@ -152,27 +110,6 @@ class HostResourceDataNodes1(object):
         self._dedicate_core = dedicate_core
 
     @property
-    def rpc_port(self):
-        """Gets the rpc_port of this HostResourceDataNodes1.  # noqa: E501
-
-
-        :return: The rpc_port of this HostResourceDataNodes1.  # noqa: E501
-        :rtype: float
-        """
-        return self._rpc_port
-
-    @rpc_port.setter
-    def rpc_port(self, rpc_port):
-        """Sets the rpc_port of this HostResourceDataNodes1.
-
-
-        :param rpc_port: The rpc_port of this HostResourceDataNodes1.  # noqa: E501
-        :type: float
-        """
-
-        self._rpc_port = rpc_port
-
-    @property
     def dedicated_mode(self):
         """Gets the dedicated_mode of this HostResourceDataNodes1.  # noqa: E501
 
@@ -192,6 +129,69 @@ class HostResourceDataNodes1(object):
         """
 
         self._dedicated_mode = dedicated_mode
+
+    @property
+    def http_port(self):
+        """Gets the http_port of this HostResourceDataNodes1.  # noqa: E501
+
+
+        :return: The http_port of this HostResourceDataNodes1.  # noqa: E501
+        :rtype: float
+        """
+        return self._http_port
+
+    @http_port.setter
+    def http_port(self, http_port):
+        """Sets the http_port of this HostResourceDataNodes1.
+
+
+        :param http_port: The http_port of this HostResourceDataNodes1.  # noqa: E501
+        :type: float
+        """
+
+        self._http_port = http_port
+
+    @property
+    def roles(self):
+        """Gets the roles of this HostResourceDataNodes1.  # noqa: E501
+
+
+        :return: The roles of this HostResourceDataNodes1.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._roles
+
+    @roles.setter
+    def roles(self, roles):
+        """Sets the roles of this HostResourceDataNodes1.
+
+
+        :param roles: The roles of this HostResourceDataNodes1.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._roles = roles
+
+    @property
+    def rpc_port(self):
+        """Gets the rpc_port of this HostResourceDataNodes1.  # noqa: E501
+
+
+        :return: The rpc_port of this HostResourceDataNodes1.  # noqa: E501
+        :rtype: float
+        """
+        return self._rpc_port
+
+    @rpc_port.setter
+    def rpc_port(self, rpc_port):
+        """Sets the rpc_port of this HostResourceDataNodes1.
+
+
+        :param rpc_port: The rpc_port of this HostResourceDataNodes1.  # noqa: E501
+        :type: float
+        """
+
+        self._rpc_port = rpc_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -223,7 +223,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2004
+        :return: InlineResponse20084
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -243,7 +243,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2004
+        :return: InlineResponse20084
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -291,7 +291,7 @@ class WekaHomeApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2004',  # noqa: E501
+            response_type='InlineResponse20084',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -308,7 +308,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2005
+        :return: InlineResponse20085
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -328,7 +328,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2005
+        :return: InlineResponse20085
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -376,7 +376,7 @@ class WekaHomeApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2005',  # noqa: E501
+            response_type='InlineResponse20085',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -393,7 +393,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2006
+        :return: InlineResponse20086
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -413,7 +413,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2006
+        :return: InlineResponse20086
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -461,7 +461,7 @@ class WekaHomeApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2006',  # noqa: E501
+            response_type='InlineResponse20086',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -478,7 +478,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: InlineResponse20087
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -498,7 +498,7 @@ class WekaHomeApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: InlineResponse20087
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -546,7 +546,7 @@ class WekaHomeApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2007',  # noqa: E501
+            response_type='InlineResponse20087',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -564,7 +564,7 @@ class WekaHomeApi(object):
 
         :param async_req bool
         :param WekaHomeProxyBody body: (required)
-        :return: InlineResponse2005
+        :return: InlineResponse20085
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -585,7 +585,7 @@ class WekaHomeApi(object):
 
         :param async_req bool
         :param WekaHomeProxyBody body: (required)
-        :return: InlineResponse2005
+        :return: InlineResponse20085
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -643,7 +643,7 @@ class WekaHomeApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2005',  # noqa: E501
+            response_type='InlineResponse20085',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

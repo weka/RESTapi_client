@@ -28,45 +28,24 @@ class SnapshotsUidBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'new_name': 'str',
-        'access_point': 'str'
+        'access_point': 'str',
+        'new_name': 'str'
     }
 
     attribute_map = {
-        'new_name': 'new_name',
-        'access_point': 'access_point'
+        'access_point': 'access_point',
+        'new_name': 'new_name'
     }
 
-    def __init__(self, new_name=None, access_point=None):  # noqa: E501
+    def __init__(self, access_point=None, new_name=None):  # noqa: E501
         """SnapshotsUidBody - a model defined in Swagger"""  # noqa: E501
-        self._new_name = None
         self._access_point = None
+        self._new_name = None
         self.discriminator = None
-        if new_name is not None:
-            self.new_name = new_name
         if access_point is not None:
             self.access_point = access_point
-
-    @property
-    def new_name(self):
-        """Gets the new_name of this SnapshotsUidBody.  # noqa: E501
-
-
-        :return: The new_name of this SnapshotsUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._new_name
-
-    @new_name.setter
-    def new_name(self, new_name):
-        """Sets the new_name of this SnapshotsUidBody.
-
-
-        :param new_name: The new_name of this SnapshotsUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._new_name = new_name
+        if new_name is not None:
+            self.new_name = new_name
 
     @property
     def access_point(self):
@@ -88,6 +67,27 @@ class SnapshotsUidBody(object):
         """
 
         self._access_point = access_point
+
+    @property
+    def new_name(self):
+        """Gets the new_name of this SnapshotsUidBody.  # noqa: E501
+
+
+        :return: The new_name of this SnapshotsUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._new_name
+
+    @new_name.setter
+    def new_name(self, new_name):
+        """Sets the new_name of this SnapshotsUidBody.
+
+
+        :param new_name: The new_name of this SnapshotsUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._new_name = new_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

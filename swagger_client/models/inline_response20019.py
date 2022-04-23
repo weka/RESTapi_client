@@ -28,7 +28,7 @@ class InlineResponse20019(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'FileSystem'
+        'data': 'str'
     }
 
     attribute_map = {
@@ -46,9 +46,10 @@ class InlineResponse20019(object):
     def data(self):
         """Gets the data of this InlineResponse20019.  # noqa: E501
 
+        Detach task id  # noqa: E501
 
         :return: The data of this InlineResponse20019.  # noqa: E501
-        :rtype: FileSystem
+        :rtype: str
         """
         return self._data
 
@@ -56,9 +57,10 @@ class InlineResponse20019(object):
     def data(self, data):
         """Sets the data of this InlineResponse20019.
 
+        Detach task id  # noqa: E501
 
         :param data: The data of this InlineResponse20019.  # noqa: E501
-        :type: FileSystem
+        :type: str
         """
 
         self._data = data

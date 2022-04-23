@@ -42,7 +42,7 @@ class UserApi(object):
 
         :param async_req bool
         :param UsersBody body: (required)
-        :return: InlineResponse20085
+        :return: InlineResponse20082
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class UserApi(object):
 
         :param async_req bool
         :param UsersBody body: (required)
-        :return: InlineResponse20085
+        :return: InlineResponse20082
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -121,7 +121,7 @@ class UserApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20085',  # noqa: E501
+            response_type='InlineResponse20082',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -231,7 +231,7 @@ class UserApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20084
+        :return: InlineResponse20081
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -251,7 +251,7 @@ class UserApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20084
+        :return: InlineResponse20081
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -299,7 +299,7 @@ class UserApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20084',  # noqa: E501
+            response_type='InlineResponse20081',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -411,7 +411,7 @@ class UserApi(object):
         :param async_req bool
         :param UsersUidBody body: (required)
         :param str uid: User uid (required)
-        :return: InlineResponse20085
+        :return: InlineResponse20082
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -433,7 +433,7 @@ class UserApi(object):
         :param async_req bool
         :param UsersUidBody body: (required)
         :param str uid: User uid (required)
-        :return: InlineResponse20085
+        :return: InlineResponse20082
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -497,7 +497,7 @@ class UserApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20085',  # noqa: E501
+            response_type='InlineResponse20082',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -611,7 +611,7 @@ class UserApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20086
+        :return: InlineResponse20083
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -631,7 +631,7 @@ class UserApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20086
+        :return: InlineResponse20083
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -679,7 +679,7 @@ class UserApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20086',  # noqa: E501
+            response_type='InlineResponse20083',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

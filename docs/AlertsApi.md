@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**unmute_alert_by_type**](AlertsApi.md#unmute_alert_by_type) | **PUT** /alerts/{alert_type}/unmute | Unmute alerts by type
 
 # **get_alert_description**
-> InlineResponse2003 get_alert_description()
+> InlineResponse2002 get_alert_description()
 
 Get alerts description
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_alerts_types**
-> InlineResponse2002 get_alerts_types()
+> InlineResponse2003 get_alerts_types()
 
 Get alerts types
 
@@ -126,7 +126,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

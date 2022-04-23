@@ -28,61 +28,128 @@ class S3Body1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'default_fs_name': 'str',
-        'host_uids': 'list[str]',
         'all_hosts': 'bool',
-        'port': 'float',
-        'mount_options': 'str',
-        'key': 'str',
-        'secret': 'str',
-        'anonymous_posix_uid': 'float',
         'anonymous_posix_gid': 'float',
-        'etcd_cluster_size': 'float'
+        'anonymous_posix_uid': 'float',
+        'default_fs_name': 'str',
+        'etcd_cluster_size': 'float',
+        'host_uids': 'list[str]',
+        'key': 'str',
+        'mount_options': 'str',
+        'port': 'float',
+        'secret': 'str'
     }
 
     attribute_map = {
-        'default_fs_name': 'default_fs_name',
-        'host_uids': 'host_uids',
         'all_hosts': 'all_hosts',
-        'port': 'port',
-        'mount_options': 'mount_options',
-        'key': 'key',
-        'secret': 'secret',
-        'anonymous_posix_uid': 'anonymous_posix_uid',
         'anonymous_posix_gid': 'anonymous_posix_gid',
-        'etcd_cluster_size': 'etcd_cluster_size'
+        'anonymous_posix_uid': 'anonymous_posix_uid',
+        'default_fs_name': 'default_fs_name',
+        'etcd_cluster_size': 'etcd_cluster_size',
+        'host_uids': 'host_uids',
+        'key': 'key',
+        'mount_options': 'mount_options',
+        'port': 'port',
+        'secret': 'secret'
     }
 
-    def __init__(self, default_fs_name=None, host_uids=None, all_hosts=None, port=None, mount_options=None, key=None, secret=None, anonymous_posix_uid=None, anonymous_posix_gid=None, etcd_cluster_size=None):  # noqa: E501
+    def __init__(self, all_hosts=None, anonymous_posix_gid=None, anonymous_posix_uid=None, default_fs_name=None, etcd_cluster_size=None, host_uids=None, key=None, mount_options=None, port=None, secret=None):  # noqa: E501
         """S3Body1 - a model defined in Swagger"""  # noqa: E501
-        self._default_fs_name = None
-        self._host_uids = None
         self._all_hosts = None
-        self._port = None
-        self._mount_options = None
-        self._key = None
-        self._secret = None
-        self._anonymous_posix_uid = None
         self._anonymous_posix_gid = None
+        self._anonymous_posix_uid = None
+        self._default_fs_name = None
         self._etcd_cluster_size = None
+        self._host_uids = None
+        self._key = None
+        self._mount_options = None
+        self._port = None
+        self._secret = None
         self.discriminator = None
-        self.default_fs_name = default_fs_name
-        if host_uids is not None:
-            self.host_uids = host_uids
         if all_hosts is not None:
             self.all_hosts = all_hosts
-        if port is not None:
-            self.port = port
-        if mount_options is not None:
-            self.mount_options = mount_options
-        self.key = key
-        self.secret = secret
-        if anonymous_posix_uid is not None:
-            self.anonymous_posix_uid = anonymous_posix_uid
         if anonymous_posix_gid is not None:
             self.anonymous_posix_gid = anonymous_posix_gid
+        if anonymous_posix_uid is not None:
+            self.anonymous_posix_uid = anonymous_posix_uid
+        self.default_fs_name = default_fs_name
         if etcd_cluster_size is not None:
             self.etcd_cluster_size = etcd_cluster_size
+        if host_uids is not None:
+            self.host_uids = host_uids
+        self.key = key
+        if mount_options is not None:
+            self.mount_options = mount_options
+        if port is not None:
+            self.port = port
+        self.secret = secret
+
+    @property
+    def all_hosts(self):
+        """Gets the all_hosts of this S3Body1.  # noqa: E501
+
+
+        :return: The all_hosts of this S3Body1.  # noqa: E501
+        :rtype: bool
+        """
+        return self._all_hosts
+
+    @all_hosts.setter
+    def all_hosts(self, all_hosts):
+        """Sets the all_hosts of this S3Body1.
+
+
+        :param all_hosts: The all_hosts of this S3Body1.  # noqa: E501
+        :type: bool
+        """
+
+        self._all_hosts = all_hosts
+
+    @property
+    def anonymous_posix_gid(self):
+        """Gets the anonymous_posix_gid of this S3Body1.  # noqa: E501
+
+        POSIX GID for anonymous users  # noqa: E501
+
+        :return: The anonymous_posix_gid of this S3Body1.  # noqa: E501
+        :rtype: float
+        """
+        return self._anonymous_posix_gid
+
+    @anonymous_posix_gid.setter
+    def anonymous_posix_gid(self, anonymous_posix_gid):
+        """Sets the anonymous_posix_gid of this S3Body1.
+
+        POSIX GID for anonymous users  # noqa: E501
+
+        :param anonymous_posix_gid: The anonymous_posix_gid of this S3Body1.  # noqa: E501
+        :type: float
+        """
+
+        self._anonymous_posix_gid = anonymous_posix_gid
+
+    @property
+    def anonymous_posix_uid(self):
+        """Gets the anonymous_posix_uid of this S3Body1.  # noqa: E501
+
+        POSIX UID for anonymous users  # noqa: E501
+
+        :return: The anonymous_posix_uid of this S3Body1.  # noqa: E501
+        :rtype: float
+        """
+        return self._anonymous_posix_uid
+
+    @anonymous_posix_uid.setter
+    def anonymous_posix_uid(self, anonymous_posix_uid):
+        """Sets the anonymous_posix_uid of this S3Body1.
+
+        POSIX UID for anonymous users  # noqa: E501
+
+        :param anonymous_posix_uid: The anonymous_posix_uid of this S3Body1.  # noqa: E501
+        :type: float
+        """
+
+        self._anonymous_posix_uid = anonymous_posix_uid
 
     @property
     def default_fs_name(self):
@@ -110,6 +177,29 @@ class S3Body1(object):
         self._default_fs_name = default_fs_name
 
     @property
+    def etcd_cluster_size(self):
+        """Gets the etcd_cluster_size of this S3Body1.  # noqa: E501
+
+        Size of etcd cluster  # noqa: E501
+
+        :return: The etcd_cluster_size of this S3Body1.  # noqa: E501
+        :rtype: float
+        """
+        return self._etcd_cluster_size
+
+    @etcd_cluster_size.setter
+    def etcd_cluster_size(self, etcd_cluster_size):
+        """Sets the etcd_cluster_size of this S3Body1.
+
+        Size of etcd cluster  # noqa: E501
+
+        :param etcd_cluster_size: The etcd_cluster_size of this S3Body1.  # noqa: E501
+        :type: float
+        """
+
+        self._etcd_cluster_size = etcd_cluster_size
+
+    @property
     def host_uids(self):
         """Gets the host_uids of this S3Body1.  # noqa: E501
 
@@ -131,73 +221,6 @@ class S3Body1(object):
         """
 
         self._host_uids = host_uids
-
-    @property
-    def all_hosts(self):
-        """Gets the all_hosts of this S3Body1.  # noqa: E501
-
-
-        :return: The all_hosts of this S3Body1.  # noqa: E501
-        :rtype: bool
-        """
-        return self._all_hosts
-
-    @all_hosts.setter
-    def all_hosts(self, all_hosts):
-        """Sets the all_hosts of this S3Body1.
-
-
-        :param all_hosts: The all_hosts of this S3Body1.  # noqa: E501
-        :type: bool
-        """
-
-        self._all_hosts = all_hosts
-
-    @property
-    def port(self):
-        """Gets the port of this S3Body1.  # noqa: E501
-
-        port  # noqa: E501
-
-        :return: The port of this S3Body1.  # noqa: E501
-        :rtype: float
-        """
-        return self._port
-
-    @port.setter
-    def port(self, port):
-        """Sets the port of this S3Body1.
-
-        port  # noqa: E501
-
-        :param port: The port of this S3Body1.  # noqa: E501
-        :type: float
-        """
-
-        self._port = port
-
-    @property
-    def mount_options(self):
-        """Gets the mount_options of this S3Body1.  # noqa: E501
-
-        mount options  # noqa: E501
-
-        :return: The mount_options of this S3Body1.  # noqa: E501
-        :rtype: str
-        """
-        return self._mount_options
-
-    @mount_options.setter
-    def mount_options(self, mount_options):
-        """Sets the mount_options of this S3Body1.
-
-        mount options  # noqa: E501
-
-        :param mount_options: The mount_options of this S3Body1.  # noqa: E501
-        :type: str
-        """
-
-        self._mount_options = mount_options
 
     @property
     def key(self):
@@ -225,6 +248,52 @@ class S3Body1(object):
         self._key = key
 
     @property
+    def mount_options(self):
+        """Gets the mount_options of this S3Body1.  # noqa: E501
+
+        mount options  # noqa: E501
+
+        :return: The mount_options of this S3Body1.  # noqa: E501
+        :rtype: str
+        """
+        return self._mount_options
+
+    @mount_options.setter
+    def mount_options(self, mount_options):
+        """Sets the mount_options of this S3Body1.
+
+        mount options  # noqa: E501
+
+        :param mount_options: The mount_options of this S3Body1.  # noqa: E501
+        :type: str
+        """
+
+        self._mount_options = mount_options
+
+    @property
+    def port(self):
+        """Gets the port of this S3Body1.  # noqa: E501
+
+        port  # noqa: E501
+
+        :return: The port of this S3Body1.  # noqa: E501
+        :rtype: float
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this S3Body1.
+
+        port  # noqa: E501
+
+        :param port: The port of this S3Body1.  # noqa: E501
+        :type: float
+        """
+
+        self._port = port
+
+    @property
     def secret(self):
         """Gets the secret of this S3Body1.  # noqa: E501
 
@@ -248,75 +317,6 @@ class S3Body1(object):
             raise ValueError("Invalid value for `secret`, must not be `None`")  # noqa: E501
 
         self._secret = secret
-
-    @property
-    def anonymous_posix_uid(self):
-        """Gets the anonymous_posix_uid of this S3Body1.  # noqa: E501
-
-        POSIX UID for anonymous users  # noqa: E501
-
-        :return: The anonymous_posix_uid of this S3Body1.  # noqa: E501
-        :rtype: float
-        """
-        return self._anonymous_posix_uid
-
-    @anonymous_posix_uid.setter
-    def anonymous_posix_uid(self, anonymous_posix_uid):
-        """Sets the anonymous_posix_uid of this S3Body1.
-
-        POSIX UID for anonymous users  # noqa: E501
-
-        :param anonymous_posix_uid: The anonymous_posix_uid of this S3Body1.  # noqa: E501
-        :type: float
-        """
-
-        self._anonymous_posix_uid = anonymous_posix_uid
-
-    @property
-    def anonymous_posix_gid(self):
-        """Gets the anonymous_posix_gid of this S3Body1.  # noqa: E501
-
-        POSIX GID for anonymous users  # noqa: E501
-
-        :return: The anonymous_posix_gid of this S3Body1.  # noqa: E501
-        :rtype: float
-        """
-        return self._anonymous_posix_gid
-
-    @anonymous_posix_gid.setter
-    def anonymous_posix_gid(self, anonymous_posix_gid):
-        """Sets the anonymous_posix_gid of this S3Body1.
-
-        POSIX GID for anonymous users  # noqa: E501
-
-        :param anonymous_posix_gid: The anonymous_posix_gid of this S3Body1.  # noqa: E501
-        :type: float
-        """
-
-        self._anonymous_posix_gid = anonymous_posix_gid
-
-    @property
-    def etcd_cluster_size(self):
-        """Gets the etcd_cluster_size of this S3Body1.  # noqa: E501
-
-        Size of etcd cluster  # noqa: E501
-
-        :return: The etcd_cluster_size of this S3Body1.  # noqa: E501
-        :rtype: float
-        """
-        return self._etcd_cluster_size
-
-    @etcd_cluster_size.setter
-    def etcd_cluster_size(self, etcd_cluster_size):
-        """Sets the etcd_cluster_size of this S3Body1.
-
-        Size of etcd cluster  # noqa: E501
-
-        :param etcd_cluster_size: The etcd_cluster_size of this S3Body1.  # noqa: E501
-        :type: float
-        """
-
-        self._etcd_cluster_size = etcd_cluster_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

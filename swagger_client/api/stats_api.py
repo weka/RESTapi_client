@@ -41,7 +41,7 @@ class StatsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20077
+        :return: InlineResponse20076
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -61,7 +61,7 @@ class StatsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20077
+        :return: InlineResponse20076
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -109,7 +109,7 @@ class StatsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20077',  # noqa: E501
+            response_type='InlineResponse20076',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -138,7 +138,7 @@ class StatsApi(object):
         :param list[str] param_param_key:
         :param bool no_zeroes:
         :param bool show_internal:
-        :return: InlineResponse20075
+        :return: InlineResponse20074
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -170,7 +170,7 @@ class StatsApi(object):
         :param list[str] param_param_key:
         :param bool no_zeroes:
         :param bool show_internal:
-        :return: InlineResponse20075
+        :return: InlineResponse20074
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -246,7 +246,7 @@ class StatsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20075',  # noqa: E501
+            response_type='InlineResponse20074',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -263,7 +263,7 @@ class StatsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20076
+        :return: InlineResponse20075
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -283,7 +283,7 @@ class StatsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20076
+        :return: InlineResponse20075
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -331,7 +331,7 @@ class StatsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20076',  # noqa: E501
+            response_type='InlineResponse20075',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -349,7 +349,7 @@ class StatsApi(object):
 
         :param async_req bool
         :param str retention_duration: Duration (format - 1 minute 2 seconds, options - weeks, days, hours, minutes, seconds)
-        :return: InlineResponse20078
+        :return: InlineResponse20077
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -370,7 +370,7 @@ class StatsApi(object):
 
         :param async_req bool
         :param str retention_duration: Duration (format - 1 minute 2 seconds, options - weeks, days, hours, minutes, seconds)
-        :return: InlineResponse20078
+        :return: InlineResponse20077
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -420,7 +420,7 @@ class StatsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20078',  # noqa: E501
+            response_type='InlineResponse20077',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -438,7 +438,7 @@ class StatsApi(object):
 
         :param async_req bool
         :param StatsRetentionBody body:
-        :return: InlineResponse20078
+        :return: InlineResponse20077
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -459,7 +459,7 @@ class StatsApi(object):
 
         :param async_req bool
         :param StatsRetentionBody body:
-        :return: InlineResponse20078
+        :return: InlineResponse20077
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -513,7 +513,7 @@ class StatsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20078',  # noqa: E501
+            response_type='InlineResponse20077',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

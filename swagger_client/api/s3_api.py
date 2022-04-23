@@ -899,7 +899,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20060
+        :return: InlineResponse20058
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -920,7 +920,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20060
+        :return: InlineResponse20058
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -974,7 +974,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20060',  # noqa: E501
+            response_type='InlineResponse20058',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -992,7 +992,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20060
+        :return: InlineResponse20058
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1013,7 +1013,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20060
+        :return: InlineResponse20058
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1067,7 +1067,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20060',  # noqa: E501
+            response_type='InlineResponse20058',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1084,7 +1084,7 @@ class S3Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20056
+        :return: InlineResponse20055
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1104,7 +1104,7 @@ class S3Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20056
+        :return: InlineResponse20055
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1152,7 +1152,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20056',  # noqa: E501
+            response_type='InlineResponse20055',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1432,7 +1432,7 @@ class S3Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20061
+        :return: InlineResponse20059
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1452,7 +1452,7 @@ class S3Api(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20061
+        :return: InlineResponse20059
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1500,7 +1500,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20061',  # noqa: E501
+            response_type='InlineResponse20059',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1519,7 +1519,7 @@ class S3Api(object):
         :param async_req bool
         :param LifecycleRulesBody body: (required)
         :param str bucket: bucket name (required)
-        :return: InlineResponse20058
+        :return: InlineResponse20056
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1541,7 +1541,7 @@ class S3Api(object):
         :param async_req bool
         :param LifecycleRulesBody body: (required)
         :param str bucket: bucket name (required)
-        :return: InlineResponse20058
+        :return: InlineResponse20056
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1605,7 +1605,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20058',  # noqa: E501
+            response_type='InlineResponse20056',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1623,7 +1623,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20059
+        :return: InlineResponse20057
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1644,7 +1644,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20059
+        :return: InlineResponse20057
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1698,7 +1698,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20059',  # noqa: E501
+            response_type='InlineResponse20057',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1717,7 +1717,7 @@ class S3Api(object):
         :param async_req bool
         :param str bucket: bucket name (required)
         :param str rule: rule ID (required)
-        :return: InlineResponse20059
+        :return: InlineResponse20057
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1739,7 +1739,7 @@ class S3Api(object):
         :param async_req bool
         :param str bucket: bucket name (required)
         :param str rule: rule ID (required)
-        :return: InlineResponse20059
+        :return: InlineResponse20057
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1799,7 +1799,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20059',  # noqa: E501
+            response_type='InlineResponse20057',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1817,7 +1817,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20056
+        :return: InlineResponse20055
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1838,7 +1838,7 @@ class S3Api(object):
 
         :param async_req bool
         :param str bucket: bucket name (required)
-        :return: InlineResponse20056
+        :return: InlineResponse20055
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1892,7 +1892,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20056',  # noqa: E501
+            response_type='InlineResponse20055',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1910,7 +1910,7 @@ class S3Api(object):
 
         :param async_req bool
         :param S3StsBody body: (required)
-        :return: InlineResponse20057
+        :return: InlineResponse20060
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1931,7 +1931,7 @@ class S3Api(object):
 
         :param async_req bool
         :param S3StsBody body: (required)
-        :return: InlineResponse20057
+        :return: InlineResponse20060
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1989,7 +1989,7 @@ class S3Api(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20057',  # noqa: E501
+            response_type='InlineResponse20060',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

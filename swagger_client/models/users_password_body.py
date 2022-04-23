@@ -28,81 +28,31 @@ class UsersPasswordBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'username': 'str',
-        'old_password': 'str',
         'new_password': 'str',
-        'org': 'str'
+        'old_password': 'str',
+        'org': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
-        'username': 'username',
-        'old_password': 'old_password',
         'new_password': 'new_password',
-        'org': 'org'
+        'old_password': 'old_password',
+        'org': 'org',
+        'username': 'username'
     }
 
-    def __init__(self, username=None, old_password=None, new_password=None, org=None):  # noqa: E501
+    def __init__(self, new_password=None, old_password=None, org=None, username=None):  # noqa: E501
         """UsersPasswordBody - a model defined in Swagger"""  # noqa: E501
-        self._username = None
-        self._old_password = None
         self._new_password = None
+        self._old_password = None
         self._org = None
+        self._username = None
         self.discriminator = None
-        self.username = username
-        self.old_password = old_password
         self.new_password = new_password
+        self.old_password = old_password
         if org is not None:
             self.org = org
-
-    @property
-    def username(self):
-        """Gets the username of this UsersPasswordBody.  # noqa: E501
-
-        Username  # noqa: E501
-
-        :return: The username of this UsersPasswordBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._username
-
-    @username.setter
-    def username(self, username):
-        """Sets the username of this UsersPasswordBody.
-
-        Username  # noqa: E501
-
-        :param username: The username of this UsersPasswordBody.  # noqa: E501
-        :type: str
-        """
-        if username is None:
-            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
-
-        self._username = username
-
-    @property
-    def old_password(self):
-        """Gets the old_password of this UsersPasswordBody.  # noqa: E501
-
-        Old password  # noqa: E501
-
-        :return: The old_password of this UsersPasswordBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._old_password
-
-    @old_password.setter
-    def old_password(self, old_password):
-        """Sets the old_password of this UsersPasswordBody.
-
-        Old password  # noqa: E501
-
-        :param old_password: The old_password of this UsersPasswordBody.  # noqa: E501
-        :type: str
-        """
-        if old_password is None:
-            raise ValueError("Invalid value for `old_password`, must not be `None`")  # noqa: E501
-
-        self._old_password = old_password
+        self.username = username
 
     @property
     def new_password(self):
@@ -130,6 +80,31 @@ class UsersPasswordBody(object):
         self._new_password = new_password
 
     @property
+    def old_password(self):
+        """Gets the old_password of this UsersPasswordBody.  # noqa: E501
+
+        Old password  # noqa: E501
+
+        :return: The old_password of this UsersPasswordBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._old_password
+
+    @old_password.setter
+    def old_password(self, old_password):
+        """Sets the old_password of this UsersPasswordBody.
+
+        Old password  # noqa: E501
+
+        :param old_password: The old_password of this UsersPasswordBody.  # noqa: E501
+        :type: str
+        """
+        if old_password is None:
+            raise ValueError("Invalid value for `old_password`, must not be `None`")  # noqa: E501
+
+        self._old_password = old_password
+
+    @property
     def org(self):
         """Gets the org of this UsersPasswordBody.  # noqa: E501
 
@@ -151,6 +126,31 @@ class UsersPasswordBody(object):
         """
 
         self._org = org
+
+    @property
+    def username(self):
+        """Gets the username of this UsersPasswordBody.  # noqa: E501
+
+        Username  # noqa: E501
+
+        :return: The username of this UsersPasswordBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        """Sets the username of this UsersPasswordBody.
+
+        Username  # noqa: E501
+
+        :param username: The username of this UsersPasswordBody.  # noqa: E501
+        :type: str
+        """
+        if username is None:
+            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
+
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

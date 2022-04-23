@@ -28,59 +28,82 @@ class ActiveDirectoryBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'enabled': 'bool',
-        'server_uri': 'str',
-        'start_tls': 'bool',
-        'ignore_start_tls_failure': 'bool',
-        'server_timeout_secs': 'float',
         'domain': 'str',
-        'reader_username': 'str',
+        'enabled': 'bool',
+        'ignore_start_tls_failure': 'bool',
         'reader_password': 'str',
-        'role_groups': 'object'
+        'reader_username': 'str',
+        'role_groups': 'object',
+        'server_timeout_secs': 'float',
+        'server_uri': 'str',
+        'start_tls': 'bool'
     }
 
     attribute_map = {
-        'enabled': 'enabled',
-        'server_uri': 'server_uri',
-        'start_tls': 'start_tls',
-        'ignore_start_tls_failure': 'ignore_start_tls_failure',
-        'server_timeout_secs': 'server_timeout_secs',
         'domain': 'domain',
-        'reader_username': 'reader_username',
+        'enabled': 'enabled',
+        'ignore_start_tls_failure': 'ignore_start_tls_failure',
         'reader_password': 'reader_password',
-        'role_groups': 'role_groups'
+        'reader_username': 'reader_username',
+        'role_groups': 'role_groups',
+        'server_timeout_secs': 'server_timeout_secs',
+        'server_uri': 'server_uri',
+        'start_tls': 'start_tls'
     }
 
-    def __init__(self, enabled=None, server_uri=None, start_tls=None, ignore_start_tls_failure=None, server_timeout_secs=None, domain=None, reader_username=None, reader_password=None, role_groups=None):  # noqa: E501
+    def __init__(self, domain=None, enabled=None, ignore_start_tls_failure=None, reader_password=None, reader_username=None, role_groups=None, server_timeout_secs=None, server_uri=None, start_tls=None):  # noqa: E501
         """ActiveDirectoryBody - a model defined in Swagger"""  # noqa: E501
+        self._domain = None
         self._enabled = None
+        self._ignore_start_tls_failure = None
+        self._reader_password = None
+        self._reader_username = None
+        self._role_groups = None
+        self._server_timeout_secs = None
         self._server_uri = None
         self._start_tls = None
-        self._ignore_start_tls_failure = None
-        self._server_timeout_secs = None
-        self._domain = None
-        self._reader_username = None
-        self._reader_password = None
-        self._role_groups = None
         self.discriminator = None
+        if domain is not None:
+            self.domain = domain
         if enabled is not None:
             self.enabled = enabled
+        if ignore_start_tls_failure is not None:
+            self.ignore_start_tls_failure = ignore_start_tls_failure
+        if reader_password is not None:
+            self.reader_password = reader_password
+        if reader_username is not None:
+            self.reader_username = reader_username
+        if role_groups is not None:
+            self.role_groups = role_groups
+        if server_timeout_secs is not None:
+            self.server_timeout_secs = server_timeout_secs
         if server_uri is not None:
             self.server_uri = server_uri
         if start_tls is not None:
             self.start_tls = start_tls
-        if ignore_start_tls_failure is not None:
-            self.ignore_start_tls_failure = ignore_start_tls_failure
-        if server_timeout_secs is not None:
-            self.server_timeout_secs = server_timeout_secs
-        if domain is not None:
-            self.domain = domain
-        if reader_username is not None:
-            self.reader_username = reader_username
-        if reader_password is not None:
-            self.reader_password = reader_password
-        if role_groups is not None:
-            self.role_groups = role_groups
+
+    @property
+    def domain(self):
+        """Gets the domain of this ActiveDirectoryBody.  # noqa: E501
+
+        Domain  # noqa: E501
+
+        :return: The domain of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this ActiveDirectoryBody.
+
+        Domain  # noqa: E501
+
+        :param domain: The domain of this ActiveDirectoryBody.  # noqa: E501
+        :type: str
+        """
+
+        self._domain = domain
 
     @property
     def enabled(self):
@@ -102,6 +125,121 @@ class ActiveDirectoryBody(object):
         """
 
         self._enabled = enabled
+
+    @property
+    def ignore_start_tls_failure(self):
+        """Gets the ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
+
+        Ignore start TLS failure  # noqa: E501
+
+        :return: The ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._ignore_start_tls_failure
+
+    @ignore_start_tls_failure.setter
+    def ignore_start_tls_failure(self, ignore_start_tls_failure):
+        """Sets the ignore_start_tls_failure of this ActiveDirectoryBody.
+
+        Ignore start TLS failure  # noqa: E501
+
+        :param ignore_start_tls_failure: The ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._ignore_start_tls_failure = ignore_start_tls_failure
+
+    @property
+    def reader_password(self):
+        """Gets the reader_password of this ActiveDirectoryBody.  # noqa: E501
+
+        Reader password  # noqa: E501
+
+        :return: The reader_password of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._reader_password
+
+    @reader_password.setter
+    def reader_password(self, reader_password):
+        """Sets the reader_password of this ActiveDirectoryBody.
+
+        Reader password  # noqa: E501
+
+        :param reader_password: The reader_password of this ActiveDirectoryBody.  # noqa: E501
+        :type: str
+        """
+
+        self._reader_password = reader_password
+
+    @property
+    def reader_username(self):
+        """Gets the reader_username of this ActiveDirectoryBody.  # noqa: E501
+
+        Reader username  # noqa: E501
+
+        :return: The reader_username of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._reader_username
+
+    @reader_username.setter
+    def reader_username(self, reader_username):
+        """Sets the reader_username of this ActiveDirectoryBody.
+
+        Reader username  # noqa: E501
+
+        :param reader_username: The reader_username of this ActiveDirectoryBody.  # noqa: E501
+        :type: str
+        """
+
+        self._reader_username = reader_username
+
+    @property
+    def role_groups(self):
+        """Gets the role_groups of this ActiveDirectoryBody.  # noqa: E501
+
+        user role can be ClusterAdmin, OrgAdmin, ReadOnly or Regular  # noqa: E501
+
+        :return: The role_groups of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: object
+        """
+        return self._role_groups
+
+    @role_groups.setter
+    def role_groups(self, role_groups):
+        """Sets the role_groups of this ActiveDirectoryBody.
+
+        user role can be ClusterAdmin, OrgAdmin, ReadOnly or Regular  # noqa: E501
+
+        :param role_groups: The role_groups of this ActiveDirectoryBody.  # noqa: E501
+        :type: object
+        """
+
+        self._role_groups = role_groups
+
+    @property
+    def server_timeout_secs(self):
+        """Gets the server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
+
+        LDAP connection timeout in seconds  # noqa: E501
+
+        :return: The server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._server_timeout_secs
+
+    @server_timeout_secs.setter
+    def server_timeout_secs(self, server_timeout_secs):
+        """Sets the server_timeout_secs of this ActiveDirectoryBody.
+
+        LDAP connection timeout in seconds  # noqa: E501
+
+        :param server_timeout_secs: The server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
+        :type: float
+        """
+
+        self._server_timeout_secs = server_timeout_secs
 
     @property
     def server_uri(self):
@@ -148,144 +286,6 @@ class ActiveDirectoryBody(object):
         """
 
         self._start_tls = start_tls
-
-    @property
-    def ignore_start_tls_failure(self):
-        """Gets the ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
-
-        Ignore start TLS failure  # noqa: E501
-
-        :return: The ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: bool
-        """
-        return self._ignore_start_tls_failure
-
-    @ignore_start_tls_failure.setter
-    def ignore_start_tls_failure(self, ignore_start_tls_failure):
-        """Sets the ignore_start_tls_failure of this ActiveDirectoryBody.
-
-        Ignore start TLS failure  # noqa: E501
-
-        :param ignore_start_tls_failure: The ignore_start_tls_failure of this ActiveDirectoryBody.  # noqa: E501
-        :type: bool
-        """
-
-        self._ignore_start_tls_failure = ignore_start_tls_failure
-
-    @property
-    def server_timeout_secs(self):
-        """Gets the server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
-
-        LDAP connection timeout in seconds  # noqa: E501
-
-        :return: The server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._server_timeout_secs
-
-    @server_timeout_secs.setter
-    def server_timeout_secs(self, server_timeout_secs):
-        """Sets the server_timeout_secs of this ActiveDirectoryBody.
-
-        LDAP connection timeout in seconds  # noqa: E501
-
-        :param server_timeout_secs: The server_timeout_secs of this ActiveDirectoryBody.  # noqa: E501
-        :type: float
-        """
-
-        self._server_timeout_secs = server_timeout_secs
-
-    @property
-    def domain(self):
-        """Gets the domain of this ActiveDirectoryBody.  # noqa: E501
-
-        Domain  # noqa: E501
-
-        :return: The domain of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._domain
-
-    @domain.setter
-    def domain(self, domain):
-        """Sets the domain of this ActiveDirectoryBody.
-
-        Domain  # noqa: E501
-
-        :param domain: The domain of this ActiveDirectoryBody.  # noqa: E501
-        :type: str
-        """
-
-        self._domain = domain
-
-    @property
-    def reader_username(self):
-        """Gets the reader_username of this ActiveDirectoryBody.  # noqa: E501
-
-        Reader username  # noqa: E501
-
-        :return: The reader_username of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._reader_username
-
-    @reader_username.setter
-    def reader_username(self, reader_username):
-        """Sets the reader_username of this ActiveDirectoryBody.
-
-        Reader username  # noqa: E501
-
-        :param reader_username: The reader_username of this ActiveDirectoryBody.  # noqa: E501
-        :type: str
-        """
-
-        self._reader_username = reader_username
-
-    @property
-    def reader_password(self):
-        """Gets the reader_password of this ActiveDirectoryBody.  # noqa: E501
-
-        Reader password  # noqa: E501
-
-        :return: The reader_password of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._reader_password
-
-    @reader_password.setter
-    def reader_password(self, reader_password):
-        """Sets the reader_password of this ActiveDirectoryBody.
-
-        Reader password  # noqa: E501
-
-        :param reader_password: The reader_password of this ActiveDirectoryBody.  # noqa: E501
-        :type: str
-        """
-
-        self._reader_password = reader_password
-
-    @property
-    def role_groups(self):
-        """Gets the role_groups of this ActiveDirectoryBody.  # noqa: E501
-
-        user role can be ClusterAdmin, OrgAdmin, ReadOnly or Regular  # noqa: E501
-
-        :return: The role_groups of this ActiveDirectoryBody.  # noqa: E501
-        :rtype: object
-        """
-        return self._role_groups
-
-    @role_groups.setter
-    def role_groups(self, role_groups):
-        """Sets the role_groups of this ActiveDirectoryBody.
-
-        user role can be ClusterAdmin, OrgAdmin, ReadOnly or Regular  # noqa: E501
-
-        :param role_groups: The role_groups of this ActiveDirectoryBody.  # noqa: E501
-        :type: object
-        """
-
-        self._role_groups = role_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

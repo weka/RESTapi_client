@@ -28,28 +28,32 @@ class InlineResponse20020(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'str'
+        'data': 'InlineResponse20020Data',
+        'next_token': 'float'
     }
 
     attribute_map = {
-        'data': 'data'
+        'data': 'data',
+        'next_token': 'next_token'
     }
 
-    def __init__(self, data=None):  # noqa: E501
+    def __init__(self, data=None, next_token=None):  # noqa: E501
         """InlineResponse20020 - a model defined in Swagger"""  # noqa: E501
         self._data = None
+        self._next_token = None
         self.discriminator = None
         if data is not None:
             self.data = data
+        if next_token is not None:
+            self.next_token = next_token
 
     @property
     def data(self):
         """Gets the data of this InlineResponse20020.  # noqa: E501
 
-        Detach task id  # noqa: E501
 
         :return: The data of this InlineResponse20020.  # noqa: E501
-        :rtype: str
+        :rtype: InlineResponse20020Data
         """
         return self._data
 
@@ -57,13 +61,33 @@ class InlineResponse20020(object):
     def data(self, data):
         """Sets the data of this InlineResponse20020.
 
-        Detach task id  # noqa: E501
 
         :param data: The data of this InlineResponse20020.  # noqa: E501
-        :type: str
+        :type: InlineResponse20020Data
         """
 
         self._data = data
+
+    @property
+    def next_token(self):
+        """Gets the next_token of this InlineResponse20020.  # noqa: E501
+
+
+        :return: The next_token of this InlineResponse20020.  # noqa: E501
+        :rtype: float
+        """
+        return self._next_token
+
+    @next_token.setter
+    def next_token(self, next_token):
+        """Sets the next_token of this InlineResponse20020.
+
+
+        :param next_token: The next_token of this InlineResponse20020.  # noqa: E501
+        :type: float
+        """
+
+        self._next_token = next_token
 
     def to_dict(self):
         """Returns the model properties as a dict"""

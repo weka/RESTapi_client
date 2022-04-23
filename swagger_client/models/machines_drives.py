@@ -28,45 +28,24 @@ class MachinesDrives(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
-        'status': 'str'
+        'status': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
-        'status': 'status'
+        'status': 'status',
+        'uid': 'uid'
     }
 
-    def __init__(self, uid=None, status=None):  # noqa: E501
+    def __init__(self, status=None, uid=None):  # noqa: E501
         """MachinesDrives - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
         self._status = None
+        self._uid = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
         if status is not None:
             self.status = status
-
-    @property
-    def uid(self):
-        """Gets the uid of this MachinesDrives.  # noqa: E501
-
-
-        :return: The uid of this MachinesDrives.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this MachinesDrives.
-
-
-        :param uid: The uid of this MachinesDrives.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
+        if uid is not None:
+            self.uid = uid
 
     @property
     def status(self):
@@ -88,6 +67,27 @@ class MachinesDrives(object):
         """
 
         self._status = status
+
+    @property
+    def uid(self):
+        """Gets the uid of this MachinesDrives.  # noqa: E501
+
+
+        :return: The uid of this MachinesDrives.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this MachinesDrives.
+
+
+        :param uid: The uid of this MachinesDrives.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

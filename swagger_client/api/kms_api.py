@@ -130,7 +130,7 @@ class KMSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20036
+        :return: InlineResponse20034
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -150,7 +150,7 @@ class KMSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20036
+        :return: InlineResponse20034
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -198,7 +198,7 @@ class KMSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20036',  # noqa: E501
+            response_type='InlineResponse20034',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -215,7 +215,7 @@ class KMSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20037
+        :return: InlineResponse20035
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -235,7 +235,7 @@ class KMSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20037
+        :return: InlineResponse20035
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -283,7 +283,7 @@ class KMSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20037',  # noqa: E501
+            response_type='InlineResponse20035',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

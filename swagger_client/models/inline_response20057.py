@@ -28,92 +28,42 @@ class InlineResponse20057(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'access_key': 'str',
-        'secret_key': 'str',
-        'session_token': 'str'
+        'target': 'str'
     }
 
     attribute_map = {
-        'access_key': 'access_key',
-        'secret_key': 'secret_key',
-        'session_token': 'session_token'
+        'target': 'target'
     }
 
-    def __init__(self, access_key=None, secret_key=None, session_token=None):  # noqa: E501
+    def __init__(self, target=None):  # noqa: E501
         """InlineResponse20057 - a model defined in Swagger"""  # noqa: E501
-        self._access_key = None
-        self._secret_key = None
-        self._session_token = None
+        self._target = None
         self.discriminator = None
-        if access_key is not None:
-            self.access_key = access_key
-        if secret_key is not None:
-            self.secret_key = secret_key
-        if session_token is not None:
-            self.session_token = session_token
+        if target is not None:
+            self.target = target
 
     @property
-    def access_key(self):
-        """Gets the access_key of this InlineResponse20057.  # noqa: E501
+    def target(self):
+        """Gets the target of this InlineResponse20057.  # noqa: E501
 
+        target bucket  # noqa: E501
 
-        :return: The access_key of this InlineResponse20057.  # noqa: E501
+        :return: The target of this InlineResponse20057.  # noqa: E501
         :rtype: str
         """
-        return self._access_key
+        return self._target
 
-    @access_key.setter
-    def access_key(self, access_key):
-        """Sets the access_key of this InlineResponse20057.
+    @target.setter
+    def target(self, target):
+        """Sets the target of this InlineResponse20057.
 
+        target bucket  # noqa: E501
 
-        :param access_key: The access_key of this InlineResponse20057.  # noqa: E501
+        :param target: The target of this InlineResponse20057.  # noqa: E501
         :type: str
         """
 
-        self._access_key = access_key
-
-    @property
-    def secret_key(self):
-        """Gets the secret_key of this InlineResponse20057.  # noqa: E501
-
-
-        :return: The secret_key of this InlineResponse20057.  # noqa: E501
-        :rtype: str
-        """
-        return self._secret_key
-
-    @secret_key.setter
-    def secret_key(self, secret_key):
-        """Sets the secret_key of this InlineResponse20057.
-
-
-        :param secret_key: The secret_key of this InlineResponse20057.  # noqa: E501
-        :type: str
-        """
-
-        self._secret_key = secret_key
-
-    @property
-    def session_token(self):
-        """Gets the session_token of this InlineResponse20057.  # noqa: E501
-
-
-        :return: The session_token of this InlineResponse20057.  # noqa: E501
-        :rtype: str
-        """
-        return self._session_token
-
-    @session_token.setter
-    def session_token(self, session_token):
-        """Sets the session_token of this InlineResponse20057.
-
-
-        :param session_token: The session_token of this InlineResponse20057.  # noqa: E501
-        :type: str
-        """
-
-        self._session_token = session_token
+        self._target = target
 
     def to_dict(self):
         """Returns the model properties as a dict"""

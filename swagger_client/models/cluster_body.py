@@ -30,37 +30,37 @@ class ClusterBody(object):
     swagger_types = {
         'cluster_name': 'str',
         'data_drives': 'float',
+        'hotspare_failure_domains': 'float',
         'parity_drives': 'float',
-        'scrubber_bytes_per_sec': 'float',
-        'hotspare_failure_domains': 'float'
+        'scrubber_bytes_per_sec': 'float'
     }
 
     attribute_map = {
         'cluster_name': 'cluster_name',
         'data_drives': 'data_drives',
+        'hotspare_failure_domains': 'hotspare_failure_domains',
         'parity_drives': 'parity_drives',
-        'scrubber_bytes_per_sec': 'scrubber_bytes_per_sec',
-        'hotspare_failure_domains': 'hotspare_failure_domains'
+        'scrubber_bytes_per_sec': 'scrubber_bytes_per_sec'
     }
 
-    def __init__(self, cluster_name=None, data_drives=None, parity_drives=None, scrubber_bytes_per_sec=None, hotspare_failure_domains=None):  # noqa: E501
+    def __init__(self, cluster_name=None, data_drives=None, hotspare_failure_domains=None, parity_drives=None, scrubber_bytes_per_sec=None):  # noqa: E501
         """ClusterBody - a model defined in Swagger"""  # noqa: E501
         self._cluster_name = None
         self._data_drives = None
+        self._hotspare_failure_domains = None
         self._parity_drives = None
         self._scrubber_bytes_per_sec = None
-        self._hotspare_failure_domains = None
         self.discriminator = None
         if cluster_name is not None:
             self.cluster_name = cluster_name
         if data_drives is not None:
             self.data_drives = data_drives
+        if hotspare_failure_domains is not None:
+            self.hotspare_failure_domains = hotspare_failure_domains
         if parity_drives is not None:
             self.parity_drives = parity_drives
         if scrubber_bytes_per_sec is not None:
             self.scrubber_bytes_per_sec = scrubber_bytes_per_sec
-        if hotspare_failure_domains is not None:
-            self.hotspare_failure_domains = hotspare_failure_domains
 
     @property
     def cluster_name(self):
@@ -109,6 +109,27 @@ class ClusterBody(object):
         self._data_drives = data_drives
 
     @property
+    def hotspare_failure_domains(self):
+        """Gets the hotspare_failure_domains of this ClusterBody.  # noqa: E501
+
+
+        :return: The hotspare_failure_domains of this ClusterBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._hotspare_failure_domains
+
+    @hotspare_failure_domains.setter
+    def hotspare_failure_domains(self, hotspare_failure_domains):
+        """Sets the hotspare_failure_domains of this ClusterBody.
+
+
+        :param hotspare_failure_domains: The hotspare_failure_domains of this ClusterBody.  # noqa: E501
+        :type: float
+        """
+
+        self._hotspare_failure_domains = hotspare_failure_domains
+
+    @property
     def parity_drives(self):
         """Gets the parity_drives of this ClusterBody.  # noqa: E501
 
@@ -153,27 +174,6 @@ class ClusterBody(object):
         """
 
         self._scrubber_bytes_per_sec = scrubber_bytes_per_sec
-
-    @property
-    def hotspare_failure_domains(self):
-        """Gets the hotspare_failure_domains of this ClusterBody.  # noqa: E501
-
-
-        :return: The hotspare_failure_domains of this ClusterBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._hotspare_failure_domains
-
-    @hotspare_failure_domains.setter
-    def hotspare_failure_domains(self, hotspare_failure_domains):
-        """Sets the hotspare_failure_domains of this ClusterBody.
-
-
-        :param hotspare_failure_domains: The hotspare_failure_domains of this ClusterBody.  # noqa: E501
-        :type: float
-        """
-
-        self._hotspare_failure_domains = hotspare_failure_domains
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,76 +28,34 @@ class ClientGroup(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
-        'rules': 'list[ClientGroupRules]',
         'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'rules': 'list[ClientGroupRules]',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
-        'rules': 'rules',
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'rules': 'rules',
+        'uid': 'uid'
     }
 
-    def __init__(self, uid=None, rules=None, id=None, name=None):  # noqa: E501
+    def __init__(self, id=None, name=None, rules=None, uid=None):  # noqa: E501
         """ClientGroup - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
-        self._rules = None
         self._id = None
         self._name = None
+        self._rules = None
+        self._uid = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
-        if rules is not None:
-            self.rules = rules
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-
-    @property
-    def uid(self):
-        """Gets the uid of this ClientGroup.  # noqa: E501
-
-
-        :return: The uid of this ClientGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this ClientGroup.
-
-
-        :param uid: The uid of this ClientGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def rules(self):
-        """Gets the rules of this ClientGroup.  # noqa: E501
-
-
-        :return: The rules of this ClientGroup.  # noqa: E501
-        :rtype: list[ClientGroupRules]
-        """
-        return self._rules
-
-    @rules.setter
-    def rules(self, rules):
-        """Sets the rules of this ClientGroup.
-
-
-        :param rules: The rules of this ClientGroup.  # noqa: E501
-        :type: list[ClientGroupRules]
-        """
-
-        self._rules = rules
+        if rules is not None:
+            self.rules = rules
+        if uid is not None:
+            self.uid = uid
 
     @property
     def id(self):
@@ -140,6 +98,48 @@ class ClientGroup(object):
         """
 
         self._name = name
+
+    @property
+    def rules(self):
+        """Gets the rules of this ClientGroup.  # noqa: E501
+
+
+        :return: The rules of this ClientGroup.  # noqa: E501
+        :rtype: list[ClientGroupRules]
+        """
+        return self._rules
+
+    @rules.setter
+    def rules(self, rules):
+        """Sets the rules of this ClientGroup.
+
+
+        :param rules: The rules of this ClientGroup.  # noqa: E501
+        :type: list[ClientGroupRules]
+        """
+
+        self._rules = rules
+
+    @property
+    def uid(self):
+        """Gets the uid of this ClientGroup.  # noqa: E501
+
+
+        :return: The uid of this ClientGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this ClientGroup.
+
+
+        :param uid: The uid of this ClientGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

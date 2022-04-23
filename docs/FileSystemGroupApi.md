@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**update_file_system_group**](FileSystemGroupApi.md#update_file_system_group) | **PUT** /fileSystemGroups/{uid} | Update file system group
 
 # **create_file_system_group**
-> InlineResponse20027 create_file_system_group(body)
+> InlineResponse20015 create_file_system_group(body)
 
 Create file system group
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_file_system_group**
-> InlineResponse20027 get_file_system_group(uid)
+> InlineResponse20015 get_file_system_group(uid)
 
 Get file system group
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_file_system_groups**
-> InlineResponse20026 get_file_system_groups()
+> InlineResponse20014 get_file_system_groups()
 
 Get all file system groups
 
@@ -181,7 +181,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_file_system_group**
-> InlineResponse20027 update_file_system_group(body, uid)
+> InlineResponse20015 update_file_system_group(body, uid)
 
 Update file system group
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 

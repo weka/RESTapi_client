@@ -28,35 +28,41 @@ class PermissionsUidBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'anon_gid': 'float',
+        'anon_uid': 'float',
+        'obs_direct': 'bool',
         'path': 'str',
         'permission_type': 'str',
         'root_squashing': 'bool',
-        'squash_mode': 'str',
-        'anon_uid': 'float',
-        'anon_gid': 'float',
-        'obs_direct': 'bool'
+        'squash_mode': 'str'
     }
 
     attribute_map = {
+        'anon_gid': 'anon_gid',
+        'anon_uid': 'anon_uid',
+        'obs_direct': 'obs_direct',
         'path': 'path',
         'permission_type': 'permission_type',
         'root_squashing': 'root_squashing',
-        'squash_mode': 'squash_mode',
-        'anon_uid': 'anon_uid',
-        'anon_gid': 'anon_gid',
-        'obs_direct': 'obs_direct'
+        'squash_mode': 'squash_mode'
     }
 
-    def __init__(self, path=None, permission_type=None, root_squashing=None, squash_mode=None, anon_uid=None, anon_gid=None, obs_direct=None):  # noqa: E501
+    def __init__(self, anon_gid=None, anon_uid=None, obs_direct=None, path=None, permission_type=None, root_squashing=None, squash_mode=None):  # noqa: E501
         """PermissionsUidBody - a model defined in Swagger"""  # noqa: E501
+        self._anon_gid = None
+        self._anon_uid = None
+        self._obs_direct = None
         self._path = None
         self._permission_type = None
         self._root_squashing = None
         self._squash_mode = None
-        self._anon_uid = None
-        self._anon_gid = None
-        self._obs_direct = None
         self.discriminator = None
+        if anon_gid is not None:
+            self.anon_gid = anon_gid
+        if anon_uid is not None:
+            self.anon_uid = anon_uid
+        if obs_direct is not None:
+            self.obs_direct = obs_direct
         if path is not None:
             self.path = path
         if permission_type is not None:
@@ -65,12 +71,75 @@ class PermissionsUidBody(object):
             self.root_squashing = root_squashing
         if squash_mode is not None:
             self.squash_mode = squash_mode
-        if anon_uid is not None:
-            self.anon_uid = anon_uid
-        if anon_gid is not None:
-            self.anon_gid = anon_gid
-        if obs_direct is not None:
-            self.obs_direct = obs_direct
+
+    @property
+    def anon_gid(self):
+        """Gets the anon_gid of this PermissionsUidBody.  # noqa: E501
+
+        Anonymous GID to be used instead of root when root squashing is enabled  # noqa: E501
+
+        :return: The anon_gid of this PermissionsUidBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._anon_gid
+
+    @anon_gid.setter
+    def anon_gid(self, anon_gid):
+        """Sets the anon_gid of this PermissionsUidBody.
+
+        Anonymous GID to be used instead of root when root squashing is enabled  # noqa: E501
+
+        :param anon_gid: The anon_gid of this PermissionsUidBody.  # noqa: E501
+        :type: float
+        """
+
+        self._anon_gid = anon_gid
+
+    @property
+    def anon_uid(self):
+        """Gets the anon_uid of this PermissionsUidBody.  # noqa: E501
+
+        Anonymous UID to be used instead of root when root squashing is enabled  # noqa: E501
+
+        :return: The anon_uid of this PermissionsUidBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._anon_uid
+
+    @anon_uid.setter
+    def anon_uid(self, anon_uid):
+        """Sets the anon_uid of this PermissionsUidBody.
+
+        Anonymous UID to be used instead of root when root squashing is enabled  # noqa: E501
+
+        :param anon_uid: The anon_uid of this PermissionsUidBody.  # noqa: E501
+        :type: float
+        """
+
+        self._anon_uid = anon_uid
+
+    @property
+    def obs_direct(self):
+        """Gets the obs_direct of this PermissionsUidBody.  # noqa: E501
+
+        Obs direct  # noqa: E501
+
+        :return: The obs_direct of this PermissionsUidBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._obs_direct
+
+    @obs_direct.setter
+    def obs_direct(self, obs_direct):
+        """Sets the obs_direct of this PermissionsUidBody.
+
+        Obs direct  # noqa: E501
+
+        :param obs_direct: The obs_direct of this PermissionsUidBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._obs_direct = obs_direct
 
     @property
     def path(self):
@@ -175,75 +244,6 @@ class PermissionsUidBody(object):
             )
 
         self._squash_mode = squash_mode
-
-    @property
-    def anon_uid(self):
-        """Gets the anon_uid of this PermissionsUidBody.  # noqa: E501
-
-        Anonymous UID to be used instead of root when root squashing is enabled  # noqa: E501
-
-        :return: The anon_uid of this PermissionsUidBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._anon_uid
-
-    @anon_uid.setter
-    def anon_uid(self, anon_uid):
-        """Sets the anon_uid of this PermissionsUidBody.
-
-        Anonymous UID to be used instead of root when root squashing is enabled  # noqa: E501
-
-        :param anon_uid: The anon_uid of this PermissionsUidBody.  # noqa: E501
-        :type: float
-        """
-
-        self._anon_uid = anon_uid
-
-    @property
-    def anon_gid(self):
-        """Gets the anon_gid of this PermissionsUidBody.  # noqa: E501
-
-        Anonymous GID to be used instead of root when root squashing is enabled  # noqa: E501
-
-        :return: The anon_gid of this PermissionsUidBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._anon_gid
-
-    @anon_gid.setter
-    def anon_gid(self, anon_gid):
-        """Sets the anon_gid of this PermissionsUidBody.
-
-        Anonymous GID to be used instead of root when root squashing is enabled  # noqa: E501
-
-        :param anon_gid: The anon_gid of this PermissionsUidBody.  # noqa: E501
-        :type: float
-        """
-
-        self._anon_gid = anon_gid
-
-    @property
-    def obs_direct(self):
-        """Gets the obs_direct of this PermissionsUidBody.  # noqa: E501
-
-        Obs direct  # noqa: E501
-
-        :return: The obs_direct of this PermissionsUidBody.  # noqa: E501
-        :rtype: bool
-        """
-        return self._obs_direct
-
-    @obs_direct.setter
-    def obs_direct(self, obs_direct):
-        """Sets the obs_direct of this PermissionsUidBody.
-
-        Obs direct  # noqa: E501
-
-        :param obs_direct: The obs_direct of this PermissionsUidBody.  # noqa: E501
-        :type: bool
-        """
-
-        self._obs_direct = obs_direct
 
     def to_dict(self):
         """Returns the model properties as a dict"""

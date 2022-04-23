@@ -28,70 +28,40 @@ class InlineResponse20058(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'target': 'str'
+        'data': 'InlineResponse20058Data'
     }
 
     attribute_map = {
-        'id': 'id',
-        'target': 'target'
+        'data': 'data'
     }
 
-    def __init__(self, id=None, target=None):  # noqa: E501
+    def __init__(self, data=None):  # noqa: E501
         """InlineResponse20058 - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._target = None
+        self._data = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if target is not None:
-            self.target = target
+        if data is not None:
+            self.data = data
 
     @property
-    def id(self):
-        """Gets the id of this InlineResponse20058.  # noqa: E501
+    def data(self):
+        """Gets the data of this InlineResponse20058.  # noqa: E501
 
-        rule id  # noqa: E501
 
-        :return: The id of this InlineResponse20058.  # noqa: E501
-        :rtype: str
+        :return: The data of this InlineResponse20058.  # noqa: E501
+        :rtype: InlineResponse20058Data
         """
-        return self._id
+        return self._data
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this InlineResponse20058.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this InlineResponse20058.
 
-        rule id  # noqa: E501
 
-        :param id: The id of this InlineResponse20058.  # noqa: E501
-        :type: str
+        :param data: The data of this InlineResponse20058.  # noqa: E501
+        :type: InlineResponse20058Data
         """
 
-        self._id = id
-
-    @property
-    def target(self):
-        """Gets the target of this InlineResponse20058.  # noqa: E501
-
-        target bucket  # noqa: E501
-
-        :return: The target of this InlineResponse20058.  # noqa: E501
-        :rtype: str
-        """
-        return self._target
-
-    @target.setter
-    def target(self, target):
-        """Sets the target of this InlineResponse20058.
-
-        target bucket  # noqa: E501
-
-        :param target: The target of this InlineResponse20058.  # noqa: E501
-        :type: str
-        """
-
-        self._target = target
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,548 +28,149 @@ class FileSystem(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'auto_max_files': 'bool',
-        'used_ssd_data': 'float',
-        'name': 'str',
-        'uid': 'str',
-        'is_removing': 'bool',
-        'group_id': 'str',
-        'is_creating': 'bool',
-        'free_total': 'float',
-        'is_encrypted': 'bool',
-        'metadata_budget': 'float',
-        'used_total_data': 'float',
-        'used_total': 'float',
-        'ssd_budget': 'float',
-        'is_ready': 'bool',
-        'group_name': 'str',
-        'available_total': 'float',
-        'status': 'str',
-        'used_ssd_metadata': 'float',
         'auth_required': 'bool',
+        'auto_max_files': 'bool',
+        'available_ssd': 'float',
         'available_ssd_metadata': 'float',
-        'total_budget': 'float',
-        'used_ssd': 'float',
+        'available_total': 'float',
+        'free_ssd': 'float',
+        'free_total': 'float',
+        'group_id': 'str',
+        'group_name': 'str',
+        'id': 'str',
+        'is_creating': 'bool',
+        'is_encrypted': 'bool',
+        'is_ready': 'bool',
+        'is_removing': 'bool',
+        'metadata_budget': 'float',
+        'name': 'str',
         'object_storages': 'list[FileSystemObjectStorages]',
         'obs_buckets': 'list[FileSystemObjectStorages]',
-        'available_ssd': 'float',
-        'free_ssd': 'float'
+        'ssd_budget': 'float',
+        'status': 'str',
+        'total_budget': 'float',
+        'uid': 'str',
+        'used_ssd': 'float',
+        'used_ssd_data': 'float',
+        'used_ssd_metadata': 'float',
+        'used_total': 'float',
+        'used_total_data': 'float'
     }
 
     attribute_map = {
-        'id': 'id',
-        'auto_max_files': 'auto_max_files',
-        'used_ssd_data': 'used_ssd_data',
-        'name': 'name',
-        'uid': 'uid',
-        'is_removing': 'is_removing',
-        'group_id': 'group_id',
-        'is_creating': 'is_creating',
-        'free_total': 'free_total',
-        'is_encrypted': 'is_encrypted',
-        'metadata_budget': 'metadata_budget',
-        'used_total_data': 'used_total_data',
-        'used_total': 'used_total',
-        'ssd_budget': 'ssd_budget',
-        'is_ready': 'is_ready',
-        'group_name': 'group_name',
-        'available_total': 'available_total',
-        'status': 'status',
-        'used_ssd_metadata': 'used_ssd_metadata',
         'auth_required': 'auth_required',
+        'auto_max_files': 'auto_max_files',
+        'available_ssd': 'available_ssd',
         'available_ssd_metadata': 'available_ssd_metadata',
-        'total_budget': 'total_budget',
-        'used_ssd': 'used_ssd',
+        'available_total': 'available_total',
+        'free_ssd': 'free_ssd',
+        'free_total': 'free_total',
+        'group_id': 'group_id',
+        'group_name': 'group_name',
+        'id': 'id',
+        'is_creating': 'is_creating',
+        'is_encrypted': 'is_encrypted',
+        'is_ready': 'is_ready',
+        'is_removing': 'is_removing',
+        'metadata_budget': 'metadata_budget',
+        'name': 'name',
         'object_storages': 'object_storages',
         'obs_buckets': 'obs_buckets',
-        'available_ssd': 'available_ssd',
-        'free_ssd': 'free_ssd'
+        'ssd_budget': 'ssd_budget',
+        'status': 'status',
+        'total_budget': 'total_budget',
+        'uid': 'uid',
+        'used_ssd': 'used_ssd',
+        'used_ssd_data': 'used_ssd_data',
+        'used_ssd_metadata': 'used_ssd_metadata',
+        'used_total': 'used_total',
+        'used_total_data': 'used_total_data'
     }
 
-    def __init__(self, id=None, auto_max_files=None, used_ssd_data=None, name=None, uid=None, is_removing=None, group_id=None, is_creating=None, free_total=None, is_encrypted=None, metadata_budget=None, used_total_data=None, used_total=None, ssd_budget=None, is_ready=None, group_name=None, available_total=None, status=None, used_ssd_metadata=None, auth_required=None, available_ssd_metadata=None, total_budget=None, used_ssd=None, object_storages=None, obs_buckets=None, available_ssd=None, free_ssd=None):  # noqa: E501
+    def __init__(self, auth_required=None, auto_max_files=None, available_ssd=None, available_ssd_metadata=None, available_total=None, free_ssd=None, free_total=None, group_id=None, group_name=None, id=None, is_creating=None, is_encrypted=None, is_ready=None, is_removing=None, metadata_budget=None, name=None, object_storages=None, obs_buckets=None, ssd_budget=None, status=None, total_budget=None, uid=None, used_ssd=None, used_ssd_data=None, used_ssd_metadata=None, used_total=None, used_total_data=None):  # noqa: E501
         """FileSystem - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._auto_max_files = None
-        self._used_ssd_data = None
-        self._name = None
-        self._uid = None
-        self._is_removing = None
-        self._group_id = None
-        self._is_creating = None
-        self._free_total = None
-        self._is_encrypted = None
-        self._metadata_budget = None
-        self._used_total_data = None
-        self._used_total = None
-        self._ssd_budget = None
-        self._is_ready = None
-        self._group_name = None
-        self._available_total = None
-        self._status = None
-        self._used_ssd_metadata = None
         self._auth_required = None
+        self._auto_max_files = None
+        self._available_ssd = None
         self._available_ssd_metadata = None
-        self._total_budget = None
-        self._used_ssd = None
+        self._available_total = None
+        self._free_ssd = None
+        self._free_total = None
+        self._group_id = None
+        self._group_name = None
+        self._id = None
+        self._is_creating = None
+        self._is_encrypted = None
+        self._is_ready = None
+        self._is_removing = None
+        self._metadata_budget = None
+        self._name = None
         self._object_storages = None
         self._obs_buckets = None
-        self._available_ssd = None
-        self._free_ssd = None
+        self._ssd_budget = None
+        self._status = None
+        self._total_budget = None
+        self._uid = None
+        self._used_ssd = None
+        self._used_ssd_data = None
+        self._used_ssd_metadata = None
+        self._used_total = None
+        self._used_total_data = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if auto_max_files is not None:
-            self.auto_max_files = auto_max_files
-        if used_ssd_data is not None:
-            self.used_ssd_data = used_ssd_data
-        if name is not None:
-            self.name = name
-        if uid is not None:
-            self.uid = uid
-        if is_removing is not None:
-            self.is_removing = is_removing
-        if group_id is not None:
-            self.group_id = group_id
-        if is_creating is not None:
-            self.is_creating = is_creating
-        if free_total is not None:
-            self.free_total = free_total
-        if is_encrypted is not None:
-            self.is_encrypted = is_encrypted
-        if metadata_budget is not None:
-            self.metadata_budget = metadata_budget
-        if used_total_data is not None:
-            self.used_total_data = used_total_data
-        if used_total is not None:
-            self.used_total = used_total
-        if ssd_budget is not None:
-            self.ssd_budget = ssd_budget
-        if is_ready is not None:
-            self.is_ready = is_ready
-        if group_name is not None:
-            self.group_name = group_name
-        if available_total is not None:
-            self.available_total = available_total
-        if status is not None:
-            self.status = status
-        if used_ssd_metadata is not None:
-            self.used_ssd_metadata = used_ssd_metadata
         if auth_required is not None:
             self.auth_required = auth_required
+        if auto_max_files is not None:
+            self.auto_max_files = auto_max_files
+        if available_ssd is not None:
+            self.available_ssd = available_ssd
         if available_ssd_metadata is not None:
             self.available_ssd_metadata = available_ssd_metadata
-        if total_budget is not None:
-            self.total_budget = total_budget
-        if used_ssd is not None:
-            self.used_ssd = used_ssd
+        if available_total is not None:
+            self.available_total = available_total
+        if free_ssd is not None:
+            self.free_ssd = free_ssd
+        if free_total is not None:
+            self.free_total = free_total
+        if group_id is not None:
+            self.group_id = group_id
+        if group_name is not None:
+            self.group_name = group_name
+        if id is not None:
+            self.id = id
+        if is_creating is not None:
+            self.is_creating = is_creating
+        if is_encrypted is not None:
+            self.is_encrypted = is_encrypted
+        if is_ready is not None:
+            self.is_ready = is_ready
+        if is_removing is not None:
+            self.is_removing = is_removing
+        if metadata_budget is not None:
+            self.metadata_budget = metadata_budget
+        if name is not None:
+            self.name = name
         if object_storages is not None:
             self.object_storages = object_storages
         if obs_buckets is not None:
             self.obs_buckets = obs_buckets
-        if available_ssd is not None:
-            self.available_ssd = available_ssd
-        if free_ssd is not None:
-            self.free_ssd = free_ssd
-
-    @property
-    def id(self):
-        """Gets the id of this FileSystem.  # noqa: E501
-
-
-        :return: The id of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this FileSystem.
-
-
-        :param id: The id of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def auto_max_files(self):
-        """Gets the auto_max_files of this FileSystem.  # noqa: E501
-
-
-        :return: The auto_max_files of this FileSystem.  # noqa: E501
-        :rtype: bool
-        """
-        return self._auto_max_files
-
-    @auto_max_files.setter
-    def auto_max_files(self, auto_max_files):
-        """Sets the auto_max_files of this FileSystem.
-
-
-        :param auto_max_files: The auto_max_files of this FileSystem.  # noqa: E501
-        :type: bool
-        """
-
-        self._auto_max_files = auto_max_files
-
-    @property
-    def used_ssd_data(self):
-        """Gets the used_ssd_data of this FileSystem.  # noqa: E501
-
-
-        :return: The used_ssd_data of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._used_ssd_data
-
-    @used_ssd_data.setter
-    def used_ssd_data(self, used_ssd_data):
-        """Sets the used_ssd_data of this FileSystem.
-
-
-        :param used_ssd_data: The used_ssd_data of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._used_ssd_data = used_ssd_data
-
-    @property
-    def name(self):
-        """Gets the name of this FileSystem.  # noqa: E501
-
-
-        :return: The name of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this FileSystem.
-
-
-        :param name: The name of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
-
-    @property
-    def uid(self):
-        """Gets the uid of this FileSystem.  # noqa: E501
-
-
-        :return: The uid of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this FileSystem.
-
-
-        :param uid: The uid of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def is_removing(self):
-        """Gets the is_removing of this FileSystem.  # noqa: E501
-
-
-        :return: The is_removing of this FileSystem.  # noqa: E501
-        :rtype: bool
-        """
-        return self._is_removing
-
-    @is_removing.setter
-    def is_removing(self, is_removing):
-        """Sets the is_removing of this FileSystem.
-
-
-        :param is_removing: The is_removing of this FileSystem.  # noqa: E501
-        :type: bool
-        """
-
-        self._is_removing = is_removing
-
-    @property
-    def group_id(self):
-        """Gets the group_id of this FileSystem.  # noqa: E501
-
-
-        :return: The group_id of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this FileSystem.
-
-
-        :param group_id: The group_id of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._group_id = group_id
-
-    @property
-    def is_creating(self):
-        """Gets the is_creating of this FileSystem.  # noqa: E501
-
-
-        :return: The is_creating of this FileSystem.  # noqa: E501
-        :rtype: bool
-        """
-        return self._is_creating
-
-    @is_creating.setter
-    def is_creating(self, is_creating):
-        """Sets the is_creating of this FileSystem.
-
-
-        :param is_creating: The is_creating of this FileSystem.  # noqa: E501
-        :type: bool
-        """
-
-        self._is_creating = is_creating
-
-    @property
-    def free_total(self):
-        """Gets the free_total of this FileSystem.  # noqa: E501
-
-
-        :return: The free_total of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._free_total
-
-    @free_total.setter
-    def free_total(self, free_total):
-        """Sets the free_total of this FileSystem.
-
-
-        :param free_total: The free_total of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._free_total = free_total
-
-    @property
-    def is_encrypted(self):
-        """Gets the is_encrypted of this FileSystem.  # noqa: E501
-
-
-        :return: The is_encrypted of this FileSystem.  # noqa: E501
-        :rtype: bool
-        """
-        return self._is_encrypted
-
-    @is_encrypted.setter
-    def is_encrypted(self, is_encrypted):
-        """Sets the is_encrypted of this FileSystem.
-
-
-        :param is_encrypted: The is_encrypted of this FileSystem.  # noqa: E501
-        :type: bool
-        """
-
-        self._is_encrypted = is_encrypted
-
-    @property
-    def metadata_budget(self):
-        """Gets the metadata_budget of this FileSystem.  # noqa: E501
-
-
-        :return: The metadata_budget of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._metadata_budget
-
-    @metadata_budget.setter
-    def metadata_budget(self, metadata_budget):
-        """Sets the metadata_budget of this FileSystem.
-
-
-        :param metadata_budget: The metadata_budget of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._metadata_budget = metadata_budget
-
-    @property
-    def used_total_data(self):
-        """Gets the used_total_data of this FileSystem.  # noqa: E501
-
-
-        :return: The used_total_data of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._used_total_data
-
-    @used_total_data.setter
-    def used_total_data(self, used_total_data):
-        """Sets the used_total_data of this FileSystem.
-
-
-        :param used_total_data: The used_total_data of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._used_total_data = used_total_data
-
-    @property
-    def used_total(self):
-        """Gets the used_total of this FileSystem.  # noqa: E501
-
-
-        :return: The used_total of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._used_total
-
-    @used_total.setter
-    def used_total(self, used_total):
-        """Sets the used_total of this FileSystem.
-
-
-        :param used_total: The used_total of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._used_total = used_total
-
-    @property
-    def ssd_budget(self):
-        """Gets the ssd_budget of this FileSystem.  # noqa: E501
-
-
-        :return: The ssd_budget of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._ssd_budget
-
-    @ssd_budget.setter
-    def ssd_budget(self, ssd_budget):
-        """Sets the ssd_budget of this FileSystem.
-
-
-        :param ssd_budget: The ssd_budget of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._ssd_budget = ssd_budget
-
-    @property
-    def is_ready(self):
-        """Gets the is_ready of this FileSystem.  # noqa: E501
-
-
-        :return: The is_ready of this FileSystem.  # noqa: E501
-        :rtype: bool
-        """
-        return self._is_ready
-
-    @is_ready.setter
-    def is_ready(self, is_ready):
-        """Sets the is_ready of this FileSystem.
-
-
-        :param is_ready: The is_ready of this FileSystem.  # noqa: E501
-        :type: bool
-        """
-
-        self._is_ready = is_ready
-
-    @property
-    def group_name(self):
-        """Gets the group_name of this FileSystem.  # noqa: E501
-
-
-        :return: The group_name of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._group_name
-
-    @group_name.setter
-    def group_name(self, group_name):
-        """Sets the group_name of this FileSystem.
-
-
-        :param group_name: The group_name of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._group_name = group_name
-
-    @property
-    def available_total(self):
-        """Gets the available_total of this FileSystem.  # noqa: E501
-
-
-        :return: The available_total of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._available_total
-
-    @available_total.setter
-    def available_total(self, available_total):
-        """Sets the available_total of this FileSystem.
-
-
-        :param available_total: The available_total of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._available_total = available_total
-
-    @property
-    def status(self):
-        """Gets the status of this FileSystem.  # noqa: E501
-
-
-        :return: The status of this FileSystem.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this FileSystem.
-
-
-        :param status: The status of this FileSystem.  # noqa: E501
-        :type: str
-        """
-
-        self._status = status
-
-    @property
-    def used_ssd_metadata(self):
-        """Gets the used_ssd_metadata of this FileSystem.  # noqa: E501
-
-
-        :return: The used_ssd_metadata of this FileSystem.  # noqa: E501
-        :rtype: float
-        """
-        return self._used_ssd_metadata
-
-    @used_ssd_metadata.setter
-    def used_ssd_metadata(self, used_ssd_metadata):
-        """Sets the used_ssd_metadata of this FileSystem.
-
-
-        :param used_ssd_metadata: The used_ssd_metadata of this FileSystem.  # noqa: E501
-        :type: float
-        """
-
-        self._used_ssd_metadata = used_ssd_metadata
+        if ssd_budget is not None:
+            self.ssd_budget = ssd_budget
+        if status is not None:
+            self.status = status
+        if total_budget is not None:
+            self.total_budget = total_budget
+        if uid is not None:
+            self.uid = uid
+        if used_ssd is not None:
+            self.used_ssd = used_ssd
+        if used_ssd_data is not None:
+            self.used_ssd_data = used_ssd_data
+        if used_ssd_metadata is not None:
+            self.used_ssd_metadata = used_ssd_metadata
+        if used_total is not None:
+            self.used_total = used_total
+        if used_total_data is not None:
+            self.used_total_data = used_total_data
 
     @property
     def auth_required(self):
@@ -593,6 +194,48 @@ class FileSystem(object):
         self._auth_required = auth_required
 
     @property
+    def auto_max_files(self):
+        """Gets the auto_max_files of this FileSystem.  # noqa: E501
+
+
+        :return: The auto_max_files of this FileSystem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._auto_max_files
+
+    @auto_max_files.setter
+    def auto_max_files(self, auto_max_files):
+        """Sets the auto_max_files of this FileSystem.
+
+
+        :param auto_max_files: The auto_max_files of this FileSystem.  # noqa: E501
+        :type: bool
+        """
+
+        self._auto_max_files = auto_max_files
+
+    @property
+    def available_ssd(self):
+        """Gets the available_ssd of this FileSystem.  # noqa: E501
+
+
+        :return: The available_ssd of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._available_ssd
+
+    @available_ssd.setter
+    def available_ssd(self, available_ssd):
+        """Sets the available_ssd of this FileSystem.
+
+
+        :param available_ssd: The available_ssd of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._available_ssd = available_ssd
+
+    @property
     def available_ssd_metadata(self):
         """Gets the available_ssd_metadata of this FileSystem.  # noqa: E501
 
@@ -614,46 +257,256 @@ class FileSystem(object):
         self._available_ssd_metadata = available_ssd_metadata
 
     @property
-    def total_budget(self):
-        """Gets the total_budget of this FileSystem.  # noqa: E501
+    def available_total(self):
+        """Gets the available_total of this FileSystem.  # noqa: E501
 
 
-        :return: The total_budget of this FileSystem.  # noqa: E501
+        :return: The available_total of this FileSystem.  # noqa: E501
         :rtype: float
         """
-        return self._total_budget
+        return self._available_total
 
-    @total_budget.setter
-    def total_budget(self, total_budget):
-        """Sets the total_budget of this FileSystem.
+    @available_total.setter
+    def available_total(self, available_total):
+        """Sets the available_total of this FileSystem.
 
 
-        :param total_budget: The total_budget of this FileSystem.  # noqa: E501
+        :param available_total: The available_total of this FileSystem.  # noqa: E501
         :type: float
         """
 
-        self._total_budget = total_budget
+        self._available_total = available_total
 
     @property
-    def used_ssd(self):
-        """Gets the used_ssd of this FileSystem.  # noqa: E501
+    def free_ssd(self):
+        """Gets the free_ssd of this FileSystem.  # noqa: E501
 
 
-        :return: The used_ssd of this FileSystem.  # noqa: E501
+        :return: The free_ssd of this FileSystem.  # noqa: E501
         :rtype: float
         """
-        return self._used_ssd
+        return self._free_ssd
 
-    @used_ssd.setter
-    def used_ssd(self, used_ssd):
-        """Sets the used_ssd of this FileSystem.
+    @free_ssd.setter
+    def free_ssd(self, free_ssd):
+        """Sets the free_ssd of this FileSystem.
 
 
-        :param used_ssd: The used_ssd of this FileSystem.  # noqa: E501
+        :param free_ssd: The free_ssd of this FileSystem.  # noqa: E501
         :type: float
         """
 
-        self._used_ssd = used_ssd
+        self._free_ssd = free_ssd
+
+    @property
+    def free_total(self):
+        """Gets the free_total of this FileSystem.  # noqa: E501
+
+
+        :return: The free_total of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._free_total
+
+    @free_total.setter
+    def free_total(self, free_total):
+        """Sets the free_total of this FileSystem.
+
+
+        :param free_total: The free_total of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._free_total = free_total
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this FileSystem.  # noqa: E501
+
+
+        :return: The group_id of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this FileSystem.
+
+
+        :param group_id: The group_id of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._group_id = group_id
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this FileSystem.  # noqa: E501
+
+
+        :return: The group_name of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this FileSystem.
+
+
+        :param group_name: The group_name of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._group_name = group_name
+
+    @property
+    def id(self):
+        """Gets the id of this FileSystem.  # noqa: E501
+
+
+        :return: The id of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this FileSystem.
+
+
+        :param id: The id of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def is_creating(self):
+        """Gets the is_creating of this FileSystem.  # noqa: E501
+
+
+        :return: The is_creating of this FileSystem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_creating
+
+    @is_creating.setter
+    def is_creating(self, is_creating):
+        """Sets the is_creating of this FileSystem.
+
+
+        :param is_creating: The is_creating of this FileSystem.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_creating = is_creating
+
+    @property
+    def is_encrypted(self):
+        """Gets the is_encrypted of this FileSystem.  # noqa: E501
+
+
+        :return: The is_encrypted of this FileSystem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_encrypted
+
+    @is_encrypted.setter
+    def is_encrypted(self, is_encrypted):
+        """Sets the is_encrypted of this FileSystem.
+
+
+        :param is_encrypted: The is_encrypted of this FileSystem.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_encrypted = is_encrypted
+
+    @property
+    def is_ready(self):
+        """Gets the is_ready of this FileSystem.  # noqa: E501
+
+
+        :return: The is_ready of this FileSystem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_ready
+
+    @is_ready.setter
+    def is_ready(self, is_ready):
+        """Sets the is_ready of this FileSystem.
+
+
+        :param is_ready: The is_ready of this FileSystem.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_ready = is_ready
+
+    @property
+    def is_removing(self):
+        """Gets the is_removing of this FileSystem.  # noqa: E501
+
+
+        :return: The is_removing of this FileSystem.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_removing
+
+    @is_removing.setter
+    def is_removing(self, is_removing):
+        """Sets the is_removing of this FileSystem.
+
+
+        :param is_removing: The is_removing of this FileSystem.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_removing = is_removing
+
+    @property
+    def metadata_budget(self):
+        """Gets the metadata_budget of this FileSystem.  # noqa: E501
+
+
+        :return: The metadata_budget of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._metadata_budget
+
+    @metadata_budget.setter
+    def metadata_budget(self, metadata_budget):
+        """Sets the metadata_budget of this FileSystem.
+
+
+        :param metadata_budget: The metadata_budget of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._metadata_budget = metadata_budget
+
+    @property
+    def name(self):
+        """Gets the name of this FileSystem.  # noqa: E501
+
+
+        :return: The name of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this FileSystem.
+
+
+        :param name: The name of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
 
     @property
     def object_storages(self):
@@ -698,46 +551,193 @@ class FileSystem(object):
         self._obs_buckets = obs_buckets
 
     @property
-    def available_ssd(self):
-        """Gets the available_ssd of this FileSystem.  # noqa: E501
+    def ssd_budget(self):
+        """Gets the ssd_budget of this FileSystem.  # noqa: E501
 
 
-        :return: The available_ssd of this FileSystem.  # noqa: E501
+        :return: The ssd_budget of this FileSystem.  # noqa: E501
         :rtype: float
         """
-        return self._available_ssd
+        return self._ssd_budget
 
-    @available_ssd.setter
-    def available_ssd(self, available_ssd):
-        """Sets the available_ssd of this FileSystem.
+    @ssd_budget.setter
+    def ssd_budget(self, ssd_budget):
+        """Sets the ssd_budget of this FileSystem.
 
 
-        :param available_ssd: The available_ssd of this FileSystem.  # noqa: E501
+        :param ssd_budget: The ssd_budget of this FileSystem.  # noqa: E501
         :type: float
         """
 
-        self._available_ssd = available_ssd
+        self._ssd_budget = ssd_budget
 
     @property
-    def free_ssd(self):
-        """Gets the free_ssd of this FileSystem.  # noqa: E501
+    def status(self):
+        """Gets the status of this FileSystem.  # noqa: E501
 
 
-        :return: The free_ssd of this FileSystem.  # noqa: E501
+        :return: The status of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this FileSystem.
+
+
+        :param status: The status of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._status = status
+
+    @property
+    def total_budget(self):
+        """Gets the total_budget of this FileSystem.  # noqa: E501
+
+
+        :return: The total_budget of this FileSystem.  # noqa: E501
         :rtype: float
         """
-        return self._free_ssd
+        return self._total_budget
 
-    @free_ssd.setter
-    def free_ssd(self, free_ssd):
-        """Sets the free_ssd of this FileSystem.
+    @total_budget.setter
+    def total_budget(self, total_budget):
+        """Sets the total_budget of this FileSystem.
 
 
-        :param free_ssd: The free_ssd of this FileSystem.  # noqa: E501
+        :param total_budget: The total_budget of this FileSystem.  # noqa: E501
         :type: float
         """
 
-        self._free_ssd = free_ssd
+        self._total_budget = total_budget
+
+    @property
+    def uid(self):
+        """Gets the uid of this FileSystem.  # noqa: E501
+
+
+        :return: The uid of this FileSystem.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this FileSystem.
+
+
+        :param uid: The uid of this FileSystem.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
+
+    @property
+    def used_ssd(self):
+        """Gets the used_ssd of this FileSystem.  # noqa: E501
+
+
+        :return: The used_ssd of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._used_ssd
+
+    @used_ssd.setter
+    def used_ssd(self, used_ssd):
+        """Sets the used_ssd of this FileSystem.
+
+
+        :param used_ssd: The used_ssd of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._used_ssd = used_ssd
+
+    @property
+    def used_ssd_data(self):
+        """Gets the used_ssd_data of this FileSystem.  # noqa: E501
+
+
+        :return: The used_ssd_data of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._used_ssd_data
+
+    @used_ssd_data.setter
+    def used_ssd_data(self, used_ssd_data):
+        """Sets the used_ssd_data of this FileSystem.
+
+
+        :param used_ssd_data: The used_ssd_data of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._used_ssd_data = used_ssd_data
+
+    @property
+    def used_ssd_metadata(self):
+        """Gets the used_ssd_metadata of this FileSystem.  # noqa: E501
+
+
+        :return: The used_ssd_metadata of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._used_ssd_metadata
+
+    @used_ssd_metadata.setter
+    def used_ssd_metadata(self, used_ssd_metadata):
+        """Sets the used_ssd_metadata of this FileSystem.
+
+
+        :param used_ssd_metadata: The used_ssd_metadata of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._used_ssd_metadata = used_ssd_metadata
+
+    @property
+    def used_total(self):
+        """Gets the used_total of this FileSystem.  # noqa: E501
+
+
+        :return: The used_total of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._used_total
+
+    @used_total.setter
+    def used_total(self, used_total):
+        """Sets the used_total of this FileSystem.
+
+
+        :param used_total: The used_total of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._used_total = used_total
+
+    @property
+    def used_total_data(self):
+        """Gets the used_total_data of this FileSystem.  # noqa: E501
+
+
+        :return: The used_total_data of this FileSystem.  # noqa: E501
+        :rtype: float
+        """
+        return self._used_total_data
+
+    @used_total_data.setter
+    def used_total_data(self, used_total_data):
+        """Sets the used_total_data of this FileSystem.
+
+
+        :param used_total_data: The used_total_data of this FileSystem.  # noqa: E501
+        :type: float
+        """
+
+        self._used_total_data = used_total_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

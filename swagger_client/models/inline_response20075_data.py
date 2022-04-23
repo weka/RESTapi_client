@@ -28,40 +28,40 @@ class InlineResponse20075Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'all': 'InlineResponse20075DataAll'
+        'response_count_length_required': 'InlineResponse20075DataRESPONSECOUNTLENGTHREQUIRED'
     }
 
     attribute_map = {
-        'all': 'all'
+        'response_count_length_required': 'RESPONSE_COUNT_LENGTH_REQUIRED'
     }
 
-    def __init__(self, all=None):  # noqa: E501
+    def __init__(self, response_count_length_required=None):  # noqa: E501
         """InlineResponse20075Data - a model defined in Swagger"""  # noqa: E501
-        self._all = None
+        self._response_count_length_required = None
         self.discriminator = None
-        if all is not None:
-            self.all = all
+        if response_count_length_required is not None:
+            self.response_count_length_required = response_count_length_required
 
     @property
-    def all(self):
-        """Gets the all of this InlineResponse20075Data.  # noqa: E501
+    def response_count_length_required(self):
+        """Gets the response_count_length_required of this InlineResponse20075Data.  # noqa: E501
 
 
-        :return: The all of this InlineResponse20075Data.  # noqa: E501
-        :rtype: InlineResponse20075DataAll
+        :return: The response_count_length_required of this InlineResponse20075Data.  # noqa: E501
+        :rtype: InlineResponse20075DataRESPONSECOUNTLENGTHREQUIRED
         """
-        return self._all
+        return self._response_count_length_required
 
-    @all.setter
-    def all(self, all):
-        """Sets the all of this InlineResponse20075Data.
+    @response_count_length_required.setter
+    def response_count_length_required(self, response_count_length_required):
+        """Sets the response_count_length_required of this InlineResponse20075Data.
 
 
-        :param all: The all of this InlineResponse20075Data.  # noqa: E501
-        :type: InlineResponse20075DataAll
+        :param response_count_length_required: The response_count_length_required of this InlineResponse20075Data.  # noqa: E501
+        :type: InlineResponse20075DataRESPONSECOUNTLENGTHREQUIRED
         """
 
-        self._all = all
+        self._response_count_length_required = response_count_length_required
 
     def to_dict(self):
         """Returns the model properties as a dict"""

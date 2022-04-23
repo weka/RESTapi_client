@@ -28,45 +28,24 @@ class NodeDpdkPortInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'num_peers': 'float',
-        'ip': 'str'
+        'ip': 'str',
+        'num_peers': 'float'
     }
 
     attribute_map = {
-        'num_peers': 'num_peers',
-        'ip': 'ip'
+        'ip': 'ip',
+        'num_peers': 'num_peers'
     }
 
-    def __init__(self, num_peers=None, ip=None):  # noqa: E501
+    def __init__(self, ip=None, num_peers=None):  # noqa: E501
         """NodeDpdkPortInfo - a model defined in Swagger"""  # noqa: E501
-        self._num_peers = None
         self._ip = None
+        self._num_peers = None
         self.discriminator = None
-        if num_peers is not None:
-            self.num_peers = num_peers
         if ip is not None:
             self.ip = ip
-
-    @property
-    def num_peers(self):
-        """Gets the num_peers of this NodeDpdkPortInfo.  # noqa: E501
-
-
-        :return: The num_peers of this NodeDpdkPortInfo.  # noqa: E501
-        :rtype: float
-        """
-        return self._num_peers
-
-    @num_peers.setter
-    def num_peers(self, num_peers):
-        """Sets the num_peers of this NodeDpdkPortInfo.
-
-
-        :param num_peers: The num_peers of this NodeDpdkPortInfo.  # noqa: E501
-        :type: float
-        """
-
-        self._num_peers = num_peers
+        if num_peers is not None:
+            self.num_peers = num_peers
 
     @property
     def ip(self):
@@ -88,6 +67,27 @@ class NodeDpdkPortInfo(object):
         """
 
         self._ip = ip
+
+    @property
+    def num_peers(self):
+        """Gets the num_peers of this NodeDpdkPortInfo.  # noqa: E501
+
+
+        :return: The num_peers of this NodeDpdkPortInfo.  # noqa: E501
+        :rtype: float
+        """
+        return self._num_peers
+
+    @num_peers.setter
+    def num_peers(self, num_peers):
+        """Sets the num_peers of this NodeDpdkPortInfo.
+
+
+        :param num_peers: The num_peers of this NodeDpdkPortInfo.  # noqa: E501
+        :type: float
+        """
+
+        self._num_peers = num_peers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

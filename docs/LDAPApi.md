@@ -52,7 +52,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_ldap**
-> InlineResponse20038 get_ldap()
+> InlineResponse20036 get_ldap()
 
 Get LDAP configuration
 
@@ -81,7 +81,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**InlineResponse20036**](InlineResponse20036.md)
 
 ### Authorization
 

@@ -28,173 +28,110 @@ class NfsPermission(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'group_id': 'str',
-        'privileged_port': 'bool',
-        'id': 'str',
-        'obs_direct': 'bool',
+        'anon_gid': 'str',
         'anon_uid': 'str',
-        'manage_gids': 'bool',
         'custom_options': 'str',
         'filesystem': 'str',
-        'uid': 'str',
-        'group': 'str',
         'filesystem_id': 'str',
-        'permission_type': 'str',
+        'group': 'str',
+        'group_id': 'str',
+        'id': 'str',
+        'manage_gids': 'bool',
+        'obs_direct': 'bool',
         'path': 'str',
+        'permission_type': 'str',
+        'privileged_port': 'bool',
         'squash_mode': 'str',
-        'anon_gid': 'str'
+        'uid': 'str'
     }
 
     attribute_map = {
-        'group_id': 'group_id',
-        'privileged_port': 'privileged_port',
-        'id': 'id',
-        'obs_direct': 'obs_direct',
+        'anon_gid': 'anon_gid',
         'anon_uid': 'anon_uid',
-        'manage_gids': 'manage_gids',
         'custom_options': 'custom_options',
         'filesystem': 'filesystem',
-        'uid': 'uid',
-        'group': 'group',
         'filesystem_id': 'filesystem_id',
-        'permission_type': 'permission_type',
+        'group': 'group',
+        'group_id': 'group_id',
+        'id': 'id',
+        'manage_gids': 'manage_gids',
+        'obs_direct': 'obs_direct',
         'path': 'path',
+        'permission_type': 'permission_type',
+        'privileged_port': 'privileged_port',
         'squash_mode': 'squash_mode',
-        'anon_gid': 'anon_gid'
+        'uid': 'uid'
     }
 
-    def __init__(self, group_id=None, privileged_port=None, id=None, obs_direct=None, anon_uid=None, manage_gids=None, custom_options=None, filesystem=None, uid=None, group=None, filesystem_id=None, permission_type=None, path=None, squash_mode=None, anon_gid=None):  # noqa: E501
+    def __init__(self, anon_gid=None, anon_uid=None, custom_options=None, filesystem=None, filesystem_id=None, group=None, group_id=None, id=None, manage_gids=None, obs_direct=None, path=None, permission_type=None, privileged_port=None, squash_mode=None, uid=None):  # noqa: E501
         """NfsPermission - a model defined in Swagger"""  # noqa: E501
-        self._group_id = None
-        self._privileged_port = None
-        self._id = None
-        self._obs_direct = None
+        self._anon_gid = None
         self._anon_uid = None
-        self._manage_gids = None
         self._custom_options = None
         self._filesystem = None
-        self._uid = None
-        self._group = None
         self._filesystem_id = None
-        self._permission_type = None
+        self._group = None
+        self._group_id = None
+        self._id = None
+        self._manage_gids = None
+        self._obs_direct = None
         self._path = None
+        self._permission_type = None
+        self._privileged_port = None
         self._squash_mode = None
-        self._anon_gid = None
+        self._uid = None
         self.discriminator = None
-        if group_id is not None:
-            self.group_id = group_id
-        if privileged_port is not None:
-            self.privileged_port = privileged_port
-        if id is not None:
-            self.id = id
-        if obs_direct is not None:
-            self.obs_direct = obs_direct
+        if anon_gid is not None:
+            self.anon_gid = anon_gid
         if anon_uid is not None:
             self.anon_uid = anon_uid
-        if manage_gids is not None:
-            self.manage_gids = manage_gids
         if custom_options is not None:
             self.custom_options = custom_options
         if filesystem is not None:
             self.filesystem = filesystem
-        if uid is not None:
-            self.uid = uid
-        if group is not None:
-            self.group = group
         if filesystem_id is not None:
             self.filesystem_id = filesystem_id
-        if permission_type is not None:
-            self.permission_type = permission_type
+        if group is not None:
+            self.group = group
+        if group_id is not None:
+            self.group_id = group_id
+        if id is not None:
+            self.id = id
+        if manage_gids is not None:
+            self.manage_gids = manage_gids
+        if obs_direct is not None:
+            self.obs_direct = obs_direct
         if path is not None:
             self.path = path
+        if permission_type is not None:
+            self.permission_type = permission_type
+        if privileged_port is not None:
+            self.privileged_port = privileged_port
         if squash_mode is not None:
             self.squash_mode = squash_mode
-        if anon_gid is not None:
-            self.anon_gid = anon_gid
+        if uid is not None:
+            self.uid = uid
 
     @property
-    def group_id(self):
-        """Gets the group_id of this NfsPermission.  # noqa: E501
+    def anon_gid(self):
+        """Gets the anon_gid of this NfsPermission.  # noqa: E501
 
 
-        :return: The group_id of this NfsPermission.  # noqa: E501
+        :return: The anon_gid of this NfsPermission.  # noqa: E501
         :rtype: str
         """
-        return self._group_id
+        return self._anon_gid
 
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this NfsPermission.
+    @anon_gid.setter
+    def anon_gid(self, anon_gid):
+        """Sets the anon_gid of this NfsPermission.
 
 
-        :param group_id: The group_id of this NfsPermission.  # noqa: E501
+        :param anon_gid: The anon_gid of this NfsPermission.  # noqa: E501
         :type: str
         """
 
-        self._group_id = group_id
-
-    @property
-    def privileged_port(self):
-        """Gets the privileged_port of this NfsPermission.  # noqa: E501
-
-
-        :return: The privileged_port of this NfsPermission.  # noqa: E501
-        :rtype: bool
-        """
-        return self._privileged_port
-
-    @privileged_port.setter
-    def privileged_port(self, privileged_port):
-        """Sets the privileged_port of this NfsPermission.
-
-
-        :param privileged_port: The privileged_port of this NfsPermission.  # noqa: E501
-        :type: bool
-        """
-
-        self._privileged_port = privileged_port
-
-    @property
-    def id(self):
-        """Gets the id of this NfsPermission.  # noqa: E501
-
-
-        :return: The id of this NfsPermission.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this NfsPermission.
-
-
-        :param id: The id of this NfsPermission.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def obs_direct(self):
-        """Gets the obs_direct of this NfsPermission.  # noqa: E501
-
-
-        :return: The obs_direct of this NfsPermission.  # noqa: E501
-        :rtype: bool
-        """
-        return self._obs_direct
-
-    @obs_direct.setter
-    def obs_direct(self, obs_direct):
-        """Sets the obs_direct of this NfsPermission.
-
-
-        :param obs_direct: The obs_direct of this NfsPermission.  # noqa: E501
-        :type: bool
-        """
-
-        self._obs_direct = obs_direct
+        self._anon_gid = anon_gid
 
     @property
     def anon_uid(self):
@@ -216,27 +153,6 @@ class NfsPermission(object):
         """
 
         self._anon_uid = anon_uid
-
-    @property
-    def manage_gids(self):
-        """Gets the manage_gids of this NfsPermission.  # noqa: E501
-
-
-        :return: The manage_gids of this NfsPermission.  # noqa: E501
-        :rtype: bool
-        """
-        return self._manage_gids
-
-    @manage_gids.setter
-    def manage_gids(self, manage_gids):
-        """Sets the manage_gids of this NfsPermission.
-
-
-        :param manage_gids: The manage_gids of this NfsPermission.  # noqa: E501
-        :type: bool
-        """
-
-        self._manage_gids = manage_gids
 
     @property
     def custom_options(self):
@@ -281,25 +197,25 @@ class NfsPermission(object):
         self._filesystem = filesystem
 
     @property
-    def uid(self):
-        """Gets the uid of this NfsPermission.  # noqa: E501
+    def filesystem_id(self):
+        """Gets the filesystem_id of this NfsPermission.  # noqa: E501
 
 
-        :return: The uid of this NfsPermission.  # noqa: E501
+        :return: The filesystem_id of this NfsPermission.  # noqa: E501
         :rtype: str
         """
-        return self._uid
+        return self._filesystem_id
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this NfsPermission.
+    @filesystem_id.setter
+    def filesystem_id(self, filesystem_id):
+        """Sets the filesystem_id of this NfsPermission.
 
 
-        :param uid: The uid of this NfsPermission.  # noqa: E501
+        :param filesystem_id: The filesystem_id of this NfsPermission.  # noqa: E501
         :type: str
         """
 
-        self._uid = uid
+        self._filesystem_id = filesystem_id
 
     @property
     def group(self):
@@ -323,46 +239,88 @@ class NfsPermission(object):
         self._group = group
 
     @property
-    def filesystem_id(self):
-        """Gets the filesystem_id of this NfsPermission.  # noqa: E501
+    def group_id(self):
+        """Gets the group_id of this NfsPermission.  # noqa: E501
 
 
-        :return: The filesystem_id of this NfsPermission.  # noqa: E501
+        :return: The group_id of this NfsPermission.  # noqa: E501
         :rtype: str
         """
-        return self._filesystem_id
+        return self._group_id
 
-    @filesystem_id.setter
-    def filesystem_id(self, filesystem_id):
-        """Sets the filesystem_id of this NfsPermission.
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this NfsPermission.
 
 
-        :param filesystem_id: The filesystem_id of this NfsPermission.  # noqa: E501
+        :param group_id: The group_id of this NfsPermission.  # noqa: E501
         :type: str
         """
 
-        self._filesystem_id = filesystem_id
+        self._group_id = group_id
 
     @property
-    def permission_type(self):
-        """Gets the permission_type of this NfsPermission.  # noqa: E501
+    def id(self):
+        """Gets the id of this NfsPermission.  # noqa: E501
 
 
-        :return: The permission_type of this NfsPermission.  # noqa: E501
+        :return: The id of this NfsPermission.  # noqa: E501
         :rtype: str
         """
-        return self._permission_type
+        return self._id
 
-    @permission_type.setter
-    def permission_type(self, permission_type):
-        """Sets the permission_type of this NfsPermission.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this NfsPermission.
 
 
-        :param permission_type: The permission_type of this NfsPermission.  # noqa: E501
+        :param id: The id of this NfsPermission.  # noqa: E501
         :type: str
         """
 
-        self._permission_type = permission_type
+        self._id = id
+
+    @property
+    def manage_gids(self):
+        """Gets the manage_gids of this NfsPermission.  # noqa: E501
+
+
+        :return: The manage_gids of this NfsPermission.  # noqa: E501
+        :rtype: bool
+        """
+        return self._manage_gids
+
+    @manage_gids.setter
+    def manage_gids(self, manage_gids):
+        """Sets the manage_gids of this NfsPermission.
+
+
+        :param manage_gids: The manage_gids of this NfsPermission.  # noqa: E501
+        :type: bool
+        """
+
+        self._manage_gids = manage_gids
+
+    @property
+    def obs_direct(self):
+        """Gets the obs_direct of this NfsPermission.  # noqa: E501
+
+
+        :return: The obs_direct of this NfsPermission.  # noqa: E501
+        :rtype: bool
+        """
+        return self._obs_direct
+
+    @obs_direct.setter
+    def obs_direct(self, obs_direct):
+        """Sets the obs_direct of this NfsPermission.
+
+
+        :param obs_direct: The obs_direct of this NfsPermission.  # noqa: E501
+        :type: bool
+        """
+
+        self._obs_direct = obs_direct
 
     @property
     def path(self):
@@ -386,6 +344,48 @@ class NfsPermission(object):
         self._path = path
 
     @property
+    def permission_type(self):
+        """Gets the permission_type of this NfsPermission.  # noqa: E501
+
+
+        :return: The permission_type of this NfsPermission.  # noqa: E501
+        :rtype: str
+        """
+        return self._permission_type
+
+    @permission_type.setter
+    def permission_type(self, permission_type):
+        """Sets the permission_type of this NfsPermission.
+
+
+        :param permission_type: The permission_type of this NfsPermission.  # noqa: E501
+        :type: str
+        """
+
+        self._permission_type = permission_type
+
+    @property
+    def privileged_port(self):
+        """Gets the privileged_port of this NfsPermission.  # noqa: E501
+
+
+        :return: The privileged_port of this NfsPermission.  # noqa: E501
+        :rtype: bool
+        """
+        return self._privileged_port
+
+    @privileged_port.setter
+    def privileged_port(self, privileged_port):
+        """Sets the privileged_port of this NfsPermission.
+
+
+        :param privileged_port: The privileged_port of this NfsPermission.  # noqa: E501
+        :type: bool
+        """
+
+        self._privileged_port = privileged_port
+
+    @property
     def squash_mode(self):
         """Gets the squash_mode of this NfsPermission.  # noqa: E501
 
@@ -407,25 +407,25 @@ class NfsPermission(object):
         self._squash_mode = squash_mode
 
     @property
-    def anon_gid(self):
-        """Gets the anon_gid of this NfsPermission.  # noqa: E501
+    def uid(self):
+        """Gets the uid of this NfsPermission.  # noqa: E501
 
 
-        :return: The anon_gid of this NfsPermission.  # noqa: E501
+        :return: The uid of this NfsPermission.  # noqa: E501
         :rtype: str
         """
-        return self._anon_gid
+        return self._uid
 
-    @anon_gid.setter
-    def anon_gid(self, anon_gid):
-        """Sets the anon_gid of this NfsPermission.
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this NfsPermission.
 
 
-        :param anon_gid: The anon_gid of this NfsPermission.  # noqa: E501
+        :param uid: The uid of this NfsPermission.  # noqa: E501
         :type: str
         """
 
-        self._anon_gid = anon_gid
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

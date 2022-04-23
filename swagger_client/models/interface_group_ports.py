@@ -28,55 +28,34 @@ class InterfaceGroupPorts(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'host_uid': 'str',
         'host_id': 'str',
+        'host_uid': 'str',
         'port': 'str',
         'status': 'str'
     }
 
     attribute_map = {
-        'host_uid': 'host_uid',
         'host_id': 'host_id',
+        'host_uid': 'host_uid',
         'port': 'port',
         'status': 'status'
     }
 
-    def __init__(self, host_uid=None, host_id=None, port=None, status=None):  # noqa: E501
+    def __init__(self, host_id=None, host_uid=None, port=None, status=None):  # noqa: E501
         """InterfaceGroupPorts - a model defined in Swagger"""  # noqa: E501
-        self._host_uid = None
         self._host_id = None
+        self._host_uid = None
         self._port = None
         self._status = None
         self.discriminator = None
-        if host_uid is not None:
-            self.host_uid = host_uid
         if host_id is not None:
             self.host_id = host_id
+        if host_uid is not None:
+            self.host_uid = host_uid
         if port is not None:
             self.port = port
         if status is not None:
             self.status = status
-
-    @property
-    def host_uid(self):
-        """Gets the host_uid of this InterfaceGroupPorts.  # noqa: E501
-
-
-        :return: The host_uid of this InterfaceGroupPorts.  # noqa: E501
-        :rtype: str
-        """
-        return self._host_uid
-
-    @host_uid.setter
-    def host_uid(self, host_uid):
-        """Sets the host_uid of this InterfaceGroupPorts.
-
-
-        :param host_uid: The host_uid of this InterfaceGroupPorts.  # noqa: E501
-        :type: str
-        """
-
-        self._host_uid = host_uid
 
     @property
     def host_id(self):
@@ -98,6 +77,27 @@ class InterfaceGroupPorts(object):
         """
 
         self._host_id = host_id
+
+    @property
+    def host_uid(self):
+        """Gets the host_uid of this InterfaceGroupPorts.  # noqa: E501
+
+
+        :return: The host_uid of this InterfaceGroupPorts.  # noqa: E501
+        :rtype: str
+        """
+        return self._host_uid
+
+    @host_uid.setter
+    def host_uid(self, host_uid):
+        """Sets the host_uid of this InterfaceGroupPorts.
+
+
+        :param host_uid: The host_uid of this InterfaceGroupPorts.  # noqa: E501
+        :type: str
+        """
+
+        self._host_uid = host_uid
 
     @property
     def port(self):

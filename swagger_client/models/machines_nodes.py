@@ -28,76 +28,55 @@ class MachinesNodes(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
-        'status': 'str',
+        'dedicated_core': 'bool',
         'roles': 'list[str]',
-        'dedicated_core': 'bool'
+        'status': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
-        'status': 'status',
+        'dedicated_core': 'dedicated_core',
         'roles': 'roles',
-        'dedicated_core': 'dedicated_core'
+        'status': 'status',
+        'uid': 'uid'
     }
 
-    def __init__(self, uid=None, status=None, roles=None, dedicated_core=None):  # noqa: E501
+    def __init__(self, dedicated_core=None, roles=None, status=None, uid=None):  # noqa: E501
         """MachinesNodes - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
-        self._status = None
-        self._roles = None
         self._dedicated_core = None
+        self._roles = None
+        self._status = None
+        self._uid = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
-        if status is not None:
-            self.status = status
-        if roles is not None:
-            self.roles = roles
         if dedicated_core is not None:
             self.dedicated_core = dedicated_core
+        if roles is not None:
+            self.roles = roles
+        if status is not None:
+            self.status = status
+        if uid is not None:
+            self.uid = uid
 
     @property
-    def uid(self):
-        """Gets the uid of this MachinesNodes.  # noqa: E501
+    def dedicated_core(self):
+        """Gets the dedicated_core of this MachinesNodes.  # noqa: E501
 
 
-        :return: The uid of this MachinesNodes.  # noqa: E501
-        :rtype: str
+        :return: The dedicated_core of this MachinesNodes.  # noqa: E501
+        :rtype: bool
         """
-        return self._uid
+        return self._dedicated_core
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this MachinesNodes.
-
-
-        :param uid: The uid of this MachinesNodes.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def status(self):
-        """Gets the status of this MachinesNodes.  # noqa: E501
+    @dedicated_core.setter
+    def dedicated_core(self, dedicated_core):
+        """Sets the dedicated_core of this MachinesNodes.
 
 
-        :return: The status of this MachinesNodes.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this MachinesNodes.
-
-
-        :param status: The status of this MachinesNodes.  # noqa: E501
-        :type: str
+        :param dedicated_core: The dedicated_core of this MachinesNodes.  # noqa: E501
+        :type: bool
         """
 
-        self._status = status
+        self._dedicated_core = dedicated_core
 
     @property
     def roles(self):
@@ -121,25 +100,46 @@ class MachinesNodes(object):
         self._roles = roles
 
     @property
-    def dedicated_core(self):
-        """Gets the dedicated_core of this MachinesNodes.  # noqa: E501
+    def status(self):
+        """Gets the status of this MachinesNodes.  # noqa: E501
 
 
-        :return: The dedicated_core of this MachinesNodes.  # noqa: E501
-        :rtype: bool
+        :return: The status of this MachinesNodes.  # noqa: E501
+        :rtype: str
         """
-        return self._dedicated_core
+        return self._status
 
-    @dedicated_core.setter
-    def dedicated_core(self, dedicated_core):
-        """Sets the dedicated_core of this MachinesNodes.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this MachinesNodes.
 
 
-        :param dedicated_core: The dedicated_core of this MachinesNodes.  # noqa: E501
-        :type: bool
+        :param status: The status of this MachinesNodes.  # noqa: E501
+        :type: str
         """
 
-        self._dedicated_core = dedicated_core
+        self._status = status
+
+    @property
+    def uid(self):
+        """Gets the uid of this MachinesNodes.  # noqa: E501
+
+
+        :return: The uid of this MachinesNodes.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this MachinesNodes.
+
+
+        :param uid: The uid of this MachinesNodes.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

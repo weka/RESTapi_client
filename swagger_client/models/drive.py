@@ -47,8 +47,8 @@ class Drive(object):
         'size_bytes': 'float',
         'spares_remaining': 'float',
         'spares_threshold': 'float',
-        'status': 'str',
         'state_change_time': 'str',
+        'status': 'str',
         'uid': 'str',
         'uuid': 'str',
         'vendor': 'str'
@@ -74,14 +74,14 @@ class Drive(object):
         'size_bytes': 'size_bytes',
         'spares_remaining': 'spares_remaining',
         'spares_threshold': 'spares_threshold',
-        'status': 'status',
         'state_change_time': 'state_change_time',
+        'status': 'status',
         'uid': 'uid',
         'uuid': 'uuid',
         'vendor': 'vendor'
     }
 
-    def __init__(self, added_time=None, attachment=None, block_size=None, device_path=None, failure_domain=None, failure_domain_name=None, firmware=None, host_id=None, hostname=None, id=None, model=None, node_id=None, percentage_used=None, removed_time=None, serial_number=None, should_be_active=None, size_bytes=None, spares_remaining=None, spares_threshold=None, status=None, state_change_time=None, uid=None, uuid=None, vendor=None):  # noqa: E501
+    def __init__(self, added_time=None, attachment=None, block_size=None, device_path=None, failure_domain=None, failure_domain_name=None, firmware=None, host_id=None, hostname=None, id=None, model=None, node_id=None, percentage_used=None, removed_time=None, serial_number=None, should_be_active=None, size_bytes=None, spares_remaining=None, spares_threshold=None, state_change_time=None, status=None, uid=None, uuid=None, vendor=None):  # noqa: E501
         """Drive - a model defined in Swagger"""  # noqa: E501
         self._added_time = None
         self._attachment = None
@@ -102,8 +102,8 @@ class Drive(object):
         self._size_bytes = None
         self._spares_remaining = None
         self._spares_threshold = None
-        self._status = None
         self._state_change_time = None
+        self._status = None
         self._uid = None
         self._uuid = None
         self._vendor = None
@@ -146,10 +146,10 @@ class Drive(object):
             self.spares_remaining = spares_remaining
         if spares_threshold is not None:
             self.spares_threshold = spares_threshold
-        if status is not None:
-            self.status = status
         if state_change_time is not None:
             self.state_change_time = state_change_time
+        if status is not None:
+            self.status = status
         if uid is not None:
             self.uid = uid
         if uuid is not None:
@@ -557,27 +557,6 @@ class Drive(object):
         self._spares_threshold = spares_threshold
 
     @property
-    def status(self):
-        """Gets the status of this Drive.  # noqa: E501
-
-
-        :return: The status of this Drive.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this Drive.
-
-
-        :param status: The status of this Drive.  # noqa: E501
-        :type: str
-        """
-
-        self._status = status
-
-    @property
     def state_change_time(self):
         """Gets the state_change_time of this Drive.  # noqa: E501
 
@@ -597,6 +576,27 @@ class Drive(object):
         """
 
         self._state_change_time = state_change_time
+
+    @property
+    def status(self):
+        """Gets the status of this Drive.  # noqa: E501
+
+
+        :return: The status of this Drive.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Drive.
+
+
+        :param status: The status of this Drive.  # noqa: E501
+        :type: str
+        """
+
+        self._status = status
 
     @property
     def uid(self):

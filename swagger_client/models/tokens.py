@@ -29,33 +29,33 @@ class Tokens(object):
     """
     swagger_types = {
         'access_token': 'str',
-        'token_type': 'str',
         'expires_in': 'float',
-        'refresh_token': 'str'
+        'refresh_token': 'str',
+        'token_type': 'str'
     }
 
     attribute_map = {
         'access_token': 'access_token',
-        'token_type': 'token_type',
         'expires_in': 'expires_in',
-        'refresh_token': 'refresh_token'
+        'refresh_token': 'refresh_token',
+        'token_type': 'token_type'
     }
 
-    def __init__(self, access_token=None, token_type=None, expires_in=None, refresh_token=None):  # noqa: E501
+    def __init__(self, access_token=None, expires_in=None, refresh_token=None, token_type=None):  # noqa: E501
         """Tokens - a model defined in Swagger"""  # noqa: E501
         self._access_token = None
-        self._token_type = None
         self._expires_in = None
         self._refresh_token = None
+        self._token_type = None
         self.discriminator = None
         if access_token is not None:
             self.access_token = access_token
-        if token_type is not None:
-            self.token_type = token_type
         if expires_in is not None:
             self.expires_in = expires_in
         if refresh_token is not None:
             self.refresh_token = refresh_token
+        if token_type is not None:
+            self.token_type = token_type
 
     @property
     def access_token(self):
@@ -77,27 +77,6 @@ class Tokens(object):
         """
 
         self._access_token = access_token
-
-    @property
-    def token_type(self):
-        """Gets the token_type of this Tokens.  # noqa: E501
-
-
-        :return: The token_type of this Tokens.  # noqa: E501
-        :rtype: str
-        """
-        return self._token_type
-
-    @token_type.setter
-    def token_type(self, token_type):
-        """Sets the token_type of this Tokens.
-
-
-        :param token_type: The token_type of this Tokens.  # noqa: E501
-        :type: str
-        """
-
-        self._token_type = token_type
 
     @property
     def expires_in(self):
@@ -140,6 +119,27 @@ class Tokens(object):
         """
 
         self._refresh_token = refresh_token
+
+    @property
+    def token_type(self):
+        """Gets the token_type of this Tokens.  # noqa: E501
+
+
+        :return: The token_type of this Tokens.  # noqa: E501
+        :rtype: str
+        """
+        return self._token_type
+
+    @token_type.setter
+    def token_type(self, token_type):
+        """Sets the token_type of this Tokens.
+
+
+        :param token_type: The token_type of this Tokens.  # noqa: E501
+        :type: str
+        """
+
+        self._token_type = token_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

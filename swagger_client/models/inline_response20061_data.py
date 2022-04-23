@@ -28,40 +28,66 @@ class InlineResponse20061Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'bool'
+        'enabled': 'bool',
+        'text': 'str'
     }
 
     attribute_map = {
-        'uid': '&lt;uid&gt;'
+        'enabled': 'enabled',
+        'text': 'text'
     }
 
-    def __init__(self, uid=None):  # noqa: E501
+    def __init__(self, enabled=None, text=None):  # noqa: E501
         """InlineResponse20061Data - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
+        self._enabled = None
+        self._text = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
+        if enabled is not None:
+            self.enabled = enabled
+        if text is not None:
+            self.text = text
 
     @property
-    def uid(self):
-        """Gets the uid of this InlineResponse20061Data.  # noqa: E501
+    def enabled(self):
+        """Gets the enabled of this InlineResponse20061Data.  # noqa: E501
 
 
-        :return: The uid of this InlineResponse20061Data.  # noqa: E501
+        :return: The enabled of this InlineResponse20061Data.  # noqa: E501
         :rtype: bool
         """
-        return self._uid
+        return self._enabled
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this InlineResponse20061Data.
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this InlineResponse20061Data.
 
 
-        :param uid: The uid of this InlineResponse20061Data.  # noqa: E501
+        :param enabled: The enabled of this InlineResponse20061Data.  # noqa: E501
         :type: bool
         """
 
-        self._uid = uid
+        self._enabled = enabled
+
+    @property
+    def text(self):
+        """Gets the text of this InlineResponse20061Data.  # noqa: E501
+
+
+        :return: The text of this InlineResponse20061Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        """Sets the text of this InlineResponse20061Data.
+
+
+        :param text: The text of this InlineResponse20061Data.  # noqa: E501
+        :type: str
+        """
+
+        self._text = text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

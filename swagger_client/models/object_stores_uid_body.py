@@ -28,182 +28,107 @@ class ObjectStoresUidBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'new_name': 'str',
-        'protocol': 'str',
-        'hostname': 'str',
-        'port': 'float',
-        'auth_method': 'str',
-        'region': 'str',
         'access_key_id': 'str',
-        'secret_key': 'str',
+        'auth_method': 'str',
         'bandwidth': 'float',
+        'hostname': 'str',
+        'max_blocks_in_data_blob': 'float',
         'max_concurrent_downloads': 'float',
-        'max_concurrent_uploads': 'float',
         'max_concurrent_removals': 'float',
+        'max_concurrent_uploads': 'float',
         'max_extents_in_data_blob': 'float',
-        'max_blocks_in_data_blob': 'float'
+        'new_name': 'str',
+        'port': 'float',
+        'protocol': 'str',
+        'region': 'str',
+        'secret_key': 'str'
     }
 
     attribute_map = {
-        'new_name': 'new_name',
-        'protocol': 'protocol',
-        'hostname': 'hostname',
-        'port': 'port',
-        'auth_method': 'auth_method',
-        'region': 'region',
         'access_key_id': 'access_key_id',
-        'secret_key': 'secret_key',
+        'auth_method': 'auth_method',
         'bandwidth': 'bandwidth',
+        'hostname': 'hostname',
+        'max_blocks_in_data_blob': 'max_blocks_in_data_blob',
         'max_concurrent_downloads': 'max_concurrent_downloads',
-        'max_concurrent_uploads': 'max_concurrent_uploads',
         'max_concurrent_removals': 'max_concurrent_removals',
+        'max_concurrent_uploads': 'max_concurrent_uploads',
         'max_extents_in_data_blob': 'max_extents_in_data_blob',
-        'max_blocks_in_data_blob': 'max_blocks_in_data_blob'
+        'new_name': 'new_name',
+        'port': 'port',
+        'protocol': 'protocol',
+        'region': 'region',
+        'secret_key': 'secret_key'
     }
 
-    def __init__(self, new_name=None, protocol=None, hostname=None, port=None, auth_method=None, region=None, access_key_id=None, secret_key=None, bandwidth=None, max_concurrent_downloads=None, max_concurrent_uploads=None, max_concurrent_removals=None, max_extents_in_data_blob=None, max_blocks_in_data_blob=None):  # noqa: E501
+    def __init__(self, access_key_id=None, auth_method=None, bandwidth=None, hostname=None, max_blocks_in_data_blob=None, max_concurrent_downloads=None, max_concurrent_removals=None, max_concurrent_uploads=None, max_extents_in_data_blob=None, new_name=None, port=None, protocol=None, region=None, secret_key=None):  # noqa: E501
         """ObjectStoresUidBody - a model defined in Swagger"""  # noqa: E501
-        self._new_name = None
-        self._protocol = None
-        self._hostname = None
-        self._port = None
-        self._auth_method = None
-        self._region = None
         self._access_key_id = None
-        self._secret_key = None
+        self._auth_method = None
         self._bandwidth = None
-        self._max_concurrent_downloads = None
-        self._max_concurrent_uploads = None
-        self._max_concurrent_removals = None
-        self._max_extents_in_data_blob = None
+        self._hostname = None
         self._max_blocks_in_data_blob = None
+        self._max_concurrent_downloads = None
+        self._max_concurrent_removals = None
+        self._max_concurrent_uploads = None
+        self._max_extents_in_data_blob = None
+        self._new_name = None
+        self._port = None
+        self._protocol = None
+        self._region = None
+        self._secret_key = None
         self.discriminator = None
-        if new_name is not None:
-            self.new_name = new_name
-        if protocol is not None:
-            self.protocol = protocol
-        if hostname is not None:
-            self.hostname = hostname
-        if port is not None:
-            self.port = port
-        if auth_method is not None:
-            self.auth_method = auth_method
-        if region is not None:
-            self.region = region
         if access_key_id is not None:
             self.access_key_id = access_key_id
-        if secret_key is not None:
-            self.secret_key = secret_key
+        if auth_method is not None:
+            self.auth_method = auth_method
         if bandwidth is not None:
             self.bandwidth = bandwidth
-        if max_concurrent_downloads is not None:
-            self.max_concurrent_downloads = max_concurrent_downloads
-        if max_concurrent_uploads is not None:
-            self.max_concurrent_uploads = max_concurrent_uploads
-        if max_concurrent_removals is not None:
-            self.max_concurrent_removals = max_concurrent_removals
-        if max_extents_in_data_blob is not None:
-            self.max_extents_in_data_blob = max_extents_in_data_blob
+        if hostname is not None:
+            self.hostname = hostname
         if max_blocks_in_data_blob is not None:
             self.max_blocks_in_data_blob = max_blocks_in_data_blob
+        if max_concurrent_downloads is not None:
+            self.max_concurrent_downloads = max_concurrent_downloads
+        if max_concurrent_removals is not None:
+            self.max_concurrent_removals = max_concurrent_removals
+        if max_concurrent_uploads is not None:
+            self.max_concurrent_uploads = max_concurrent_uploads
+        if max_extents_in_data_blob is not None:
+            self.max_extents_in_data_blob = max_extents_in_data_blob
+        if new_name is not None:
+            self.new_name = new_name
+        if port is not None:
+            self.port = port
+        if protocol is not None:
+            self.protocol = protocol
+        if region is not None:
+            self.region = region
+        if secret_key is not None:
+            self.secret_key = secret_key
 
     @property
-    def new_name(self):
-        """Gets the new_name of this ObjectStoresUidBody.  # noqa: E501
+    def access_key_id(self):
+        """Gets the access_key_id of this ObjectStoresUidBody.  # noqa: E501
 
-        Name of the Object Store  # noqa: E501
+        Access Key ID for AWS Signature authentications  # noqa: E501
 
-        :return: The new_name of this ObjectStoresUidBody.  # noqa: E501
+        :return: The access_key_id of this ObjectStoresUidBody.  # noqa: E501
         :rtype: str
         """
-        return self._new_name
+        return self._access_key_id
 
-    @new_name.setter
-    def new_name(self, new_name):
-        """Sets the new_name of this ObjectStoresUidBody.
+    @access_key_id.setter
+    def access_key_id(self, access_key_id):
+        """Sets the access_key_id of this ObjectStoresUidBody.
 
-        Name of the Object Store  # noqa: E501
+        Access Key ID for AWS Signature authentications  # noqa: E501
 
-        :param new_name: The new_name of this ObjectStoresUidBody.  # noqa: E501
+        :param access_key_id: The access_key_id of this ObjectStoresUidBody.  # noqa: E501
         :type: str
         """
 
-        self._new_name = new_name
-
-    @property
-    def protocol(self):
-        """Gets the protocol of this ObjectStoresUidBody.  # noqa: E501
-
-        One of - HTTP (default), HTTPS, HTTPS_UNVERIFIED  # noqa: E501
-
-        :return: The protocol of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._protocol
-
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this ObjectStoresUidBody.
-
-        One of - HTTP (default), HTTPS, HTTPS_UNVERIFIED  # noqa: E501
-
-        :param protocol: The protocol of this ObjectStoresUidBody.  # noqa: E501
-        :type: str
-        """
-        allowed_values = ["HTTP", "HTTPS", "HTTPS_UNVERIFIED"]  # noqa: E501
-        if protocol not in allowed_values:
-            raise ValueError(
-                "Invalid value for `protocol` ({0}), must be one of {1}"  # noqa: E501
-                .format(protocol, allowed_values)
-            )
-
-        self._protocol = protocol
-
-    @property
-    def hostname(self):
-        """Gets the hostname of this ObjectStoresUidBody.  # noqa: E501
-
-        Hostname (or IP) of the entrypoint to the object store  # noqa: E501
-
-        :return: The hostname of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._hostname
-
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this ObjectStoresUidBody.
-
-        Hostname (or IP) of the entrypoint to the object store  # noqa: E501
-
-        :param hostname: The hostname of this ObjectStoresUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._hostname = hostname
-
-    @property
-    def port(self):
-        """Gets the port of this ObjectStoresUidBody.  # noqa: E501
-
-        Port of the entrypoint to S3 (single Accesser or Load-Balancer)  # noqa: E501
-
-        :return: The port of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._port
-
-    @port.setter
-    def port(self, port):
-        """Sets the port of this ObjectStoresUidBody.
-
-        Port of the entrypoint to S3 (single Accesser or Load-Balancer)  # noqa: E501
-
-        :param port: The port of this ObjectStoresUidBody.  # noqa: E501
-        :type: float
-        """
-
-        self._port = port
+        self._access_key_id = access_key_id
 
     @property
     def auth_method(self):
@@ -235,75 +160,6 @@ class ObjectStoresUidBody(object):
         self._auth_method = auth_method
 
     @property
-    def region(self):
-        """Gets the region of this ObjectStoresUidBody.  # noqa: E501
-
-        Name of the region we are assigned to work with (usually empty)  # noqa: E501
-
-        :return: The region of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this ObjectStoresUidBody.
-
-        Name of the region we are assigned to work with (usually empty)  # noqa: E501
-
-        :param region: The region of this ObjectStoresUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._region = region
-
-    @property
-    def access_key_id(self):
-        """Gets the access_key_id of this ObjectStoresUidBody.  # noqa: E501
-
-        Access Key ID for AWS Signature authentications  # noqa: E501
-
-        :return: The access_key_id of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._access_key_id
-
-    @access_key_id.setter
-    def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this ObjectStoresUidBody.
-
-        Access Key ID for AWS Signature authentications  # noqa: E501
-
-        :param access_key_id: The access_key_id of this ObjectStoresUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._access_key_id = access_key_id
-
-    @property
-    def secret_key(self):
-        """Gets the secret_key of this ObjectStoresUidBody.  # noqa: E501
-
-        Secret Key for AWS Signature authentications  # noqa: E501
-
-        :return: The secret_key of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._secret_key
-
-    @secret_key.setter
-    def secret_key(self, secret_key):
-        """Sets the secret_key of this ObjectStoresUidBody.
-
-        Secret Key for AWS Signature authentications  # noqa: E501
-
-        :param secret_key: The secret_key of this ObjectStoresUidBody.  # noqa: E501
-        :type: str
-        """
-
-        self._secret_key = secret_key
-
-    @property
     def bandwidth(self):
         """Gets the bandwidth of this ObjectStoresUidBody.  # noqa: E501
 
@@ -325,6 +181,52 @@ class ObjectStoresUidBody(object):
         """
 
         self._bandwidth = bandwidth
+
+    @property
+    def hostname(self):
+        """Gets the hostname of this ObjectStoresUidBody.  # noqa: E501
+
+        Hostname (or IP) of the entrypoint to the object store  # noqa: E501
+
+        :return: The hostname of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this ObjectStoresUidBody.
+
+        Hostname (or IP) of the entrypoint to the object store  # noqa: E501
+
+        :param hostname: The hostname of this ObjectStoresUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._hostname = hostname
+
+    @property
+    def max_blocks_in_data_blob(self):
+        """Gets the max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+
+        Maximum size to upload to an object store data blob (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+
+        :return: The max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_blocks_in_data_blob
+
+    @max_blocks_in_data_blob.setter
+    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
+        """Sets the max_blocks_in_data_blob of this ObjectStoresUidBody.
+
+        Maximum size to upload to an object store data blob (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+
+        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+        :type: float
+        """
+
+        self._max_blocks_in_data_blob = max_blocks_in_data_blob
 
     @property
     def max_concurrent_downloads(self):
@@ -350,29 +252,6 @@ class ObjectStoresUidBody(object):
         self._max_concurrent_downloads = max_concurrent_downloads
 
     @property
-    def max_concurrent_uploads(self):
-        """Gets the max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
-
-        Maximum number of uploads we concurrently perform on this object store in a single IO node (format - 1..64)  # noqa: E501
-
-        :return: The max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_concurrent_uploads
-
-    @max_concurrent_uploads.setter
-    def max_concurrent_uploads(self, max_concurrent_uploads):
-        """Sets the max_concurrent_uploads of this ObjectStoresUidBody.
-
-        Maximum number of uploads we concurrently perform on this object store in a single IO node (format - 1..64)  # noqa: E501
-
-        :param max_concurrent_uploads: The max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
-        :type: float
-        """
-
-        self._max_concurrent_uploads = max_concurrent_uploads
-
-    @property
     def max_concurrent_removals(self):
         """Gets the max_concurrent_removals of this ObjectStoresUidBody.  # noqa: E501
 
@@ -394,6 +273,29 @@ class ObjectStoresUidBody(object):
         """
 
         self._max_concurrent_removals = max_concurrent_removals
+
+    @property
+    def max_concurrent_uploads(self):
+        """Gets the max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
+
+        Maximum number of uploads we concurrently perform on this object store in a single IO node (format - 1..64)  # noqa: E501
+
+        :return: The max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_concurrent_uploads
+
+    @max_concurrent_uploads.setter
+    def max_concurrent_uploads(self, max_concurrent_uploads):
+        """Sets the max_concurrent_uploads of this ObjectStoresUidBody.
+
+        Maximum number of uploads we concurrently perform on this object store in a single IO node (format - 1..64)  # noqa: E501
+
+        :param max_concurrent_uploads: The max_concurrent_uploads of this ObjectStoresUidBody.  # noqa: E501
+        :type: float
+        """
+
+        self._max_concurrent_uploads = max_concurrent_uploads
 
     @property
     def max_extents_in_data_blob(self):
@@ -419,27 +321,125 @@ class ObjectStoresUidBody(object):
         self._max_extents_in_data_blob = max_extents_in_data_blob
 
     @property
-    def max_blocks_in_data_blob(self):
-        """Gets the max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+    def new_name(self):
+        """Gets the new_name of this ObjectStoresUidBody.  # noqa: E501
 
-        Maximum size to upload to an object store data blob (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Name of the Object Store  # noqa: E501
 
-        :return: The max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+        :return: The new_name of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._new_name
+
+    @new_name.setter
+    def new_name(self, new_name):
+        """Sets the new_name of this ObjectStoresUidBody.
+
+        Name of the Object Store  # noqa: E501
+
+        :param new_name: The new_name of this ObjectStoresUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._new_name = new_name
+
+    @property
+    def port(self):
+        """Gets the port of this ObjectStoresUidBody.  # noqa: E501
+
+        Port of the entrypoint to S3 (single Accesser or Load-Balancer)  # noqa: E501
+
+        :return: The port of this ObjectStoresUidBody.  # noqa: E501
         :rtype: float
         """
-        return self._max_blocks_in_data_blob
+        return self._port
 
-    @max_blocks_in_data_blob.setter
-    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
-        """Sets the max_blocks_in_data_blob of this ObjectStoresUidBody.
+    @port.setter
+    def port(self, port):
+        """Sets the port of this ObjectStoresUidBody.
 
-        Maximum size to upload to an object store data blob (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Port of the entrypoint to S3 (single Accesser or Load-Balancer)  # noqa: E501
 
-        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStoresUidBody.  # noqa: E501
+        :param port: The port of this ObjectStoresUidBody.  # noqa: E501
         :type: float
         """
 
-        self._max_blocks_in_data_blob = max_blocks_in_data_blob
+        self._port = port
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ObjectStoresUidBody.  # noqa: E501
+
+        One of - HTTP (default), HTTPS, HTTPS_UNVERIFIED  # noqa: E501
+
+        :return: The protocol of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ObjectStoresUidBody.
+
+        One of - HTTP (default), HTTPS, HTTPS_UNVERIFIED  # noqa: E501
+
+        :param protocol: The protocol of this ObjectStoresUidBody.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["HTTP", "HTTPS", "HTTPS_UNVERIFIED"]  # noqa: E501
+        if protocol not in allowed_values:
+            raise ValueError(
+                "Invalid value for `protocol` ({0}), must be one of {1}"  # noqa: E501
+                .format(protocol, allowed_values)
+            )
+
+        self._protocol = protocol
+
+    @property
+    def region(self):
+        """Gets the region of this ObjectStoresUidBody.  # noqa: E501
+
+        Name of the region we are assigned to work with (usually empty)  # noqa: E501
+
+        :return: The region of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this ObjectStoresUidBody.
+
+        Name of the region we are assigned to work with (usually empty)  # noqa: E501
+
+        :param region: The region of this ObjectStoresUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._region = region
+
+    @property
+    def secret_key(self):
+        """Gets the secret_key of this ObjectStoresUidBody.  # noqa: E501
+
+        Secret Key for AWS Signature authentications  # noqa: E501
+
+        :return: The secret_key of this ObjectStoresUidBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._secret_key
+
+    @secret_key.setter
+    def secret_key(self, secret_key):
+        """Sets the secret_key of this ObjectStoresUidBody.
+
+        Secret Key for AWS Signature authentications  # noqa: E501
+
+        :param secret_key: The secret_key of this ObjectStoresUidBody.  # noqa: E501
+        :type: str
+        """
+
+        self._secret_key = secret_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,34 +28,57 @@ class ClusterBody1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'admin_password': 'str',
         'hosts_hostnames': 'list[str]',
         'hosts_ips': 'list[str]',
-        'join_secrets': 'list[str]',
-        'admin_password': 'str'
+        'join_secrets': 'list[str]'
     }
 
     attribute_map = {
+        'admin_password': 'admin_password',
         'hosts_hostnames': 'hosts_hostnames',
         'hosts_ips': 'hosts_ips',
-        'join_secrets': 'join_secrets',
-        'admin_password': 'admin_password'
+        'join_secrets': 'join_secrets'
     }
 
-    def __init__(self, hosts_hostnames=None, hosts_ips=None, join_secrets=None, admin_password=None):  # noqa: E501
+    def __init__(self, admin_password=None, hosts_hostnames=None, hosts_ips=None, join_secrets=None):  # noqa: E501
         """ClusterBody1 - a model defined in Swagger"""  # noqa: E501
+        self._admin_password = None
         self._hosts_hostnames = None
         self._hosts_ips = None
         self._join_secrets = None
-        self._admin_password = None
         self.discriminator = None
+        if admin_password is not None:
+            self.admin_password = admin_password
         if hosts_hostnames is not None:
             self.hosts_hostnames = hosts_hostnames
         if hosts_ips is not None:
             self.hosts_ips = hosts_ips
         if join_secrets is not None:
             self.join_secrets = join_secrets
-        if admin_password is not None:
-            self.admin_password = admin_password
+
+    @property
+    def admin_password(self):
+        """Gets the admin_password of this ClusterBody1.  # noqa: E501
+
+        The password for the cluster admin user; will be set to the default password if not provided  # noqa: E501
+
+        :return: The admin_password of this ClusterBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._admin_password
+
+    @admin_password.setter
+    def admin_password(self, admin_password):
+        """Sets the admin_password of this ClusterBody1.
+
+        The password for the cluster admin user; will be set to the default password if not provided  # noqa: E501
+
+        :param admin_password: The admin_password of this ClusterBody1.  # noqa: E501
+        :type: str
+        """
+
+        self._admin_password = admin_password
 
     @property
     def hosts_hostnames(self):
@@ -125,29 +148,6 @@ class ClusterBody1(object):
         """
 
         self._join_secrets = join_secrets
-
-    @property
-    def admin_password(self):
-        """Gets the admin_password of this ClusterBody1.  # noqa: E501
-
-        The password for the cluster admin user; will be set to the default password if not provided  # noqa: E501
-
-        :return: The admin_password of this ClusterBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._admin_password
-
-    @admin_password.setter
-    def admin_password(self, admin_password):
-        """Sets the admin_password of this ClusterBody1.
-
-        The password for the cluster admin user; will be set to the default password if not provided  # noqa: E501
-
-        :param admin_password: The admin_password of this ClusterBody1.  # noqa: E501
-        :type: str
-        """
-
-        self._admin_password = admin_password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

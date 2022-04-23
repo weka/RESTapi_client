@@ -42,7 +42,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param ObjectStoreBucketsBody body:
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param ObjectStoreBucketsBody body:
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class ObjectStoreBucketApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20050',  # noqa: E501
+            response_type='InlineResponse20049',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -227,7 +227,7 @@ class ObjectStoreBucketApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20049
+        :return: InlineResponse20048
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -247,7 +247,7 @@ class ObjectStoreBucketApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20049
+        :return: InlineResponse20048
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -295,7 +295,7 @@ class ObjectStoreBucketApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20049',  # noqa: E501
+            response_type='InlineResponse20048',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -313,7 +313,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param str uid: object storage uid (required)
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -334,7 +334,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param str uid: object storage uid (required)
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -388,7 +388,7 @@ class ObjectStoreBucketApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20050',  # noqa: E501
+            response_type='InlineResponse20049',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -406,7 +406,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param str uid: object storage uid (required)
-        :return: InlineResponse20051
+        :return: InlineResponse20050
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -427,7 +427,7 @@ class ObjectStoreBucketApi(object):
 
         :param async_req bool
         :param str uid: object storage uid (required)
-        :return: InlineResponse20051
+        :return: InlineResponse20050
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -481,7 +481,7 @@ class ObjectStoreBucketApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20051',  # noqa: E501
+            response_type='InlineResponse20050',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -500,7 +500,7 @@ class ObjectStoreBucketApi(object):
         :param async_req bool
         :param str uid: object storage uid (required)
         :param ObjectStoreBucketsUidBody body:
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -522,7 +522,7 @@ class ObjectStoreBucketApi(object):
         :param async_req bool
         :param str uid: object storage uid (required)
         :param ObjectStoreBucketsUidBody body:
-        :return: InlineResponse20050
+        :return: InlineResponse20049
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -582,7 +582,7 @@ class ObjectStoreBucketApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20050',  # noqa: E501
+            response_type='InlineResponse20049',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

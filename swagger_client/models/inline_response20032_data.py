@@ -28,92 +28,92 @@ class InlineResponse20032Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'net': 'InlineResponse20032DataNet',
-        'disks': 'list[InlineResponse20032DataDisks]',
-        'resolved_ip': 'str'
+        'completed': 'bool',
+        'resend_secs': 'float',
+        'result': 'InlineResponse20032DataResult'
     }
 
     attribute_map = {
-        'net': 'net',
-        'disks': 'disks',
-        'resolved_ip': 'resolvedIp'
+        'completed': 'completed',
+        'resend_secs': 'resend_secs',
+        'result': 'result'
     }
 
-    def __init__(self, net=None, disks=None, resolved_ip=None):  # noqa: E501
+    def __init__(self, completed=None, resend_secs=None, result=None):  # noqa: E501
         """InlineResponse20032Data - a model defined in Swagger"""  # noqa: E501
-        self._net = None
-        self._disks = None
-        self._resolved_ip = None
+        self._completed = None
+        self._resend_secs = None
+        self._result = None
         self.discriminator = None
-        if net is not None:
-            self.net = net
-        if disks is not None:
-            self.disks = disks
-        if resolved_ip is not None:
-            self.resolved_ip = resolved_ip
+        if completed is not None:
+            self.completed = completed
+        if resend_secs is not None:
+            self.resend_secs = resend_secs
+        if result is not None:
+            self.result = result
 
     @property
-    def net(self):
-        """Gets the net of this InlineResponse20032Data.  # noqa: E501
+    def completed(self):
+        """Gets the completed of this InlineResponse20032Data.  # noqa: E501
 
 
-        :return: The net of this InlineResponse20032Data.  # noqa: E501
-        :rtype: InlineResponse20032DataNet
+        :return: The completed of this InlineResponse20032Data.  # noqa: E501
+        :rtype: bool
         """
-        return self._net
+        return self._completed
 
-    @net.setter
-    def net(self, net):
-        """Sets the net of this InlineResponse20032Data.
+    @completed.setter
+    def completed(self, completed):
+        """Sets the completed of this InlineResponse20032Data.
 
 
-        :param net: The net of this InlineResponse20032Data.  # noqa: E501
-        :type: InlineResponse20032DataNet
+        :param completed: The completed of this InlineResponse20032Data.  # noqa: E501
+        :type: bool
         """
 
-        self._net = net
+        self._completed = completed
 
     @property
-    def disks(self):
-        """Gets the disks of this InlineResponse20032Data.  # noqa: E501
+    def resend_secs(self):
+        """Gets the resend_secs of this InlineResponse20032Data.  # noqa: E501
 
 
-        :return: The disks of this InlineResponse20032Data.  # noqa: E501
-        :rtype: list[InlineResponse20032DataDisks]
+        :return: The resend_secs of this InlineResponse20032Data.  # noqa: E501
+        :rtype: float
         """
-        return self._disks
+        return self._resend_secs
 
-    @disks.setter
-    def disks(self, disks):
-        """Sets the disks of this InlineResponse20032Data.
+    @resend_secs.setter
+    def resend_secs(self, resend_secs):
+        """Sets the resend_secs of this InlineResponse20032Data.
 
 
-        :param disks: The disks of this InlineResponse20032Data.  # noqa: E501
-        :type: list[InlineResponse20032DataDisks]
+        :param resend_secs: The resend_secs of this InlineResponse20032Data.  # noqa: E501
+        :type: float
         """
 
-        self._disks = disks
+        self._resend_secs = resend_secs
 
     @property
-    def resolved_ip(self):
-        """Gets the resolved_ip of this InlineResponse20032Data.  # noqa: E501
+    def result(self):
+        """Gets the result of this InlineResponse20032Data.  # noqa: E501
 
 
-        :return: The resolved_ip of this InlineResponse20032Data.  # noqa: E501
-        :rtype: str
+        :return: The result of this InlineResponse20032Data.  # noqa: E501
+        :rtype: InlineResponse20032DataResult
         """
-        return self._resolved_ip
+        return self._result
 
-    @resolved_ip.setter
-    def resolved_ip(self, resolved_ip):
-        """Sets the resolved_ip of this InlineResponse20032Data.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this InlineResponse20032Data.
 
 
-        :param resolved_ip: The resolved_ip of this InlineResponse20032Data.  # noqa: E501
-        :type: str
+        :param result: The result of this InlineResponse20032Data.  # noqa: E501
+        :type: InlineResponse20032DataResult
         """
 
-        self._resolved_ip = resolved_ip
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

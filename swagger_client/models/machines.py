@@ -28,116 +28,116 @@ class Machines(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
-        'roles': 'list[str]',
+        'drives': 'list[MachinesDrives]',
+        'load': 'float',
         'name': 'str',
+        'nodes': 'list[MachinesNodes]',
         'primary_ip_address': 'str',
         'primary_port': 'float',
-        'status': 'str',
-        'up_since': 'str',
-        'load': 'float',
-        'nodes': 'list[MachinesNodes]',
-        'versions': 'list[str]',
         'ram_allocated': 'float',
-        'drives': 'list[MachinesDrives]'
+        'roles': 'list[str]',
+        'status': 'str',
+        'uid': 'str',
+        'up_since': 'str',
+        'versions': 'list[str]'
     }
 
     attribute_map = {
-        'uid': 'uid',
-        'roles': 'roles',
+        'drives': 'drives',
+        'load': 'load',
         'name': 'name',
+        'nodes': 'nodes',
         'primary_ip_address': 'primary_ip_address',
         'primary_port': 'primary_port',
-        'status': 'status',
-        'up_since': 'up_since',
-        'load': 'load',
-        'nodes': 'nodes',
-        'versions': 'versions',
         'ram_allocated': 'ram_allocated',
-        'drives': 'drives'
+        'roles': 'roles',
+        'status': 'status',
+        'uid': 'uid',
+        'up_since': 'up_since',
+        'versions': 'versions'
     }
 
-    def __init__(self, uid=None, roles=None, name=None, primary_ip_address=None, primary_port=None, status=None, up_since=None, load=None, nodes=None, versions=None, ram_allocated=None, drives=None):  # noqa: E501
+    def __init__(self, drives=None, load=None, name=None, nodes=None, primary_ip_address=None, primary_port=None, ram_allocated=None, roles=None, status=None, uid=None, up_since=None, versions=None):  # noqa: E501
         """Machines - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
-        self._roles = None
+        self._drives = None
+        self._load = None
         self._name = None
+        self._nodes = None
         self._primary_ip_address = None
         self._primary_port = None
-        self._status = None
-        self._up_since = None
-        self._load = None
-        self._nodes = None
-        self._versions = None
         self._ram_allocated = None
-        self._drives = None
+        self._roles = None
+        self._status = None
+        self._uid = None
+        self._up_since = None
+        self._versions = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
-        if roles is not None:
-            self.roles = roles
+        if drives is not None:
+            self.drives = drives
+        if load is not None:
+            self.load = load
         if name is not None:
             self.name = name
+        if nodes is not None:
+            self.nodes = nodes
         if primary_ip_address is not None:
             self.primary_ip_address = primary_ip_address
         if primary_port is not None:
             self.primary_port = primary_port
-        if status is not None:
-            self.status = status
-        if up_since is not None:
-            self.up_since = up_since
-        if load is not None:
-            self.load = load
-        if nodes is not None:
-            self.nodes = nodes
-        if versions is not None:
-            self.versions = versions
         if ram_allocated is not None:
             self.ram_allocated = ram_allocated
-        if drives is not None:
-            self.drives = drives
+        if roles is not None:
+            self.roles = roles
+        if status is not None:
+            self.status = status
+        if uid is not None:
+            self.uid = uid
+        if up_since is not None:
+            self.up_since = up_since
+        if versions is not None:
+            self.versions = versions
 
     @property
-    def uid(self):
-        """Gets the uid of this Machines.  # noqa: E501
+    def drives(self):
+        """Gets the drives of this Machines.  # noqa: E501
 
 
-        :return: The uid of this Machines.  # noqa: E501
-        :rtype: str
+        :return: The drives of this Machines.  # noqa: E501
+        :rtype: list[MachinesDrives]
         """
-        return self._uid
+        return self._drives
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this Machines.
+    @drives.setter
+    def drives(self, drives):
+        """Sets the drives of this Machines.
 
 
-        :param uid: The uid of this Machines.  # noqa: E501
-        :type: str
+        :param drives: The drives of this Machines.  # noqa: E501
+        :type: list[MachinesDrives]
         """
 
-        self._uid = uid
+        self._drives = drives
 
     @property
-    def roles(self):
-        """Gets the roles of this Machines.  # noqa: E501
+    def load(self):
+        """Gets the load of this Machines.  # noqa: E501
 
 
-        :return: The roles of this Machines.  # noqa: E501
-        :rtype: list[str]
+        :return: The load of this Machines.  # noqa: E501
+        :rtype: float
         """
-        return self._roles
+        return self._load
 
-    @roles.setter
-    def roles(self, roles):
-        """Sets the roles of this Machines.
+    @load.setter
+    def load(self, load):
+        """Sets the load of this Machines.
 
 
-        :param roles: The roles of this Machines.  # noqa: E501
-        :type: list[str]
+        :param load: The load of this Machines.  # noqa: E501
+        :type: float
         """
 
-        self._roles = roles
+        self._load = load
 
     @property
     def name(self):
@@ -159,6 +159,27 @@ class Machines(object):
         """
 
         self._name = name
+
+    @property
+    def nodes(self):
+        """Gets the nodes of this Machines.  # noqa: E501
+
+
+        :return: The nodes of this Machines.  # noqa: E501
+        :rtype: list[MachinesNodes]
+        """
+        return self._nodes
+
+    @nodes.setter
+    def nodes(self, nodes):
+        """Sets the nodes of this Machines.
+
+
+        :param nodes: The nodes of this Machines.  # noqa: E501
+        :type: list[MachinesNodes]
+        """
+
+        self._nodes = nodes
 
     @property
     def primary_ip_address(self):
@@ -203,6 +224,48 @@ class Machines(object):
         self._primary_port = primary_port
 
     @property
+    def ram_allocated(self):
+        """Gets the ram_allocated of this Machines.  # noqa: E501
+
+
+        :return: The ram_allocated of this Machines.  # noqa: E501
+        :rtype: float
+        """
+        return self._ram_allocated
+
+    @ram_allocated.setter
+    def ram_allocated(self, ram_allocated):
+        """Sets the ram_allocated of this Machines.
+
+
+        :param ram_allocated: The ram_allocated of this Machines.  # noqa: E501
+        :type: float
+        """
+
+        self._ram_allocated = ram_allocated
+
+    @property
+    def roles(self):
+        """Gets the roles of this Machines.  # noqa: E501
+
+
+        :return: The roles of this Machines.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._roles
+
+    @roles.setter
+    def roles(self, roles):
+        """Sets the roles of this Machines.
+
+
+        :param roles: The roles of this Machines.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._roles = roles
+
+    @property
     def status(self):
         """Gets the status of this Machines.  # noqa: E501
 
@@ -222,6 +285,27 @@ class Machines(object):
         """
 
         self._status = status
+
+    @property
+    def uid(self):
+        """Gets the uid of this Machines.  # noqa: E501
+
+
+        :return: The uid of this Machines.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this Machines.
+
+
+        :param uid: The uid of this Machines.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     @property
     def up_since(self):
@@ -245,48 +329,6 @@ class Machines(object):
         self._up_since = up_since
 
     @property
-    def load(self):
-        """Gets the load of this Machines.  # noqa: E501
-
-
-        :return: The load of this Machines.  # noqa: E501
-        :rtype: float
-        """
-        return self._load
-
-    @load.setter
-    def load(self, load):
-        """Sets the load of this Machines.
-
-
-        :param load: The load of this Machines.  # noqa: E501
-        :type: float
-        """
-
-        self._load = load
-
-    @property
-    def nodes(self):
-        """Gets the nodes of this Machines.  # noqa: E501
-
-
-        :return: The nodes of this Machines.  # noqa: E501
-        :rtype: list[MachinesNodes]
-        """
-        return self._nodes
-
-    @nodes.setter
-    def nodes(self, nodes):
-        """Sets the nodes of this Machines.
-
-
-        :param nodes: The nodes of this Machines.  # noqa: E501
-        :type: list[MachinesNodes]
-        """
-
-        self._nodes = nodes
-
-    @property
     def versions(self):
         """Gets the versions of this Machines.  # noqa: E501
 
@@ -306,48 +348,6 @@ class Machines(object):
         """
 
         self._versions = versions
-
-    @property
-    def ram_allocated(self):
-        """Gets the ram_allocated of this Machines.  # noqa: E501
-
-
-        :return: The ram_allocated of this Machines.  # noqa: E501
-        :rtype: float
-        """
-        return self._ram_allocated
-
-    @ram_allocated.setter
-    def ram_allocated(self, ram_allocated):
-        """Sets the ram_allocated of this Machines.
-
-
-        :param ram_allocated: The ram_allocated of this Machines.  # noqa: E501
-        :type: float
-        """
-
-        self._ram_allocated = ram_allocated
-
-    @property
-    def drives(self):
-        """Gets the drives of this Machines.  # noqa: E501
-
-
-        :return: The drives of this Machines.  # noqa: E501
-        :rtype: list[MachinesDrives]
-        """
-        return self._drives
-
-    @drives.setter
-    def drives(self, drives):
-        """Sets the drives of this Machines.
-
-
-        :param drives: The drives of this Machines.  # noqa: E501
-        :type: list[MachinesDrives]
-        """
-
-        self._drives = drives
 
     def to_dict(self):
         """Returns the model properties as a dict"""

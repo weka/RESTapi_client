@@ -28,279 +28,174 @@ class Host(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'mode': 'str',
-        'failure_domain_id': 'str',
-        'bandwidth': 'float',
-        'failure_domain': 'str',
         'added_time': 'str',
-        'uid': 'str',
-        'drives_dedicated_cores': 'float',
-        'hostname': 'str',
-        'ips': 'list[str]',
-        'member_of_leadership': 'bool',
-        'io_nodes': 'float',
-        'last_failure_time': 'str',
-        'state': 'str',
-        'start_time': 'str',
+        'auto_remove_timeout': 'float',
         'aws': 'HostAws',
-        'sw_version': 'str',
-        'os_info': 'HostOsInfo',
-        'last_failure_code': 'str',
-        'cores_ids': 'list[float]',
-        'memory': 'float',
-        'frontend_dedicated_cores': 'float',
-        'failure_domain_type': 'str',
-        'leadership_role': 'str',
-        'state_changed_time': 'str',
-        'status': 'str',
+        'bandwidth': 'float',
         'cores': 'float',
+        'cores_ids': 'list[float]',
+        'drives_dedicated_cores': 'float',
+        'failure_domain': 'str',
+        'failure_domain_id': 'str',
+        'failure_domain_type': 'str',
+        'frontend_dedicated_cores': 'float',
         'host_ip': 'str',
+        'hostname': 'str',
+        'id': 'str',
+        'io_nodes': 'float',
+        'ips': 'list[str]',
         'is_dedicated': 'bool',
         'last_failure': 'str',
+        'last_failure_code': 'str',
+        'last_failure_time': 'str',
+        'leadership_role': 'str',
+        'member_of_leadership': 'bool',
+        'memory': 'float',
         'mgmt_port': 'float',
-        'auto_remove_timeout': 'float'
+        'mode': 'str',
+        'os_info': 'HostOsInfo',
+        'start_time': 'str',
+        'state': 'str',
+        'state_changed_time': 'str',
+        'status': 'str',
+        'sw_version': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'mode': 'mode',
-        'failure_domain_id': 'failure_domain_id',
-        'bandwidth': 'bandwidth',
-        'failure_domain': 'failure_domain',
         'added_time': 'added_time',
-        'uid': 'uid',
-        'drives_dedicated_cores': 'drives_dedicated_cores',
-        'hostname': 'hostname',
-        'ips': 'ips',
-        'member_of_leadership': 'member_of_leadership',
-        'io_nodes': 'io_nodes',
-        'last_failure_time': 'last_failure_time',
-        'state': 'state',
-        'start_time': 'start_time',
+        'auto_remove_timeout': 'auto_remove_timeout',
         'aws': 'aws',
-        'sw_version': 'sw_version',
-        'os_info': 'os_info',
-        'last_failure_code': 'last_failure_code',
-        'cores_ids': 'cores_ids',
-        'memory': 'memory',
-        'frontend_dedicated_cores': 'frontend_dedicated_cores',
-        'failure_domain_type': 'failure_domain_type',
-        'leadership_role': 'leadership_role',
-        'state_changed_time': 'state_changed_time',
-        'status': 'status',
+        'bandwidth': 'bandwidth',
         'cores': 'cores',
+        'cores_ids': 'cores_ids',
+        'drives_dedicated_cores': 'drives_dedicated_cores',
+        'failure_domain': 'failure_domain',
+        'failure_domain_id': 'failure_domain_id',
+        'failure_domain_type': 'failure_domain_type',
+        'frontend_dedicated_cores': 'frontend_dedicated_cores',
         'host_ip': 'host_ip',
+        'hostname': 'hostname',
+        'id': 'id',
+        'io_nodes': 'io_nodes',
+        'ips': 'ips',
         'is_dedicated': 'is_dedicated',
         'last_failure': 'last_failure',
+        'last_failure_code': 'last_failure_code',
+        'last_failure_time': 'last_failure_time',
+        'leadership_role': 'leadership_role',
+        'member_of_leadership': 'member_of_leadership',
+        'memory': 'memory',
         'mgmt_port': 'mgmt_port',
-        'auto_remove_timeout': 'auto_remove_timeout'
+        'mode': 'mode',
+        'os_info': 'os_info',
+        'start_time': 'start_time',
+        'state': 'state',
+        'state_changed_time': 'state_changed_time',
+        'status': 'status',
+        'sw_version': 'sw_version',
+        'uid': 'uid'
     }
 
-    def __init__(self, id=None, mode=None, failure_domain_id=None, bandwidth=None, failure_domain=None, added_time=None, uid=None, drives_dedicated_cores=None, hostname=None, ips=None, member_of_leadership=None, io_nodes=None, last_failure_time=None, state=None, start_time=None, aws=None, sw_version=None, os_info=None, last_failure_code=None, cores_ids=None, memory=None, frontend_dedicated_cores=None, failure_domain_type=None, leadership_role=None, state_changed_time=None, status=None, cores=None, host_ip=None, is_dedicated=None, last_failure=None, mgmt_port=None, auto_remove_timeout=None):  # noqa: E501
+    def __init__(self, added_time=None, auto_remove_timeout=None, aws=None, bandwidth=None, cores=None, cores_ids=None, drives_dedicated_cores=None, failure_domain=None, failure_domain_id=None, failure_domain_type=None, frontend_dedicated_cores=None, host_ip=None, hostname=None, id=None, io_nodes=None, ips=None, is_dedicated=None, last_failure=None, last_failure_code=None, last_failure_time=None, leadership_role=None, member_of_leadership=None, memory=None, mgmt_port=None, mode=None, os_info=None, start_time=None, state=None, state_changed_time=None, status=None, sw_version=None, uid=None):  # noqa: E501
         """Host - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._mode = None
-        self._failure_domain_id = None
-        self._bandwidth = None
-        self._failure_domain = None
         self._added_time = None
-        self._uid = None
-        self._drives_dedicated_cores = None
-        self._hostname = None
-        self._ips = None
-        self._member_of_leadership = None
-        self._io_nodes = None
-        self._last_failure_time = None
-        self._state = None
-        self._start_time = None
+        self._auto_remove_timeout = None
         self._aws = None
-        self._sw_version = None
-        self._os_info = None
-        self._last_failure_code = None
-        self._cores_ids = None
-        self._memory = None
-        self._frontend_dedicated_cores = None
-        self._failure_domain_type = None
-        self._leadership_role = None
-        self._state_changed_time = None
-        self._status = None
+        self._bandwidth = None
         self._cores = None
+        self._cores_ids = None
+        self._drives_dedicated_cores = None
+        self._failure_domain = None
+        self._failure_domain_id = None
+        self._failure_domain_type = None
+        self._frontend_dedicated_cores = None
         self._host_ip = None
+        self._hostname = None
+        self._id = None
+        self._io_nodes = None
+        self._ips = None
         self._is_dedicated = None
         self._last_failure = None
+        self._last_failure_code = None
+        self._last_failure_time = None
+        self._leadership_role = None
+        self._member_of_leadership = None
+        self._memory = None
         self._mgmt_port = None
-        self._auto_remove_timeout = None
+        self._mode = None
+        self._os_info = None
+        self._start_time = None
+        self._state = None
+        self._state_changed_time = None
+        self._status = None
+        self._sw_version = None
+        self._uid = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if mode is not None:
-            self.mode = mode
-        if failure_domain_id is not None:
-            self.failure_domain_id = failure_domain_id
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
-        if failure_domain is not None:
-            self.failure_domain = failure_domain
         if added_time is not None:
             self.added_time = added_time
-        if uid is not None:
-            self.uid = uid
-        if drives_dedicated_cores is not None:
-            self.drives_dedicated_cores = drives_dedicated_cores
-        if hostname is not None:
-            self.hostname = hostname
-        if ips is not None:
-            self.ips = ips
-        if member_of_leadership is not None:
-            self.member_of_leadership = member_of_leadership
-        if io_nodes is not None:
-            self.io_nodes = io_nodes
-        if last_failure_time is not None:
-            self.last_failure_time = last_failure_time
-        if state is not None:
-            self.state = state
-        if start_time is not None:
-            self.start_time = start_time
+        if auto_remove_timeout is not None:
+            self.auto_remove_timeout = auto_remove_timeout
         if aws is not None:
             self.aws = aws
-        if sw_version is not None:
-            self.sw_version = sw_version
-        if os_info is not None:
-            self.os_info = os_info
-        if last_failure_code is not None:
-            self.last_failure_code = last_failure_code
-        if cores_ids is not None:
-            self.cores_ids = cores_ids
-        if memory is not None:
-            self.memory = memory
-        if frontend_dedicated_cores is not None:
-            self.frontend_dedicated_cores = frontend_dedicated_cores
-        if failure_domain_type is not None:
-            self.failure_domain_type = failure_domain_type
-        if leadership_role is not None:
-            self.leadership_role = leadership_role
-        if state_changed_time is not None:
-            self.state_changed_time = state_changed_time
-        if status is not None:
-            self.status = status
+        if bandwidth is not None:
+            self.bandwidth = bandwidth
         if cores is not None:
             self.cores = cores
+        if cores_ids is not None:
+            self.cores_ids = cores_ids
+        if drives_dedicated_cores is not None:
+            self.drives_dedicated_cores = drives_dedicated_cores
+        if failure_domain is not None:
+            self.failure_domain = failure_domain
+        if failure_domain_id is not None:
+            self.failure_domain_id = failure_domain_id
+        if failure_domain_type is not None:
+            self.failure_domain_type = failure_domain_type
+        if frontend_dedicated_cores is not None:
+            self.frontend_dedicated_cores = frontend_dedicated_cores
         if host_ip is not None:
             self.host_ip = host_ip
+        if hostname is not None:
+            self.hostname = hostname
+        if id is not None:
+            self.id = id
+        if io_nodes is not None:
+            self.io_nodes = io_nodes
+        if ips is not None:
+            self.ips = ips
         if is_dedicated is not None:
             self.is_dedicated = is_dedicated
         if last_failure is not None:
             self.last_failure = last_failure
+        if last_failure_code is not None:
+            self.last_failure_code = last_failure_code
+        if last_failure_time is not None:
+            self.last_failure_time = last_failure_time
+        if leadership_role is not None:
+            self.leadership_role = leadership_role
+        if member_of_leadership is not None:
+            self.member_of_leadership = member_of_leadership
+        if memory is not None:
+            self.memory = memory
         if mgmt_port is not None:
             self.mgmt_port = mgmt_port
-        if auto_remove_timeout is not None:
-            self.auto_remove_timeout = auto_remove_timeout
-
-    @property
-    def id(self):
-        """Gets the id of this Host.  # noqa: E501
-
-
-        :return: The id of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Host.
-
-
-        :param id: The id of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def mode(self):
-        """Gets the mode of this Host.  # noqa: E501
-
-
-        :return: The mode of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this Host.
-
-
-        :param mode: The mode of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._mode = mode
-
-    @property
-    def failure_domain_id(self):
-        """Gets the failure_domain_id of this Host.  # noqa: E501
-
-
-        :return: The failure_domain_id of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._failure_domain_id
-
-    @failure_domain_id.setter
-    def failure_domain_id(self, failure_domain_id):
-        """Sets the failure_domain_id of this Host.
-
-
-        :param failure_domain_id: The failure_domain_id of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._failure_domain_id = failure_domain_id
-
-    @property
-    def bandwidth(self):
-        """Gets the bandwidth of this Host.  # noqa: E501
-
-
-        :return: The bandwidth of this Host.  # noqa: E501
-        :rtype: float
-        """
-        return self._bandwidth
-
-    @bandwidth.setter
-    def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this Host.
-
-
-        :param bandwidth: The bandwidth of this Host.  # noqa: E501
-        :type: float
-        """
-
-        self._bandwidth = bandwidth
-
-    @property
-    def failure_domain(self):
-        """Gets the failure_domain of this Host.  # noqa: E501
-
-
-        :return: The failure_domain of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._failure_domain
-
-    @failure_domain.setter
-    def failure_domain(self, failure_domain):
-        """Sets the failure_domain of this Host.
-
-
-        :param failure_domain: The failure_domain of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._failure_domain = failure_domain
+        if mode is not None:
+            self.mode = mode
+        if os_info is not None:
+            self.os_info = os_info
+        if start_time is not None:
+            self.start_time = start_time
+        if state is not None:
+            self.state = state
+        if state_changed_time is not None:
+            self.state_changed_time = state_changed_time
+        if status is not None:
+            self.status = status
+        if sw_version is not None:
+            self.sw_version = sw_version
+        if uid is not None:
+            self.uid = uid
 
     @property
     def added_time(self):
@@ -324,193 +219,25 @@ class Host(object):
         self._added_time = added_time
 
     @property
-    def uid(self):
-        """Gets the uid of this Host.  # noqa: E501
+    def auto_remove_timeout(self):
+        """Gets the auto_remove_timeout of this Host.  # noqa: E501
 
 
-        :return: The uid of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this Host.
-
-
-        :param uid: The uid of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def drives_dedicated_cores(self):
-        """Gets the drives_dedicated_cores of this Host.  # noqa: E501
-
-
-        :return: The drives_dedicated_cores of this Host.  # noqa: E501
+        :return: The auto_remove_timeout of this Host.  # noqa: E501
         :rtype: float
         """
-        return self._drives_dedicated_cores
+        return self._auto_remove_timeout
 
-    @drives_dedicated_cores.setter
-    def drives_dedicated_cores(self, drives_dedicated_cores):
-        """Sets the drives_dedicated_cores of this Host.
+    @auto_remove_timeout.setter
+    def auto_remove_timeout(self, auto_remove_timeout):
+        """Sets the auto_remove_timeout of this Host.
 
 
-        :param drives_dedicated_cores: The drives_dedicated_cores of this Host.  # noqa: E501
+        :param auto_remove_timeout: The auto_remove_timeout of this Host.  # noqa: E501
         :type: float
         """
 
-        self._drives_dedicated_cores = drives_dedicated_cores
-
-    @property
-    def hostname(self):
-        """Gets the hostname of this Host.  # noqa: E501
-
-
-        :return: The hostname of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._hostname
-
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this Host.
-
-
-        :param hostname: The hostname of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._hostname = hostname
-
-    @property
-    def ips(self):
-        """Gets the ips of this Host.  # noqa: E501
-
-
-        :return: The ips of this Host.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._ips
-
-    @ips.setter
-    def ips(self, ips):
-        """Sets the ips of this Host.
-
-
-        :param ips: The ips of this Host.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._ips = ips
-
-    @property
-    def member_of_leadership(self):
-        """Gets the member_of_leadership of this Host.  # noqa: E501
-
-
-        :return: The member_of_leadership of this Host.  # noqa: E501
-        :rtype: bool
-        """
-        return self._member_of_leadership
-
-    @member_of_leadership.setter
-    def member_of_leadership(self, member_of_leadership):
-        """Sets the member_of_leadership of this Host.
-
-
-        :param member_of_leadership: The member_of_leadership of this Host.  # noqa: E501
-        :type: bool
-        """
-
-        self._member_of_leadership = member_of_leadership
-
-    @property
-    def io_nodes(self):
-        """Gets the io_nodes of this Host.  # noqa: E501
-
-
-        :return: The io_nodes of this Host.  # noqa: E501
-        :rtype: float
-        """
-        return self._io_nodes
-
-    @io_nodes.setter
-    def io_nodes(self, io_nodes):
-        """Sets the io_nodes of this Host.
-
-
-        :param io_nodes: The io_nodes of this Host.  # noqa: E501
-        :type: float
-        """
-
-        self._io_nodes = io_nodes
-
-    @property
-    def last_failure_time(self):
-        """Gets the last_failure_time of this Host.  # noqa: E501
-
-
-        :return: The last_failure_time of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._last_failure_time
-
-    @last_failure_time.setter
-    def last_failure_time(self, last_failure_time):
-        """Sets the last_failure_time of this Host.
-
-
-        :param last_failure_time: The last_failure_time of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._last_failure_time = last_failure_time
-
-    @property
-    def state(self):
-        """Gets the state of this Host.  # noqa: E501
-
-
-        :return: The state of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        """Sets the state of this Host.
-
-
-        :param state: The state of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._state = state
-
-    @property
-    def start_time(self):
-        """Gets the start_time of this Host.  # noqa: E501
-
-
-        :return: The start_time of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._start_time
-
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this Host.
-
-
-        :param start_time: The start_time of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._start_time = start_time
+        self._auto_remove_timeout = auto_remove_timeout
 
     @property
     def aws(self):
@@ -534,214 +261,25 @@ class Host(object):
         self._aws = aws
 
     @property
-    def sw_version(self):
-        """Gets the sw_version of this Host.  # noqa: E501
+    def bandwidth(self):
+        """Gets the bandwidth of this Host.  # noqa: E501
 
 
-        :return: The sw_version of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._sw_version
-
-    @sw_version.setter
-    def sw_version(self, sw_version):
-        """Sets the sw_version of this Host.
-
-
-        :param sw_version: The sw_version of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._sw_version = sw_version
-
-    @property
-    def os_info(self):
-        """Gets the os_info of this Host.  # noqa: E501
-
-
-        :return: The os_info of this Host.  # noqa: E501
-        :rtype: HostOsInfo
-        """
-        return self._os_info
-
-    @os_info.setter
-    def os_info(self, os_info):
-        """Sets the os_info of this Host.
-
-
-        :param os_info: The os_info of this Host.  # noqa: E501
-        :type: HostOsInfo
-        """
-
-        self._os_info = os_info
-
-    @property
-    def last_failure_code(self):
-        """Gets the last_failure_code of this Host.  # noqa: E501
-
-
-        :return: The last_failure_code of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._last_failure_code
-
-    @last_failure_code.setter
-    def last_failure_code(self, last_failure_code):
-        """Sets the last_failure_code of this Host.
-
-
-        :param last_failure_code: The last_failure_code of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._last_failure_code = last_failure_code
-
-    @property
-    def cores_ids(self):
-        """Gets the cores_ids of this Host.  # noqa: E501
-
-
-        :return: The cores_ids of this Host.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._cores_ids
-
-    @cores_ids.setter
-    def cores_ids(self, cores_ids):
-        """Sets the cores_ids of this Host.
-
-
-        :param cores_ids: The cores_ids of this Host.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._cores_ids = cores_ids
-
-    @property
-    def memory(self):
-        """Gets the memory of this Host.  # noqa: E501
-
-
-        :return: The memory of this Host.  # noqa: E501
+        :return: The bandwidth of this Host.  # noqa: E501
         :rtype: float
         """
-        return self._memory
+        return self._bandwidth
 
-    @memory.setter
-    def memory(self, memory):
-        """Sets the memory of this Host.
+    @bandwidth.setter
+    def bandwidth(self, bandwidth):
+        """Sets the bandwidth of this Host.
 
 
-        :param memory: The memory of this Host.  # noqa: E501
+        :param bandwidth: The bandwidth of this Host.  # noqa: E501
         :type: float
         """
 
-        self._memory = memory
-
-    @property
-    def frontend_dedicated_cores(self):
-        """Gets the frontend_dedicated_cores of this Host.  # noqa: E501
-
-
-        :return: The frontend_dedicated_cores of this Host.  # noqa: E501
-        :rtype: float
-        """
-        return self._frontend_dedicated_cores
-
-    @frontend_dedicated_cores.setter
-    def frontend_dedicated_cores(self, frontend_dedicated_cores):
-        """Sets the frontend_dedicated_cores of this Host.
-
-
-        :param frontend_dedicated_cores: The frontend_dedicated_cores of this Host.  # noqa: E501
-        :type: float
-        """
-
-        self._frontend_dedicated_cores = frontend_dedicated_cores
-
-    @property
-    def failure_domain_type(self):
-        """Gets the failure_domain_type of this Host.  # noqa: E501
-
-
-        :return: The failure_domain_type of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._failure_domain_type
-
-    @failure_domain_type.setter
-    def failure_domain_type(self, failure_domain_type):
-        """Sets the failure_domain_type of this Host.
-
-
-        :param failure_domain_type: The failure_domain_type of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._failure_domain_type = failure_domain_type
-
-    @property
-    def leadership_role(self):
-        """Gets the leadership_role of this Host.  # noqa: E501
-
-
-        :return: The leadership_role of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._leadership_role
-
-    @leadership_role.setter
-    def leadership_role(self, leadership_role):
-        """Sets the leadership_role of this Host.
-
-
-        :param leadership_role: The leadership_role of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._leadership_role = leadership_role
-
-    @property
-    def state_changed_time(self):
-        """Gets the state_changed_time of this Host.  # noqa: E501
-
-
-        :return: The state_changed_time of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._state_changed_time
-
-    @state_changed_time.setter
-    def state_changed_time(self, state_changed_time):
-        """Sets the state_changed_time of this Host.
-
-
-        :param state_changed_time: The state_changed_time of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._state_changed_time = state_changed_time
-
-    @property
-    def status(self):
-        """Gets the status of this Host.  # noqa: E501
-
-
-        :return: The status of this Host.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this Host.
-
-
-        :param status: The status of this Host.  # noqa: E501
-        :type: str
-        """
-
-        self._status = status
+        self._bandwidth = bandwidth
 
     @property
     def cores(self):
@@ -765,6 +303,132 @@ class Host(object):
         self._cores = cores
 
     @property
+    def cores_ids(self):
+        """Gets the cores_ids of this Host.  # noqa: E501
+
+
+        :return: The cores_ids of this Host.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._cores_ids
+
+    @cores_ids.setter
+    def cores_ids(self, cores_ids):
+        """Sets the cores_ids of this Host.
+
+
+        :param cores_ids: The cores_ids of this Host.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._cores_ids = cores_ids
+
+    @property
+    def drives_dedicated_cores(self):
+        """Gets the drives_dedicated_cores of this Host.  # noqa: E501
+
+
+        :return: The drives_dedicated_cores of this Host.  # noqa: E501
+        :rtype: float
+        """
+        return self._drives_dedicated_cores
+
+    @drives_dedicated_cores.setter
+    def drives_dedicated_cores(self, drives_dedicated_cores):
+        """Sets the drives_dedicated_cores of this Host.
+
+
+        :param drives_dedicated_cores: The drives_dedicated_cores of this Host.  # noqa: E501
+        :type: float
+        """
+
+        self._drives_dedicated_cores = drives_dedicated_cores
+
+    @property
+    def failure_domain(self):
+        """Gets the failure_domain of this Host.  # noqa: E501
+
+
+        :return: The failure_domain of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._failure_domain
+
+    @failure_domain.setter
+    def failure_domain(self, failure_domain):
+        """Sets the failure_domain of this Host.
+
+
+        :param failure_domain: The failure_domain of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._failure_domain = failure_domain
+
+    @property
+    def failure_domain_id(self):
+        """Gets the failure_domain_id of this Host.  # noqa: E501
+
+
+        :return: The failure_domain_id of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._failure_domain_id
+
+    @failure_domain_id.setter
+    def failure_domain_id(self, failure_domain_id):
+        """Sets the failure_domain_id of this Host.
+
+
+        :param failure_domain_id: The failure_domain_id of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._failure_domain_id = failure_domain_id
+
+    @property
+    def failure_domain_type(self):
+        """Gets the failure_domain_type of this Host.  # noqa: E501
+
+
+        :return: The failure_domain_type of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._failure_domain_type
+
+    @failure_domain_type.setter
+    def failure_domain_type(self, failure_domain_type):
+        """Sets the failure_domain_type of this Host.
+
+
+        :param failure_domain_type: The failure_domain_type of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._failure_domain_type = failure_domain_type
+
+    @property
+    def frontend_dedicated_cores(self):
+        """Gets the frontend_dedicated_cores of this Host.  # noqa: E501
+
+
+        :return: The frontend_dedicated_cores of this Host.  # noqa: E501
+        :rtype: float
+        """
+        return self._frontend_dedicated_cores
+
+    @frontend_dedicated_cores.setter
+    def frontend_dedicated_cores(self, frontend_dedicated_cores):
+        """Sets the frontend_dedicated_cores of this Host.
+
+
+        :param frontend_dedicated_cores: The frontend_dedicated_cores of this Host.  # noqa: E501
+        :type: float
+        """
+
+        self._frontend_dedicated_cores = frontend_dedicated_cores
+
+    @property
     def host_ip(self):
         """Gets the host_ip of this Host.  # noqa: E501
 
@@ -784,6 +448,90 @@ class Host(object):
         """
 
         self._host_ip = host_ip
+
+    @property
+    def hostname(self):
+        """Gets the hostname of this Host.  # noqa: E501
+
+
+        :return: The hostname of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this Host.
+
+
+        :param hostname: The hostname of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._hostname = hostname
+
+    @property
+    def id(self):
+        """Gets the id of this Host.  # noqa: E501
+
+
+        :return: The id of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Host.
+
+
+        :param id: The id of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def io_nodes(self):
+        """Gets the io_nodes of this Host.  # noqa: E501
+
+
+        :return: The io_nodes of this Host.  # noqa: E501
+        :rtype: float
+        """
+        return self._io_nodes
+
+    @io_nodes.setter
+    def io_nodes(self, io_nodes):
+        """Sets the io_nodes of this Host.
+
+
+        :param io_nodes: The io_nodes of this Host.  # noqa: E501
+        :type: float
+        """
+
+        self._io_nodes = io_nodes
+
+    @property
+    def ips(self):
+        """Gets the ips of this Host.  # noqa: E501
+
+
+        :return: The ips of this Host.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._ips
+
+    @ips.setter
+    def ips(self, ips):
+        """Sets the ips of this Host.
+
+
+        :param ips: The ips of this Host.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._ips = ips
 
     @property
     def is_dedicated(self):
@@ -828,6 +576,111 @@ class Host(object):
         self._last_failure = last_failure
 
     @property
+    def last_failure_code(self):
+        """Gets the last_failure_code of this Host.  # noqa: E501
+
+
+        :return: The last_failure_code of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._last_failure_code
+
+    @last_failure_code.setter
+    def last_failure_code(self, last_failure_code):
+        """Sets the last_failure_code of this Host.
+
+
+        :param last_failure_code: The last_failure_code of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._last_failure_code = last_failure_code
+
+    @property
+    def last_failure_time(self):
+        """Gets the last_failure_time of this Host.  # noqa: E501
+
+
+        :return: The last_failure_time of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._last_failure_time
+
+    @last_failure_time.setter
+    def last_failure_time(self, last_failure_time):
+        """Sets the last_failure_time of this Host.
+
+
+        :param last_failure_time: The last_failure_time of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._last_failure_time = last_failure_time
+
+    @property
+    def leadership_role(self):
+        """Gets the leadership_role of this Host.  # noqa: E501
+
+
+        :return: The leadership_role of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._leadership_role
+
+    @leadership_role.setter
+    def leadership_role(self, leadership_role):
+        """Sets the leadership_role of this Host.
+
+
+        :param leadership_role: The leadership_role of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._leadership_role = leadership_role
+
+    @property
+    def member_of_leadership(self):
+        """Gets the member_of_leadership of this Host.  # noqa: E501
+
+
+        :return: The member_of_leadership of this Host.  # noqa: E501
+        :rtype: bool
+        """
+        return self._member_of_leadership
+
+    @member_of_leadership.setter
+    def member_of_leadership(self, member_of_leadership):
+        """Sets the member_of_leadership of this Host.
+
+
+        :param member_of_leadership: The member_of_leadership of this Host.  # noqa: E501
+        :type: bool
+        """
+
+        self._member_of_leadership = member_of_leadership
+
+    @property
+    def memory(self):
+        """Gets the memory of this Host.  # noqa: E501
+
+
+        :return: The memory of this Host.  # noqa: E501
+        :rtype: float
+        """
+        return self._memory
+
+    @memory.setter
+    def memory(self, memory):
+        """Sets the memory of this Host.
+
+
+        :param memory: The memory of this Host.  # noqa: E501
+        :type: float
+        """
+
+        self._memory = memory
+
+    @property
     def mgmt_port(self):
         """Gets the mgmt_port of this Host.  # noqa: E501
 
@@ -849,25 +702,172 @@ class Host(object):
         self._mgmt_port = mgmt_port
 
     @property
-    def auto_remove_timeout(self):
-        """Gets the auto_remove_timeout of this Host.  # noqa: E501
+    def mode(self):
+        """Gets the mode of this Host.  # noqa: E501
 
 
-        :return: The auto_remove_timeout of this Host.  # noqa: E501
-        :rtype: float
+        :return: The mode of this Host.  # noqa: E501
+        :rtype: str
         """
-        return self._auto_remove_timeout
+        return self._mode
 
-    @auto_remove_timeout.setter
-    def auto_remove_timeout(self, auto_remove_timeout):
-        """Sets the auto_remove_timeout of this Host.
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this Host.
 
 
-        :param auto_remove_timeout: The auto_remove_timeout of this Host.  # noqa: E501
-        :type: float
+        :param mode: The mode of this Host.  # noqa: E501
+        :type: str
         """
 
-        self._auto_remove_timeout = auto_remove_timeout
+        self._mode = mode
+
+    @property
+    def os_info(self):
+        """Gets the os_info of this Host.  # noqa: E501
+
+
+        :return: The os_info of this Host.  # noqa: E501
+        :rtype: HostOsInfo
+        """
+        return self._os_info
+
+    @os_info.setter
+    def os_info(self, os_info):
+        """Sets the os_info of this Host.
+
+
+        :param os_info: The os_info of this Host.  # noqa: E501
+        :type: HostOsInfo
+        """
+
+        self._os_info = os_info
+
+    @property
+    def start_time(self):
+        """Gets the start_time of this Host.  # noqa: E501
+
+
+        :return: The start_time of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this Host.
+
+
+        :param start_time: The start_time of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._start_time = start_time
+
+    @property
+    def state(self):
+        """Gets the state of this Host.  # noqa: E501
+
+
+        :return: The state of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this Host.
+
+
+        :param state: The state of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._state = state
+
+    @property
+    def state_changed_time(self):
+        """Gets the state_changed_time of this Host.  # noqa: E501
+
+
+        :return: The state_changed_time of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._state_changed_time
+
+    @state_changed_time.setter
+    def state_changed_time(self, state_changed_time):
+        """Sets the state_changed_time of this Host.
+
+
+        :param state_changed_time: The state_changed_time of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._state_changed_time = state_changed_time
+
+    @property
+    def status(self):
+        """Gets the status of this Host.  # noqa: E501
+
+
+        :return: The status of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Host.
+
+
+        :param status: The status of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._status = status
+
+    @property
+    def sw_version(self):
+        """Gets the sw_version of this Host.  # noqa: E501
+
+
+        :return: The sw_version of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._sw_version
+
+    @sw_version.setter
+    def sw_version(self, sw_version):
+        """Sets the sw_version of this Host.
+
+
+        :param sw_version: The sw_version of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._sw_version = sw_version
+
+    @property
+    def uid(self):
+        """Gets the uid of this Host.  # noqa: E501
+
+
+        :return: The uid of this Host.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this Host.
+
+
+        :param uid: The uid of this Host.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,40 +28,118 @@ class InlineResponse2004DataHosts(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'host_id0': 'InlineResponse2004DataHostsHostId0'
+        'active_count': 'float',
+        'backends': 'InlineResponse2004DataDrives',
+        'clients': 'InlineResponse2004DataHostsClients',
+        'total_count': 'float'
     }
 
     attribute_map = {
-        'host_id0': 'HostId&lt;0&gt;'
+        'active_count': 'active_count',
+        'backends': 'backends',
+        'clients': 'clients',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, host_id0=None):  # noqa: E501
+    def __init__(self, active_count=None, backends=None, clients=None, total_count=None):  # noqa: E501
         """InlineResponse2004DataHosts - a model defined in Swagger"""  # noqa: E501
-        self._host_id0 = None
+        self._active_count = None
+        self._backends = None
+        self._clients = None
+        self._total_count = None
         self.discriminator = None
-        if host_id0 is not None:
-            self.host_id0 = host_id0
+        if active_count is not None:
+            self.active_count = active_count
+        if backends is not None:
+            self.backends = backends
+        if clients is not None:
+            self.clients = clients
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
-    def host_id0(self):
-        """Gets the host_id0 of this InlineResponse2004DataHosts.  # noqa: E501
+    def active_count(self):
+        """Gets the active_count of this InlineResponse2004DataHosts.  # noqa: E501
 
 
-        :return: The host_id0 of this InlineResponse2004DataHosts.  # noqa: E501
-        :rtype: InlineResponse2004DataHostsHostId0
+        :return: The active_count of this InlineResponse2004DataHosts.  # noqa: E501
+        :rtype: float
         """
-        return self._host_id0
+        return self._active_count
 
-    @host_id0.setter
-    def host_id0(self, host_id0):
-        """Sets the host_id0 of this InlineResponse2004DataHosts.
+    @active_count.setter
+    def active_count(self, active_count):
+        """Sets the active_count of this InlineResponse2004DataHosts.
 
 
-        :param host_id0: The host_id0 of this InlineResponse2004DataHosts.  # noqa: E501
-        :type: InlineResponse2004DataHostsHostId0
+        :param active_count: The active_count of this InlineResponse2004DataHosts.  # noqa: E501
+        :type: float
         """
 
-        self._host_id0 = host_id0
+        self._active_count = active_count
+
+    @property
+    def backends(self):
+        """Gets the backends of this InlineResponse2004DataHosts.  # noqa: E501
+
+
+        :return: The backends of this InlineResponse2004DataHosts.  # noqa: E501
+        :rtype: InlineResponse2004DataDrives
+        """
+        return self._backends
+
+    @backends.setter
+    def backends(self, backends):
+        """Sets the backends of this InlineResponse2004DataHosts.
+
+
+        :param backends: The backends of this InlineResponse2004DataHosts.  # noqa: E501
+        :type: InlineResponse2004DataDrives
+        """
+
+        self._backends = backends
+
+    @property
+    def clients(self):
+        """Gets the clients of this InlineResponse2004DataHosts.  # noqa: E501
+
+
+        :return: The clients of this InlineResponse2004DataHosts.  # noqa: E501
+        :rtype: InlineResponse2004DataHostsClients
+        """
+        return self._clients
+
+    @clients.setter
+    def clients(self, clients):
+        """Sets the clients of this InlineResponse2004DataHosts.
+
+
+        :param clients: The clients of this InlineResponse2004DataHosts.  # noqa: E501
+        :type: InlineResponse2004DataHostsClients
+        """
+
+        self._clients = clients
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this InlineResponse2004DataHosts.  # noqa: E501
+
+
+        :return: The total_count of this InlineResponse2004DataHosts.  # noqa: E501
+        :rtype: float
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this InlineResponse2004DataHosts.
+
+
+        :param total_count: The total_count of this InlineResponse2004DataHosts.  # noqa: E501
+        :type: float
+        """
+
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

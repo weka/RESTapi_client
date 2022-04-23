@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_nodes**](NodesApi.md#get_nodes) | **GET** /nodes | Get all nodes
 
 # **get_node**
-> InlineResponse20034 get_node(uid)
+> InlineResponse20030 get_node(uid)
 
 Get node
 
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**InlineResponse20030**](InlineResponse20030.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_nodes**
-> InlineResponse20048 get_nodes()
+> InlineResponse20047 get_nodes()
 
 Get all nodes
 
@@ -84,7 +84,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20048**](InlineResponse20048.md)
+[**InlineResponse20047**](InlineResponse20047.md)
 
 ### Authorization
 

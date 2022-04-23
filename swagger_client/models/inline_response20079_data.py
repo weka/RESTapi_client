@@ -28,92 +28,40 @@ class InlineResponse20079Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'resend_secs': 'float',
-        'result': 'InlineResponse20079DataResult',
-        'completed': 'bool'
+        'cpu_percent_limit': 'float'
     }
 
     attribute_map = {
-        'resend_secs': 'resend_secs',
-        'result': 'result',
-        'completed': 'completed'
+        'cpu_percent_limit': 'cpuPercentLimit'
     }
 
-    def __init__(self, resend_secs=None, result=None, completed=None):  # noqa: E501
+    def __init__(self, cpu_percent_limit=None):  # noqa: E501
         """InlineResponse20079Data - a model defined in Swagger"""  # noqa: E501
-        self._resend_secs = None
-        self._result = None
-        self._completed = None
+        self._cpu_percent_limit = None
         self.discriminator = None
-        if resend_secs is not None:
-            self.resend_secs = resend_secs
-        if result is not None:
-            self.result = result
-        if completed is not None:
-            self.completed = completed
+        if cpu_percent_limit is not None:
+            self.cpu_percent_limit = cpu_percent_limit
 
     @property
-    def resend_secs(self):
-        """Gets the resend_secs of this InlineResponse20079Data.  # noqa: E501
+    def cpu_percent_limit(self):
+        """Gets the cpu_percent_limit of this InlineResponse20079Data.  # noqa: E501
 
 
-        :return: The resend_secs of this InlineResponse20079Data.  # noqa: E501
+        :return: The cpu_percent_limit of this InlineResponse20079Data.  # noqa: E501
         :rtype: float
         """
-        return self._resend_secs
+        return self._cpu_percent_limit
 
-    @resend_secs.setter
-    def resend_secs(self, resend_secs):
-        """Sets the resend_secs of this InlineResponse20079Data.
+    @cpu_percent_limit.setter
+    def cpu_percent_limit(self, cpu_percent_limit):
+        """Sets the cpu_percent_limit of this InlineResponse20079Data.
 
 
-        :param resend_secs: The resend_secs of this InlineResponse20079Data.  # noqa: E501
+        :param cpu_percent_limit: The cpu_percent_limit of this InlineResponse20079Data.  # noqa: E501
         :type: float
         """
 
-        self._resend_secs = resend_secs
-
-    @property
-    def result(self):
-        """Gets the result of this InlineResponse20079Data.  # noqa: E501
-
-
-        :return: The result of this InlineResponse20079Data.  # noqa: E501
-        :rtype: InlineResponse20079DataResult
-        """
-        return self._result
-
-    @result.setter
-    def result(self, result):
-        """Sets the result of this InlineResponse20079Data.
-
-
-        :param result: The result of this InlineResponse20079Data.  # noqa: E501
-        :type: InlineResponse20079DataResult
-        """
-
-        self._result = result
-
-    @property
-    def completed(self):
-        """Gets the completed of this InlineResponse20079Data.  # noqa: E501
-
-
-        :return: The completed of this InlineResponse20079Data.  # noqa: E501
-        :rtype: bool
-        """
-        return self._completed
-
-    @completed.setter
-    def completed(self, completed):
-        """Sets the completed of this InlineResponse20079Data.
-
-
-        :param completed: The completed of this InlineResponse20079Data.  # noqa: E501
-        :type: bool
-        """
-
-        self._completed = completed
+        self._cpu_percent_limit = cpu_percent_limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

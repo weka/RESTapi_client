@@ -28,73 +28,94 @@ class FileSystemsDownloadBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'name': 'str',
-        'group_name': 'str',
-        'total_capacity': 'float',
-        'object_storage': 'str',
-        'locator': 'str',
-        'ssd_capacity': 'float',
+        'additional_object_storage': 'str',
         'auth_required': 'bool',
-        'additional_object_storage': 'str'
+        'group_name': 'str',
+        'locator': 'str',
+        'name': 'str',
+        'object_storage': 'str',
+        'ssd_capacity': 'float',
+        'total_capacity': 'float'
     }
 
     attribute_map = {
-        'name': 'name',
-        'group_name': 'group_name',
-        'total_capacity': 'total_capacity',
-        'object_storage': 'object_storage',
-        'locator': 'locator',
-        'ssd_capacity': 'ssd_capacity',
+        'additional_object_storage': 'additional_object_storage',
         'auth_required': 'auth_required',
-        'additional_object_storage': 'additional_object_storage'
+        'group_name': 'group_name',
+        'locator': 'locator',
+        'name': 'name',
+        'object_storage': 'object_storage',
+        'ssd_capacity': 'ssd_capacity',
+        'total_capacity': 'total_capacity'
     }
 
-    def __init__(self, name=None, group_name=None, total_capacity=None, object_storage=None, locator=None, ssd_capacity=None, auth_required=None, additional_object_storage=None):  # noqa: E501
+    def __init__(self, additional_object_storage=None, auth_required=None, group_name=None, locator=None, name=None, object_storage=None, ssd_capacity=None, total_capacity=None):  # noqa: E501
         """FileSystemsDownloadBody - a model defined in Swagger"""  # noqa: E501
-        self._name = None
-        self._group_name = None
-        self._total_capacity = None
-        self._object_storage = None
-        self._locator = None
-        self._ssd_capacity = None
-        self._auth_required = None
         self._additional_object_storage = None
+        self._auth_required = None
+        self._group_name = None
+        self._locator = None
+        self._name = None
+        self._object_storage = None
+        self._ssd_capacity = None
+        self._total_capacity = None
         self.discriminator = None
-        self.name = name
-        self.group_name = group_name
-        self.total_capacity = total_capacity
-        self.object_storage = object_storage
-        self.locator = locator
-        self.ssd_capacity = ssd_capacity
-        if auth_required is not None:
-            self.auth_required = auth_required
         if additional_object_storage is not None:
             self.additional_object_storage = additional_object_storage
+        if auth_required is not None:
+            self.auth_required = auth_required
+        self.group_name = group_name
+        self.locator = locator
+        self.name = name
+        self.object_storage = object_storage
+        self.ssd_capacity = ssd_capacity
+        self.total_capacity = total_capacity
 
     @property
-    def name(self):
-        """Gets the name of this FileSystemsDownloadBody.  # noqa: E501
+    def additional_object_storage(self):
+        """Gets the additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
 
-        New file system name  # noqa: E501
+        Additional object Store name  # noqa: E501
 
-        :return: The name of this FileSystemsDownloadBody.  # noqa: E501
+        :return: The additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
         :rtype: str
         """
-        return self._name
+        return self._additional_object_storage
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this FileSystemsDownloadBody.
+    @additional_object_storage.setter
+    def additional_object_storage(self, additional_object_storage):
+        """Sets the additional_object_storage of this FileSystemsDownloadBody.
 
-        New file system name  # noqa: E501
+        Additional object Store name  # noqa: E501
 
-        :param name: The name of this FileSystemsDownloadBody.  # noqa: E501
+        :param additional_object_storage: The additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
         :type: str
         """
-        if name is None:
-            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
-        self._name = name
+        self._additional_object_storage = additional_object_storage
+
+    @property
+    def auth_required(self):
+        """Gets the auth_required of this FileSystemsDownloadBody.  # noqa: E501
+
+        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+
+        :return: The auth_required of this FileSystemsDownloadBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._auth_required
+
+    @auth_required.setter
+    def auth_required(self, auth_required):
+        """Sets the auth_required of this FileSystemsDownloadBody.
+
+        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+
+        :param auth_required: The auth_required of this FileSystemsDownloadBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._auth_required = auth_required
 
     @property
     def group_name(self):
@@ -122,29 +143,54 @@ class FileSystemsDownloadBody(object):
         self._group_name = group_name
 
     @property
-    def total_capacity(self):
-        """Gets the total_capacity of this FileSystemsDownloadBody.  # noqa: E501
+    def locator(self):
+        """Gets the locator of this FileSystemsDownloadBody.  # noqa: E501
 
-        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Locator  # noqa: E501
 
-        :return: The total_capacity of this FileSystemsDownloadBody.  # noqa: E501
-        :rtype: float
+        :return: The locator of this FileSystemsDownloadBody.  # noqa: E501
+        :rtype: str
         """
-        return self._total_capacity
+        return self._locator
 
-    @total_capacity.setter
-    def total_capacity(self, total_capacity):
-        """Sets the total_capacity of this FileSystemsDownloadBody.
+    @locator.setter
+    def locator(self, locator):
+        """Sets the locator of this FileSystemsDownloadBody.
 
-        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Locator  # noqa: E501
 
-        :param total_capacity: The total_capacity of this FileSystemsDownloadBody.  # noqa: E501
-        :type: float
+        :param locator: The locator of this FileSystemsDownloadBody.  # noqa: E501
+        :type: str
         """
-        if total_capacity is None:
-            raise ValueError("Invalid value for `total_capacity`, must not be `None`")  # noqa: E501
+        if locator is None:
+            raise ValueError("Invalid value for `locator`, must not be `None`")  # noqa: E501
 
-        self._total_capacity = total_capacity
+        self._locator = locator
+
+    @property
+    def name(self):
+        """Gets the name of this FileSystemsDownloadBody.  # noqa: E501
+
+        New file system name  # noqa: E501
+
+        :return: The name of this FileSystemsDownloadBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this FileSystemsDownloadBody.
+
+        New file system name  # noqa: E501
+
+        :param name: The name of this FileSystemsDownloadBody.  # noqa: E501
+        :type: str
+        """
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
+
+        self._name = name
 
     @property
     def object_storage(self):
@@ -172,31 +218,6 @@ class FileSystemsDownloadBody(object):
         self._object_storage = object_storage
 
     @property
-    def locator(self):
-        """Gets the locator of this FileSystemsDownloadBody.  # noqa: E501
-
-        Locator  # noqa: E501
-
-        :return: The locator of this FileSystemsDownloadBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._locator
-
-    @locator.setter
-    def locator(self, locator):
-        """Sets the locator of this FileSystemsDownloadBody.
-
-        Locator  # noqa: E501
-
-        :param locator: The locator of this FileSystemsDownloadBody.  # noqa: E501
-        :type: str
-        """
-        if locator is None:
-            raise ValueError("Invalid value for `locator`, must not be `None`")  # noqa: E501
-
-        self._locator = locator
-
-    @property
     def ssd_capacity(self):
         """Gets the ssd_capacity of this FileSystemsDownloadBody.  # noqa: E501
 
@@ -222,50 +243,29 @@ class FileSystemsDownloadBody(object):
         self._ssd_capacity = ssd_capacity
 
     @property
-    def auth_required(self):
-        """Gets the auth_required of this FileSystemsDownloadBody.  # noqa: E501
+    def total_capacity(self):
+        """Gets the total_capacity of this FileSystemsDownloadBody.  # noqa: E501
 
-        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :return: The auth_required of this FileSystemsDownloadBody.  # noqa: E501
-        :rtype: bool
+        :return: The total_capacity of this FileSystemsDownloadBody.  # noqa: E501
+        :rtype: float
         """
-        return self._auth_required
+        return self._total_capacity
 
-    @auth_required.setter
-    def auth_required(self, auth_required):
-        """Sets the auth_required of this FileSystemsDownloadBody.
+    @total_capacity.setter
+    def total_capacity(self, total_capacity):
+        """Sets the total_capacity of this FileSystemsDownloadBody.
 
-        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :param auth_required: The auth_required of this FileSystemsDownloadBody.  # noqa: E501
-        :type: bool
+        :param total_capacity: The total_capacity of this FileSystemsDownloadBody.  # noqa: E501
+        :type: float
         """
+        if total_capacity is None:
+            raise ValueError("Invalid value for `total_capacity`, must not be `None`")  # noqa: E501
 
-        self._auth_required = auth_required
-
-    @property
-    def additional_object_storage(self):
-        """Gets the additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
-
-        Additional object Store name  # noqa: E501
-
-        :return: The additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._additional_object_storage
-
-    @additional_object_storage.setter
-    def additional_object_storage(self, additional_object_storage):
-        """Sets the additional_object_storage of this FileSystemsDownloadBody.
-
-        Additional object Store name  # noqa: E501
-
-        :param additional_object_storage: The additional_object_storage of this FileSystemsDownloadBody.  # noqa: E501
-        :type: str
-        """
-
-        self._additional_object_storage = additional_object_storage
+        self._total_capacity = total_capacity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

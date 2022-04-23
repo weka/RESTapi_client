@@ -28,51 +28,26 @@ class InterfaceGroupsPortBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
         'host_uid': 'str',
-        'port': 'str'
+        'port': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
         'host_uid': 'host_uid',
-        'port': 'port'
+        'port': 'port',
+        'uid': 'uid'
     }
 
-    def __init__(self, uid=None, host_uid=None, port=None):  # noqa: E501
+    def __init__(self, host_uid=None, port=None, uid=None):  # noqa: E501
         """InterfaceGroupsPortBody - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
         self._host_uid = None
         self._port = None
+        self._uid = None
         self.discriminator = None
-        self.uid = uid
         self.host_uid = host_uid
         self.port = port
-
-    @property
-    def uid(self):
-        """Gets the uid of this InterfaceGroupsPortBody.  # noqa: E501
-
-        Interface Group UUID  # noqa: E501
-
-        :return: The uid of this InterfaceGroupsPortBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this InterfaceGroupsPortBody.
-
-        Interface Group UUID  # noqa: E501
-
-        :param uid: The uid of this InterfaceGroupsPortBody.  # noqa: E501
-        :type: str
-        """
-        if uid is None:
-            raise ValueError("Invalid value for `uid`, must not be `None`")  # noqa: E501
-
-        self._uid = uid
+        self.uid = uid
 
     @property
     def host_uid(self):
@@ -121,6 +96,31 @@ class InterfaceGroupsPortBody(object):
             raise ValueError("Invalid value for `port`, must not be `None`")  # noqa: E501
 
         self._port = port
+
+    @property
+    def uid(self):
+        """Gets the uid of this InterfaceGroupsPortBody.  # noqa: E501
+
+        Interface Group UUID  # noqa: E501
+
+        :return: The uid of this InterfaceGroupsPortBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this InterfaceGroupsPortBody.
+
+        Interface Group UUID  # noqa: E501
+
+        :param uid: The uid of this InterfaceGroupsPortBody.  # noqa: E501
+        :type: str
+        """
+        if uid is None:
+            raise ValueError("Invalid value for `uid`, must not be `None`")  # noqa: E501
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

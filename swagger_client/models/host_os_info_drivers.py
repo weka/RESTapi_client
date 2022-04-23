@@ -28,39 +28,60 @@ class HostOsInfoDrivers(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'ib_uverbs': 'str',
         'ixgbe': 'str',
         'ixgbevf': 'str',
         'mlx5_core': 'str',
-        'ib_uverbs': 'str',
         'uio_pci_generic': 'str'
     }
 
     attribute_map = {
+        'ib_uverbs': 'ib_uverbs',
         'ixgbe': 'ixgbe',
         'ixgbevf': 'ixgbevf',
         'mlx5_core': 'mlx5_core',
-        'ib_uverbs': 'ib_uverbs',
         'uio_pci_generic': 'uio_pci_generic'
     }
 
-    def __init__(self, ixgbe=None, ixgbevf=None, mlx5_core=None, ib_uverbs=None, uio_pci_generic=None):  # noqa: E501
+    def __init__(self, ib_uverbs=None, ixgbe=None, ixgbevf=None, mlx5_core=None, uio_pci_generic=None):  # noqa: E501
         """HostOsInfoDrivers - a model defined in Swagger"""  # noqa: E501
+        self._ib_uverbs = None
         self._ixgbe = None
         self._ixgbevf = None
         self._mlx5_core = None
-        self._ib_uverbs = None
         self._uio_pci_generic = None
         self.discriminator = None
+        if ib_uverbs is not None:
+            self.ib_uverbs = ib_uverbs
         if ixgbe is not None:
             self.ixgbe = ixgbe
         if ixgbevf is not None:
             self.ixgbevf = ixgbevf
         if mlx5_core is not None:
             self.mlx5_core = mlx5_core
-        if ib_uverbs is not None:
-            self.ib_uverbs = ib_uverbs
         if uio_pci_generic is not None:
             self.uio_pci_generic = uio_pci_generic
+
+    @property
+    def ib_uverbs(self):
+        """Gets the ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
+
+
+        :return: The ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
+        :rtype: str
+        """
+        return self._ib_uverbs
+
+    @ib_uverbs.setter
+    def ib_uverbs(self, ib_uverbs):
+        """Sets the ib_uverbs of this HostOsInfoDrivers.
+
+
+        :param ib_uverbs: The ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
+        :type: str
+        """
+
+        self._ib_uverbs = ib_uverbs
 
     @property
     def ixgbe(self):
@@ -124,27 +145,6 @@ class HostOsInfoDrivers(object):
         """
 
         self._mlx5_core = mlx5_core
-
-    @property
-    def ib_uverbs(self):
-        """Gets the ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
-
-
-        :return: The ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
-        :rtype: str
-        """
-        return self._ib_uverbs
-
-    @ib_uverbs.setter
-    def ib_uverbs(self, ib_uverbs):
-        """Sets the ib_uverbs of this HostOsInfoDrivers.
-
-
-        :param ib_uverbs: The ib_uverbs of this HostOsInfoDrivers.  # noqa: E501
-        :type: str
-        """
-
-        self._ib_uverbs = ib_uverbs
 
     @property
     def uio_pci_generic(self):

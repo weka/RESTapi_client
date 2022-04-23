@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**put_quota**](QuotaApi.md#put_quota) | **PUT** /fileSystems/{uid}/quota/{inode_context} | Set a quota on a directory
 
 # **delete_quota**
-> InlineResponse20024 delete_quota(uid, inode_context, path=path)
+> InlineResponse20023 delete_quota(uid, inode_context, path=path)
 
 Remove the quota from a directory
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20024**](InlineResponse20024.md)
+[**InlineResponse20023**](InlineResponse20023.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_quota**
-> InlineResponse20022 get_quota(uid, inode_context)
+> InlineResponse20021 get_quota(uid, inode_context)
 
 Get the parameters of a specific directory quota
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**InlineResponse20021**](InlineResponse20021.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_quota_deprecated**
-> InlineResponse20055 get_quota_deprecated(type, uid, next_token=next_token)
+> InlineResponse20054 get_quota_deprecated(type, uid, next_token=next_token)
 
 Get file system quota
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20055**](InlineResponse20055.md)
+[**InlineResponse20054**](InlineResponse20054.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_quotas**
-> InlineResponse20021 list_quotas(uid, next_token=next_token)
+> InlineResponse20020 list_quotas(uid, next_token=next_token)
 
 Get a list of quotas in the file system
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20020**](InlineResponse20020.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_quota**
-> InlineResponse20022 patch_quota(uid, inode_context, path=path, hard_limit_bytes=hard_limit_bytes, soft_limit_bytes=soft_limit_bytes, grace_seconds=grace_seconds, owner=owner)
+> InlineResponse20021 patch_quota(uid, inode_context, path=path, hard_limit_bytes=hard_limit_bytes, soft_limit_bytes=soft_limit_bytes, grace_seconds=grace_seconds, owner=owner)
 
 Patch the parameters of a directory quota
 
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**InlineResponse20021**](InlineResponse20021.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_quota**
-> InlineResponse20023 put_quota(uid, inode_context, hard_limit_bytes, soft_limit_bytes, grace_seconds, path=path, owner=owner)
+> InlineResponse20022 put_quota(uid, inode_context, hard_limit_bytes, soft_limit_bytes, grace_seconds, path=path, owner=owner)
 
 Set a quota on a directory
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**InlineResponse20022**](InlineResponse20022.md)
 
 ### Authorization
 

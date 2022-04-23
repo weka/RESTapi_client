@@ -28,67 +28,259 @@ class SmbBody1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'name': 'str',
-        'samba_hosts': 'list[str]',
-        'domain': 'str',
-        'samba_ips': 'list[str]',
-        'domain_netbios_name': 'str',
-        'idmap_backend': 'str',
         'default_domain_mapping_from_id': 'float',
         'default_domain_mapping_to_id': 'float',
+        'domain': 'str',
+        'domain_netbios_name': 'str',
+        'encryption': 'str',
+        'idmap_backend': 'str',
         'joined_domain_mapping_from_id': 'float',
         'joined_domain_mapping_to_id': 'float',
-        'encryption': 'str'
+        'name': 'str',
+        'samba_hosts': 'list[str]',
+        'samba_ips': 'list[str]'
     }
 
     attribute_map = {
-        'name': 'name',
-        'samba_hosts': 'samba_hosts',
-        'domain': 'domain',
-        'samba_ips': 'samba_ips',
-        'domain_netbios_name': 'domain_netbios_name',
-        'idmap_backend': 'idmap_backend',
         'default_domain_mapping_from_id': 'default_domain_mapping_from_id',
         'default_domain_mapping_to_id': 'default_domain_mapping_to_id',
+        'domain': 'domain',
+        'domain_netbios_name': 'domain_netbios_name',
+        'encryption': 'encryption',
+        'idmap_backend': 'idmap_backend',
         'joined_domain_mapping_from_id': 'joined_domain_mapping_from_id',
         'joined_domain_mapping_to_id': 'joined_domain_mapping_to_id',
-        'encryption': 'encryption'
+        'name': 'name',
+        'samba_hosts': 'samba_hosts',
+        'samba_ips': 'samba_ips'
     }
 
-    def __init__(self, name=None, samba_hosts=None, domain=None, samba_ips=None, domain_netbios_name=None, idmap_backend=None, default_domain_mapping_from_id=None, default_domain_mapping_to_id=None, joined_domain_mapping_from_id=None, joined_domain_mapping_to_id=None, encryption=None):  # noqa: E501
+    def __init__(self, default_domain_mapping_from_id=None, default_domain_mapping_to_id=None, domain=None, domain_netbios_name=None, encryption=None, idmap_backend=None, joined_domain_mapping_from_id=None, joined_domain_mapping_to_id=None, name=None, samba_hosts=None, samba_ips=None):  # noqa: E501
         """SmbBody1 - a model defined in Swagger"""  # noqa: E501
-        self._name = None
-        self._samba_hosts = None
-        self._domain = None
-        self._samba_ips = None
-        self._domain_netbios_name = None
-        self._idmap_backend = None
         self._default_domain_mapping_from_id = None
         self._default_domain_mapping_to_id = None
+        self._domain = None
+        self._domain_netbios_name = None
+        self._encryption = None
+        self._idmap_backend = None
         self._joined_domain_mapping_from_id = None
         self._joined_domain_mapping_to_id = None
-        self._encryption = None
+        self._name = None
+        self._samba_hosts = None
+        self._samba_ips = None
         self.discriminator = None
-        self.name = name
-        if samba_hosts is not None:
-            self.samba_hosts = samba_hosts
-        self.domain = domain
-        if samba_ips is not None:
-            self.samba_ips = samba_ips
-        if domain_netbios_name is not None:
-            self.domain_netbios_name = domain_netbios_name
-        if idmap_backend is not None:
-            self.idmap_backend = idmap_backend
         if default_domain_mapping_from_id is not None:
             self.default_domain_mapping_from_id = default_domain_mapping_from_id
         if default_domain_mapping_to_id is not None:
             self.default_domain_mapping_to_id = default_domain_mapping_to_id
+        self.domain = domain
+        if domain_netbios_name is not None:
+            self.domain_netbios_name = domain_netbios_name
+        if encryption is not None:
+            self.encryption = encryption
+        if idmap_backend is not None:
+            self.idmap_backend = idmap_backend
         if joined_domain_mapping_from_id is not None:
             self.joined_domain_mapping_from_id = joined_domain_mapping_from_id
         if joined_domain_mapping_to_id is not None:
             self.joined_domain_mapping_to_id = joined_domain_mapping_to_id
-        if encryption is not None:
-            self.encryption = encryption
+        self.name = name
+        if samba_hosts is not None:
+            self.samba_hosts = samba_hosts
+        if samba_ips is not None:
+            self.samba_ips = samba_ips
+
+    @property
+    def default_domain_mapping_from_id(self):
+        """Gets the default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+
+        The samba default domain first id  # noqa: E501
+
+        :return: The default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+        :rtype: float
+        """
+        return self._default_domain_mapping_from_id
+
+    @default_domain_mapping_from_id.setter
+    def default_domain_mapping_from_id(self, default_domain_mapping_from_id):
+        """Sets the default_domain_mapping_from_id of this SmbBody1.
+
+        The samba default domain first id  # noqa: E501
+
+        :param default_domain_mapping_from_id: The default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+        :type: float
+        """
+
+        self._default_domain_mapping_from_id = default_domain_mapping_from_id
+
+    @property
+    def default_domain_mapping_to_id(self):
+        """Gets the default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+
+        The samba default domain last id  # noqa: E501
+
+        :return: The default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+        :rtype: float
+        """
+        return self._default_domain_mapping_to_id
+
+    @default_domain_mapping_to_id.setter
+    def default_domain_mapping_to_id(self, default_domain_mapping_to_id):
+        """Sets the default_domain_mapping_to_id of this SmbBody1.
+
+        The samba default domain last id  # noqa: E501
+
+        :param default_domain_mapping_to_id: The default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+        :type: float
+        """
+
+        self._default_domain_mapping_to_id = default_domain_mapping_to_id
+
+    @property
+    def domain(self):
+        """Gets the domain of this SmbBody1.  # noqa: E501
+
+        The domain to join the SMB cluster to  # noqa: E501
+
+        :return: The domain of this SmbBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this SmbBody1.
+
+        The domain to join the SMB cluster to  # noqa: E501
+
+        :param domain: The domain of this SmbBody1.  # noqa: E501
+        :type: str
+        """
+        if domain is None:
+            raise ValueError("Invalid value for `domain`, must not be `None`")  # noqa: E501
+
+        self._domain = domain
+
+    @property
+    def domain_netbios_name(self):
+        """Gets the domain_netbios_name of this SmbBody1.  # noqa: E501
+
+        The domain netbios name; If not given, the default will be the first part of the given domain name  # noqa: E501
+
+        :return: The domain_netbios_name of this SmbBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain_netbios_name
+
+    @domain_netbios_name.setter
+    def domain_netbios_name(self, domain_netbios_name):
+        """Sets the domain_netbios_name of this SmbBody1.
+
+        The domain netbios name; If not given, the default will be the first part of the given domain name  # noqa: E501
+
+        :param domain_netbios_name: The domain_netbios_name of this SmbBody1.  # noqa: E501
+        :type: str
+        """
+
+        self._domain_netbios_name = domain_netbios_name
+
+    @property
+    def encryption(self):
+        """Gets the encryption of this SmbBody1.  # noqa: E501
+
+        Samba cluster encryption  # noqa: E501
+
+        :return: The encryption of this SmbBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._encryption
+
+    @encryption.setter
+    def encryption(self, encryption):
+        """Sets the encryption of this SmbBody1.
+
+        Samba cluster encryption  # noqa: E501
+
+        :param encryption: The encryption of this SmbBody1.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["enabled", "disabled", "desired", "required"]  # noqa: E501
+        if encryption not in allowed_values:
+            raise ValueError(
+                "Invalid value for `encryption` ({0}), must be one of {1}"  # noqa: E501
+                .format(encryption, allowed_values)
+            )
+
+        self._encryption = encryption
+
+    @property
+    def idmap_backend(self):
+        """Gets the idmap_backend of this SmbBody1.  # noqa: E501
+
+        The samba domain backend type (rid, rfc2307, etc.). Note that rfc2307 requires uid/gid configuration on the Active Directory and is persistent, while rid does not require any Active Directory configuration but in case of range changes  # noqa: E501
+
+        :return: The idmap_backend of this SmbBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._idmap_backend
+
+    @idmap_backend.setter
+    def idmap_backend(self, idmap_backend):
+        """Sets the idmap_backend of this SmbBody1.
+
+        The samba domain backend type (rid, rfc2307, etc.). Note that rfc2307 requires uid/gid configuration on the Active Directory and is persistent, while rid does not require any Active Directory configuration but in case of range changes  # noqa: E501
+
+        :param idmap_backend: The idmap_backend of this SmbBody1.  # noqa: E501
+        :type: str
+        """
+
+        self._idmap_backend = idmap_backend
+
+    @property
+    def joined_domain_mapping_from_id(self):
+        """Gets the joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+
+        The joined domain first id  # noqa: E501
+
+        :return: The joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+        :rtype: float
+        """
+        return self._joined_domain_mapping_from_id
+
+    @joined_domain_mapping_from_id.setter
+    def joined_domain_mapping_from_id(self, joined_domain_mapping_from_id):
+        """Sets the joined_domain_mapping_from_id of this SmbBody1.
+
+        The joined domain first id  # noqa: E501
+
+        :param joined_domain_mapping_from_id: The joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
+        :type: float
+        """
+
+        self._joined_domain_mapping_from_id = joined_domain_mapping_from_id
+
+    @property
+    def joined_domain_mapping_to_id(self):
+        """Gets the joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+
+        The joined domain last id  # noqa: E501
+
+        :return: The joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+        :rtype: float
+        """
+        return self._joined_domain_mapping_to_id
+
+    @joined_domain_mapping_to_id.setter
+    def joined_domain_mapping_to_id(self, joined_domain_mapping_to_id):
+        """Sets the joined_domain_mapping_to_id of this SmbBody1.
+
+        The joined domain last id  # noqa: E501
+
+        :param joined_domain_mapping_to_id: The joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
+        :type: float
+        """
+
+        self._joined_domain_mapping_to_id = joined_domain_mapping_to_id
 
     @property
     def name(self):
@@ -139,31 +331,6 @@ class SmbBody1(object):
         self._samba_hosts = samba_hosts
 
     @property
-    def domain(self):
-        """Gets the domain of this SmbBody1.  # noqa: E501
-
-        The domain to join the SMB cluster to  # noqa: E501
-
-        :return: The domain of this SmbBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._domain
-
-    @domain.setter
-    def domain(self, domain):
-        """Sets the domain of this SmbBody1.
-
-        The domain to join the SMB cluster to  # noqa: E501
-
-        :param domain: The domain of this SmbBody1.  # noqa: E501
-        :type: str
-        """
-        if domain is None:
-            raise ValueError("Invalid value for `domain`, must not be `None`")  # noqa: E501
-
-        self._domain = domain
-
-    @property
     def samba_ips(self):
         """Gets the samba_ips of this SmbBody1.  # noqa: E501
 
@@ -185,173 +352,6 @@ class SmbBody1(object):
         """
 
         self._samba_ips = samba_ips
-
-    @property
-    def domain_netbios_name(self):
-        """Gets the domain_netbios_name of this SmbBody1.  # noqa: E501
-
-        The domain netbios name; If not given, the default will be the first part of the given domain name  # noqa: E501
-
-        :return: The domain_netbios_name of this SmbBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._domain_netbios_name
-
-    @domain_netbios_name.setter
-    def domain_netbios_name(self, domain_netbios_name):
-        """Sets the domain_netbios_name of this SmbBody1.
-
-        The domain netbios name; If not given, the default will be the first part of the given domain name  # noqa: E501
-
-        :param domain_netbios_name: The domain_netbios_name of this SmbBody1.  # noqa: E501
-        :type: str
-        """
-
-        self._domain_netbios_name = domain_netbios_name
-
-    @property
-    def idmap_backend(self):
-        """Gets the idmap_backend of this SmbBody1.  # noqa: E501
-
-        The samba domain backend type (rid, rfc2307, etc.). Note that rfc2307 requires uid/gid configuration on the Active Directory and is persistent, while rid does not require any Active Directory configuration but in case of range changes  # noqa: E501
-
-        :return: The idmap_backend of this SmbBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._idmap_backend
-
-    @idmap_backend.setter
-    def idmap_backend(self, idmap_backend):
-        """Sets the idmap_backend of this SmbBody1.
-
-        The samba domain backend type (rid, rfc2307, etc.). Note that rfc2307 requires uid/gid configuration on the Active Directory and is persistent, while rid does not require any Active Directory configuration but in case of range changes  # noqa: E501
-
-        :param idmap_backend: The idmap_backend of this SmbBody1.  # noqa: E501
-        :type: str
-        """
-
-        self._idmap_backend = idmap_backend
-
-    @property
-    def default_domain_mapping_from_id(self):
-        """Gets the default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-
-        The samba default domain first id  # noqa: E501
-
-        :return: The default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-        :rtype: float
-        """
-        return self._default_domain_mapping_from_id
-
-    @default_domain_mapping_from_id.setter
-    def default_domain_mapping_from_id(self, default_domain_mapping_from_id):
-        """Sets the default_domain_mapping_from_id of this SmbBody1.
-
-        The samba default domain first id  # noqa: E501
-
-        :param default_domain_mapping_from_id: The default_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-        :type: float
-        """
-
-        self._default_domain_mapping_from_id = default_domain_mapping_from_id
-
-    @property
-    def default_domain_mapping_to_id(self):
-        """Gets the default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-
-        The samba default domain last id  # noqa: E501
-
-        :return: The default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-        :rtype: float
-        """
-        return self._default_domain_mapping_to_id
-
-    @default_domain_mapping_to_id.setter
-    def default_domain_mapping_to_id(self, default_domain_mapping_to_id):
-        """Sets the default_domain_mapping_to_id of this SmbBody1.
-
-        The samba default domain last id  # noqa: E501
-
-        :param default_domain_mapping_to_id: The default_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-        :type: float
-        """
-
-        self._default_domain_mapping_to_id = default_domain_mapping_to_id
-
-    @property
-    def joined_domain_mapping_from_id(self):
-        """Gets the joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-
-        The joined domain first id  # noqa: E501
-
-        :return: The joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-        :rtype: float
-        """
-        return self._joined_domain_mapping_from_id
-
-    @joined_domain_mapping_from_id.setter
-    def joined_domain_mapping_from_id(self, joined_domain_mapping_from_id):
-        """Sets the joined_domain_mapping_from_id of this SmbBody1.
-
-        The joined domain first id  # noqa: E501
-
-        :param joined_domain_mapping_from_id: The joined_domain_mapping_from_id of this SmbBody1.  # noqa: E501
-        :type: float
-        """
-
-        self._joined_domain_mapping_from_id = joined_domain_mapping_from_id
-
-    @property
-    def joined_domain_mapping_to_id(self):
-        """Gets the joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-
-        The joined domain last id  # noqa: E501
-
-        :return: The joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-        :rtype: float
-        """
-        return self._joined_domain_mapping_to_id
-
-    @joined_domain_mapping_to_id.setter
-    def joined_domain_mapping_to_id(self, joined_domain_mapping_to_id):
-        """Sets the joined_domain_mapping_to_id of this SmbBody1.
-
-        The joined domain last id  # noqa: E501
-
-        :param joined_domain_mapping_to_id: The joined_domain_mapping_to_id of this SmbBody1.  # noqa: E501
-        :type: float
-        """
-
-        self._joined_domain_mapping_to_id = joined_domain_mapping_to_id
-
-    @property
-    def encryption(self):
-        """Gets the encryption of this SmbBody1.  # noqa: E501
-
-        Samba cluster encryption  # noqa: E501
-
-        :return: The encryption of this SmbBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._encryption
-
-    @encryption.setter
-    def encryption(self, encryption):
-        """Sets the encryption of this SmbBody1.
-
-        Samba cluster encryption  # noqa: E501
-
-        :param encryption: The encryption of this SmbBody1.  # noqa: E501
-        :type: str
-        """
-        allowed_values = ["enabled", "disabled", "desired", "required"]  # noqa: E501
-        if encryption not in allowed_values:
-            raise ValueError(
-                "Invalid value for `encryption` ({0}), must be one of {1}"  # noqa: E501
-                .format(encryption, allowed_values)
-            )
-
-        self._encryption = encryption
 
     def to_dict(self):
         """Returns the model properties as a dict"""

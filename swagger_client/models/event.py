@@ -31,6 +31,7 @@ class Event(object):
         'category': 'str',
         'cloud_digested_ts': 'str',
         'cloud_id': 'str',
+        'description': 'str',
         'entity': 'str',
         'guid': 'str',
         'hash': 'float',
@@ -44,7 +45,6 @@ class Event(object):
         'severity': 'str',
         'sqs_message_time': 'str',
         'timestamp': 'str',
-        'description': 'str',
         'type': 'str'
     }
 
@@ -52,6 +52,7 @@ class Event(object):
         'category': 'category',
         'cloud_digested_ts': 'cloud_digested_ts',
         'cloud_id': 'cloud_id',
+        'description': 'description',
         'entity': 'entity',
         'guid': 'guid',
         'hash': 'hash',
@@ -65,15 +66,15 @@ class Event(object):
         'severity': 'severity',
         'sqs_message_time': 'sqs_message_time',
         'timestamp': 'timestamp',
-        'description': 'description',
         'type': 'type'
     }
 
-    def __init__(self, category=None, cloud_digested_ts=None, cloud_id=None, entity=None, guid=None, hash=None, is_backend=None, nid=None, org_id=None, params=None, permission=None, processed=None, s3_time=None, severity=None, sqs_message_time=None, timestamp=None, description=None, type=None):  # noqa: E501
+    def __init__(self, category=None, cloud_digested_ts=None, cloud_id=None, description=None, entity=None, guid=None, hash=None, is_backend=None, nid=None, org_id=None, params=None, permission=None, processed=None, s3_time=None, severity=None, sqs_message_time=None, timestamp=None, type=None):  # noqa: E501
         """Event - a model defined in Swagger"""  # noqa: E501
         self._category = None
         self._cloud_digested_ts = None
         self._cloud_id = None
+        self._description = None
         self._entity = None
         self._guid = None
         self._hash = None
@@ -87,7 +88,6 @@ class Event(object):
         self._severity = None
         self._sqs_message_time = None
         self._timestamp = None
-        self._description = None
         self._type = None
         self.discriminator = None
         if category is not None:
@@ -96,6 +96,8 @@ class Event(object):
             self.cloud_digested_ts = cloud_digested_ts
         if cloud_id is not None:
             self.cloud_id = cloud_id
+        if description is not None:
+            self.description = description
         if entity is not None:
             self.entity = entity
         if guid is not None:
@@ -122,8 +124,6 @@ class Event(object):
             self.sqs_message_time = sqs_message_time
         if timestamp is not None:
             self.timestamp = timestamp
-        if description is not None:
-            self.description = description
         if type is not None:
             self.type = type
 
@@ -189,6 +189,27 @@ class Event(object):
         """
 
         self._cloud_id = cloud_id
+
+    @property
+    def description(self):
+        """Gets the description of this Event.  # noqa: E501
+
+
+        :return: The description of this Event.  # noqa: E501
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this Event.
+
+
+        :param description: The description of this Event.  # noqa: E501
+        :type: str
+        """
+
+        self._description = description
 
     @property
     def entity(self):
@@ -462,27 +483,6 @@ class Event(object):
         """
 
         self._timestamp = timestamp
-
-    @property
-    def description(self):
-        """Gets the description of this Event.  # noqa: E501
-
-
-        :return: The description of this Event.  # noqa: E501
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this Event.
-
-
-        :param description: The description of this Event.  # noqa: E501
-        :type: str
-        """
-
-        self._description = description
 
     @property
     def type(self):

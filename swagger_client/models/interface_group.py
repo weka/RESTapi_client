@@ -28,164 +28,59 @@ class InterfaceGroup(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'subnet_mask': 'str',
-        'ports': 'list[InterfaceGroupPorts]',
-        'name': 'str',
-        'uid': 'str',
-        'ips': 'list[str]',
         'allow_manage_gids': 'bool',
-        'type': 'str',
         'gateway': 'str',
-        'status': 'str'
+        'ips': 'list[str]',
+        'name': 'str',
+        'ports': 'list[InterfaceGroupPorts]',
+        'status': 'str',
+        'subnet_mask': 'str',
+        'type': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'subnet_mask': 'subnet_mask',
-        'ports': 'ports',
-        'name': 'name',
-        'uid': 'uid',
-        'ips': 'ips',
         'allow_manage_gids': 'allow_manage_gids',
-        'type': 'type',
         'gateway': 'gateway',
-        'status': 'status'
+        'ips': 'ips',
+        'name': 'name',
+        'ports': 'ports',
+        'status': 'status',
+        'subnet_mask': 'subnet_mask',
+        'type': 'type',
+        'uid': 'uid'
     }
 
-    def __init__(self, subnet_mask=None, ports=None, name=None, uid=None, ips=None, allow_manage_gids=None, type=None, gateway=None, status=None):  # noqa: E501
+    def __init__(self, allow_manage_gids=None, gateway=None, ips=None, name=None, ports=None, status=None, subnet_mask=None, type=None, uid=None):  # noqa: E501
         """InterfaceGroup - a model defined in Swagger"""  # noqa: E501
-        self._subnet_mask = None
-        self._ports = None
-        self._name = None
-        self._uid = None
-        self._ips = None
         self._allow_manage_gids = None
-        self._type = None
         self._gateway = None
+        self._ips = None
+        self._name = None
+        self._ports = None
         self._status = None
+        self._subnet_mask = None
+        self._type = None
+        self._uid = None
         self.discriminator = None
-        if subnet_mask is not None:
-            self.subnet_mask = subnet_mask
-        if ports is not None:
-            self.ports = ports
-        if name is not None:
-            self.name = name
-        if uid is not None:
-            self.uid = uid
-        if ips is not None:
-            self.ips = ips
         if allow_manage_gids is not None:
             self.allow_manage_gids = allow_manage_gids
-        if type is not None:
-            self.type = type
         if gateway is not None:
             self.gateway = gateway
+        if ips is not None:
+            self.ips = ips
+        if name is not None:
+            self.name = name
+        if ports is not None:
+            self.ports = ports
         if status is not None:
             self.status = status
-
-    @property
-    def subnet_mask(self):
-        """Gets the subnet_mask of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The subnet_mask of this InterfaceGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._subnet_mask
-
-    @subnet_mask.setter
-    def subnet_mask(self, subnet_mask):
-        """Sets the subnet_mask of this InterfaceGroup.
-
-
-        :param subnet_mask: The subnet_mask of this InterfaceGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._subnet_mask = subnet_mask
-
-    @property
-    def ports(self):
-        """Gets the ports of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The ports of this InterfaceGroup.  # noqa: E501
-        :rtype: list[InterfaceGroupPorts]
-        """
-        return self._ports
-
-    @ports.setter
-    def ports(self, ports):
-        """Sets the ports of this InterfaceGroup.
-
-
-        :param ports: The ports of this InterfaceGroup.  # noqa: E501
-        :type: list[InterfaceGroupPorts]
-        """
-
-        self._ports = ports
-
-    @property
-    def name(self):
-        """Gets the name of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The name of this InterfaceGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this InterfaceGroup.
-
-
-        :param name: The name of this InterfaceGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
-
-    @property
-    def uid(self):
-        """Gets the uid of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The uid of this InterfaceGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this InterfaceGroup.
-
-
-        :param uid: The uid of this InterfaceGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def ips(self):
-        """Gets the ips of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The ips of this InterfaceGroup.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._ips
-
-    @ips.setter
-    def ips(self, ips):
-        """Sets the ips of this InterfaceGroup.
-
-
-        :param ips: The ips of this InterfaceGroup.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._ips = ips
+        if subnet_mask is not None:
+            self.subnet_mask = subnet_mask
+        if type is not None:
+            self.type = type
+        if uid is not None:
+            self.uid = uid
 
     @property
     def allow_manage_gids(self):
@@ -209,27 +104,6 @@ class InterfaceGroup(object):
         self._allow_manage_gids = allow_manage_gids
 
     @property
-    def type(self):
-        """Gets the type of this InterfaceGroup.  # noqa: E501
-
-
-        :return: The type of this InterfaceGroup.  # noqa: E501
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this InterfaceGroup.
-
-
-        :param type: The type of this InterfaceGroup.  # noqa: E501
-        :type: str
-        """
-
-        self._type = type
-
-    @property
     def gateway(self):
         """Gets the gateway of this InterfaceGroup.  # noqa: E501
 
@@ -251,6 +125,69 @@ class InterfaceGroup(object):
         self._gateway = gateway
 
     @property
+    def ips(self):
+        """Gets the ips of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The ips of this InterfaceGroup.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._ips
+
+    @ips.setter
+    def ips(self, ips):
+        """Sets the ips of this InterfaceGroup.
+
+
+        :param ips: The ips of this InterfaceGroup.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._ips = ips
+
+    @property
+    def name(self):
+        """Gets the name of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The name of this InterfaceGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this InterfaceGroup.
+
+
+        :param name: The name of this InterfaceGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
+
+    @property
+    def ports(self):
+        """Gets the ports of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The ports of this InterfaceGroup.  # noqa: E501
+        :rtype: list[InterfaceGroupPorts]
+        """
+        return self._ports
+
+    @ports.setter
+    def ports(self, ports):
+        """Sets the ports of this InterfaceGroup.
+
+
+        :param ports: The ports of this InterfaceGroup.  # noqa: E501
+        :type: list[InterfaceGroupPorts]
+        """
+
+        self._ports = ports
+
+    @property
     def status(self):
         """Gets the status of this InterfaceGroup.  # noqa: E501
 
@@ -270,6 +207,69 @@ class InterfaceGroup(object):
         """
 
         self._status = status
+
+    @property
+    def subnet_mask(self):
+        """Gets the subnet_mask of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The subnet_mask of this InterfaceGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._subnet_mask
+
+    @subnet_mask.setter
+    def subnet_mask(self, subnet_mask):
+        """Sets the subnet_mask of this InterfaceGroup.
+
+
+        :param subnet_mask: The subnet_mask of this InterfaceGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._subnet_mask = subnet_mask
+
+    @property
+    def type(self):
+        """Gets the type of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The type of this InterfaceGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this InterfaceGroup.
+
+
+        :param type: The type of this InterfaceGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._type = type
+
+    @property
+    def uid(self):
+        """Gets the uid of this InterfaceGroup.  # noqa: E501
+
+
+        :return: The uid of this InterfaceGroup.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this InterfaceGroup.
+
+
+        :param uid: The uid of this InterfaceGroup.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

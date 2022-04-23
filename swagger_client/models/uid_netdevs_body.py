@@ -28,49 +28,72 @@ class UidNetdevsBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'apply_host': 'bool',
         'device': 'str',
-        'ips_type': 'str',
-        'ips': 'list[str]',
         'gateway': 'str',
-        'netmask': 'float',
+        'ips': 'list[str]',
+        'ips_type': 'str',
         'name': 'str',
-        'apply_host': 'bool'
+        'netmask': 'float'
     }
 
     attribute_map = {
+        'apply_host': 'apply_host',
         'device': 'device',
-        'ips_type': 'ips_type',
-        'ips': 'ips',
         'gateway': 'gateway',
-        'netmask': 'netmask',
+        'ips': 'ips',
+        'ips_type': 'ips_type',
         'name': 'name',
-        'apply_host': 'apply_host'
+        'netmask': 'netmask'
     }
 
-    def __init__(self, device=None, ips_type=None, ips=None, gateway=None, netmask=None, name=None, apply_host=None):  # noqa: E501
+    def __init__(self, apply_host=None, device=None, gateway=None, ips=None, ips_type=None, name=None, netmask=None):  # noqa: E501
         """UidNetdevsBody - a model defined in Swagger"""  # noqa: E501
-        self._device = None
-        self._ips_type = None
-        self._ips = None
-        self._gateway = None
-        self._netmask = None
-        self._name = None
         self._apply_host = None
+        self._device = None
+        self._gateway = None
+        self._ips = None
+        self._ips_type = None
+        self._name = None
+        self._netmask = None
         self.discriminator = None
-        if device is not None:
-            self.device = device
-        if ips_type is not None:
-            self.ips_type = ips_type
-        if ips is not None:
-            self.ips = ips
-        if gateway is not None:
-            self.gateway = gateway
-        if netmask is not None:
-            self.netmask = netmask
-        if name is not None:
-            self.name = name
         if apply_host is not None:
             self.apply_host = apply_host
+        if device is not None:
+            self.device = device
+        if gateway is not None:
+            self.gateway = gateway
+        if ips is not None:
+            self.ips = ips
+        if ips_type is not None:
+            self.ips_type = ips_type
+        if name is not None:
+            self.name = name
+        if netmask is not None:
+            self.netmask = netmask
+
+    @property
+    def apply_host(self):
+        """Gets the apply_host of this UidNetdevsBody.  # noqa: E501
+
+        Apply the host after this change  # noqa: E501
+
+        :return: The apply_host of this UidNetdevsBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._apply_host
+
+    @apply_host.setter
+    def apply_host(self, apply_host):
+        """Sets the apply_host of this UidNetdevsBody.
+
+        Apply the host after this change  # noqa: E501
+
+        :param apply_host: The apply_host of this UidNetdevsBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._apply_host = apply_host
 
     @property
     def device(self):
@@ -94,6 +117,52 @@ class UidNetdevsBody(object):
         """
 
         self._device = device
+
+    @property
+    def gateway(self):
+        """Gets the gateway of this UidNetdevsBody.  # noqa: E501
+
+        Default gateway IP. In AWS this value is auto-detected, otherwise the default data networking gateway will be used  # noqa: E501
+
+        :return: The gateway of this UidNetdevsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._gateway
+
+    @gateway.setter
+    def gateway(self, gateway):
+        """Sets the gateway of this UidNetdevsBody.
+
+        Default gateway IP. In AWS this value is auto-detected, otherwise the default data networking gateway will be used  # noqa: E501
+
+        :param gateway: The gateway of this UidNetdevsBody.  # noqa: E501
+        :type: str
+        """
+
+        self._gateway = gateway
+
+    @property
+    def ips(self):
+        """Gets the ips of this UidNetdevsBody.  # noqa: E501
+
+        IPs to be allocated to cores using the device. If not given - IPs may be set automatically according the interface's IPs, or taken from the default networking IPs pool (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
+
+        :return: The ips of this UidNetdevsBody.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._ips
+
+    @ips.setter
+    def ips(self, ips):
+        """Sets the ips of this UidNetdevsBody.
+
+        IPs to be allocated to cores using the device. If not given - IPs may be set automatically according the interface's IPs, or taken from the default networking IPs pool (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
+
+        :param ips: The ips of this UidNetdevsBody.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._ips = ips
 
     @property
     def ips_type(self):
@@ -125,75 +194,6 @@ class UidNetdevsBody(object):
         self._ips_type = ips_type
 
     @property
-    def ips(self):
-        """Gets the ips of this UidNetdevsBody.  # noqa: E501
-
-        IPs to be allocated to cores using the device. If not given - IPs may be set automatically according the interface's IPs, or taken from the default networking IPs pool (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
-
-        :return: The ips of this UidNetdevsBody.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._ips
-
-    @ips.setter
-    def ips(self, ips):
-        """Sets the ips of this UidNetdevsBody.
-
-        IPs to be allocated to cores using the device. If not given - IPs may be set automatically according the interface's IPs, or taken from the default networking IPs pool (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
-
-        :param ips: The ips of this UidNetdevsBody.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._ips = ips
-
-    @property
-    def gateway(self):
-        """Gets the gateway of this UidNetdevsBody.  # noqa: E501
-
-        Default gateway IP. In AWS this value is auto-detected, otherwise the default data networking gateway will be used  # noqa: E501
-
-        :return: The gateway of this UidNetdevsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._gateway
-
-    @gateway.setter
-    def gateway(self, gateway):
-        """Sets the gateway of this UidNetdevsBody.
-
-        Default gateway IP. In AWS this value is auto-detected, otherwise the default data networking gateway will be used  # noqa: E501
-
-        :param gateway: The gateway of this UidNetdevsBody.  # noqa: E501
-        :type: str
-        """
-
-        self._gateway = gateway
-
-    @property
-    def netmask(self):
-        """Gets the netmask of this UidNetdevsBody.  # noqa: E501
-
-        Netmask in bits number. In AWS this value is auto-detected, otherwise the default data networking netmask will be used  # noqa: E501
-
-        :return: The netmask of this UidNetdevsBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._netmask
-
-    @netmask.setter
-    def netmask(self, netmask):
-        """Sets the netmask of this UidNetdevsBody.
-
-        Netmask in bits number. In AWS this value is auto-detected, otherwise the default data networking netmask will be used  # noqa: E501
-
-        :param netmask: The netmask of this UidNetdevsBody.  # noqa: E501
-        :type: float
-        """
-
-        self._netmask = netmask
-
-    @property
     def name(self):
         """Gets the name of this UidNetdevsBody.  # noqa: E501
 
@@ -217,27 +217,27 @@ class UidNetdevsBody(object):
         self._name = name
 
     @property
-    def apply_host(self):
-        """Gets the apply_host of this UidNetdevsBody.  # noqa: E501
+    def netmask(self):
+        """Gets the netmask of this UidNetdevsBody.  # noqa: E501
 
-        Apply the host after this change  # noqa: E501
+        Netmask in bits number. In AWS this value is auto-detected, otherwise the default data networking netmask will be used  # noqa: E501
 
-        :return: The apply_host of this UidNetdevsBody.  # noqa: E501
-        :rtype: bool
+        :return: The netmask of this UidNetdevsBody.  # noqa: E501
+        :rtype: float
         """
-        return self._apply_host
+        return self._netmask
 
-    @apply_host.setter
-    def apply_host(self, apply_host):
-        """Sets the apply_host of this UidNetdevsBody.
+    @netmask.setter
+    def netmask(self, netmask):
+        """Sets the netmask of this UidNetdevsBody.
 
-        Apply the host after this change  # noqa: E501
+        Netmask in bits number. In AWS this value is auto-detected, otherwise the default data networking netmask will be used  # noqa: E501
 
-        :param apply_host: The apply_host of this UidNetdevsBody.  # noqa: E501
-        :type: bool
+        :param netmask: The netmask of this UidNetdevsBody.  # noqa: E501
+        :type: float
         """
 
-        self._apply_host = apply_host
+        self._netmask = netmask
 
     def to_dict(self):
         """Returns the model properties as a dict"""

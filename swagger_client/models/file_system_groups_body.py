@@ -29,27 +29,27 @@ class FileSystemGroupsBody(object):
     """
     swagger_types = {
         'name': 'str',
-        'target_ssd_retention': 'float',
-        'start_demote': 'float'
+        'start_demote': 'float',
+        'target_ssd_retention': 'float'
     }
 
     attribute_map = {
         'name': 'name',
-        'target_ssd_retention': 'target_ssd_retention',
-        'start_demote': 'start_demote'
+        'start_demote': 'start_demote',
+        'target_ssd_retention': 'target_ssd_retention'
     }
 
-    def __init__(self, name=None, target_ssd_retention=None, start_demote=None):  # noqa: E501
+    def __init__(self, name=None, start_demote=None, target_ssd_retention=None):  # noqa: E501
         """FileSystemGroupsBody - a model defined in Swagger"""  # noqa: E501
         self._name = None
-        self._target_ssd_retention = None
         self._start_demote = None
+        self._target_ssd_retention = None
         self.discriminator = None
         self.name = name
-        if target_ssd_retention is not None:
-            self.target_ssd_retention = target_ssd_retention
         if start_demote is not None:
             self.start_demote = start_demote
+        if target_ssd_retention is not None:
+            self.target_ssd_retention = target_ssd_retention
 
     @property
     def name(self):
@@ -77,29 +77,6 @@ class FileSystemGroupsBody(object):
         self._name = name
 
     @property
-    def target_ssd_retention(self):
-        """Gets the target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
-
-        SSD retention period  # noqa: E501
-
-        :return: The target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._target_ssd_retention
-
-    @target_ssd_retention.setter
-    def target_ssd_retention(self, target_ssd_retention):
-        """Sets the target_ssd_retention of this FileSystemGroupsBody.
-
-        SSD retention period  # noqa: E501
-
-        :param target_ssd_retention: The target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
-        :type: float
-        """
-
-        self._target_ssd_retention = target_ssd_retention
-
-    @property
     def start_demote(self):
         """Gets the start_demote of this FileSystemGroupsBody.  # noqa: E501
 
@@ -121,6 +98,29 @@ class FileSystemGroupsBody(object):
         """
 
         self._start_demote = start_demote
+
+    @property
+    def target_ssd_retention(self):
+        """Gets the target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
+
+        SSD retention period  # noqa: E501
+
+        :return: The target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
+        :rtype: float
+        """
+        return self._target_ssd_retention
+
+    @target_ssd_retention.setter
+    def target_ssd_retention(self, target_ssd_retention):
+        """Sets the target_ssd_retention of this FileSystemGroupsBody.
+
+        SSD retention period  # noqa: E501
+
+        :param target_ssd_retention: The target_ssd_retention of this FileSystemGroupsBody.  # noqa: E501
+        :type: float
+        """
+
+        self._target_ssd_retention = target_ssd_retention
 
     def to_dict(self):
         """Returns the model properties as a dict"""

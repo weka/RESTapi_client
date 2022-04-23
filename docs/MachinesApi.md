@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**get_machines**](MachinesApi.md#get_machines) | **GET** /machines | Get all machines
 
 # **get_machines**
-> InlineResponse20041 get_machines(role=role)
+> InlineResponse20040 get_machines(role=role)
 
 Get all machines
 
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20041**](InlineResponse20041.md)
+[**InlineResponse20040**](InlineResponse20040.md)
 
 ### Authorization
 

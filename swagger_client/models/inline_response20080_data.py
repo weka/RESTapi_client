@@ -28,92 +28,248 @@ class InlineResponse20080Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'resend_secs': 'float',
-        'result': 'InlineResponse20080DataResult',
-        'completed': 'bool'
+        'common_name': 'str',
+        'country': 'str',
+        'email': 'str',
+        'enabled': 'bool',
+        'expired_date': 'str',
+        'locality': 'str',
+        'organization': 'str',
+        'organization_unit': 'str',
+        'state': 'str'
     }
 
     attribute_map = {
-        'resend_secs': 'resend_secs',
-        'result': 'result',
-        'completed': 'completed'
+        'common_name': 'commonName',
+        'country': 'country',
+        'email': 'email',
+        'enabled': 'enabled',
+        'expired_date': 'expiredDate',
+        'locality': 'locality',
+        'organization': 'organization',
+        'organization_unit': 'organizationUnit',
+        'state': 'state'
     }
 
-    def __init__(self, resend_secs=None, result=None, completed=None):  # noqa: E501
+    def __init__(self, common_name=None, country=None, email=None, enabled=None, expired_date=None, locality=None, organization=None, organization_unit=None, state=None):  # noqa: E501
         """InlineResponse20080Data - a model defined in Swagger"""  # noqa: E501
-        self._resend_secs = None
-        self._result = None
-        self._completed = None
+        self._common_name = None
+        self._country = None
+        self._email = None
+        self._enabled = None
+        self._expired_date = None
+        self._locality = None
+        self._organization = None
+        self._organization_unit = None
+        self._state = None
         self.discriminator = None
-        if resend_secs is not None:
-            self.resend_secs = resend_secs
-        if result is not None:
-            self.result = result
-        if completed is not None:
-            self.completed = completed
+        if common_name is not None:
+            self.common_name = common_name
+        if country is not None:
+            self.country = country
+        if email is not None:
+            self.email = email
+        if enabled is not None:
+            self.enabled = enabled
+        if expired_date is not None:
+            self.expired_date = expired_date
+        if locality is not None:
+            self.locality = locality
+        if organization is not None:
+            self.organization = organization
+        if organization_unit is not None:
+            self.organization_unit = organization_unit
+        if state is not None:
+            self.state = state
 
     @property
-    def resend_secs(self):
-        """Gets the resend_secs of this InlineResponse20080Data.  # noqa: E501
+    def common_name(self):
+        """Gets the common_name of this InlineResponse20080Data.  # noqa: E501
 
 
-        :return: The resend_secs of this InlineResponse20080Data.  # noqa: E501
-        :rtype: float
+        :return: The common_name of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
         """
-        return self._resend_secs
+        return self._common_name
 
-    @resend_secs.setter
-    def resend_secs(self, resend_secs):
-        """Sets the resend_secs of this InlineResponse20080Data.
+    @common_name.setter
+    def common_name(self, common_name):
+        """Sets the common_name of this InlineResponse20080Data.
 
 
-        :param resend_secs: The resend_secs of this InlineResponse20080Data.  # noqa: E501
-        :type: float
+        :param common_name: The common_name of this InlineResponse20080Data.  # noqa: E501
+        :type: str
         """
 
-        self._resend_secs = resend_secs
+        self._common_name = common_name
 
     @property
-    def result(self):
-        """Gets the result of this InlineResponse20080Data.  # noqa: E501
+    def country(self):
+        """Gets the country of this InlineResponse20080Data.  # noqa: E501
 
 
-        :return: The result of this InlineResponse20080Data.  # noqa: E501
-        :rtype: InlineResponse20080DataResult
+        :return: The country of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
         """
-        return self._result
+        return self._country
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this InlineResponse20080Data.
+    @country.setter
+    def country(self, country):
+        """Sets the country of this InlineResponse20080Data.
 
 
-        :param result: The result of this InlineResponse20080Data.  # noqa: E501
-        :type: InlineResponse20080DataResult
+        :param country: The country of this InlineResponse20080Data.  # noqa: E501
+        :type: str
         """
 
-        self._result = result
+        self._country = country
 
     @property
-    def completed(self):
-        """Gets the completed of this InlineResponse20080Data.  # noqa: E501
+    def email(self):
+        """Gets the email of this InlineResponse20080Data.  # noqa: E501
 
 
-        :return: The completed of this InlineResponse20080Data.  # noqa: E501
+        :return: The email of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this InlineResponse20080Data.
+
+
+        :param email: The email of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._email = email
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The enabled of this InlineResponse20080Data.  # noqa: E501
         :rtype: bool
         """
-        return self._completed
+        return self._enabled
 
-    @completed.setter
-    def completed(self, completed):
-        """Sets the completed of this InlineResponse20080Data.
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this InlineResponse20080Data.
 
 
-        :param completed: The completed of this InlineResponse20080Data.  # noqa: E501
+        :param enabled: The enabled of this InlineResponse20080Data.  # noqa: E501
         :type: bool
         """
 
-        self._completed = completed
+        self._enabled = enabled
+
+    @property
+    def expired_date(self):
+        """Gets the expired_date of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The expired_date of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._expired_date
+
+    @expired_date.setter
+    def expired_date(self, expired_date):
+        """Sets the expired_date of this InlineResponse20080Data.
+
+
+        :param expired_date: The expired_date of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._expired_date = expired_date
+
+    @property
+    def locality(self):
+        """Gets the locality of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The locality of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._locality
+
+    @locality.setter
+    def locality(self, locality):
+        """Sets the locality of this InlineResponse20080Data.
+
+
+        :param locality: The locality of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._locality = locality
+
+    @property
+    def organization(self):
+        """Gets the organization of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The organization of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._organization
+
+    @organization.setter
+    def organization(self, organization):
+        """Sets the organization of this InlineResponse20080Data.
+
+
+        :param organization: The organization of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._organization = organization
+
+    @property
+    def organization_unit(self):
+        """Gets the organization_unit of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The organization_unit of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._organization_unit
+
+    @organization_unit.setter
+    def organization_unit(self, organization_unit):
+        """Sets the organization_unit of this InlineResponse20080Data.
+
+
+        :param organization_unit: The organization_unit of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._organization_unit = organization_unit
+
+    @property
+    def state(self):
+        """Gets the state of this InlineResponse20080Data.  # noqa: E501
+
+
+        :return: The state of this InlineResponse20080Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this InlineResponse20080Data.
+
+
+        :param state: The state of this InlineResponse20080Data.  # noqa: E501
+        :type: str
+        """
+
+        self._state = state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

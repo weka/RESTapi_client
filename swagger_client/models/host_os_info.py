@@ -28,44 +28,65 @@ class HostOsInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'drivers': 'HostOsInfoDrivers',
         'kernel_name': 'str',
-        'platform': 'str',
+        'kernel_release': 'str',
         'kernel_version': 'str',
         'os_name': 'str',
-        'kernel_release': 'str',
-        'drivers': 'HostOsInfoDrivers'
+        'platform': 'str'
     }
 
     attribute_map = {
+        'drivers': 'drivers',
         'kernel_name': 'kernel_name',
-        'platform': 'platform',
+        'kernel_release': 'kernel_release',
         'kernel_version': 'kernel_version',
         'os_name': 'os_name',
-        'kernel_release': 'kernel_release',
-        'drivers': 'drivers'
+        'platform': 'platform'
     }
 
-    def __init__(self, kernel_name=None, platform=None, kernel_version=None, os_name=None, kernel_release=None, drivers=None):  # noqa: E501
+    def __init__(self, drivers=None, kernel_name=None, kernel_release=None, kernel_version=None, os_name=None, platform=None):  # noqa: E501
         """HostOsInfo - a model defined in Swagger"""  # noqa: E501
+        self._drivers = None
         self._kernel_name = None
-        self._platform = None
+        self._kernel_release = None
         self._kernel_version = None
         self._os_name = None
-        self._kernel_release = None
-        self._drivers = None
+        self._platform = None
         self.discriminator = None
+        if drivers is not None:
+            self.drivers = drivers
         if kernel_name is not None:
             self.kernel_name = kernel_name
-        if platform is not None:
-            self.platform = platform
+        if kernel_release is not None:
+            self.kernel_release = kernel_release
         if kernel_version is not None:
             self.kernel_version = kernel_version
         if os_name is not None:
             self.os_name = os_name
-        if kernel_release is not None:
-            self.kernel_release = kernel_release
-        if drivers is not None:
-            self.drivers = drivers
+        if platform is not None:
+            self.platform = platform
+
+    @property
+    def drivers(self):
+        """Gets the drivers of this HostOsInfo.  # noqa: E501
+
+
+        :return: The drivers of this HostOsInfo.  # noqa: E501
+        :rtype: HostOsInfoDrivers
+        """
+        return self._drivers
+
+    @drivers.setter
+    def drivers(self, drivers):
+        """Sets the drivers of this HostOsInfo.
+
+
+        :param drivers: The drivers of this HostOsInfo.  # noqa: E501
+        :type: HostOsInfoDrivers
+        """
+
+        self._drivers = drivers
 
     @property
     def kernel_name(self):
@@ -89,25 +110,25 @@ class HostOsInfo(object):
         self._kernel_name = kernel_name
 
     @property
-    def platform(self):
-        """Gets the platform of this HostOsInfo.  # noqa: E501
+    def kernel_release(self):
+        """Gets the kernel_release of this HostOsInfo.  # noqa: E501
 
 
-        :return: The platform of this HostOsInfo.  # noqa: E501
+        :return: The kernel_release of this HostOsInfo.  # noqa: E501
         :rtype: str
         """
-        return self._platform
+        return self._kernel_release
 
-    @platform.setter
-    def platform(self, platform):
-        """Sets the platform of this HostOsInfo.
+    @kernel_release.setter
+    def kernel_release(self, kernel_release):
+        """Sets the kernel_release of this HostOsInfo.
 
 
-        :param platform: The platform of this HostOsInfo.  # noqa: E501
+        :param kernel_release: The kernel_release of this HostOsInfo.  # noqa: E501
         :type: str
         """
 
-        self._platform = platform
+        self._kernel_release = kernel_release
 
     @property
     def kernel_version(self):
@@ -152,46 +173,25 @@ class HostOsInfo(object):
         self._os_name = os_name
 
     @property
-    def kernel_release(self):
-        """Gets the kernel_release of this HostOsInfo.  # noqa: E501
+    def platform(self):
+        """Gets the platform of this HostOsInfo.  # noqa: E501
 
 
-        :return: The kernel_release of this HostOsInfo.  # noqa: E501
+        :return: The platform of this HostOsInfo.  # noqa: E501
         :rtype: str
         """
-        return self._kernel_release
+        return self._platform
 
-    @kernel_release.setter
-    def kernel_release(self, kernel_release):
-        """Sets the kernel_release of this HostOsInfo.
+    @platform.setter
+    def platform(self, platform):
+        """Sets the platform of this HostOsInfo.
 
 
-        :param kernel_release: The kernel_release of this HostOsInfo.  # noqa: E501
+        :param platform: The platform of this HostOsInfo.  # noqa: E501
         :type: str
         """
 
-        self._kernel_release = kernel_release
-
-    @property
-    def drivers(self):
-        """Gets the drivers of this HostOsInfo.  # noqa: E501
-
-
-        :return: The drivers of this HostOsInfo.  # noqa: E501
-        :rtype: HostOsInfoDrivers
-        """
-        return self._drivers
-
-    @drivers.setter
-    def drivers(self, drivers):
-        """Sets the drivers of this HostOsInfo.
-
-
-        :param drivers: The drivers of this HostOsInfo.  # noqa: E501
-        :type: HostOsInfoDrivers
-        """
-
-        self._drivers = drivers
+        self._platform = platform
 
     def to_dict(self):
         """Returns the model properties as a dict"""

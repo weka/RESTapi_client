@@ -252,7 +252,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param FileSystemsBody body: (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -273,7 +273,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param FileSystemsBody body: (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -331,7 +331,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='InlineResponse20017',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -540,7 +540,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str obs_uid: object store system uid (required)
-        :return: InlineResponse20020
+        :return: InlineResponse20019
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -562,7 +562,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str obs_uid: object store system uid (required)
-        :return: InlineResponse20020
+        :return: InlineResponse20019
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -622,7 +622,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20020',  # noqa: E501
+            response_type='InlineResponse20019',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -641,7 +641,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str obs_uid: object store system uid (required)
-        :return: InlineResponse20020
+        :return: InlineResponse20019
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -663,7 +663,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str obs_uid: object store system uid (required)
-        :return: InlineResponse20020
+        :return: InlineResponse20019
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -723,7 +723,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20020',  # noqa: E501
+            response_type='InlineResponse20019',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -741,7 +741,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param FileSystemsDownloadBody body: (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -762,7 +762,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param FileSystemsDownloadBody body: (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -820,7 +820,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='InlineResponse20017',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -839,7 +839,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param bool force_fresh: Refresh the capacities to make sure they are most updated
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -861,7 +861,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param bool force_fresh: Refresh the capacities to make sure they are most updated
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -917,7 +917,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='InlineResponse20017',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -935,7 +935,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param bool force_fresh: Refresh the capacities to make sure they are most updated
-        :return: InlineResponse20018
+        :return: InlineResponse20016
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -956,7 +956,7 @@ class FileSystemApi(object):
 
         :param async_req bool
         :param bool force_fresh: Refresh the capacities to make sure they are most updated
-        :return: InlineResponse20018
+        :return: InlineResponse20016
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1006,7 +1006,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20018',  # noqa: E501
+            response_type='InlineResponse20016',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1023,7 +1023,7 @@ class FileSystemApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20025
+        :return: InlineResponse20018
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1043,7 +1043,7 @@ class FileSystemApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20025
+        :return: InlineResponse20018
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1091,7 +1091,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20025',  # noqa: E501
+            response_type='InlineResponse20018',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1215,7 +1215,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param FileSystemsUidBody body: (required)
         :param str uid: File system uid (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1237,7 +1237,7 @@ class FileSystemApi(object):
         :param async_req bool
         :param FileSystemsUidBody body: (required)
         :param str uid: File system uid (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20017
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1301,7 +1301,7 @@ class FileSystemApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='InlineResponse20017',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

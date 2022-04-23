@@ -28,86 +28,36 @@ class SnapshotsBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'fs_uid': 'str',
-        'name': 'str',
         'access_point': 'str',
-        'source_snap_uid': 'str',
-        'is_writable': 'bool'
+        'fs_uid': 'str',
+        'is_writable': 'bool',
+        'name': 'str',
+        'source_snap_uid': 'str'
     }
 
     attribute_map = {
-        'fs_uid': 'fs_uid',
-        'name': 'name',
         'access_point': 'access_point',
-        'source_snap_uid': 'source_snap_uid',
-        'is_writable': 'is_writable'
+        'fs_uid': 'fs_uid',
+        'is_writable': 'is_writable',
+        'name': 'name',
+        'source_snap_uid': 'source_snap_uid'
     }
 
-    def __init__(self, fs_uid=None, name=None, access_point=None, source_snap_uid=None, is_writable=None):  # noqa: E501
+    def __init__(self, access_point=None, fs_uid=None, is_writable=None, name=None, source_snap_uid=None):  # noqa: E501
         """SnapshotsBody - a model defined in Swagger"""  # noqa: E501
-        self._fs_uid = None
-        self._name = None
         self._access_point = None
-        self._source_snap_uid = None
+        self._fs_uid = None
         self._is_writable = None
+        self._name = None
+        self._source_snap_uid = None
         self.discriminator = None
-        self.fs_uid = fs_uid
-        self.name = name
         self.access_point = access_point
-        if source_snap_uid is not None:
-            self.source_snap_uid = source_snap_uid
+        self.fs_uid = fs_uid
         if is_writable is not None:
             self.is_writable = is_writable
-
-    @property
-    def fs_uid(self):
-        """Gets the fs_uid of this SnapshotsBody.  # noqa: E501
-
-        File system uid for creating the snapshot  # noqa: E501
-
-        :return: The fs_uid of this SnapshotsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._fs_uid
-
-    @fs_uid.setter
-    def fs_uid(self, fs_uid):
-        """Sets the fs_uid of this SnapshotsBody.
-
-        File system uid for creating the snapshot  # noqa: E501
-
-        :param fs_uid: The fs_uid of this SnapshotsBody.  # noqa: E501
-        :type: str
-        """
-        if fs_uid is None:
-            raise ValueError("Invalid value for `fs_uid`, must not be `None`")  # noqa: E501
-
-        self._fs_uid = fs_uid
-
-    @property
-    def name(self):
-        """Gets the name of this SnapshotsBody.  # noqa: E501
-
-        Target Snapshot name  # noqa: E501
-
-        :return: The name of this SnapshotsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this SnapshotsBody.
-
-        Target Snapshot name  # noqa: E501
-
-        :param name: The name of this SnapshotsBody.  # noqa: E501
-        :type: str
-        """
-        if name is None:
-            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
-
-        self._name = name
+        self.name = name
+        if source_snap_uid is not None:
+            self.source_snap_uid = source_snap_uid
 
     @property
     def access_point(self):
@@ -135,27 +85,29 @@ class SnapshotsBody(object):
         self._access_point = access_point
 
     @property
-    def source_snap_uid(self):
-        """Gets the source_snap_uid of this SnapshotsBody.  # noqa: E501
+    def fs_uid(self):
+        """Gets the fs_uid of this SnapshotsBody.  # noqa: E501
 
-        Source snapshot uid for copy a snapshot  # noqa: E501
+        File system uid for creating the snapshot  # noqa: E501
 
-        :return: The source_snap_uid of this SnapshotsBody.  # noqa: E501
+        :return: The fs_uid of this SnapshotsBody.  # noqa: E501
         :rtype: str
         """
-        return self._source_snap_uid
+        return self._fs_uid
 
-    @source_snap_uid.setter
-    def source_snap_uid(self, source_snap_uid):
-        """Sets the source_snap_uid of this SnapshotsBody.
+    @fs_uid.setter
+    def fs_uid(self, fs_uid):
+        """Sets the fs_uid of this SnapshotsBody.
 
-        Source snapshot uid for copy a snapshot  # noqa: E501
+        File system uid for creating the snapshot  # noqa: E501
 
-        :param source_snap_uid: The source_snap_uid of this SnapshotsBody.  # noqa: E501
+        :param fs_uid: The fs_uid of this SnapshotsBody.  # noqa: E501
         :type: str
         """
+        if fs_uid is None:
+            raise ValueError("Invalid value for `fs_uid`, must not be `None`")  # noqa: E501
 
-        self._source_snap_uid = source_snap_uid
+        self._fs_uid = fs_uid
 
     @property
     def is_writable(self):
@@ -179,6 +131,54 @@ class SnapshotsBody(object):
         """
 
         self._is_writable = is_writable
+
+    @property
+    def name(self):
+        """Gets the name of this SnapshotsBody.  # noqa: E501
+
+        Target Snapshot name  # noqa: E501
+
+        :return: The name of this SnapshotsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this SnapshotsBody.
+
+        Target Snapshot name  # noqa: E501
+
+        :param name: The name of this SnapshotsBody.  # noqa: E501
+        :type: str
+        """
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
+
+        self._name = name
+
+    @property
+    def source_snap_uid(self):
+        """Gets the source_snap_uid of this SnapshotsBody.  # noqa: E501
+
+        Source snapshot uid for copy a snapshot  # noqa: E501
+
+        :return: The source_snap_uid of this SnapshotsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._source_snap_uid
+
+    @source_snap_uid.setter
+    def source_snap_uid(self, source_snap_uid):
+        """Sets the source_snap_uid of this SnapshotsBody.
+
+        Source snapshot uid for copy a snapshot  # noqa: E501
+
+        :param source_snap_uid: The source_snap_uid of this SnapshotsBody.  # noqa: E501
+        :type: str
+        """
+
+        self._source_snap_uid = source_snap_uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

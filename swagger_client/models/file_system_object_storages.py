@@ -28,65 +28,107 @@ class FileSystemObjectStorages(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'uid': 'str',
+        'mode': 'str',
+        'name': 'str',
+        'obs_id': 'str',
         'state': 'str',
         'status': 'str',
-        'obs_id': 'str',
-        'mode': 'str',
-        'name': 'str'
+        'uid': 'str'
     }
 
     attribute_map = {
-        'uid': 'uid',
+        'mode': 'mode',
+        'name': 'name',
+        'obs_id': 'obsId',
         'state': 'state',
         'status': 'status',
-        'obs_id': 'obsId',
-        'mode': 'mode',
-        'name': 'name'
+        'uid': 'uid'
     }
 
-    def __init__(self, uid=None, state=None, status=None, obs_id=None, mode=None, name=None):  # noqa: E501
+    def __init__(self, mode=None, name=None, obs_id=None, state=None, status=None, uid=None):  # noqa: E501
         """FileSystemObjectStorages - a model defined in Swagger"""  # noqa: E501
-        self._uid = None
-        self._state = None
-        self._status = None
-        self._obs_id = None
         self._mode = None
         self._name = None
+        self._obs_id = None
+        self._state = None
+        self._status = None
+        self._uid = None
         self.discriminator = None
-        if uid is not None:
-            self.uid = uid
-        if state is not None:
-            self.state = state
-        if status is not None:
-            self.status = status
-        if obs_id is not None:
-            self.obs_id = obs_id
         if mode is not None:
             self.mode = mode
         if name is not None:
             self.name = name
+        if obs_id is not None:
+            self.obs_id = obs_id
+        if state is not None:
+            self.state = state
+        if status is not None:
+            self.status = status
+        if uid is not None:
+            self.uid = uid
 
     @property
-    def uid(self):
-        """Gets the uid of this FileSystemObjectStorages.  # noqa: E501
+    def mode(self):
+        """Gets the mode of this FileSystemObjectStorages.  # noqa: E501
 
 
-        :return: The uid of this FileSystemObjectStorages.  # noqa: E501
+        :return: The mode of this FileSystemObjectStorages.  # noqa: E501
         :rtype: str
         """
-        return self._uid
+        return self._mode
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this FileSystemObjectStorages.
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this FileSystemObjectStorages.
 
 
-        :param uid: The uid of this FileSystemObjectStorages.  # noqa: E501
+        :param mode: The mode of this FileSystemObjectStorages.  # noqa: E501
         :type: str
         """
 
-        self._uid = uid
+        self._mode = mode
+
+    @property
+    def name(self):
+        """Gets the name of this FileSystemObjectStorages.  # noqa: E501
+
+
+        :return: The name of this FileSystemObjectStorages.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this FileSystemObjectStorages.
+
+
+        :param name: The name of this FileSystemObjectStorages.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
+
+    @property
+    def obs_id(self):
+        """Gets the obs_id of this FileSystemObjectStorages.  # noqa: E501
+
+
+        :return: The obs_id of this FileSystemObjectStorages.  # noqa: E501
+        :rtype: str
+        """
+        return self._obs_id
+
+    @obs_id.setter
+    def obs_id(self, obs_id):
+        """Sets the obs_id of this FileSystemObjectStorages.
+
+
+        :param obs_id: The obs_id of this FileSystemObjectStorages.  # noqa: E501
+        :type: str
+        """
+
+        self._obs_id = obs_id
 
     @property
     def state(self):
@@ -131,67 +173,25 @@ class FileSystemObjectStorages(object):
         self._status = status
 
     @property
-    def obs_id(self):
-        """Gets the obs_id of this FileSystemObjectStorages.  # noqa: E501
+    def uid(self):
+        """Gets the uid of this FileSystemObjectStorages.  # noqa: E501
 
 
-        :return: The obs_id of this FileSystemObjectStorages.  # noqa: E501
+        :return: The uid of this FileSystemObjectStorages.  # noqa: E501
         :rtype: str
         """
-        return self._obs_id
+        return self._uid
 
-    @obs_id.setter
-    def obs_id(self, obs_id):
-        """Sets the obs_id of this FileSystemObjectStorages.
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this FileSystemObjectStorages.
 
 
-        :param obs_id: The obs_id of this FileSystemObjectStorages.  # noqa: E501
+        :param uid: The uid of this FileSystemObjectStorages.  # noqa: E501
         :type: str
         """
 
-        self._obs_id = obs_id
-
-    @property
-    def mode(self):
-        """Gets the mode of this FileSystemObjectStorages.  # noqa: E501
-
-
-        :return: The mode of this FileSystemObjectStorages.  # noqa: E501
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this FileSystemObjectStorages.
-
-
-        :param mode: The mode of this FileSystemObjectStorages.  # noqa: E501
-        :type: str
-        """
-
-        self._mode = mode
-
-    @property
-    def name(self):
-        """Gets the name of this FileSystemObjectStorages.  # noqa: E501
-
-
-        :return: The name of this FileSystemObjectStorages.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this FileSystemObjectStorages.
-
-
-        :param name: The name of this FileSystemObjectStorages.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

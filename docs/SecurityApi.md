@@ -101,7 +101,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_login_banner**
-> InlineResponse20070 get_login_banner()
+> InlineResponse20061 get_login_banner()
 
 Get the login banner
 
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20070**](InlineResponse20070.md)
+[**InlineResponse20061**](InlineResponse20061.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tokens_expiry**
-> InlineResponse20069 get_tokens_expiry()
+> InlineResponse20063 get_tokens_expiry()
 
 Get tokens default expiry time
 
@@ -173,7 +173,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20069**](InlineResponse20069.md)
+[**InlineResponse20063**](InlineResponse20063.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tokens_expiry_deprecated**
-> InlineResponse20069 get_tokens_expiry_deprecated()
+> InlineResponse20063 get_tokens_expiry_deprecated()
 
 Get tokens default expiry time
 
@@ -216,7 +216,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20069**](InlineResponse20069.md)
+[**InlineResponse20063**](InlineResponse20063.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **show_ca_cert**
-> InlineResponse20071 show_ca_cert()
+> InlineResponse20062 show_ca_cert()
 
 Show the CA-Cert for the cluster (Vault)
 
@@ -353,7 +353,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20071**](InlineResponse20071.md)
+[**InlineResponse20062**](InlineResponse20062.md)
 
 ### Authorization
 

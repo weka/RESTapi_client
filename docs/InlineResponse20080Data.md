@@ -3,9 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resend_secs** | **float** |  | [optional] 
-**result** | [**InlineResponse20080DataResult**](InlineResponse20080DataResult.md) |  | [optional] 
-**completed** | **bool** |  | [optional] 
+**common_name** | **str** |  | [optional] 
+**country** | **str** |  | [optional] 
+**email** | **str** |  | [optional] 
+**enabled** | **bool** |  | [optional] 
+**expired_date** | **str** |  | [optional] 
+**locality** | **str** |  | [optional] 
+**organization** | **str** |  | [optional] 
+**organization_unit** | **str** |  | [optional] 
+**state** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

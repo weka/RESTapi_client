@@ -3,7 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**all** | [**InlineResponse20063DataAll**](InlineResponse20063DataAll.md) |  | [optional] 
+**access_token_expiry** | **float** |  | [optional] 
+**refresh_token_expiry** | **float** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

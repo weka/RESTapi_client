@@ -28,47 +28,22 @@ class S3PoliciesBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'policy_name': 'str',
-        'policy_file_content': 'str'
+        'policy_file_content': 'str',
+        'policy_name': 'str'
     }
 
     attribute_map = {
-        'policy_name': 'policy_name',
-        'policy_file_content': 'policy_file_content'
+        'policy_file_content': 'policy_file_content',
+        'policy_name': 'policy_name'
     }
 
-    def __init__(self, policy_name=None, policy_file_content=None):  # noqa: E501
+    def __init__(self, policy_file_content=None, policy_name=None):  # noqa: E501
         """S3PoliciesBody - a model defined in Swagger"""  # noqa: E501
-        self._policy_name = None
         self._policy_file_content = None
+        self._policy_name = None
         self.discriminator = None
-        self.policy_name = policy_name
         self.policy_file_content = policy_file_content
-
-    @property
-    def policy_name(self):
-        """Gets the policy_name of this S3PoliciesBody.  # noqa: E501
-
-        policy name  # noqa: E501
-
-        :return: The policy_name of this S3PoliciesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._policy_name
-
-    @policy_name.setter
-    def policy_name(self, policy_name):
-        """Sets the policy_name of this S3PoliciesBody.
-
-        policy name  # noqa: E501
-
-        :param policy_name: The policy_name of this S3PoliciesBody.  # noqa: E501
-        :type: str
-        """
-        if policy_name is None:
-            raise ValueError("Invalid value for `policy_name`, must not be `None`")  # noqa: E501
-
-        self._policy_name = policy_name
+        self.policy_name = policy_name
 
     @property
     def policy_file_content(self):
@@ -94,6 +69,31 @@ class S3PoliciesBody(object):
             raise ValueError("Invalid value for `policy_file_content`, must not be `None`")  # noqa: E501
 
         self._policy_file_content = policy_file_content
+
+    @property
+    def policy_name(self):
+        """Gets the policy_name of this S3PoliciesBody.  # noqa: E501
+
+        policy name  # noqa: E501
+
+        :return: The policy_name of this S3PoliciesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._policy_name
+
+    @policy_name.setter
+    def policy_name(self, policy_name):
+        """Sets the policy_name of this S3PoliciesBody.
+
+        policy name  # noqa: E501
+
+        :param policy_name: The policy_name of this S3PoliciesBody.  # noqa: E501
+        :type: str
+        """
+        if policy_name is None:
+            raise ValueError("Invalid value for `policy_name`, must not be `None`")  # noqa: E501
+
+        self._policy_name = policy_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

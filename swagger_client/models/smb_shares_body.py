@@ -28,247 +28,82 @@ class SmbSharesBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'share_name': 'str',
-        'fs_name': 'str',
-        'description': 'str',
-        'sub_path': 'str',
-        'mount_options': 'str',
-        'file_create_mask': 'str',
-        'directory_create_mask': 'str',
         'acl': 'bool',
-        'obs_direct': 'bool',
+        'additional_share_options': 'list[str]',
+        'description': 'str',
+        'directory_create_mask': 'str',
         'encryption': 'str',
+        'file_create_mask': 'str',
+        'fs_name': 'str',
+        'mount_options': 'str',
+        'obs_direct': 'bool',
         'read_only': 'bool',
+        'share_name': 'str',
+        'sub_path': 'str',
         'user_list_type': 'str',
-        'users': 'list[str]',
-        'additional_share_options': 'list[str]'
+        'users': 'list[str]'
     }
 
     attribute_map = {
-        'share_name': 'share_name',
-        'fs_name': 'fs_name',
-        'description': 'description',
-        'sub_path': 'sub_path',
-        'mount_options': 'mount_options',
-        'file_create_mask': 'file_create_mask',
-        'directory_create_mask': 'directory_create_mask',
         'acl': 'acl',
-        'obs_direct': 'obs_direct',
+        'additional_share_options': 'additional_share_options',
+        'description': 'description',
+        'directory_create_mask': 'directory_create_mask',
         'encryption': 'encryption',
+        'file_create_mask': 'file_create_mask',
+        'fs_name': 'fs_name',
+        'mount_options': 'mount_options',
+        'obs_direct': 'obs_direct',
         'read_only': 'read_only',
+        'share_name': 'share_name',
+        'sub_path': 'sub_path',
         'user_list_type': 'user_list_type',
-        'users': 'users',
-        'additional_share_options': 'additional_share_options'
+        'users': 'users'
     }
 
-    def __init__(self, share_name=None, fs_name=None, description=None, sub_path=None, mount_options=None, file_create_mask=None, directory_create_mask=None, acl=None, obs_direct=None, encryption=None, read_only=None, user_list_type=None, users=None, additional_share_options=None):  # noqa: E501
+    def __init__(self, acl=None, additional_share_options=None, description=None, directory_create_mask=None, encryption=None, file_create_mask=None, fs_name=None, mount_options=None, obs_direct=None, read_only=None, share_name=None, sub_path=None, user_list_type=None, users=None):  # noqa: E501
         """SmbSharesBody - a model defined in Swagger"""  # noqa: E501
-        self._share_name = None
-        self._fs_name = None
-        self._description = None
-        self._sub_path = None
-        self._mount_options = None
-        self._file_create_mask = None
-        self._directory_create_mask = None
         self._acl = None
-        self._obs_direct = None
+        self._additional_share_options = None
+        self._description = None
+        self._directory_create_mask = None
         self._encryption = None
+        self._file_create_mask = None
+        self._fs_name = None
+        self._mount_options = None
+        self._obs_direct = None
         self._read_only = None
+        self._share_name = None
+        self._sub_path = None
         self._user_list_type = None
         self._users = None
-        self._additional_share_options = None
         self.discriminator = None
-        self.share_name = share_name
-        self.fs_name = fs_name
-        if description is not None:
-            self.description = description
-        if sub_path is not None:
-            self.sub_path = sub_path
-        if mount_options is not None:
-            self.mount_options = mount_options
-        if file_create_mask is not None:
-            self.file_create_mask = file_create_mask
-        if directory_create_mask is not None:
-            self.directory_create_mask = directory_create_mask
         if acl is not None:
             self.acl = acl
-        if obs_direct is not None:
-            self.obs_direct = obs_direct
+        if additional_share_options is not None:
+            self.additional_share_options = additional_share_options
+        if description is not None:
+            self.description = description
+        if directory_create_mask is not None:
+            self.directory_create_mask = directory_create_mask
         if encryption is not None:
             self.encryption = encryption
+        if file_create_mask is not None:
+            self.file_create_mask = file_create_mask
+        self.fs_name = fs_name
+        if mount_options is not None:
+            self.mount_options = mount_options
+        if obs_direct is not None:
+            self.obs_direct = obs_direct
         if read_only is not None:
             self.read_only = read_only
+        self.share_name = share_name
+        if sub_path is not None:
+            self.sub_path = sub_path
         if user_list_type is not None:
             self.user_list_type = user_list_type
         if users is not None:
             self.users = users
-        if additional_share_options is not None:
-            self.additional_share_options = additional_share_options
-
-    @property
-    def share_name(self):
-        """Gets the share_name of this SmbSharesBody.  # noqa: E501
-
-        The name of the share being added  # noqa: E501
-
-        :return: The share_name of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._share_name
-
-    @share_name.setter
-    def share_name(self, share_name):
-        """Sets the share_name of this SmbSharesBody.
-
-        The name of the share being added  # noqa: E501
-
-        :param share_name: The share_name of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-        if share_name is None:
-            raise ValueError("Invalid value for `share_name`, must not be `None`")  # noqa: E501
-
-        self._share_name = share_name
-
-    @property
-    def fs_name(self):
-        """Gets the fs_name of this SmbSharesBody.  # noqa: E501
-
-        Filesystem name to share  # noqa: E501
-
-        :return: The fs_name of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._fs_name
-
-    @fs_name.setter
-    def fs_name(self, fs_name):
-        """Sets the fs_name of this SmbSharesBody.
-
-        Filesystem name to share  # noqa: E501
-
-        :param fs_name: The fs_name of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-        if fs_name is None:
-            raise ValueError("Invalid value for `fs_name`, must not be `None`")  # noqa: E501
-
-        self._fs_name = fs_name
-
-    @property
-    def description(self):
-        """Gets the description of this SmbSharesBody.  # noqa: E501
-
-        A description for samba to show regarding the share  # noqa: E501
-
-        :return: The description of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this SmbSharesBody.
-
-        A description for samba to show regarding the share  # noqa: E501
-
-        :param description: The description of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-
-        self._description = description
-
-    @property
-    def sub_path(self):
-        """Gets the sub_path of this SmbSharesBody.  # noqa: E501
-
-        The path inside the filesystem to share  # noqa: E501
-
-        :return: The sub_path of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._sub_path
-
-    @sub_path.setter
-    def sub_path(self, sub_path):
-        """Sets the sub_path of this SmbSharesBody.
-
-        The path inside the filesystem to share  # noqa: E501
-
-        :param sub_path: The sub_path of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-
-        self._sub_path = sub_path
-
-    @property
-    def mount_options(self):
-        """Gets the mount_options of this SmbSharesBody.  # noqa: E501
-
-        Option to pass to the mount command when mounting weka. NOTE - This parameter is DANGEROUS, use with caution. Incorrect usage may lead to DATA LOSS  # noqa: E501
-
-        :return: The mount_options of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._mount_options
-
-    @mount_options.setter
-    def mount_options(self, mount_options):
-        """Sets the mount_options of this SmbSharesBody.
-
-        Option to pass to the mount command when mounting weka. NOTE - This parameter is DANGEROUS, use with caution. Incorrect usage may lead to DATA LOSS  # noqa: E501
-
-        :param mount_options: The mount_options of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-
-        self._mount_options = mount_options
-
-    @property
-    def file_create_mask(self):
-        """Gets the file_create_mask of this SmbSharesBody.  # noqa: E501
-
-        POSIX mode mask files will be created with. E.g. \"0744\"  # noqa: E501
-
-        :return: The file_create_mask of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._file_create_mask
-
-    @file_create_mask.setter
-    def file_create_mask(self, file_create_mask):
-        """Sets the file_create_mask of this SmbSharesBody.
-
-        POSIX mode mask files will be created with. E.g. \"0744\"  # noqa: E501
-
-        :param file_create_mask: The file_create_mask of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-
-        self._file_create_mask = file_create_mask
-
-    @property
-    def directory_create_mask(self):
-        """Gets the directory_create_mask of this SmbSharesBody.  # noqa: E501
-
-        POSIX mode mask directories will be created with. E.g. \"0755\"  # noqa: E501
-
-        :return: The directory_create_mask of this SmbSharesBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._directory_create_mask
-
-    @directory_create_mask.setter
-    def directory_create_mask(self, directory_create_mask):
-        """Sets the directory_create_mask of this SmbSharesBody.
-
-        POSIX mode mask directories will be created with. E.g. \"0755\"  # noqa: E501
-
-        :param directory_create_mask: The directory_create_mask of this SmbSharesBody.  # noqa: E501
-        :type: str
-        """
-
-        self._directory_create_mask = directory_create_mask
 
     @property
     def acl(self):
@@ -294,27 +129,71 @@ class SmbSharesBody(object):
         self._acl = acl
 
     @property
-    def obs_direct(self):
-        """Gets the obs_direct of this SmbSharesBody.  # noqa: E501
+    def additional_share_options(self):
+        """Gets the additional_share_options of this SmbSharesBody.  # noqa: E501
 
-        Mount samba in obs-direct mode  # noqa: E501
 
-        :return: The obs_direct of this SmbSharesBody.  # noqa: E501
-        :rtype: bool
+        :return: The additional_share_options of this SmbSharesBody.  # noqa: E501
+        :rtype: list[str]
         """
-        return self._obs_direct
+        return self._additional_share_options
 
-    @obs_direct.setter
-    def obs_direct(self, obs_direct):
-        """Sets the obs_direct of this SmbSharesBody.
+    @additional_share_options.setter
+    def additional_share_options(self, additional_share_options):
+        """Sets the additional_share_options of this SmbSharesBody.
 
-        Mount samba in obs-direct mode  # noqa: E501
 
-        :param obs_direct: The obs_direct of this SmbSharesBody.  # noqa: E501
-        :type: bool
+        :param additional_share_options: The additional_share_options of this SmbSharesBody.  # noqa: E501
+        :type: list[str]
         """
 
-        self._obs_direct = obs_direct
+        self._additional_share_options = additional_share_options
+
+    @property
+    def description(self):
+        """Gets the description of this SmbSharesBody.  # noqa: E501
+
+        A description for samba to show regarding the share  # noqa: E501
+
+        :return: The description of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this SmbSharesBody.
+
+        A description for samba to show regarding the share  # noqa: E501
+
+        :param description: The description of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+
+        self._description = description
+
+    @property
+    def directory_create_mask(self):
+        """Gets the directory_create_mask of this SmbSharesBody.  # noqa: E501
+
+        POSIX mode mask directories will be created with. E.g. \"0755\"  # noqa: E501
+
+        :return: The directory_create_mask of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._directory_create_mask
+
+    @directory_create_mask.setter
+    def directory_create_mask(self, directory_create_mask):
+        """Sets the directory_create_mask of this SmbSharesBody.
+
+        POSIX mode mask directories will be created with. E.g. \"0755\"  # noqa: E501
+
+        :param directory_create_mask: The directory_create_mask of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+
+        self._directory_create_mask = directory_create_mask
 
     @property
     def encryption(self):
@@ -346,6 +225,100 @@ class SmbSharesBody(object):
         self._encryption = encryption
 
     @property
+    def file_create_mask(self):
+        """Gets the file_create_mask of this SmbSharesBody.  # noqa: E501
+
+        POSIX mode mask files will be created with. E.g. \"0744\"  # noqa: E501
+
+        :return: The file_create_mask of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._file_create_mask
+
+    @file_create_mask.setter
+    def file_create_mask(self, file_create_mask):
+        """Sets the file_create_mask of this SmbSharesBody.
+
+        POSIX mode mask files will be created with. E.g. \"0744\"  # noqa: E501
+
+        :param file_create_mask: The file_create_mask of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+
+        self._file_create_mask = file_create_mask
+
+    @property
+    def fs_name(self):
+        """Gets the fs_name of this SmbSharesBody.  # noqa: E501
+
+        Filesystem name to share  # noqa: E501
+
+        :return: The fs_name of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._fs_name
+
+    @fs_name.setter
+    def fs_name(self, fs_name):
+        """Sets the fs_name of this SmbSharesBody.
+
+        Filesystem name to share  # noqa: E501
+
+        :param fs_name: The fs_name of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+        if fs_name is None:
+            raise ValueError("Invalid value for `fs_name`, must not be `None`")  # noqa: E501
+
+        self._fs_name = fs_name
+
+    @property
+    def mount_options(self):
+        """Gets the mount_options of this SmbSharesBody.  # noqa: E501
+
+        Option to pass to the mount command when mounting weka. NOTE - This parameter is DANGEROUS, use with caution. Incorrect usage may lead to DATA LOSS  # noqa: E501
+
+        :return: The mount_options of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._mount_options
+
+    @mount_options.setter
+    def mount_options(self, mount_options):
+        """Sets the mount_options of this SmbSharesBody.
+
+        Option to pass to the mount command when mounting weka. NOTE - This parameter is DANGEROUS, use with caution. Incorrect usage may lead to DATA LOSS  # noqa: E501
+
+        :param mount_options: The mount_options of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+
+        self._mount_options = mount_options
+
+    @property
+    def obs_direct(self):
+        """Gets the obs_direct of this SmbSharesBody.  # noqa: E501
+
+        Mount samba in obs-direct mode  # noqa: E501
+
+        :return: The obs_direct of this SmbSharesBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._obs_direct
+
+    @obs_direct.setter
+    def obs_direct(self, obs_direct):
+        """Sets the obs_direct of this SmbSharesBody.
+
+        Mount samba in obs-direct mode  # noqa: E501
+
+        :param obs_direct: The obs_direct of this SmbSharesBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._obs_direct = obs_direct
+
+    @property
     def read_only(self):
         """Gets the read_only of this SmbSharesBody.  # noqa: E501
 
@@ -367,6 +340,54 @@ class SmbSharesBody(object):
         """
 
         self._read_only = read_only
+
+    @property
+    def share_name(self):
+        """Gets the share_name of this SmbSharesBody.  # noqa: E501
+
+        The name of the share being added  # noqa: E501
+
+        :return: The share_name of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._share_name
+
+    @share_name.setter
+    def share_name(self, share_name):
+        """Sets the share_name of this SmbSharesBody.
+
+        The name of the share being added  # noqa: E501
+
+        :param share_name: The share_name of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+        if share_name is None:
+            raise ValueError("Invalid value for `share_name`, must not be `None`")  # noqa: E501
+
+        self._share_name = share_name
+
+    @property
+    def sub_path(self):
+        """Gets the sub_path of this SmbSharesBody.  # noqa: E501
+
+        The path inside the filesystem to share  # noqa: E501
+
+        :return: The sub_path of this SmbSharesBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._sub_path
+
+    @sub_path.setter
+    def sub_path(self, sub_path):
+        """Sets the sub_path of this SmbSharesBody.
+
+        The path inside the filesystem to share  # noqa: E501
+
+        :param sub_path: The sub_path of this SmbSharesBody.  # noqa: E501
+        :type: str
+        """
+
+        self._sub_path = sub_path
 
     @property
     def user_list_type(self):
@@ -411,27 +432,6 @@ class SmbSharesBody(object):
         """
 
         self._users = users
-
-    @property
-    def additional_share_options(self):
-        """Gets the additional_share_options of this SmbSharesBody.  # noqa: E501
-
-
-        :return: The additional_share_options of this SmbSharesBody.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._additional_share_options
-
-    @additional_share_options.setter
-    def additional_share_options(self, additional_share_options):
-        """Sets the additional_share_options of this SmbSharesBody.
-
-
-        :param additional_share_options: The additional_share_options of this SmbSharesBody.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._additional_share_options = additional_share_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

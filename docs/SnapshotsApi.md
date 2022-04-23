@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**upload_snapshot**](SnapshotsApi.md#upload_snapshot) | **POST** /snapshots/{uid}/upload | Upload snapshot to object store
 
 # **copy_snapshot**
-> InlineResponse20073 copy_snapshot(uid, body=body)
+> InlineResponse20072 copy_snapshot(uid, body=body)
 
 Copy snapshot from the same file system
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_snapshot**
-> InlineResponse20073 create_snapshot(body=body)
+> InlineResponse20072 create_snapshot(body=body)
 
 Create snapshot
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_snapshot**
-> InlineResponse20073 get_snapshot(uid)
+> InlineResponse20072 get_snapshot(uid)
 
 Get snapshot
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_snapshots**
-> InlineResponse20072 get_snapshots()
+> InlineResponse20071 get_snapshots()
 
 Get snapshots
 
@@ -233,7 +233,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20072**](InlineResponse20072.md)
+[**InlineResponse20071**](InlineResponse20071.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **restore_file_system_from_snapshot**
-> InlineResponse20073 restore_file_system_from_snapshot(fs_uid, uid)
+> InlineResponse20072 restore_file_system_from_snapshot(fs_uid, uid)
 
 Restore file system from snapshot
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_snapshot**
-> InlineResponse20073 update_snapshot(uid, body=body)
+> InlineResponse20072 update_snapshot(uid, body=body)
 
 Update snapshot
 
@@ -331,7 +331,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20073**](InlineResponse20073.md)
+[**InlineResponse20072**](InlineResponse20072.md)
 
 ### Authorization
 
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_snapshot**
-> InlineResponse20074 upload_snapshot(uid, body=body)
+> InlineResponse20073 upload_snapshot(uid, body=body)
 
 Upload snapshot to object store
 
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20074**](InlineResponse20074.md)
+[**InlineResponse20073**](InlineResponse20073.md)
 
 ### Authorization
 

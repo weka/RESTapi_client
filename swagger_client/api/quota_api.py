@@ -44,7 +44,7 @@ class QuotaApi(object):
         :param str uid: file system uid (required)
         :param str inode_context: directory's inode id (required)
         :param str path:
-        :return: InlineResponse20024
+        :return: InlineResponse20023
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -67,7 +67,7 @@ class QuotaApi(object):
         :param str uid: file system uid (required)
         :param str inode_context: directory's inode id (required)
         :param str path:
-        :return: InlineResponse20024
+        :return: InlineResponse20023
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -129,7 +129,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20024',  # noqa: E501
+            response_type='InlineResponse20023',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -148,7 +148,7 @@ class QuotaApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str inode_context: directory's inode id (required)
-        :return: InlineResponse20022
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -170,7 +170,7 @@ class QuotaApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str inode_context: directory's inode id (required)
-        :return: InlineResponse20022
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -230,7 +230,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20022',  # noqa: E501
+            response_type='InlineResponse20021',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -250,7 +250,7 @@ class QuotaApi(object):
         :param str type: Quota type (required)
         :param str uid: File system uid (required)
         :param str next_token: Token to get the next page
-        :return: InlineResponse20055
+        :return: InlineResponse20054
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -273,7 +273,7 @@ class QuotaApi(object):
         :param str type: Quota type (required)
         :param str uid: File system uid (required)
         :param str next_token: Token to get the next page
-        :return: InlineResponse20055
+        :return: InlineResponse20054
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -335,7 +335,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20055',  # noqa: E501
+            response_type='InlineResponse20054',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -354,7 +354,7 @@ class QuotaApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str next_token: Token to get the next page
-        :return: InlineResponse20021
+        :return: InlineResponse20020
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -376,7 +376,7 @@ class QuotaApi(object):
         :param async_req bool
         :param str uid: file system uid (required)
         :param str next_token: Token to get the next page
-        :return: InlineResponse20021
+        :return: InlineResponse20020
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -432,7 +432,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20021',  # noqa: E501
+            response_type='InlineResponse20020',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -456,7 +456,7 @@ class QuotaApi(object):
         :param float soft_limit_bytes: 0 for unlimited
         :param float grace_seconds:
         :param str owner:
-        :return: InlineResponse20022
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -483,7 +483,7 @@ class QuotaApi(object):
         :param float soft_limit_bytes: 0 for unlimited
         :param float grace_seconds:
         :param str owner:
-        :return: InlineResponse20022
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -553,7 +553,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20022',  # noqa: E501
+            response_type='InlineResponse20021',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -577,7 +577,7 @@ class QuotaApi(object):
         :param float grace_seconds: (required)
         :param str path:
         :param str owner:
-        :return: InlineResponse20023
+        :return: InlineResponse20022
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -604,7 +604,7 @@ class QuotaApi(object):
         :param float grace_seconds: (required)
         :param str path:
         :param str owner:
-        :return: InlineResponse20023
+        :return: InlineResponse20022
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -686,7 +686,7 @@ class QuotaApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20023',  # noqa: E501
+            response_type='InlineResponse20022',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

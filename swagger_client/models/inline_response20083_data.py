@@ -28,248 +28,144 @@ class InlineResponse20083Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'enabled': 'bool',
-        'organization': 'str',
-        'country': 'str',
-        'state': 'str',
-        'expired_date': 'str',
-        'email': 'str',
-        'common_name': 'str',
-        'locality': 'str',
-        'organization_unit': 'str'
+        'org_id': 'float',
+        'org_name': 'str',
+        'role': 'str',
+        'source': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
-        'enabled': 'enabled',
-        'organization': 'organization',
-        'country': 'country',
-        'state': 'state',
-        'expired_date': 'expiredDate',
-        'email': 'email',
-        'common_name': 'commonName',
-        'locality': 'locality',
-        'organization_unit': 'organizationUnit'
+        'org_id': 'org_id',
+        'org_name': 'org_name',
+        'role': 'role',
+        'source': 'source',
+        'username': 'username'
     }
 
-    def __init__(self, enabled=None, organization=None, country=None, state=None, expired_date=None, email=None, common_name=None, locality=None, organization_unit=None):  # noqa: E501
+    def __init__(self, org_id=None, org_name=None, role=None, source=None, username=None):  # noqa: E501
         """InlineResponse20083Data - a model defined in Swagger"""  # noqa: E501
-        self._enabled = None
-        self._organization = None
-        self._country = None
-        self._state = None
-        self._expired_date = None
-        self._email = None
-        self._common_name = None
-        self._locality = None
-        self._organization_unit = None
+        self._org_id = None
+        self._org_name = None
+        self._role = None
+        self._source = None
+        self._username = None
         self.discriminator = None
-        if enabled is not None:
-            self.enabled = enabled
-        if organization is not None:
-            self.organization = organization
-        if country is not None:
-            self.country = country
-        if state is not None:
-            self.state = state
-        if expired_date is not None:
-            self.expired_date = expired_date
-        if email is not None:
-            self.email = email
-        if common_name is not None:
-            self.common_name = common_name
-        if locality is not None:
-            self.locality = locality
-        if organization_unit is not None:
-            self.organization_unit = organization_unit
+        if org_id is not None:
+            self.org_id = org_id
+        if org_name is not None:
+            self.org_name = org_name
+        if role is not None:
+            self.role = role
+        if source is not None:
+            self.source = source
+        if username is not None:
+            self.username = username
 
     @property
-    def enabled(self):
-        """Gets the enabled of this InlineResponse20083Data.  # noqa: E501
+    def org_id(self):
+        """Gets the org_id of this InlineResponse20083Data.  # noqa: E501
 
 
-        :return: The enabled of this InlineResponse20083Data.  # noqa: E501
-        :rtype: bool
+        :return: The org_id of this InlineResponse20083Data.  # noqa: E501
+        :rtype: float
         """
-        return self._enabled
+        return self._org_id
 
-    @enabled.setter
-    def enabled(self, enabled):
-        """Sets the enabled of this InlineResponse20083Data.
+    @org_id.setter
+    def org_id(self, org_id):
+        """Sets the org_id of this InlineResponse20083Data.
 
 
-        :param enabled: The enabled of this InlineResponse20083Data.  # noqa: E501
-        :type: bool
+        :param org_id: The org_id of this InlineResponse20083Data.  # noqa: E501
+        :type: float
         """
 
-        self._enabled = enabled
+        self._org_id = org_id
 
     @property
-    def organization(self):
-        """Gets the organization of this InlineResponse20083Data.  # noqa: E501
+    def org_name(self):
+        """Gets the org_name of this InlineResponse20083Data.  # noqa: E501
 
 
-        :return: The organization of this InlineResponse20083Data.  # noqa: E501
+        :return: The org_name of this InlineResponse20083Data.  # noqa: E501
         :rtype: str
         """
-        return self._organization
+        return self._org_name
 
-    @organization.setter
-    def organization(self, organization):
-        """Sets the organization of this InlineResponse20083Data.
+    @org_name.setter
+    def org_name(self, org_name):
+        """Sets the org_name of this InlineResponse20083Data.
 
 
-        :param organization: The organization of this InlineResponse20083Data.  # noqa: E501
+        :param org_name: The org_name of this InlineResponse20083Data.  # noqa: E501
         :type: str
         """
 
-        self._organization = organization
+        self._org_name = org_name
 
     @property
-    def country(self):
-        """Gets the country of this InlineResponse20083Data.  # noqa: E501
+    def role(self):
+        """Gets the role of this InlineResponse20083Data.  # noqa: E501
 
 
-        :return: The country of this InlineResponse20083Data.  # noqa: E501
+        :return: The role of this InlineResponse20083Data.  # noqa: E501
         :rtype: str
         """
-        return self._country
+        return self._role
 
-    @country.setter
-    def country(self, country):
-        """Sets the country of this InlineResponse20083Data.
+    @role.setter
+    def role(self, role):
+        """Sets the role of this InlineResponse20083Data.
 
 
-        :param country: The country of this InlineResponse20083Data.  # noqa: E501
+        :param role: The role of this InlineResponse20083Data.  # noqa: E501
         :type: str
         """
 
-        self._country = country
+        self._role = role
 
     @property
-    def state(self):
-        """Gets the state of this InlineResponse20083Data.  # noqa: E501
+    def source(self):
+        """Gets the source of this InlineResponse20083Data.  # noqa: E501
 
 
-        :return: The state of this InlineResponse20083Data.  # noqa: E501
+        :return: The source of this InlineResponse20083Data.  # noqa: E501
         :rtype: str
         """
-        return self._state
+        return self._source
 
-    @state.setter
-    def state(self, state):
-        """Sets the state of this InlineResponse20083Data.
+    @source.setter
+    def source(self, source):
+        """Sets the source of this InlineResponse20083Data.
 
 
-        :param state: The state of this InlineResponse20083Data.  # noqa: E501
+        :param source: The source of this InlineResponse20083Data.  # noqa: E501
         :type: str
         """
 
-        self._state = state
+        self._source = source
 
     @property
-    def expired_date(self):
-        """Gets the expired_date of this InlineResponse20083Data.  # noqa: E501
+    def username(self):
+        """Gets the username of this InlineResponse20083Data.  # noqa: E501
 
 
-        :return: The expired_date of this InlineResponse20083Data.  # noqa: E501
+        :return: The username of this InlineResponse20083Data.  # noqa: E501
         :rtype: str
         """
-        return self._expired_date
+        return self._username
 
-    @expired_date.setter
-    def expired_date(self, expired_date):
-        """Sets the expired_date of this InlineResponse20083Data.
+    @username.setter
+    def username(self, username):
+        """Sets the username of this InlineResponse20083Data.
 
 
-        :param expired_date: The expired_date of this InlineResponse20083Data.  # noqa: E501
+        :param username: The username of this InlineResponse20083Data.  # noqa: E501
         :type: str
         """
 
-        self._expired_date = expired_date
-
-    @property
-    def email(self):
-        """Gets the email of this InlineResponse20083Data.  # noqa: E501
-
-
-        :return: The email of this InlineResponse20083Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._email
-
-    @email.setter
-    def email(self, email):
-        """Sets the email of this InlineResponse20083Data.
-
-
-        :param email: The email of this InlineResponse20083Data.  # noqa: E501
-        :type: str
-        """
-
-        self._email = email
-
-    @property
-    def common_name(self):
-        """Gets the common_name of this InlineResponse20083Data.  # noqa: E501
-
-
-        :return: The common_name of this InlineResponse20083Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._common_name
-
-    @common_name.setter
-    def common_name(self, common_name):
-        """Sets the common_name of this InlineResponse20083Data.
-
-
-        :param common_name: The common_name of this InlineResponse20083Data.  # noqa: E501
-        :type: str
-        """
-
-        self._common_name = common_name
-
-    @property
-    def locality(self):
-        """Gets the locality of this InlineResponse20083Data.  # noqa: E501
-
-
-        :return: The locality of this InlineResponse20083Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._locality
-
-    @locality.setter
-    def locality(self, locality):
-        """Sets the locality of this InlineResponse20083Data.
-
-
-        :param locality: The locality of this InlineResponse20083Data.  # noqa: E501
-        :type: str
-        """
-
-        self._locality = locality
-
-    @property
-    def organization_unit(self):
-        """Gets the organization_unit of this InlineResponse20083Data.  # noqa: E501
-
-
-        :return: The organization_unit of this InlineResponse20083Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._organization_unit
-
-    @organization_unit.setter
-    def organization_unit(self, organization_unit):
-        """Sets the organization_unit of this InlineResponse20083Data.
-
-
-        :param organization_unit: The organization_unit of this InlineResponse20083Data.  # noqa: E501
-        :type: str
-        """
-
-        self._organization_unit = organization_unit
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

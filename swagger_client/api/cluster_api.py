@@ -42,7 +42,7 @@ class ClusterApi(object):
 
         :param async_req bool
         :param ClusterBody1 body: (required)
-        :return: InlineResponse2009
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class ClusterApi(object):
 
         :param async_req bool
         :param ClusterBody1 body: (required)
-        :return: InlineResponse2009
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -121,7 +121,7 @@ class ClusterApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2009',  # noqa: E501
+            response_type='InlineResponse2005',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -138,7 +138,7 @@ class ClusterApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2008
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -158,7 +158,7 @@ class ClusterApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2008
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,7 +206,7 @@ class ClusterApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2008',  # noqa: E501
+            response_type='InlineResponse2004',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**refresh_token**](LoginApi.md#refresh_token) | **POST** /login/refresh | get authentication tokens using refresh token
 
 # **login**
-> InlineResponse20040 login(body)
+> InlineResponse20038 login(body)
 
 login to system
 
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](InlineResponse20040.md)
+[**InlineResponse20038**](InlineResponse20038.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **refresh_token**
-> InlineResponse20040 refresh_token(body)
+> InlineResponse20039 refresh_token(body)
 
 get authentication tokens using refresh token
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](InlineResponse20040.md)
+[**InlineResponse20039**](InlineResponse20039.md)
 
 ### Authorization
 

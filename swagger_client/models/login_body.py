@@ -28,52 +28,50 @@ class LoginBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'username': 'str',
+        'org': 'str',
         'password': 'str',
-        'org': 'str'
+        'username': 'str'
     }
 
     attribute_map = {
-        'username': 'username',
+        'org': 'org',
         'password': 'password',
-        'org': 'org'
+        'username': 'username'
     }
 
-    def __init__(self, username=None, password=None, org=None):  # noqa: E501
+    def __init__(self, org=None, password=None, username=None):  # noqa: E501
         """LoginBody - a model defined in Swagger"""  # noqa: E501
-        self._username = None
-        self._password = None
         self._org = None
+        self._password = None
+        self._username = None
         self.discriminator = None
-        self.username = username
-        self.password = password
         if org is not None:
             self.org = org
+        self.password = password
+        self.username = username
 
     @property
-    def username(self):
-        """Gets the username of this LoginBody.  # noqa: E501
+    def org(self):
+        """Gets the org of this LoginBody.  # noqa: E501
 
-        User's username  # noqa: E501
+        Organization name, default 'Root'  # noqa: E501
 
-        :return: The username of this LoginBody.  # noqa: E501
+        :return: The org of this LoginBody.  # noqa: E501
         :rtype: str
         """
-        return self._username
+        return self._org
 
-    @username.setter
-    def username(self, username):
-        """Sets the username of this LoginBody.
+    @org.setter
+    def org(self, org):
+        """Sets the org of this LoginBody.
 
-        User's username  # noqa: E501
+        Organization name, default 'Root'  # noqa: E501
 
-        :param username: The username of this LoginBody.  # noqa: E501
+        :param org: The org of this LoginBody.  # noqa: E501
         :type: str
         """
-        if username is None:
-            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
 
-        self._username = username
+        self._org = org
 
     @property
     def password(self):
@@ -101,27 +99,29 @@ class LoginBody(object):
         self._password = password
 
     @property
-    def org(self):
-        """Gets the org of this LoginBody.  # noqa: E501
+    def username(self):
+        """Gets the username of this LoginBody.  # noqa: E501
 
-        Organization name, default 'Root'  # noqa: E501
+        User's username  # noqa: E501
 
-        :return: The org of this LoginBody.  # noqa: E501
+        :return: The username of this LoginBody.  # noqa: E501
         :rtype: str
         """
-        return self._org
+        return self._username
 
-    @org.setter
-    def org(self, org):
-        """Sets the org of this LoginBody.
+    @username.setter
+    def username(self, username):
+        """Sets the username of this LoginBody.
 
-        Organization name, default 'Root'  # noqa: E501
+        User's username  # noqa: E501
 
-        :param org: The org of this LoginBody.  # noqa: E501
+        :param username: The username of this LoginBody.  # noqa: E501
         :type: str
         """
+        if username is None:
+            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
 
-        self._org = org
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

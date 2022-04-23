@@ -28,7 +28,7 @@ class InlineResponse20027(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'FileSystemGroup'
+        'data': 'list[Netdev]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class InlineResponse20027(object):
 
 
         :return: The data of this InlineResponse20027.  # noqa: E501
-        :rtype: FileSystemGroup
+        :rtype: list[Netdev]
         """
         return self._data
 
@@ -58,7 +58,7 @@ class InlineResponse20027(object):
 
 
         :param data: The data of this InlineResponse20027.  # noqa: E501
-        :type: FileSystemGroup
+        :type: list[Netdev]
         """
 
         self._data = data

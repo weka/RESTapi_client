@@ -28,40 +28,92 @@ class InlineResponse2005Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'proxy': 'str'
+        'failures': 'object',
+        'guid': 'str',
+        'success': 'object'
     }
 
     attribute_map = {
-        'proxy': 'proxy'
+        'failures': 'failures',
+        'guid': 'guid',
+        'success': 'success'
     }
 
-    def __init__(self, proxy=None):  # noqa: E501
+    def __init__(self, failures=None, guid=None, success=None):  # noqa: E501
         """InlineResponse2005Data - a model defined in Swagger"""  # noqa: E501
-        self._proxy = None
+        self._failures = None
+        self._guid = None
+        self._success = None
         self.discriminator = None
-        if proxy is not None:
-            self.proxy = proxy
+        if failures is not None:
+            self.failures = failures
+        if guid is not None:
+            self.guid = guid
+        if success is not None:
+            self.success = success
 
     @property
-    def proxy(self):
-        """Gets the proxy of this InlineResponse2005Data.  # noqa: E501
+    def failures(self):
+        """Gets the failures of this InlineResponse2005Data.  # noqa: E501
 
 
-        :return: The proxy of this InlineResponse2005Data.  # noqa: E501
+        :return: The failures of this InlineResponse2005Data.  # noqa: E501
+        :rtype: object
+        """
+        return self._failures
+
+    @failures.setter
+    def failures(self, failures):
+        """Sets the failures of this InlineResponse2005Data.
+
+
+        :param failures: The failures of this InlineResponse2005Data.  # noqa: E501
+        :type: object
+        """
+
+        self._failures = failures
+
+    @property
+    def guid(self):
+        """Gets the guid of this InlineResponse2005Data.  # noqa: E501
+
+
+        :return: The guid of this InlineResponse2005Data.  # noqa: E501
         :rtype: str
         """
-        return self._proxy
+        return self._guid
 
-    @proxy.setter
-    def proxy(self, proxy):
-        """Sets the proxy of this InlineResponse2005Data.
+    @guid.setter
+    def guid(self, guid):
+        """Sets the guid of this InlineResponse2005Data.
 
 
-        :param proxy: The proxy of this InlineResponse2005Data.  # noqa: E501
+        :param guid: The guid of this InlineResponse2005Data.  # noqa: E501
         :type: str
         """
 
-        self._proxy = proxy
+        self._guid = guid
+
+    @property
+    def success(self):
+        """Gets the success of this InlineResponse2005Data.  # noqa: E501
+
+
+        :return: The success of this InlineResponse2005Data.  # noqa: E501
+        :rtype: object
+        """
+        return self._success
+
+    @success.setter
+    def success(self, success):
+        """Sets the success of this InlineResponse2005Data.
+
+
+        :param success: The success of this InlineResponse2005Data.  # noqa: E501
+        :type: object
+        """
+
+        self._success = success
 
     def to_dict(self):
         """Returns the model properties as a dict"""

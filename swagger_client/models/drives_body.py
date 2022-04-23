@@ -28,56 +28,56 @@ class DrivesBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'host_uid': 'str',
+        'allow_format_non_wekafs_drives': 'bool',
         'device_path': 'str',
         'force': 'bool',
-        'allow_format_non_wekafs_drives': 'bool'
+        'host_uid': 'str'
     }
 
     attribute_map = {
-        'host_uid': 'host_uid',
+        'allow_format_non_wekafs_drives': 'allow_format_non_wekafs_drives',
         'device_path': 'device_path',
         'force': 'force',
-        'allow_format_non_wekafs_drives': 'allow_format_non_wekafs_drives'
+        'host_uid': 'host_uid'
     }
 
-    def __init__(self, host_uid=None, device_path=None, force=None, allow_format_non_wekafs_drives=None):  # noqa: E501
+    def __init__(self, allow_format_non_wekafs_drives=None, device_path=None, force=None, host_uid=None):  # noqa: E501
         """DrivesBody - a model defined in Swagger"""  # noqa: E501
-        self._host_uid = None
+        self._allow_format_non_wekafs_drives = None
         self._device_path = None
         self._force = None
-        self._allow_format_non_wekafs_drives = None
+        self._host_uid = None
         self.discriminator = None
-        if host_uid is not None:
-            self.host_uid = host_uid
+        if allow_format_non_wekafs_drives is not None:
+            self.allow_format_non_wekafs_drives = allow_format_non_wekafs_drives
         self.device_path = device_path
         if force is not None:
             self.force = force
-        if allow_format_non_wekafs_drives is not None:
-            self.allow_format_non_wekafs_drives = allow_format_non_wekafs_drives
+        if host_uid is not None:
+            self.host_uid = host_uid
 
     @property
-    def host_uid(self):
-        """Gets the host_uid of this DrivesBody.  # noqa: E501
+    def allow_format_non_wekafs_drives(self):
+        """Gets the allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
 
-        The host the drive attached to  # noqa: E501
+        Allow reuse of drives formatted by another versions  # noqa: E501
 
-        :return: The host_uid of this DrivesBody.  # noqa: E501
-        :rtype: str
+        :return: The allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
+        :rtype: bool
         """
-        return self._host_uid
+        return self._allow_format_non_wekafs_drives
 
-    @host_uid.setter
-    def host_uid(self, host_uid):
-        """Sets the host_uid of this DrivesBody.
+    @allow_format_non_wekafs_drives.setter
+    def allow_format_non_wekafs_drives(self, allow_format_non_wekafs_drives):
+        """Sets the allow_format_non_wekafs_drives of this DrivesBody.
 
-        The host the drive attached to  # noqa: E501
+        Allow reuse of drives formatted by another versions  # noqa: E501
 
-        :param host_uid: The host_uid of this DrivesBody.  # noqa: E501
-        :type: str
+        :param allow_format_non_wekafs_drives: The allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
+        :type: bool
         """
 
-        self._host_uid = host_uid
+        self._allow_format_non_wekafs_drives = allow_format_non_wekafs_drives
 
     @property
     def device_path(self):
@@ -128,27 +128,27 @@ class DrivesBody(object):
         self._force = force
 
     @property
-    def allow_format_non_wekafs_drives(self):
-        """Gets the allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
+    def host_uid(self):
+        """Gets the host_uid of this DrivesBody.  # noqa: E501
 
-        Allow reuse of drives formatted by another versions  # noqa: E501
+        The host the drive attached to  # noqa: E501
 
-        :return: The allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
-        :rtype: bool
+        :return: The host_uid of this DrivesBody.  # noqa: E501
+        :rtype: str
         """
-        return self._allow_format_non_wekafs_drives
+        return self._host_uid
 
-    @allow_format_non_wekafs_drives.setter
-    def allow_format_non_wekafs_drives(self, allow_format_non_wekafs_drives):
-        """Sets the allow_format_non_wekafs_drives of this DrivesBody.
+    @host_uid.setter
+    def host_uid(self, host_uid):
+        """Sets the host_uid of this DrivesBody.
 
-        Allow reuse of drives formatted by another versions  # noqa: E501
+        The host the drive attached to  # noqa: E501
 
-        :param allow_format_non_wekafs_drives: The allow_format_non_wekafs_drives of this DrivesBody.  # noqa: E501
-        :type: bool
+        :param host_uid: The host_uid of this DrivesBody.  # noqa: E501
+        :type: str
         """
 
-        self._allow_format_non_wekafs_drives = allow_format_non_wekafs_drives
+        self._host_uid = host_uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

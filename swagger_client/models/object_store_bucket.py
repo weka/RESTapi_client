@@ -28,247 +28,310 @@ class ObjectStoreBucket(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'status_remove': 'str',
-        'id': 'str',
-        'secret_key': 'str',
-        'errors_timeout': 'float',
+        'access_key_id': 'str',
+        'auth_method': 'str',
         'bandwidth': 'ObjectStoreBandwidth',
+        'bucket': 'str',
+        'down_count': 'float',
+        'down_nodes': 'list[str]',
+        'errors_timeout': 'float',
+        'hostname': 'str',
+        'id': 'str',
+        'last_errors': 'str',
+        'max_blocks_in_data_blob': 'float',
+        'max_concurrent_downloads': 'float',
+        'max_concurrent_removals': 'float',
+        'max_concurrent_uploads': 'float',
+        'max_extents_in_data_blob': 'float',
         'name': 'str',
         'obs_name': 'str',
         'obs_site': 'str',
-        'prefetch_mib': 'float',
-        'uid': 'str',
-        'hostname': 'str',
-        'unknown_nodes': 'list[str]',
-        'unknown_count': 'float',
-        'up_nodes': 'list[str]',
-        'up_count': 'float',
-        'down_count': 'float',
-        'max_concurrent_uploads': 'float',
-        'auth_method': 'str',
-        'status_upload': 'str',
-        'max_concurrent_removals': 'float',
-        'max_extents_in_data_blob': 'float',
-        'max_blocks_in_data_blob': 'float',
-        'upload_bandwidth': 'ObjectStoreUploadBandwidth',
-        'up_since': 'str',
-        'access_key_id': 'str',
-        'last_errors': 'str',
         'port': 'float',
-        'status_download': 'str',
-        'bucket': 'str',
-        'status': 'str',
-        'max_concurrent_downloads': 'float',
-        'region': 'str',
+        'prefetch_mib': 'float',
         'protocol': 'str',
-        'down_nodes': 'list[str]'
+        'region': 'str',
+        'secret_key': 'str',
+        'status': 'str',
+        'status_download': 'str',
+        'status_remove': 'str',
+        'status_upload': 'str',
+        'uid': 'str',
+        'unknown_count': 'float',
+        'unknown_nodes': 'list[str]',
+        'up_count': 'float',
+        'up_nodes': 'list[str]',
+        'up_since': 'str',
+        'upload_bandwidth': 'ObjectStoreUploadBandwidth'
     }
 
     attribute_map = {
-        'status_remove': 'status_remove',
-        'id': 'id',
-        'secret_key': 'secret_key',
-        'errors_timeout': 'errors_timeout',
+        'access_key_id': 'access_key_id',
+        'auth_method': 'auth_method',
         'bandwidth': 'bandwidth',
+        'bucket': 'bucket',
+        'down_count': 'down_count',
+        'down_nodes': 'down_nodes',
+        'errors_timeout': 'errors_timeout',
+        'hostname': 'hostname',
+        'id': 'id',
+        'last_errors': 'last_errors',
+        'max_blocks_in_data_blob': 'max_blocks_in_data_blob',
+        'max_concurrent_downloads': 'max_concurrent_downloads',
+        'max_concurrent_removals': 'max_concurrent_removals',
+        'max_concurrent_uploads': 'max_concurrent_uploads',
+        'max_extents_in_data_blob': 'max_extents_in_data_blob',
         'name': 'name',
         'obs_name': 'obs_name',
         'obs_site': 'obs_site',
-        'prefetch_mib': 'prefetch_mib',
-        'uid': 'uid',
-        'hostname': 'hostname',
-        'unknown_nodes': 'unknown_nodes',
-        'unknown_count': 'unknown_count',
-        'up_nodes': 'up_nodes',
-        'up_count': 'up_count',
-        'down_count': 'down_count',
-        'max_concurrent_uploads': 'max_concurrent_uploads',
-        'auth_method': 'auth_method',
-        'status_upload': 'status_upload',
-        'max_concurrent_removals': 'max_concurrent_removals',
-        'max_extents_in_data_blob': 'max_extents_in_data_blob',
-        'max_blocks_in_data_blob': 'max_blocks_in_data_blob',
-        'upload_bandwidth': 'uploadBandwidth',
-        'up_since': 'up_since',
-        'access_key_id': 'access_key_id',
-        'last_errors': 'last_errors',
         'port': 'port',
-        'status_download': 'status_download',
-        'bucket': 'bucket',
-        'status': 'status',
-        'max_concurrent_downloads': 'max_concurrent_downloads',
-        'region': 'region',
+        'prefetch_mib': 'prefetch_mib',
         'protocol': 'protocol',
-        'down_nodes': 'down_nodes'
+        'region': 'region',
+        'secret_key': 'secret_key',
+        'status': 'status',
+        'status_download': 'status_download',
+        'status_remove': 'status_remove',
+        'status_upload': 'status_upload',
+        'uid': 'uid',
+        'unknown_count': 'unknown_count',
+        'unknown_nodes': 'unknown_nodes',
+        'up_count': 'up_count',
+        'up_nodes': 'up_nodes',
+        'up_since': 'up_since',
+        'upload_bandwidth': 'uploadBandwidth'
     }
 
-    def __init__(self, status_remove=None, id=None, secret_key=None, errors_timeout=None, bandwidth=None, name=None, obs_name=None, obs_site=None, prefetch_mib=None, uid=None, hostname=None, unknown_nodes=None, unknown_count=None, up_nodes=None, up_count=None, down_count=None, max_concurrent_uploads=None, auth_method=None, status_upload=None, max_concurrent_removals=None, max_extents_in_data_blob=None, max_blocks_in_data_blob=None, upload_bandwidth=None, up_since=None, access_key_id=None, last_errors=None, port=None, status_download=None, bucket=None, status=None, max_concurrent_downloads=None, region=None, protocol=None, down_nodes=None):  # noqa: E501
+    def __init__(self, access_key_id=None, auth_method=None, bandwidth=None, bucket=None, down_count=None, down_nodes=None, errors_timeout=None, hostname=None, id=None, last_errors=None, max_blocks_in_data_blob=None, max_concurrent_downloads=None, max_concurrent_removals=None, max_concurrent_uploads=None, max_extents_in_data_blob=None, name=None, obs_name=None, obs_site=None, port=None, prefetch_mib=None, protocol=None, region=None, secret_key=None, status=None, status_download=None, status_remove=None, status_upload=None, uid=None, unknown_count=None, unknown_nodes=None, up_count=None, up_nodes=None, up_since=None, upload_bandwidth=None):  # noqa: E501
         """ObjectStoreBucket - a model defined in Swagger"""  # noqa: E501
-        self._status_remove = None
-        self._id = None
-        self._secret_key = None
-        self._errors_timeout = None
+        self._access_key_id = None
+        self._auth_method = None
         self._bandwidth = None
+        self._bucket = None
+        self._down_count = None
+        self._down_nodes = None
+        self._errors_timeout = None
+        self._hostname = None
+        self._id = None
+        self._last_errors = None
+        self._max_blocks_in_data_blob = None
+        self._max_concurrent_downloads = None
+        self._max_concurrent_removals = None
+        self._max_concurrent_uploads = None
+        self._max_extents_in_data_blob = None
         self._name = None
         self._obs_name = None
         self._obs_site = None
-        self._prefetch_mib = None
-        self._uid = None
-        self._hostname = None
-        self._unknown_nodes = None
-        self._unknown_count = None
-        self._up_nodes = None
-        self._up_count = None
-        self._down_count = None
-        self._max_concurrent_uploads = None
-        self._auth_method = None
-        self._status_upload = None
-        self._max_concurrent_removals = None
-        self._max_extents_in_data_blob = None
-        self._max_blocks_in_data_blob = None
-        self._upload_bandwidth = None
-        self._up_since = None
-        self._access_key_id = None
-        self._last_errors = None
         self._port = None
-        self._status_download = None
-        self._bucket = None
-        self._status = None
-        self._max_concurrent_downloads = None
-        self._region = None
+        self._prefetch_mib = None
         self._protocol = None
-        self._down_nodes = None
+        self._region = None
+        self._secret_key = None
+        self._status = None
+        self._status_download = None
+        self._status_remove = None
+        self._status_upload = None
+        self._uid = None
+        self._unknown_count = None
+        self._unknown_nodes = None
+        self._up_count = None
+        self._up_nodes = None
+        self._up_since = None
+        self._upload_bandwidth = None
         self.discriminator = None
-        if status_remove is not None:
-            self.status_remove = status_remove
-        if id is not None:
-            self.id = id
-        if secret_key is not None:
-            self.secret_key = secret_key
-        if errors_timeout is not None:
-            self.errors_timeout = errors_timeout
+        if access_key_id is not None:
+            self.access_key_id = access_key_id
+        if auth_method is not None:
+            self.auth_method = auth_method
         if bandwidth is not None:
             self.bandwidth = bandwidth
+        if bucket is not None:
+            self.bucket = bucket
+        if down_count is not None:
+            self.down_count = down_count
+        if down_nodes is not None:
+            self.down_nodes = down_nodes
+        if errors_timeout is not None:
+            self.errors_timeout = errors_timeout
+        if hostname is not None:
+            self.hostname = hostname
+        if id is not None:
+            self.id = id
+        if last_errors is not None:
+            self.last_errors = last_errors
+        if max_blocks_in_data_blob is not None:
+            self.max_blocks_in_data_blob = max_blocks_in_data_blob
+        if max_concurrent_downloads is not None:
+            self.max_concurrent_downloads = max_concurrent_downloads
+        if max_concurrent_removals is not None:
+            self.max_concurrent_removals = max_concurrent_removals
+        if max_concurrent_uploads is not None:
+            self.max_concurrent_uploads = max_concurrent_uploads
+        if max_extents_in_data_blob is not None:
+            self.max_extents_in_data_blob = max_extents_in_data_blob
         if name is not None:
             self.name = name
         if obs_name is not None:
             self.obs_name = obs_name
         if obs_site is not None:
             self.obs_site = obs_site
-        if prefetch_mib is not None:
-            self.prefetch_mib = prefetch_mib
-        if uid is not None:
-            self.uid = uid
-        if hostname is not None:
-            self.hostname = hostname
-        if unknown_nodes is not None:
-            self.unknown_nodes = unknown_nodes
-        if unknown_count is not None:
-            self.unknown_count = unknown_count
-        if up_nodes is not None:
-            self.up_nodes = up_nodes
-        if up_count is not None:
-            self.up_count = up_count
-        if down_count is not None:
-            self.down_count = down_count
-        if max_concurrent_uploads is not None:
-            self.max_concurrent_uploads = max_concurrent_uploads
-        if auth_method is not None:
-            self.auth_method = auth_method
-        if status_upload is not None:
-            self.status_upload = status_upload
-        if max_concurrent_removals is not None:
-            self.max_concurrent_removals = max_concurrent_removals
-        if max_extents_in_data_blob is not None:
-            self.max_extents_in_data_blob = max_extents_in_data_blob
-        if max_blocks_in_data_blob is not None:
-            self.max_blocks_in_data_blob = max_blocks_in_data_blob
-        if upload_bandwidth is not None:
-            self.upload_bandwidth = upload_bandwidth
-        if up_since is not None:
-            self.up_since = up_since
-        if access_key_id is not None:
-            self.access_key_id = access_key_id
-        if last_errors is not None:
-            self.last_errors = last_errors
         if port is not None:
             self.port = port
-        if status_download is not None:
-            self.status_download = status_download
-        if bucket is not None:
-            self.bucket = bucket
-        if status is not None:
-            self.status = status
-        if max_concurrent_downloads is not None:
-            self.max_concurrent_downloads = max_concurrent_downloads
-        if region is not None:
-            self.region = region
+        if prefetch_mib is not None:
+            self.prefetch_mib = prefetch_mib
         if protocol is not None:
             self.protocol = protocol
-        if down_nodes is not None:
-            self.down_nodes = down_nodes
+        if region is not None:
+            self.region = region
+        if secret_key is not None:
+            self.secret_key = secret_key
+        if status is not None:
+            self.status = status
+        if status_download is not None:
+            self.status_download = status_download
+        if status_remove is not None:
+            self.status_remove = status_remove
+        if status_upload is not None:
+            self.status_upload = status_upload
+        if uid is not None:
+            self.uid = uid
+        if unknown_count is not None:
+            self.unknown_count = unknown_count
+        if unknown_nodes is not None:
+            self.unknown_nodes = unknown_nodes
+        if up_count is not None:
+            self.up_count = up_count
+        if up_nodes is not None:
+            self.up_nodes = up_nodes
+        if up_since is not None:
+            self.up_since = up_since
+        if upload_bandwidth is not None:
+            self.upload_bandwidth = upload_bandwidth
 
     @property
-    def status_remove(self):
-        """Gets the status_remove of this ObjectStoreBucket.  # noqa: E501
+    def access_key_id(self):
+        """Gets the access_key_id of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The status_remove of this ObjectStoreBucket.  # noqa: E501
+        :return: The access_key_id of this ObjectStoreBucket.  # noqa: E501
         :rtype: str
         """
-        return self._status_remove
+        return self._access_key_id
 
-    @status_remove.setter
-    def status_remove(self, status_remove):
-        """Sets the status_remove of this ObjectStoreBucket.
+    @access_key_id.setter
+    def access_key_id(self, access_key_id):
+        """Sets the access_key_id of this ObjectStoreBucket.
 
 
-        :param status_remove: The status_remove of this ObjectStoreBucket.  # noqa: E501
+        :param access_key_id: The access_key_id of this ObjectStoreBucket.  # noqa: E501
         :type: str
         """
 
-        self._status_remove = status_remove
+        self._access_key_id = access_key_id
 
     @property
-    def id(self):
-        """Gets the id of this ObjectStoreBucket.  # noqa: E501
+    def auth_method(self):
+        """Gets the auth_method of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The id of this ObjectStoreBucket.  # noqa: E501
+        :return: The auth_method of this ObjectStoreBucket.  # noqa: E501
         :rtype: str
         """
-        return self._id
+        return self._auth_method
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ObjectStoreBucket.
+    @auth_method.setter
+    def auth_method(self, auth_method):
+        """Sets the auth_method of this ObjectStoreBucket.
 
 
-        :param id: The id of this ObjectStoreBucket.  # noqa: E501
+        :param auth_method: The auth_method of this ObjectStoreBucket.  # noqa: E501
         :type: str
         """
 
-        self._id = id
+        self._auth_method = auth_method
 
     @property
-    def secret_key(self):
-        """Gets the secret_key of this ObjectStoreBucket.  # noqa: E501
+    def bandwidth(self):
+        """Gets the bandwidth of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The secret_key of this ObjectStoreBucket.  # noqa: E501
+        :return: The bandwidth of this ObjectStoreBucket.  # noqa: E501
+        :rtype: ObjectStoreBandwidth
+        """
+        return self._bandwidth
+
+    @bandwidth.setter
+    def bandwidth(self, bandwidth):
+        """Sets the bandwidth of this ObjectStoreBucket.
+
+
+        :param bandwidth: The bandwidth of this ObjectStoreBucket.  # noqa: E501
+        :type: ObjectStoreBandwidth
+        """
+
+        self._bandwidth = bandwidth
+
+    @property
+    def bucket(self):
+        """Gets the bucket of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The bucket of this ObjectStoreBucket.  # noqa: E501
         :rtype: str
         """
-        return self._secret_key
+        return self._bucket
 
-    @secret_key.setter
-    def secret_key(self, secret_key):
-        """Sets the secret_key of this ObjectStoreBucket.
+    @bucket.setter
+    def bucket(self, bucket):
+        """Sets the bucket of this ObjectStoreBucket.
 
 
-        :param secret_key: The secret_key of this ObjectStoreBucket.  # noqa: E501
+        :param bucket: The bucket of this ObjectStoreBucket.  # noqa: E501
         :type: str
         """
 
-        self._secret_key = secret_key
+        self._bucket = bucket
+
+    @property
+    def down_count(self):
+        """Gets the down_count of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The down_count of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._down_count
+
+    @down_count.setter
+    def down_count(self, down_count):
+        """Sets the down_count of this ObjectStoreBucket.
+
+
+        :param down_count: The down_count of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._down_count = down_count
+
+    @property
+    def down_nodes(self):
+        """Gets the down_nodes of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The down_nodes of this ObjectStoreBucket.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._down_nodes
+
+    @down_nodes.setter
+    def down_nodes(self, down_nodes):
+        """Sets the down_nodes of this ObjectStoreBucket.
+
+
+        :param down_nodes: The down_nodes of this ObjectStoreBucket.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._down_nodes = down_nodes
 
     @property
     def errors_timeout(self):
@@ -292,25 +355,172 @@ class ObjectStoreBucket(object):
         self._errors_timeout = errors_timeout
 
     @property
-    def bandwidth(self):
-        """Gets the bandwidth of this ObjectStoreBucket.  # noqa: E501
+    def hostname(self):
+        """Gets the hostname of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The bandwidth of this ObjectStoreBucket.  # noqa: E501
-        :rtype: ObjectStoreBandwidth
+        :return: The hostname of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
         """
-        return self._bandwidth
+        return self._hostname
 
-    @bandwidth.setter
-    def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this ObjectStoreBucket.
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this ObjectStoreBucket.
 
 
-        :param bandwidth: The bandwidth of this ObjectStoreBucket.  # noqa: E501
-        :type: ObjectStoreBandwidth
+        :param hostname: The hostname of this ObjectStoreBucket.  # noqa: E501
+        :type: str
         """
 
-        self._bandwidth = bandwidth
+        self._hostname = hostname
+
+    @property
+    def id(self):
+        """Gets the id of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The id of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ObjectStoreBucket.
+
+
+        :param id: The id of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def last_errors(self):
+        """Gets the last_errors of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The last_errors of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._last_errors
+
+    @last_errors.setter
+    def last_errors(self, last_errors):
+        """Sets the last_errors of this ObjectStoreBucket.
+
+
+        :param last_errors: The last_errors of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._last_errors = last_errors
+
+    @property
+    def max_blocks_in_data_blob(self):
+        """Gets the max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_blocks_in_data_blob
+
+    @max_blocks_in_data_blob.setter
+    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
+        """Sets the max_blocks_in_data_blob of this ObjectStoreBucket.
+
+
+        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._max_blocks_in_data_blob = max_blocks_in_data_blob
+
+    @property
+    def max_concurrent_downloads(self):
+        """Gets the max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_concurrent_downloads
+
+    @max_concurrent_downloads.setter
+    def max_concurrent_downloads(self, max_concurrent_downloads):
+        """Sets the max_concurrent_downloads of this ObjectStoreBucket.
+
+
+        :param max_concurrent_downloads: The max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._max_concurrent_downloads = max_concurrent_downloads
+
+    @property
+    def max_concurrent_removals(self):
+        """Gets the max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_concurrent_removals
+
+    @max_concurrent_removals.setter
+    def max_concurrent_removals(self, max_concurrent_removals):
+        """Sets the max_concurrent_removals of this ObjectStoreBucket.
+
+
+        :param max_concurrent_removals: The max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._max_concurrent_removals = max_concurrent_removals
+
+    @property
+    def max_concurrent_uploads(self):
+        """Gets the max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_concurrent_uploads
+
+    @max_concurrent_uploads.setter
+    def max_concurrent_uploads(self, max_concurrent_uploads):
+        """Sets the max_concurrent_uploads of this ObjectStoreBucket.
+
+
+        :param max_concurrent_uploads: The max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._max_concurrent_uploads = max_concurrent_uploads
+
+    @property
+    def max_extents_in_data_blob(self):
+        """Gets the max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_extents_in_data_blob
+
+    @max_extents_in_data_blob.setter
+    def max_extents_in_data_blob(self, max_extents_in_data_blob):
+        """Sets the max_extents_in_data_blob of this ObjectStoreBucket.
+
+
+        :param max_extents_in_data_blob: The max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._max_extents_in_data_blob = max_extents_in_data_blob
 
     @property
     def name(self):
@@ -376,384 +586,6 @@ class ObjectStoreBucket(object):
         self._obs_site = obs_site
 
     @property
-    def prefetch_mib(self):
-        """Gets the prefetch_mib of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The prefetch_mib of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._prefetch_mib
-
-    @prefetch_mib.setter
-    def prefetch_mib(self, prefetch_mib):
-        """Sets the prefetch_mib of this ObjectStoreBucket.
-
-
-        :param prefetch_mib: The prefetch_mib of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._prefetch_mib = prefetch_mib
-
-    @property
-    def uid(self):
-        """Gets the uid of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The uid of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this ObjectStoreBucket.
-
-
-        :param uid: The uid of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
-
-    @property
-    def hostname(self):
-        """Gets the hostname of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The hostname of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._hostname
-
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this ObjectStoreBucket.
-
-
-        :param hostname: The hostname of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._hostname = hostname
-
-    @property
-    def unknown_nodes(self):
-        """Gets the unknown_nodes of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The unknown_nodes of this ObjectStoreBucket.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._unknown_nodes
-
-    @unknown_nodes.setter
-    def unknown_nodes(self, unknown_nodes):
-        """Sets the unknown_nodes of this ObjectStoreBucket.
-
-
-        :param unknown_nodes: The unknown_nodes of this ObjectStoreBucket.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._unknown_nodes = unknown_nodes
-
-    @property
-    def unknown_count(self):
-        """Gets the unknown_count of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The unknown_count of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._unknown_count
-
-    @unknown_count.setter
-    def unknown_count(self, unknown_count):
-        """Sets the unknown_count of this ObjectStoreBucket.
-
-
-        :param unknown_count: The unknown_count of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._unknown_count = unknown_count
-
-    @property
-    def up_nodes(self):
-        """Gets the up_nodes of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The up_nodes of this ObjectStoreBucket.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._up_nodes
-
-    @up_nodes.setter
-    def up_nodes(self, up_nodes):
-        """Sets the up_nodes of this ObjectStoreBucket.
-
-
-        :param up_nodes: The up_nodes of this ObjectStoreBucket.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._up_nodes = up_nodes
-
-    @property
-    def up_count(self):
-        """Gets the up_count of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The up_count of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._up_count
-
-    @up_count.setter
-    def up_count(self, up_count):
-        """Sets the up_count of this ObjectStoreBucket.
-
-
-        :param up_count: The up_count of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._up_count = up_count
-
-    @property
-    def down_count(self):
-        """Gets the down_count of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The down_count of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._down_count
-
-    @down_count.setter
-    def down_count(self, down_count):
-        """Sets the down_count of this ObjectStoreBucket.
-
-
-        :param down_count: The down_count of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._down_count = down_count
-
-    @property
-    def max_concurrent_uploads(self):
-        """Gets the max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_concurrent_uploads
-
-    @max_concurrent_uploads.setter
-    def max_concurrent_uploads(self, max_concurrent_uploads):
-        """Sets the max_concurrent_uploads of this ObjectStoreBucket.
-
-
-        :param max_concurrent_uploads: The max_concurrent_uploads of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._max_concurrent_uploads = max_concurrent_uploads
-
-    @property
-    def auth_method(self):
-        """Gets the auth_method of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The auth_method of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._auth_method
-
-    @auth_method.setter
-    def auth_method(self, auth_method):
-        """Sets the auth_method of this ObjectStoreBucket.
-
-
-        :param auth_method: The auth_method of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._auth_method = auth_method
-
-    @property
-    def status_upload(self):
-        """Gets the status_upload of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The status_upload of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._status_upload
-
-    @status_upload.setter
-    def status_upload(self, status_upload):
-        """Sets the status_upload of this ObjectStoreBucket.
-
-
-        :param status_upload: The status_upload of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._status_upload = status_upload
-
-    @property
-    def max_concurrent_removals(self):
-        """Gets the max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_concurrent_removals
-
-    @max_concurrent_removals.setter
-    def max_concurrent_removals(self, max_concurrent_removals):
-        """Sets the max_concurrent_removals of this ObjectStoreBucket.
-
-
-        :param max_concurrent_removals: The max_concurrent_removals of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._max_concurrent_removals = max_concurrent_removals
-
-    @property
-    def max_extents_in_data_blob(self):
-        """Gets the max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_extents_in_data_blob
-
-    @max_extents_in_data_blob.setter
-    def max_extents_in_data_blob(self, max_extents_in_data_blob):
-        """Sets the max_extents_in_data_blob of this ObjectStoreBucket.
-
-
-        :param max_extents_in_data_blob: The max_extents_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._max_extents_in_data_blob = max_extents_in_data_blob
-
-    @property
-    def max_blocks_in_data_blob(self):
-        """Gets the max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_blocks_in_data_blob
-
-    @max_blocks_in_data_blob.setter
-    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
-        """Sets the max_blocks_in_data_blob of this ObjectStoreBucket.
-
-
-        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStoreBucket.  # noqa: E501
-        :type: float
-        """
-
-        self._max_blocks_in_data_blob = max_blocks_in_data_blob
-
-    @property
-    def upload_bandwidth(self):
-        """Gets the upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
-        :rtype: ObjectStoreUploadBandwidth
-        """
-        return self._upload_bandwidth
-
-    @upload_bandwidth.setter
-    def upload_bandwidth(self, upload_bandwidth):
-        """Sets the upload_bandwidth of this ObjectStoreBucket.
-
-
-        :param upload_bandwidth: The upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
-        :type: ObjectStoreUploadBandwidth
-        """
-
-        self._upload_bandwidth = upload_bandwidth
-
-    @property
-    def up_since(self):
-        """Gets the up_since of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The up_since of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._up_since
-
-    @up_since.setter
-    def up_since(self, up_since):
-        """Sets the up_since of this ObjectStoreBucket.
-
-
-        :param up_since: The up_since of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._up_since = up_since
-
-    @property
-    def access_key_id(self):
-        """Gets the access_key_id of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The access_key_id of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._access_key_id
-
-    @access_key_id.setter
-    def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this ObjectStoreBucket.
-
-
-        :param access_key_id: The access_key_id of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._access_key_id = access_key_id
-
-    @property
-    def last_errors(self):
-        """Gets the last_errors of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The last_errors of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._last_errors
-
-    @last_errors.setter
-    def last_errors(self, last_errors):
-        """Sets the last_errors of this ObjectStoreBucket.
-
-
-        :param last_errors: The last_errors of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._last_errors = last_errors
-
-    @property
     def port(self):
         """Gets the port of this ObjectStoreBucket.  # noqa: E501
 
@@ -775,109 +607,25 @@ class ObjectStoreBucket(object):
         self._port = port
 
     @property
-    def status_download(self):
-        """Gets the status_download of this ObjectStoreBucket.  # noqa: E501
+    def prefetch_mib(self):
+        """Gets the prefetch_mib of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The status_download of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._status_download
-
-    @status_download.setter
-    def status_download(self, status_download):
-        """Sets the status_download of this ObjectStoreBucket.
-
-
-        :param status_download: The status_download of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._status_download = status_download
-
-    @property
-    def bucket(self):
-        """Gets the bucket of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The bucket of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._bucket
-
-    @bucket.setter
-    def bucket(self, bucket):
-        """Sets the bucket of this ObjectStoreBucket.
-
-
-        :param bucket: The bucket of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._bucket = bucket
-
-    @property
-    def status(self):
-        """Gets the status of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The status of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ObjectStoreBucket.
-
-
-        :param status: The status of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._status = status
-
-    @property
-    def max_concurrent_downloads(self):
-        """Gets the max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
+        :return: The prefetch_mib of this ObjectStoreBucket.  # noqa: E501
         :rtype: float
         """
-        return self._max_concurrent_downloads
+        return self._prefetch_mib
 
-    @max_concurrent_downloads.setter
-    def max_concurrent_downloads(self, max_concurrent_downloads):
-        """Sets the max_concurrent_downloads of this ObjectStoreBucket.
+    @prefetch_mib.setter
+    def prefetch_mib(self, prefetch_mib):
+        """Sets the prefetch_mib of this ObjectStoreBucket.
 
 
-        :param max_concurrent_downloads: The max_concurrent_downloads of this ObjectStoreBucket.  # noqa: E501
+        :param prefetch_mib: The prefetch_mib of this ObjectStoreBucket.  # noqa: E501
         :type: float
         """
 
-        self._max_concurrent_downloads = max_concurrent_downloads
-
-    @property
-    def region(self):
-        """Gets the region of this ObjectStoreBucket.  # noqa: E501
-
-
-        :return: The region of this ObjectStoreBucket.  # noqa: E501
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this ObjectStoreBucket.
-
-
-        :param region: The region of this ObjectStoreBucket.  # noqa: E501
-        :type: str
-        """
-
-        self._region = region
+        self._prefetch_mib = prefetch_mib
 
     @property
     def protocol(self):
@@ -901,25 +649,277 @@ class ObjectStoreBucket(object):
         self._protocol = protocol
 
     @property
-    def down_nodes(self):
-        """Gets the down_nodes of this ObjectStoreBucket.  # noqa: E501
+    def region(self):
+        """Gets the region of this ObjectStoreBucket.  # noqa: E501
 
 
-        :return: The down_nodes of this ObjectStoreBucket.  # noqa: E501
+        :return: The region of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this ObjectStoreBucket.
+
+
+        :param region: The region of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._region = region
+
+    @property
+    def secret_key(self):
+        """Gets the secret_key of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The secret_key of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._secret_key
+
+    @secret_key.setter
+    def secret_key(self, secret_key):
+        """Sets the secret_key of this ObjectStoreBucket.
+
+
+        :param secret_key: The secret_key of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._secret_key = secret_key
+
+    @property
+    def status(self):
+        """Gets the status of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The status of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ObjectStoreBucket.
+
+
+        :param status: The status of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._status = status
+
+    @property
+    def status_download(self):
+        """Gets the status_download of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The status_download of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._status_download
+
+    @status_download.setter
+    def status_download(self, status_download):
+        """Sets the status_download of this ObjectStoreBucket.
+
+
+        :param status_download: The status_download of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._status_download = status_download
+
+    @property
+    def status_remove(self):
+        """Gets the status_remove of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The status_remove of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._status_remove
+
+    @status_remove.setter
+    def status_remove(self, status_remove):
+        """Sets the status_remove of this ObjectStoreBucket.
+
+
+        :param status_remove: The status_remove of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._status_remove = status_remove
+
+    @property
+    def status_upload(self):
+        """Gets the status_upload of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The status_upload of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._status_upload
+
+    @status_upload.setter
+    def status_upload(self, status_upload):
+        """Sets the status_upload of this ObjectStoreBucket.
+
+
+        :param status_upload: The status_upload of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._status_upload = status_upload
+
+    @property
+    def uid(self):
+        """Gets the uid of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The uid of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this ObjectStoreBucket.
+
+
+        :param uid: The uid of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
+
+    @property
+    def unknown_count(self):
+        """Gets the unknown_count of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The unknown_count of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._unknown_count
+
+    @unknown_count.setter
+    def unknown_count(self, unknown_count):
+        """Sets the unknown_count of this ObjectStoreBucket.
+
+
+        :param unknown_count: The unknown_count of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._unknown_count = unknown_count
+
+    @property
+    def unknown_nodes(self):
+        """Gets the unknown_nodes of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The unknown_nodes of this ObjectStoreBucket.  # noqa: E501
         :rtype: list[str]
         """
-        return self._down_nodes
+        return self._unknown_nodes
 
-    @down_nodes.setter
-    def down_nodes(self, down_nodes):
-        """Sets the down_nodes of this ObjectStoreBucket.
+    @unknown_nodes.setter
+    def unknown_nodes(self, unknown_nodes):
+        """Sets the unknown_nodes of this ObjectStoreBucket.
 
 
-        :param down_nodes: The down_nodes of this ObjectStoreBucket.  # noqa: E501
+        :param unknown_nodes: The unknown_nodes of this ObjectStoreBucket.  # noqa: E501
         :type: list[str]
         """
 
-        self._down_nodes = down_nodes
+        self._unknown_nodes = unknown_nodes
+
+    @property
+    def up_count(self):
+        """Gets the up_count of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The up_count of this ObjectStoreBucket.  # noqa: E501
+        :rtype: float
+        """
+        return self._up_count
+
+    @up_count.setter
+    def up_count(self, up_count):
+        """Sets the up_count of this ObjectStoreBucket.
+
+
+        :param up_count: The up_count of this ObjectStoreBucket.  # noqa: E501
+        :type: float
+        """
+
+        self._up_count = up_count
+
+    @property
+    def up_nodes(self):
+        """Gets the up_nodes of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The up_nodes of this ObjectStoreBucket.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._up_nodes
+
+    @up_nodes.setter
+    def up_nodes(self, up_nodes):
+        """Sets the up_nodes of this ObjectStoreBucket.
+
+
+        :param up_nodes: The up_nodes of this ObjectStoreBucket.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._up_nodes = up_nodes
+
+    @property
+    def up_since(self):
+        """Gets the up_since of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The up_since of this ObjectStoreBucket.  # noqa: E501
+        :rtype: str
+        """
+        return self._up_since
+
+    @up_since.setter
+    def up_since(self, up_since):
+        """Sets the up_since of this ObjectStoreBucket.
+
+
+        :param up_since: The up_since of this ObjectStoreBucket.  # noqa: E501
+        :type: str
+        """
+
+        self._up_since = up_since
+
+    @property
+    def upload_bandwidth(self):
+        """Gets the upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
+
+
+        :return: The upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
+        :rtype: ObjectStoreUploadBandwidth
+        """
+        return self._upload_bandwidth
+
+    @upload_bandwidth.setter
+    def upload_bandwidth(self, upload_bandwidth):
+        """Sets the upload_bandwidth of this ObjectStoreBucket.
+
+
+        :param upload_bandwidth: The upload_bandwidth of this ObjectStoreBucket.  # noqa: E501
+        :type: ObjectStoreUploadBandwidth
+        """
+
+        self._upload_bandwidth = upload_bandwidth
 
     def to_dict(self):
         """Returns the model properties as a dict"""

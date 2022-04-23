@@ -28,87 +28,150 @@ class SmbActiveDirectoryBody1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'username': 'str',
-        'password': 'str',
-        'debug_mode': 'bool',
-        'server': 'str',
-        'create_computer_ou': 'str',
-        'extra_options': 'str',
-        'task_id': 'str',
         'asynchronous': 'bool',
+        'create_computer_ou': 'str',
+        'debug_mode': 'bool',
+        'extra_options': 'str',
+        'password': 'str',
         'poll': 'bool',
-        'timeout': 'str'
+        'server': 'str',
+        'task_id': 'str',
+        'timeout': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
-        'username': 'username',
-        'password': 'password',
-        'debug_mode': 'debug_mode',
-        'server': 'server',
-        'create_computer_ou': 'create_computerOU',
-        'extra_options': 'extra_options',
-        'task_id': 'task_id',
         'asynchronous': 'asynchronous',
+        'create_computer_ou': 'create_computerOU',
+        'debug_mode': 'debug_mode',
+        'extra_options': 'extra_options',
+        'password': 'password',
         'poll': 'poll',
-        'timeout': 'timeout'
+        'server': 'server',
+        'task_id': 'task_id',
+        'timeout': 'timeout',
+        'username': 'username'
     }
 
-    def __init__(self, username=None, password=None, debug_mode=None, server=None, create_computer_ou=None, extra_options=None, task_id=None, asynchronous=None, poll=None, timeout=None):  # noqa: E501
+    def __init__(self, asynchronous=None, create_computer_ou=None, debug_mode=None, extra_options=None, password=None, poll=None, server=None, task_id=None, timeout=None, username=None):  # noqa: E501
         """SmbActiveDirectoryBody1 - a model defined in Swagger"""  # noqa: E501
-        self._username = None
-        self._password = None
-        self._debug_mode = None
-        self._server = None
-        self._create_computer_ou = None
-        self._extra_options = None
-        self._task_id = None
         self._asynchronous = None
+        self._create_computer_ou = None
+        self._debug_mode = None
+        self._extra_options = None
+        self._password = None
         self._poll = None
+        self._server = None
+        self._task_id = None
         self._timeout = None
+        self._username = None
         self.discriminator = None
-        self.username = username
-        self.password = password
-        if debug_mode is not None:
-            self.debug_mode = debug_mode
-        if server is not None:
-            self.server = server
-        if create_computer_ou is not None:
-            self.create_computer_ou = create_computer_ou
-        if extra_options is not None:
-            self.extra_options = extra_options
-        if task_id is not None:
-            self.task_id = task_id
         if asynchronous is not None:
             self.asynchronous = asynchronous
+        if create_computer_ou is not None:
+            self.create_computer_ou = create_computer_ou
+        if debug_mode is not None:
+            self.debug_mode = debug_mode
+        if extra_options is not None:
+            self.extra_options = extra_options
+        self.password = password
         if poll is not None:
             self.poll = poll
+        if server is not None:
+            self.server = server
+        if task_id is not None:
+            self.task_id = task_id
         if timeout is not None:
             self.timeout = timeout
+        self.username = username
 
     @property
-    def username(self):
-        """Gets the username of this SmbActiveDirectoryBody1.  # noqa: E501
+    def asynchronous(self):
+        """Gets the asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
 
-        The name of the administrator user to join the domain using it  # noqa: E501
 
-        :return: The username of this SmbActiveDirectoryBody1.  # noqa: E501
+        :return: The asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
+        :rtype: bool
+        """
+        return self._asynchronous
+
+    @asynchronous.setter
+    def asynchronous(self, asynchronous):
+        """Sets the asynchronous of this SmbActiveDirectoryBody1.
+
+
+        :param asynchronous: The asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
+        :type: bool
+        """
+
+        self._asynchronous = asynchronous
+
+    @property
+    def create_computer_ou(self):
+        """Gets the create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
+
+        Precreate the computer account in a specific OU  # noqa: E501
+
+        :return: The create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
         :rtype: str
         """
-        return self._username
+        return self._create_computer_ou
 
-    @username.setter
-    def username(self, username):
-        """Sets the username of this SmbActiveDirectoryBody1.
+    @create_computer_ou.setter
+    def create_computer_ou(self, create_computer_ou):
+        """Sets the create_computer_ou of this SmbActiveDirectoryBody1.
 
-        The name of the administrator user to join the domain using it  # noqa: E501
+        Precreate the computer account in a specific OU  # noqa: E501
 
-        :param username: The username of this SmbActiveDirectoryBody1.  # noqa: E501
+        :param create_computer_ou: The create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
         :type: str
         """
-        if username is None:
-            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
 
-        self._username = username
+        self._create_computer_ou = create_computer_ou
+
+    @property
+    def debug_mode(self):
+        """Gets the debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+
+        Run the command in debug mode  # noqa: E501
+
+        :return: The debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+        :rtype: bool
+        """
+        return self._debug_mode
+
+    @debug_mode.setter
+    def debug_mode(self, debug_mode):
+        """Sets the debug_mode of this SmbActiveDirectoryBody1.
+
+        Run the command in debug mode  # noqa: E501
+
+        :param debug_mode: The debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+        :type: bool
+        """
+
+        self._debug_mode = debug_mode
+
+    @property
+    def extra_options(self):
+        """Gets the extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
+
+
+        :return: The extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._extra_options
+
+    @extra_options.setter
+    def extra_options(self, extra_options):
+        """Sets the extra_options of this SmbActiveDirectoryBody1.
+
+
+        :param extra_options: The extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
+        :type: str
+        """
+
+        self._extra_options = extra_options
 
     @property
     def password(self):
@@ -136,27 +199,25 @@ class SmbActiveDirectoryBody1(object):
         self._password = password
 
     @property
-    def debug_mode(self):
-        """Gets the debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+    def poll(self):
+        """Gets the poll of this SmbActiveDirectoryBody1.  # noqa: E501
 
-        Run the command in debug mode  # noqa: E501
 
-        :return: The debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+        :return: The poll of this SmbActiveDirectoryBody1.  # noqa: E501
         :rtype: bool
         """
-        return self._debug_mode
+        return self._poll
 
-    @debug_mode.setter
-    def debug_mode(self, debug_mode):
-        """Sets the debug_mode of this SmbActiveDirectoryBody1.
+    @poll.setter
+    def poll(self, poll):
+        """Sets the poll of this SmbActiveDirectoryBody1.
 
-        Run the command in debug mode  # noqa: E501
 
-        :param debug_mode: The debug_mode of this SmbActiveDirectoryBody1.  # noqa: E501
+        :param poll: The poll of this SmbActiveDirectoryBody1.  # noqa: E501
         :type: bool
         """
 
-        self._debug_mode = debug_mode
+        self._poll = poll
 
     @property
     def server(self):
@@ -182,50 +243,6 @@ class SmbActiveDirectoryBody1(object):
         self._server = server
 
     @property
-    def create_computer_ou(self):
-        """Gets the create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
-
-        Precreate the computer account in a specific OU  # noqa: E501
-
-        :return: The create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._create_computer_ou
-
-    @create_computer_ou.setter
-    def create_computer_ou(self, create_computer_ou):
-        """Sets the create_computer_ou of this SmbActiveDirectoryBody1.
-
-        Precreate the computer account in a specific OU  # noqa: E501
-
-        :param create_computer_ou: The create_computer_ou of this SmbActiveDirectoryBody1.  # noqa: E501
-        :type: str
-        """
-
-        self._create_computer_ou = create_computer_ou
-
-    @property
-    def extra_options(self):
-        """Gets the extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
-
-
-        :return: The extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
-        :rtype: str
-        """
-        return self._extra_options
-
-    @extra_options.setter
-    def extra_options(self, extra_options):
-        """Sets the extra_options of this SmbActiveDirectoryBody1.
-
-
-        :param extra_options: The extra_options of this SmbActiveDirectoryBody1.  # noqa: E501
-        :type: str
-        """
-
-        self._extra_options = extra_options
-
-    @property
     def task_id(self):
         """Gets the task_id of this SmbActiveDirectoryBody1.  # noqa: E501
 
@@ -245,48 +262,6 @@ class SmbActiveDirectoryBody1(object):
         """
 
         self._task_id = task_id
-
-    @property
-    def asynchronous(self):
-        """Gets the asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
-
-
-        :return: The asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
-        :rtype: bool
-        """
-        return self._asynchronous
-
-    @asynchronous.setter
-    def asynchronous(self, asynchronous):
-        """Sets the asynchronous of this SmbActiveDirectoryBody1.
-
-
-        :param asynchronous: The asynchronous of this SmbActiveDirectoryBody1.  # noqa: E501
-        :type: bool
-        """
-
-        self._asynchronous = asynchronous
-
-    @property
-    def poll(self):
-        """Gets the poll of this SmbActiveDirectoryBody1.  # noqa: E501
-
-
-        :return: The poll of this SmbActiveDirectoryBody1.  # noqa: E501
-        :rtype: bool
-        """
-        return self._poll
-
-    @poll.setter
-    def poll(self, poll):
-        """Sets the poll of this SmbActiveDirectoryBody1.
-
-
-        :param poll: The poll of this SmbActiveDirectoryBody1.  # noqa: E501
-        :type: bool
-        """
-
-        self._poll = poll
 
     @property
     def timeout(self):
@@ -310,6 +285,31 @@ class SmbActiveDirectoryBody1(object):
         """
 
         self._timeout = timeout
+
+    @property
+    def username(self):
+        """Gets the username of this SmbActiveDirectoryBody1.  # noqa: E501
+
+        The name of the administrator user to join the domain using it  # noqa: E501
+
+        :return: The username of this SmbActiveDirectoryBody1.  # noqa: E501
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        """Sets the username of this SmbActiveDirectoryBody1.
+
+        The name of the administrator user to join the domain using it  # noqa: E501
+
+        :param username: The username of this SmbActiveDirectoryBody1.  # noqa: E501
+        :type: str
+        """
+        if username is None:
+            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
+
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

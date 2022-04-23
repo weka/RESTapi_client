@@ -147,7 +147,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param NfsPermissionsBody body:
-        :return: InlineResponse20043
+        :return: InlineResponse20046
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -168,7 +168,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param NfsPermissionsBody body:
-        :return: InlineResponse20043
+        :return: InlineResponse20046
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20043',  # noqa: E501
+            response_type='InlineResponse20046',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -240,7 +240,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param NfsClientGroupsBody body: (required)
-        :return: InlineResponse20045
+        :return: InlineResponse20042
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -261,7 +261,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param NfsClientGroupsBody body: (required)
-        :return: InlineResponse20045
+        :return: InlineResponse20042
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -319,7 +319,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20045',  # noqa: E501
+            response_type='InlineResponse20042',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -628,7 +628,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str uid: group uid (required)
-        :return: InlineResponse20046
+        :return: InlineResponse20043
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -649,7 +649,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str uid: group uid (required)
-        :return: InlineResponse20046
+        :return: InlineResponse20043
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -703,7 +703,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20046',  # noqa: E501
+            response_type='InlineResponse20043',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -720,7 +720,7 @@ class NFSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20044
+        :return: InlineResponse20041
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -740,7 +740,7 @@ class NFSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20044
+        :return: InlineResponse20041
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -788,7 +788,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20044',  # noqa: E501
+            response_type='InlineResponse20041',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -805,7 +805,7 @@ class NFSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20047
+        :return: InlineResponse20044
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -825,7 +825,7 @@ class NFSApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20047
+        :return: InlineResponse20044
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -873,7 +873,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20047',  # noqa: E501
+            response_type='InlineResponse20044',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -891,7 +891,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str uid: Permission uid (required)
-        :return: InlineResponse20043
+        :return: InlineResponse20046
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -912,7 +912,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str uid: Permission uid (required)
-        :return: InlineResponse20043
+        :return: InlineResponse20046
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -966,7 +966,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20043',  # noqa: E501
+            response_type='InlineResponse20046',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -984,7 +984,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str fs_uid: File system uid
-        :return: InlineResponse20042
+        :return: InlineResponse20045
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1005,7 +1005,7 @@ class NFSApi(object):
 
         :param async_req bool
         :param str fs_uid: File system uid
-        :return: InlineResponse20042
+        :return: InlineResponse20045
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1055,7 +1055,7 @@ class NFSApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20042',  # noqa: E501
+            response_type='InlineResponse20045',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

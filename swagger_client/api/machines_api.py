@@ -42,7 +42,7 @@ class MachinesApi(object):
 
         :param async_req bool
         :param list[str] role:
-        :return: InlineResponse20041
+        :return: InlineResponse20040
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class MachinesApi(object):
 
         :param async_req bool
         :param list[str] role:
-        :return: InlineResponse20041
+        :return: InlineResponse20040
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -114,7 +114,7 @@ class MachinesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20041',  # noqa: E501
+            response_type='InlineResponse20040',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

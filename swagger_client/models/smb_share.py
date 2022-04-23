@@ -28,387 +28,114 @@ class SmbShare(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'inner_path': 'str',
-        'file_create_mask': 'str',
-        'mount_options': 'str',
-        'read_write_users': 'list[str]',
-        'read_only': 'bool',
-        'valid_users': 'list[str]',
-        'invalid_users': 'list[str]',
-        'hidden': 'bool',
-        'share_name': 'str',
-        'read_only_users': 'list[str]',
-        'encryption': 'str',
-        'uid': 'str',
         'acl': 'bool',
         'additional_share_options': 'list[str]',
-        'directory_create_mask': 'str',
-        'description': 'str',
-        'obs_direct': 'bool',
         'allow_guest_access': 'bool',
-        'fs_name': 'str'
+        'description': 'str',
+        'directory_create_mask': 'str',
+        'encryption': 'str',
+        'file_create_mask': 'str',
+        'fs_name': 'str',
+        'hidden': 'bool',
+        'id': 'str',
+        'inner_path': 'str',
+        'invalid_users': 'list[str]',
+        'mount_options': 'str',
+        'obs_direct': 'bool',
+        'read_only': 'bool',
+        'read_only_users': 'list[str]',
+        'read_write_users': 'list[str]',
+        'share_name': 'str',
+        'uid': 'str',
+        'valid_users': 'list[str]'
     }
 
     attribute_map = {
-        'id': 'id',
-        'inner_path': 'innerPath',
-        'file_create_mask': 'fileCreateMask',
-        'mount_options': 'mountOptions',
-        'read_write_users': 'readWriteUsers',
-        'read_only': 'readOnly',
-        'valid_users': 'validUsers',
-        'invalid_users': 'invalidUsers',
-        'hidden': 'hidden',
-        'share_name': 'shareName',
-        'read_only_users': 'readOnlyUsers',
-        'encryption': 'encryption',
-        'uid': 'uid',
         'acl': 'acl',
         'additional_share_options': 'additionalShareOptions',
-        'directory_create_mask': 'directoryCreateMask',
-        'description': 'description',
-        'obs_direct': 'obsDirect',
         'allow_guest_access': 'allowGuestAccess',
-        'fs_name': 'fsName'
+        'description': 'description',
+        'directory_create_mask': 'directoryCreateMask',
+        'encryption': 'encryption',
+        'file_create_mask': 'fileCreateMask',
+        'fs_name': 'fsName',
+        'hidden': 'hidden',
+        'id': 'id',
+        'inner_path': 'innerPath',
+        'invalid_users': 'invalidUsers',
+        'mount_options': 'mountOptions',
+        'obs_direct': 'obsDirect',
+        'read_only': 'readOnly',
+        'read_only_users': 'readOnlyUsers',
+        'read_write_users': 'readWriteUsers',
+        'share_name': 'shareName',
+        'uid': 'uid',
+        'valid_users': 'validUsers'
     }
 
-    def __init__(self, id=None, inner_path=None, file_create_mask=None, mount_options=None, read_write_users=None, read_only=None, valid_users=None, invalid_users=None, hidden=None, share_name=None, read_only_users=None, encryption=None, uid=None, acl=None, additional_share_options=None, directory_create_mask=None, description=None, obs_direct=None, allow_guest_access=None, fs_name=None):  # noqa: E501
+    def __init__(self, acl=None, additional_share_options=None, allow_guest_access=None, description=None, directory_create_mask=None, encryption=None, file_create_mask=None, fs_name=None, hidden=None, id=None, inner_path=None, invalid_users=None, mount_options=None, obs_direct=None, read_only=None, read_only_users=None, read_write_users=None, share_name=None, uid=None, valid_users=None):  # noqa: E501
         """SmbShare - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._inner_path = None
-        self._file_create_mask = None
-        self._mount_options = None
-        self._read_write_users = None
-        self._read_only = None
-        self._valid_users = None
-        self._invalid_users = None
-        self._hidden = None
-        self._share_name = None
-        self._read_only_users = None
-        self._encryption = None
-        self._uid = None
         self._acl = None
         self._additional_share_options = None
-        self._directory_create_mask = None
-        self._description = None
-        self._obs_direct = None
         self._allow_guest_access = None
+        self._description = None
+        self._directory_create_mask = None
+        self._encryption = None
+        self._file_create_mask = None
         self._fs_name = None
+        self._hidden = None
+        self._id = None
+        self._inner_path = None
+        self._invalid_users = None
+        self._mount_options = None
+        self._obs_direct = None
+        self._read_only = None
+        self._read_only_users = None
+        self._read_write_users = None
+        self._share_name = None
+        self._uid = None
+        self._valid_users = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if inner_path is not None:
-            self.inner_path = inner_path
-        if file_create_mask is not None:
-            self.file_create_mask = file_create_mask
-        if mount_options is not None:
-            self.mount_options = mount_options
-        if read_write_users is not None:
-            self.read_write_users = read_write_users
-        if read_only is not None:
-            self.read_only = read_only
-        if valid_users is not None:
-            self.valid_users = valid_users
-        if invalid_users is not None:
-            self.invalid_users = invalid_users
-        if hidden is not None:
-            self.hidden = hidden
-        if share_name is not None:
-            self.share_name = share_name
-        if read_only_users is not None:
-            self.read_only_users = read_only_users
-        if encryption is not None:
-            self.encryption = encryption
-        if uid is not None:
-            self.uid = uid
         if acl is not None:
             self.acl = acl
         if additional_share_options is not None:
             self.additional_share_options = additional_share_options
-        if directory_create_mask is not None:
-            self.directory_create_mask = directory_create_mask
-        if description is not None:
-            self.description = description
-        if obs_direct is not None:
-            self.obs_direct = obs_direct
         if allow_guest_access is not None:
             self.allow_guest_access = allow_guest_access
+        if description is not None:
+            self.description = description
+        if directory_create_mask is not None:
+            self.directory_create_mask = directory_create_mask
+        if encryption is not None:
+            self.encryption = encryption
+        if file_create_mask is not None:
+            self.file_create_mask = file_create_mask
         if fs_name is not None:
             self.fs_name = fs_name
-
-    @property
-    def id(self):
-        """Gets the id of this SmbShare.  # noqa: E501
-
-
-        :return: The id of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this SmbShare.
-
-
-        :param id: The id of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def inner_path(self):
-        """Gets the inner_path of this SmbShare.  # noqa: E501
-
-
-        :return: The inner_path of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._inner_path
-
-    @inner_path.setter
-    def inner_path(self, inner_path):
-        """Sets the inner_path of this SmbShare.
-
-
-        :param inner_path: The inner_path of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._inner_path = inner_path
-
-    @property
-    def file_create_mask(self):
-        """Gets the file_create_mask of this SmbShare.  # noqa: E501
-
-
-        :return: The file_create_mask of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._file_create_mask
-
-    @file_create_mask.setter
-    def file_create_mask(self, file_create_mask):
-        """Sets the file_create_mask of this SmbShare.
-
-
-        :param file_create_mask: The file_create_mask of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._file_create_mask = file_create_mask
-
-    @property
-    def mount_options(self):
-        """Gets the mount_options of this SmbShare.  # noqa: E501
-
-
-        :return: The mount_options of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._mount_options
-
-    @mount_options.setter
-    def mount_options(self, mount_options):
-        """Sets the mount_options of this SmbShare.
-
-
-        :param mount_options: The mount_options of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._mount_options = mount_options
-
-    @property
-    def read_write_users(self):
-        """Gets the read_write_users of this SmbShare.  # noqa: E501
-
-
-        :return: The read_write_users of this SmbShare.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._read_write_users
-
-    @read_write_users.setter
-    def read_write_users(self, read_write_users):
-        """Sets the read_write_users of this SmbShare.
-
-
-        :param read_write_users: The read_write_users of this SmbShare.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._read_write_users = read_write_users
-
-    @property
-    def read_only(self):
-        """Gets the read_only of this SmbShare.  # noqa: E501
-
-
-        :return: The read_only of this SmbShare.  # noqa: E501
-        :rtype: bool
-        """
-        return self._read_only
-
-    @read_only.setter
-    def read_only(self, read_only):
-        """Sets the read_only of this SmbShare.
-
-
-        :param read_only: The read_only of this SmbShare.  # noqa: E501
-        :type: bool
-        """
-
-        self._read_only = read_only
-
-    @property
-    def valid_users(self):
-        """Gets the valid_users of this SmbShare.  # noqa: E501
-
-
-        :return: The valid_users of this SmbShare.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._valid_users
-
-    @valid_users.setter
-    def valid_users(self, valid_users):
-        """Sets the valid_users of this SmbShare.
-
-
-        :param valid_users: The valid_users of this SmbShare.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._valid_users = valid_users
-
-    @property
-    def invalid_users(self):
-        """Gets the invalid_users of this SmbShare.  # noqa: E501
-
-
-        :return: The invalid_users of this SmbShare.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._invalid_users
-
-    @invalid_users.setter
-    def invalid_users(self, invalid_users):
-        """Sets the invalid_users of this SmbShare.
-
-
-        :param invalid_users: The invalid_users of this SmbShare.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._invalid_users = invalid_users
-
-    @property
-    def hidden(self):
-        """Gets the hidden of this SmbShare.  # noqa: E501
-
-
-        :return: The hidden of this SmbShare.  # noqa: E501
-        :rtype: bool
-        """
-        return self._hidden
-
-    @hidden.setter
-    def hidden(self, hidden):
-        """Sets the hidden of this SmbShare.
-
-
-        :param hidden: The hidden of this SmbShare.  # noqa: E501
-        :type: bool
-        """
-
-        self._hidden = hidden
-
-    @property
-    def share_name(self):
-        """Gets the share_name of this SmbShare.  # noqa: E501
-
-
-        :return: The share_name of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._share_name
-
-    @share_name.setter
-    def share_name(self, share_name):
-        """Sets the share_name of this SmbShare.
-
-
-        :param share_name: The share_name of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._share_name = share_name
-
-    @property
-    def read_only_users(self):
-        """Gets the read_only_users of this SmbShare.  # noqa: E501
-
-
-        :return: The read_only_users of this SmbShare.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._read_only_users
-
-    @read_only_users.setter
-    def read_only_users(self, read_only_users):
-        """Sets the read_only_users of this SmbShare.
-
-
-        :param read_only_users: The read_only_users of this SmbShare.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._read_only_users = read_only_users
-
-    @property
-    def encryption(self):
-        """Gets the encryption of this SmbShare.  # noqa: E501
-
-
-        :return: The encryption of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._encryption
-
-    @encryption.setter
-    def encryption(self, encryption):
-        """Sets the encryption of this SmbShare.
-
-
-        :param encryption: The encryption of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._encryption = encryption
-
-    @property
-    def uid(self):
-        """Gets the uid of this SmbShare.  # noqa: E501
-
-
-        :return: The uid of this SmbShare.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this SmbShare.
-
-
-        :param uid: The uid of this SmbShare.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
+        if hidden is not None:
+            self.hidden = hidden
+        if id is not None:
+            self.id = id
+        if inner_path is not None:
+            self.inner_path = inner_path
+        if invalid_users is not None:
+            self.invalid_users = invalid_users
+        if mount_options is not None:
+            self.mount_options = mount_options
+        if obs_direct is not None:
+            self.obs_direct = obs_direct
+        if read_only is not None:
+            self.read_only = read_only
+        if read_only_users is not None:
+            self.read_only_users = read_only_users
+        if read_write_users is not None:
+            self.read_write_users = read_write_users
+        if share_name is not None:
+            self.share_name = share_name
+        if uid is not None:
+            self.uid = uid
+        if valid_users is not None:
+            self.valid_users = valid_users
 
     @property
     def acl(self):
@@ -453,25 +180,25 @@ class SmbShare(object):
         self._additional_share_options = additional_share_options
 
     @property
-    def directory_create_mask(self):
-        """Gets the directory_create_mask of this SmbShare.  # noqa: E501
+    def allow_guest_access(self):
+        """Gets the allow_guest_access of this SmbShare.  # noqa: E501
 
 
-        :return: The directory_create_mask of this SmbShare.  # noqa: E501
-        :rtype: str
+        :return: The allow_guest_access of this SmbShare.  # noqa: E501
+        :rtype: bool
         """
-        return self._directory_create_mask
+        return self._allow_guest_access
 
-    @directory_create_mask.setter
-    def directory_create_mask(self, directory_create_mask):
-        """Sets the directory_create_mask of this SmbShare.
+    @allow_guest_access.setter
+    def allow_guest_access(self, allow_guest_access):
+        """Sets the allow_guest_access of this SmbShare.
 
 
-        :param directory_create_mask: The directory_create_mask of this SmbShare.  # noqa: E501
-        :type: str
+        :param allow_guest_access: The allow_guest_access of this SmbShare.  # noqa: E501
+        :type: bool
         """
 
-        self._directory_create_mask = directory_create_mask
+        self._allow_guest_access = allow_guest_access
 
     @property
     def description(self):
@@ -495,46 +222,67 @@ class SmbShare(object):
         self._description = description
 
     @property
-    def obs_direct(self):
-        """Gets the obs_direct of this SmbShare.  # noqa: E501
+    def directory_create_mask(self):
+        """Gets the directory_create_mask of this SmbShare.  # noqa: E501
 
 
-        :return: The obs_direct of this SmbShare.  # noqa: E501
-        :rtype: bool
+        :return: The directory_create_mask of this SmbShare.  # noqa: E501
+        :rtype: str
         """
-        return self._obs_direct
+        return self._directory_create_mask
 
-    @obs_direct.setter
-    def obs_direct(self, obs_direct):
-        """Sets the obs_direct of this SmbShare.
+    @directory_create_mask.setter
+    def directory_create_mask(self, directory_create_mask):
+        """Sets the directory_create_mask of this SmbShare.
 
 
-        :param obs_direct: The obs_direct of this SmbShare.  # noqa: E501
-        :type: bool
+        :param directory_create_mask: The directory_create_mask of this SmbShare.  # noqa: E501
+        :type: str
         """
 
-        self._obs_direct = obs_direct
+        self._directory_create_mask = directory_create_mask
 
     @property
-    def allow_guest_access(self):
-        """Gets the allow_guest_access of this SmbShare.  # noqa: E501
+    def encryption(self):
+        """Gets the encryption of this SmbShare.  # noqa: E501
 
 
-        :return: The allow_guest_access of this SmbShare.  # noqa: E501
-        :rtype: bool
+        :return: The encryption of this SmbShare.  # noqa: E501
+        :rtype: str
         """
-        return self._allow_guest_access
+        return self._encryption
 
-    @allow_guest_access.setter
-    def allow_guest_access(self, allow_guest_access):
-        """Sets the allow_guest_access of this SmbShare.
+    @encryption.setter
+    def encryption(self, encryption):
+        """Sets the encryption of this SmbShare.
 
 
-        :param allow_guest_access: The allow_guest_access of this SmbShare.  # noqa: E501
-        :type: bool
+        :param encryption: The encryption of this SmbShare.  # noqa: E501
+        :type: str
         """
 
-        self._allow_guest_access = allow_guest_access
+        self._encryption = encryption
+
+    @property
+    def file_create_mask(self):
+        """Gets the file_create_mask of this SmbShare.  # noqa: E501
+
+
+        :return: The file_create_mask of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._file_create_mask
+
+    @file_create_mask.setter
+    def file_create_mask(self, file_create_mask):
+        """Sets the file_create_mask of this SmbShare.
+
+
+        :param file_create_mask: The file_create_mask of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._file_create_mask = file_create_mask
 
     @property
     def fs_name(self):
@@ -556,6 +304,258 @@ class SmbShare(object):
         """
 
         self._fs_name = fs_name
+
+    @property
+    def hidden(self):
+        """Gets the hidden of this SmbShare.  # noqa: E501
+
+
+        :return: The hidden of this SmbShare.  # noqa: E501
+        :rtype: bool
+        """
+        return self._hidden
+
+    @hidden.setter
+    def hidden(self, hidden):
+        """Sets the hidden of this SmbShare.
+
+
+        :param hidden: The hidden of this SmbShare.  # noqa: E501
+        :type: bool
+        """
+
+        self._hidden = hidden
+
+    @property
+    def id(self):
+        """Gets the id of this SmbShare.  # noqa: E501
+
+
+        :return: The id of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SmbShare.
+
+
+        :param id: The id of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def inner_path(self):
+        """Gets the inner_path of this SmbShare.  # noqa: E501
+
+
+        :return: The inner_path of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._inner_path
+
+    @inner_path.setter
+    def inner_path(self, inner_path):
+        """Sets the inner_path of this SmbShare.
+
+
+        :param inner_path: The inner_path of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._inner_path = inner_path
+
+    @property
+    def invalid_users(self):
+        """Gets the invalid_users of this SmbShare.  # noqa: E501
+
+
+        :return: The invalid_users of this SmbShare.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._invalid_users
+
+    @invalid_users.setter
+    def invalid_users(self, invalid_users):
+        """Sets the invalid_users of this SmbShare.
+
+
+        :param invalid_users: The invalid_users of this SmbShare.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._invalid_users = invalid_users
+
+    @property
+    def mount_options(self):
+        """Gets the mount_options of this SmbShare.  # noqa: E501
+
+
+        :return: The mount_options of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._mount_options
+
+    @mount_options.setter
+    def mount_options(self, mount_options):
+        """Sets the mount_options of this SmbShare.
+
+
+        :param mount_options: The mount_options of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._mount_options = mount_options
+
+    @property
+    def obs_direct(self):
+        """Gets the obs_direct of this SmbShare.  # noqa: E501
+
+
+        :return: The obs_direct of this SmbShare.  # noqa: E501
+        :rtype: bool
+        """
+        return self._obs_direct
+
+    @obs_direct.setter
+    def obs_direct(self, obs_direct):
+        """Sets the obs_direct of this SmbShare.
+
+
+        :param obs_direct: The obs_direct of this SmbShare.  # noqa: E501
+        :type: bool
+        """
+
+        self._obs_direct = obs_direct
+
+    @property
+    def read_only(self):
+        """Gets the read_only of this SmbShare.  # noqa: E501
+
+
+        :return: The read_only of this SmbShare.  # noqa: E501
+        :rtype: bool
+        """
+        return self._read_only
+
+    @read_only.setter
+    def read_only(self, read_only):
+        """Sets the read_only of this SmbShare.
+
+
+        :param read_only: The read_only of this SmbShare.  # noqa: E501
+        :type: bool
+        """
+
+        self._read_only = read_only
+
+    @property
+    def read_only_users(self):
+        """Gets the read_only_users of this SmbShare.  # noqa: E501
+
+
+        :return: The read_only_users of this SmbShare.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._read_only_users
+
+    @read_only_users.setter
+    def read_only_users(self, read_only_users):
+        """Sets the read_only_users of this SmbShare.
+
+
+        :param read_only_users: The read_only_users of this SmbShare.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._read_only_users = read_only_users
+
+    @property
+    def read_write_users(self):
+        """Gets the read_write_users of this SmbShare.  # noqa: E501
+
+
+        :return: The read_write_users of this SmbShare.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._read_write_users
+
+    @read_write_users.setter
+    def read_write_users(self, read_write_users):
+        """Sets the read_write_users of this SmbShare.
+
+
+        :param read_write_users: The read_write_users of this SmbShare.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._read_write_users = read_write_users
+
+    @property
+    def share_name(self):
+        """Gets the share_name of this SmbShare.  # noqa: E501
+
+
+        :return: The share_name of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._share_name
+
+    @share_name.setter
+    def share_name(self, share_name):
+        """Sets the share_name of this SmbShare.
+
+
+        :param share_name: The share_name of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._share_name = share_name
+
+    @property
+    def uid(self):
+        """Gets the uid of this SmbShare.  # noqa: E501
+
+
+        :return: The uid of this SmbShare.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this SmbShare.
+
+
+        :param uid: The uid of this SmbShare.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
+
+    @property
+    def valid_users(self):
+        """Gets the valid_users of this SmbShare.  # noqa: E501
+
+
+        :return: The valid_users of this SmbShare.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._valid_users
+
+    @valid_users.setter
+    def valid_users(self, valid_users):
+        """Sets the valid_users of this SmbShare.
+
+
+        :param valid_users: The valid_users of this SmbShare.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._valid_users = valid_users
 
     def to_dict(self):
         """Returns the model properties as a dict"""

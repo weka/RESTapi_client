@@ -43,7 +43,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: Snapshot uid (required)
         :param UidCopyBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -65,7 +65,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: Snapshot uid (required)
         :param UidCopyBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -125,7 +125,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20073',  # noqa: E501
+            response_type='InlineResponse20072',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -143,7 +143,7 @@ class SnapshotsApi(object):
 
         :param async_req bool
         :param SnapshotsBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -164,7 +164,7 @@ class SnapshotsApi(object):
 
         :param async_req bool
         :param SnapshotsBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -218,7 +218,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20073',  # noqa: E501
+            response_type='InlineResponse20072',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -329,7 +329,7 @@ class SnapshotsApi(object):
 
         :param async_req bool
         :param str uid: Snapshot uid (required)
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -350,7 +350,7 @@ class SnapshotsApi(object):
 
         :param async_req bool
         :param str uid: Snapshot uid (required)
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -404,7 +404,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20073',  # noqa: E501
+            response_type='InlineResponse20072',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -421,7 +421,7 @@ class SnapshotsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20072
+        :return: InlineResponse20071
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -441,7 +441,7 @@ class SnapshotsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20072
+        :return: InlineResponse20071
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -489,7 +489,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20072',  # noqa: E501
+            response_type='InlineResponse20071',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -508,7 +508,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str fs_uid: (required)
         :param str uid: snapshot uid (required)
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -530,7 +530,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str fs_uid: (required)
         :param str uid: snapshot uid (required)
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -590,7 +590,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20073',  # noqa: E501
+            response_type='InlineResponse20072',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -609,7 +609,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: snapshot uid (required)
         :param SnapshotsUidBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -631,7 +631,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: snapshot uid (required)
         :param SnapshotsUidBody body:
-        :return: InlineResponse20073
+        :return: InlineResponse20072
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -691,7 +691,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20073',  # noqa: E501
+            response_type='InlineResponse20072',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -710,7 +710,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: snapshot uid (required)
         :param UidUploadBody body:
-        :return: InlineResponse20074
+        :return: InlineResponse20073
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -732,7 +732,7 @@ class SnapshotsApi(object):
         :param async_req bool
         :param str uid: snapshot uid (required)
         :param UidUploadBody body:
-        :return: InlineResponse20074
+        :return: InlineResponse20073
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -792,7 +792,7 @@ class SnapshotsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20074',  # noqa: E501
+            response_type='InlineResponse20073',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

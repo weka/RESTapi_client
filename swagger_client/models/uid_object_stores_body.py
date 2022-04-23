@@ -28,48 +28,23 @@ class UidObjectStoresBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'obs_name': 'str',
-        'obs_mode': 'str'
+        'obs_mode': 'str',
+        'obs_name': 'str'
     }
 
     attribute_map = {
-        'obs_name': 'obs_name',
-        'obs_mode': 'obs_mode'
+        'obs_mode': 'obs_mode',
+        'obs_name': 'obs_name'
     }
 
-    def __init__(self, obs_name=None, obs_mode=None):  # noqa: E501
+    def __init__(self, obs_mode=None, obs_name=None):  # noqa: E501
         """UidObjectStoresBody - a model defined in Swagger"""  # noqa: E501
-        self._obs_name = None
         self._obs_mode = None
+        self._obs_name = None
         self.discriminator = None
-        self.obs_name = obs_name
         if obs_mode is not None:
             self.obs_mode = obs_mode
-
-    @property
-    def obs_name(self):
-        """Gets the obs_name of this UidObjectStoresBody.  # noqa: E501
-
-        Name of the Object Store Bucket to attach  # noqa: E501
-
-        :return: The obs_name of this UidObjectStoresBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._obs_name
-
-    @obs_name.setter
-    def obs_name(self, obs_name):
-        """Sets the obs_name of this UidObjectStoresBody.
-
-        Name of the Object Store Bucket to attach  # noqa: E501
-
-        :param obs_name: The obs_name of this UidObjectStoresBody.  # noqa: E501
-        :type: str
-        """
-        if obs_name is None:
-            raise ValueError("Invalid value for `obs_name`, must not be `None`")  # noqa: E501
-
-        self._obs_name = obs_name
+        self.obs_name = obs_name
 
     @property
     def obs_mode(self):
@@ -99,6 +74,31 @@ class UidObjectStoresBody(object):
             )
 
         self._obs_mode = obs_mode
+
+    @property
+    def obs_name(self):
+        """Gets the obs_name of this UidObjectStoresBody.  # noqa: E501
+
+        Name of the Object Store Bucket to attach  # noqa: E501
+
+        :return: The obs_name of this UidObjectStoresBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._obs_name
+
+    @obs_name.setter
+    def obs_name(self, obs_name):
+        """Sets the obs_name of this UidObjectStoresBody.
+
+        Name of the Object Store Bucket to attach  # noqa: E501
+
+        :param obs_name: The obs_name of this UidObjectStoresBody.  # noqa: E501
+        :type: str
+        """
+        if obs_name is None:
+            raise ValueError("Invalid value for `obs_name`, must not be `None`")  # noqa: E501
+
+        self._obs_name = obs_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

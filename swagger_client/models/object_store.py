@@ -28,151 +28,151 @@ class ObjectStore(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'secret_key': 'str',
-        'bandwidth': 'ObjectStoreBandwidth',
-        'name': 'str',
-        'obs_site': 'str',
-        'uid': 'str',
-        'hostname': 'str',
+        'access_key_id': 'str',
         'auth_method': 'str',
+        'bandwidth': 'ObjectStoreBandwidth',
+        'enable_upload_tags': 'bool',
+        'hostname': 'str',
+        'id': 'str',
+        'max_blocks_in_data_blob': 'float',
+        'max_concurrent_downloads': 'float',
         'max_concurrent_removals': 'float',
         'max_extents_in_data_blob': 'float',
-        'max_blocks_in_data_blob': 'float',
-        'upload_bandwidth': 'ObjectStoreUploadBandwidth',
-        'access_key_id': 'str',
+        'name': 'str',
+        'obs_site': 'str',
         'port': 'float',
-        'max_concurrent_downloads': 'float',
-        'region': 'str',
         'protocol': 'str',
-        'upload_memory_blocks_limit': 'float',
-        'enable_upload_tags': 'bool'
+        'region': 'str',
+        'secret_key': 'str',
+        'uid': 'str',
+        'upload_bandwidth': 'ObjectStoreUploadBandwidth',
+        'upload_memory_blocks_limit': 'float'
     }
 
     attribute_map = {
-        'id': 'id',
-        'secret_key': 'secret_key',
-        'bandwidth': 'bandwidth',
-        'name': 'name',
-        'obs_site': 'obs_site',
-        'uid': 'uid',
-        'hostname': 'hostname',
+        'access_key_id': 'access_key_id',
         'auth_method': 'auth_method',
+        'bandwidth': 'bandwidth',
+        'enable_upload_tags': 'enable_upload_tags',
+        'hostname': 'hostname',
+        'id': 'id',
+        'max_blocks_in_data_blob': 'max_blocks_in_data_blob',
+        'max_concurrent_downloads': 'max_concurrent_downloads',
         'max_concurrent_removals': 'max_concurrent_removals',
         'max_extents_in_data_blob': 'max_extents_in_data_blob',
-        'max_blocks_in_data_blob': 'max_blocks_in_data_blob',
-        'upload_bandwidth': 'uploadBandwidth',
-        'access_key_id': 'access_key_id',
+        'name': 'name',
+        'obs_site': 'obs_site',
         'port': 'port',
-        'max_concurrent_downloads': 'max_concurrent_downloads',
-        'region': 'region',
         'protocol': 'protocol',
-        'upload_memory_blocks_limit': 'upload_memory_blocks_limit',
-        'enable_upload_tags': 'enable_upload_tags'
+        'region': 'region',
+        'secret_key': 'secret_key',
+        'uid': 'uid',
+        'upload_bandwidth': 'uploadBandwidth',
+        'upload_memory_blocks_limit': 'upload_memory_blocks_limit'
     }
 
-    def __init__(self, id=None, secret_key=None, bandwidth=None, name=None, obs_site=None, uid=None, hostname=None, auth_method=None, max_concurrent_removals=None, max_extents_in_data_blob=None, max_blocks_in_data_blob=None, upload_bandwidth=None, access_key_id=None, port=None, max_concurrent_downloads=None, region=None, protocol=None, upload_memory_blocks_limit=None, enable_upload_tags=None):  # noqa: E501
+    def __init__(self, access_key_id=None, auth_method=None, bandwidth=None, enable_upload_tags=None, hostname=None, id=None, max_blocks_in_data_blob=None, max_concurrent_downloads=None, max_concurrent_removals=None, max_extents_in_data_blob=None, name=None, obs_site=None, port=None, protocol=None, region=None, secret_key=None, uid=None, upload_bandwidth=None, upload_memory_blocks_limit=None):  # noqa: E501
         """ObjectStore - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._secret_key = None
-        self._bandwidth = None
-        self._name = None
-        self._obs_site = None
-        self._uid = None
-        self._hostname = None
+        self._access_key_id = None
         self._auth_method = None
+        self._bandwidth = None
+        self._enable_upload_tags = None
+        self._hostname = None
+        self._id = None
+        self._max_blocks_in_data_blob = None
+        self._max_concurrent_downloads = None
         self._max_concurrent_removals = None
         self._max_extents_in_data_blob = None
-        self._max_blocks_in_data_blob = None
-        self._upload_bandwidth = None
-        self._access_key_id = None
+        self._name = None
+        self._obs_site = None
         self._port = None
-        self._max_concurrent_downloads = None
-        self._region = None
         self._protocol = None
+        self._region = None
+        self._secret_key = None
+        self._uid = None
+        self._upload_bandwidth = None
         self._upload_memory_blocks_limit = None
-        self._enable_upload_tags = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if secret_key is not None:
-            self.secret_key = secret_key
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
-        if name is not None:
-            self.name = name
-        if obs_site is not None:
-            self.obs_site = obs_site
-        if uid is not None:
-            self.uid = uid
-        if hostname is not None:
-            self.hostname = hostname
+        if access_key_id is not None:
+            self.access_key_id = access_key_id
         if auth_method is not None:
             self.auth_method = auth_method
+        if bandwidth is not None:
+            self.bandwidth = bandwidth
+        if enable_upload_tags is not None:
+            self.enable_upload_tags = enable_upload_tags
+        if hostname is not None:
+            self.hostname = hostname
+        if id is not None:
+            self.id = id
+        if max_blocks_in_data_blob is not None:
+            self.max_blocks_in_data_blob = max_blocks_in_data_blob
+        if max_concurrent_downloads is not None:
+            self.max_concurrent_downloads = max_concurrent_downloads
         if max_concurrent_removals is not None:
             self.max_concurrent_removals = max_concurrent_removals
         if max_extents_in_data_blob is not None:
             self.max_extents_in_data_blob = max_extents_in_data_blob
-        if max_blocks_in_data_blob is not None:
-            self.max_blocks_in_data_blob = max_blocks_in_data_blob
-        if upload_bandwidth is not None:
-            self.upload_bandwidth = upload_bandwidth
-        if access_key_id is not None:
-            self.access_key_id = access_key_id
+        if name is not None:
+            self.name = name
+        if obs_site is not None:
+            self.obs_site = obs_site
         if port is not None:
             self.port = port
-        if max_concurrent_downloads is not None:
-            self.max_concurrent_downloads = max_concurrent_downloads
-        if region is not None:
-            self.region = region
         if protocol is not None:
             self.protocol = protocol
+        if region is not None:
+            self.region = region
+        if secret_key is not None:
+            self.secret_key = secret_key
+        if uid is not None:
+            self.uid = uid
+        if upload_bandwidth is not None:
+            self.upload_bandwidth = upload_bandwidth
         if upload_memory_blocks_limit is not None:
             self.upload_memory_blocks_limit = upload_memory_blocks_limit
-        if enable_upload_tags is not None:
-            self.enable_upload_tags = enable_upload_tags
 
     @property
-    def id(self):
-        """Gets the id of this ObjectStore.  # noqa: E501
+    def access_key_id(self):
+        """Gets the access_key_id of this ObjectStore.  # noqa: E501
 
 
-        :return: The id of this ObjectStore.  # noqa: E501
+        :return: The access_key_id of this ObjectStore.  # noqa: E501
         :rtype: str
         """
-        return self._id
+        return self._access_key_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ObjectStore.
+    @access_key_id.setter
+    def access_key_id(self, access_key_id):
+        """Sets the access_key_id of this ObjectStore.
 
 
-        :param id: The id of this ObjectStore.  # noqa: E501
+        :param access_key_id: The access_key_id of this ObjectStore.  # noqa: E501
         :type: str
         """
 
-        self._id = id
+        self._access_key_id = access_key_id
 
     @property
-    def secret_key(self):
-        """Gets the secret_key of this ObjectStore.  # noqa: E501
+    def auth_method(self):
+        """Gets the auth_method of this ObjectStore.  # noqa: E501
 
 
-        :return: The secret_key of this ObjectStore.  # noqa: E501
+        :return: The auth_method of this ObjectStore.  # noqa: E501
         :rtype: str
         """
-        return self._secret_key
+        return self._auth_method
 
-    @secret_key.setter
-    def secret_key(self, secret_key):
-        """Sets the secret_key of this ObjectStore.
+    @auth_method.setter
+    def auth_method(self, auth_method):
+        """Sets the auth_method of this ObjectStore.
 
 
-        :param secret_key: The secret_key of this ObjectStore.  # noqa: E501
+        :param auth_method: The auth_method of this ObjectStore.  # noqa: E501
         :type: str
         """
 
-        self._secret_key = secret_key
+        self._auth_method = auth_method
 
     @property
     def bandwidth(self):
@@ -196,67 +196,25 @@ class ObjectStore(object):
         self._bandwidth = bandwidth
 
     @property
-    def name(self):
-        """Gets the name of this ObjectStore.  # noqa: E501
+    def enable_upload_tags(self):
+        """Gets the enable_upload_tags of this ObjectStore.  # noqa: E501
 
 
-        :return: The name of this ObjectStore.  # noqa: E501
-        :rtype: str
+        :return: The enable_upload_tags of this ObjectStore.  # noqa: E501
+        :rtype: bool
         """
-        return self._name
+        return self._enable_upload_tags
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ObjectStore.
-
-
-        :param name: The name of this ObjectStore.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
-
-    @property
-    def obs_site(self):
-        """Gets the obs_site of this ObjectStore.  # noqa: E501
+    @enable_upload_tags.setter
+    def enable_upload_tags(self, enable_upload_tags):
+        """Sets the enable_upload_tags of this ObjectStore.
 
 
-        :return: The obs_site of this ObjectStore.  # noqa: E501
-        :rtype: str
-        """
-        return self._obs_site
-
-    @obs_site.setter
-    def obs_site(self, obs_site):
-        """Sets the obs_site of this ObjectStore.
-
-
-        :param obs_site: The obs_site of this ObjectStore.  # noqa: E501
-        :type: str
+        :param enable_upload_tags: The enable_upload_tags of this ObjectStore.  # noqa: E501
+        :type: bool
         """
 
-        self._obs_site = obs_site
-
-    @property
-    def uid(self):
-        """Gets the uid of this ObjectStore.  # noqa: E501
-
-
-        :return: The uid of this ObjectStore.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this ObjectStore.
-
-
-        :param uid: The uid of this ObjectStore.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
+        self._enable_upload_tags = enable_upload_tags
 
     @property
     def hostname(self):
@@ -280,25 +238,67 @@ class ObjectStore(object):
         self._hostname = hostname
 
     @property
-    def auth_method(self):
-        """Gets the auth_method of this ObjectStore.  # noqa: E501
+    def id(self):
+        """Gets the id of this ObjectStore.  # noqa: E501
 
 
-        :return: The auth_method of this ObjectStore.  # noqa: E501
+        :return: The id of this ObjectStore.  # noqa: E501
         :rtype: str
         """
-        return self._auth_method
+        return self._id
 
-    @auth_method.setter
-    def auth_method(self, auth_method):
-        """Sets the auth_method of this ObjectStore.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ObjectStore.
 
 
-        :param auth_method: The auth_method of this ObjectStore.  # noqa: E501
+        :param id: The id of this ObjectStore.  # noqa: E501
         :type: str
         """
 
-        self._auth_method = auth_method
+        self._id = id
+
+    @property
+    def max_blocks_in_data_blob(self):
+        """Gets the max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
+
+
+        :return: The max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_blocks_in_data_blob
+
+    @max_blocks_in_data_blob.setter
+    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
+        """Sets the max_blocks_in_data_blob of this ObjectStore.
+
+
+        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
+        :type: float
+        """
+
+        self._max_blocks_in_data_blob = max_blocks_in_data_blob
+
+    @property
+    def max_concurrent_downloads(self):
+        """Gets the max_concurrent_downloads of this ObjectStore.  # noqa: E501
+
+
+        :return: The max_concurrent_downloads of this ObjectStore.  # noqa: E501
+        :rtype: float
+        """
+        return self._max_concurrent_downloads
+
+    @max_concurrent_downloads.setter
+    def max_concurrent_downloads(self, max_concurrent_downloads):
+        """Sets the max_concurrent_downloads of this ObjectStore.
+
+
+        :param max_concurrent_downloads: The max_concurrent_downloads of this ObjectStore.  # noqa: E501
+        :type: float
+        """
+
+        self._max_concurrent_downloads = max_concurrent_downloads
 
     @property
     def max_concurrent_removals(self):
@@ -343,67 +343,46 @@ class ObjectStore(object):
         self._max_extents_in_data_blob = max_extents_in_data_blob
 
     @property
-    def max_blocks_in_data_blob(self):
-        """Gets the max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
+    def name(self):
+        """Gets the name of this ObjectStore.  # noqa: E501
 
 
-        :return: The max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
-        :rtype: float
-        """
-        return self._max_blocks_in_data_blob
-
-    @max_blocks_in_data_blob.setter
-    def max_blocks_in_data_blob(self, max_blocks_in_data_blob):
-        """Sets the max_blocks_in_data_blob of this ObjectStore.
-
-
-        :param max_blocks_in_data_blob: The max_blocks_in_data_blob of this ObjectStore.  # noqa: E501
-        :type: float
-        """
-
-        self._max_blocks_in_data_blob = max_blocks_in_data_blob
-
-    @property
-    def upload_bandwidth(self):
-        """Gets the upload_bandwidth of this ObjectStore.  # noqa: E501
-
-
-        :return: The upload_bandwidth of this ObjectStore.  # noqa: E501
-        :rtype: ObjectStoreUploadBandwidth
-        """
-        return self._upload_bandwidth
-
-    @upload_bandwidth.setter
-    def upload_bandwidth(self, upload_bandwidth):
-        """Sets the upload_bandwidth of this ObjectStore.
-
-
-        :param upload_bandwidth: The upload_bandwidth of this ObjectStore.  # noqa: E501
-        :type: ObjectStoreUploadBandwidth
-        """
-
-        self._upload_bandwidth = upload_bandwidth
-
-    @property
-    def access_key_id(self):
-        """Gets the access_key_id of this ObjectStore.  # noqa: E501
-
-
-        :return: The access_key_id of this ObjectStore.  # noqa: E501
+        :return: The name of this ObjectStore.  # noqa: E501
         :rtype: str
         """
-        return self._access_key_id
+        return self._name
 
-    @access_key_id.setter
-    def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this ObjectStore.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ObjectStore.
 
 
-        :param access_key_id: The access_key_id of this ObjectStore.  # noqa: E501
+        :param name: The name of this ObjectStore.  # noqa: E501
         :type: str
         """
 
-        self._access_key_id = access_key_id
+        self._name = name
+
+    @property
+    def obs_site(self):
+        """Gets the obs_site of this ObjectStore.  # noqa: E501
+
+
+        :return: The obs_site of this ObjectStore.  # noqa: E501
+        :rtype: str
+        """
+        return self._obs_site
+
+    @obs_site.setter
+    def obs_site(self, obs_site):
+        """Sets the obs_site of this ObjectStore.
+
+
+        :param obs_site: The obs_site of this ObjectStore.  # noqa: E501
+        :type: str
+        """
+
+        self._obs_site = obs_site
 
     @property
     def port(self):
@@ -427,25 +406,25 @@ class ObjectStore(object):
         self._port = port
 
     @property
-    def max_concurrent_downloads(self):
-        """Gets the max_concurrent_downloads of this ObjectStore.  # noqa: E501
+    def protocol(self):
+        """Gets the protocol of this ObjectStore.  # noqa: E501
 
 
-        :return: The max_concurrent_downloads of this ObjectStore.  # noqa: E501
-        :rtype: float
+        :return: The protocol of this ObjectStore.  # noqa: E501
+        :rtype: str
         """
-        return self._max_concurrent_downloads
+        return self._protocol
 
-    @max_concurrent_downloads.setter
-    def max_concurrent_downloads(self, max_concurrent_downloads):
-        """Sets the max_concurrent_downloads of this ObjectStore.
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ObjectStore.
 
 
-        :param max_concurrent_downloads: The max_concurrent_downloads of this ObjectStore.  # noqa: E501
-        :type: float
+        :param protocol: The protocol of this ObjectStore.  # noqa: E501
+        :type: str
         """
 
-        self._max_concurrent_downloads = max_concurrent_downloads
+        self._protocol = protocol
 
     @property
     def region(self):
@@ -469,25 +448,67 @@ class ObjectStore(object):
         self._region = region
 
     @property
-    def protocol(self):
-        """Gets the protocol of this ObjectStore.  # noqa: E501
+    def secret_key(self):
+        """Gets the secret_key of this ObjectStore.  # noqa: E501
 
 
-        :return: The protocol of this ObjectStore.  # noqa: E501
+        :return: The secret_key of this ObjectStore.  # noqa: E501
         :rtype: str
         """
-        return self._protocol
+        return self._secret_key
 
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this ObjectStore.
+    @secret_key.setter
+    def secret_key(self, secret_key):
+        """Sets the secret_key of this ObjectStore.
 
 
-        :param protocol: The protocol of this ObjectStore.  # noqa: E501
+        :param secret_key: The secret_key of this ObjectStore.  # noqa: E501
         :type: str
         """
 
-        self._protocol = protocol
+        self._secret_key = secret_key
+
+    @property
+    def uid(self):
+        """Gets the uid of this ObjectStore.  # noqa: E501
+
+
+        :return: The uid of this ObjectStore.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this ObjectStore.
+
+
+        :param uid: The uid of this ObjectStore.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
+
+    @property
+    def upload_bandwidth(self):
+        """Gets the upload_bandwidth of this ObjectStore.  # noqa: E501
+
+
+        :return: The upload_bandwidth of this ObjectStore.  # noqa: E501
+        :rtype: ObjectStoreUploadBandwidth
+        """
+        return self._upload_bandwidth
+
+    @upload_bandwidth.setter
+    def upload_bandwidth(self, upload_bandwidth):
+        """Sets the upload_bandwidth of this ObjectStore.
+
+
+        :param upload_bandwidth: The upload_bandwidth of this ObjectStore.  # noqa: E501
+        :type: ObjectStoreUploadBandwidth
+        """
+
+        self._upload_bandwidth = upload_bandwidth
 
     @property
     def upload_memory_blocks_limit(self):
@@ -509,27 +530,6 @@ class ObjectStore(object):
         """
 
         self._upload_memory_blocks_limit = upload_memory_blocks_limit
-
-    @property
-    def enable_upload_tags(self):
-        """Gets the enable_upload_tags of this ObjectStore.  # noqa: E501
-
-
-        :return: The enable_upload_tags of this ObjectStore.  # noqa: E501
-        :rtype: bool
-        """
-        return self._enable_upload_tags
-
-    @enable_upload_tags.setter
-    def enable_upload_tags(self, enable_upload_tags):
-        """Sets the enable_upload_tags of this ObjectStore.
-
-
-        :param enable_upload_tags: The enable_upload_tags of this ObjectStore.  # noqa: E501
-        :type: bool
-        """
-
-        self._enable_upload_tags = enable_upload_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

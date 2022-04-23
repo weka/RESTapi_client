@@ -28,40 +28,430 @@ class InlineResponse20076Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'response_count_length_required': 'InlineResponse20076DataRESPONSECOUNTLENGTHREQUIRED'
+        'l6_rx_bytes_per_second': 'float',
+        'l6_tx_bytes_per_second': 'float',
+        'cpu_utilization_percentage': 'float',
+        'hostname': 'str',
+        'id': 'str',
+        'obs_download_bytes_per_second': 'float',
+        'obs_upload_bytes_per_second': 'float',
+        'ops_per_second': 'float',
+        'rdma_rx_bytes_per_second': 'float',
+        'rdma_tx_bytes_per_second': 'float',
+        'read_bytes_per_second': 'float',
+        'read_latency_usecs': 'float',
+        'reads_per_second': 'float',
+        'write_bytes_per_second': 'float',
+        'write_latency_usecs': 'float',
+        'writes_per_second': 'float'
     }
 
     attribute_map = {
-        'response_count_length_required': 'RESPONSE_COUNT_LENGTH_REQUIRED'
+        'l6_rx_bytes_per_second': 'L6RX_bytes_per_second',
+        'l6_tx_bytes_per_second': 'L6TX_bytes_per_second',
+        'cpu_utilization_percentage': 'cpu_utilization_percentage',
+        'hostname': 'hostname',
+        'id': 'id',
+        'obs_download_bytes_per_second': 'obs_download_bytes_per_second',
+        'obs_upload_bytes_per_second': 'obs_upload_bytes_per_second',
+        'ops_per_second': 'ops_per_second',
+        'rdma_rx_bytes_per_second': 'rdmaRX_bytes_per_second',
+        'rdma_tx_bytes_per_second': 'rdmaTX_bytes_per_second',
+        'read_bytes_per_second': 'read_bytes_per_second',
+        'read_latency_usecs': 'read_latency_usecs',
+        'reads_per_second': 'reads_per_second',
+        'write_bytes_per_second': 'write_bytes_per_second',
+        'write_latency_usecs': 'write_latency_usecs',
+        'writes_per_second': 'writes_per_second'
     }
 
-    def __init__(self, response_count_length_required=None):  # noqa: E501
+    def __init__(self, l6_rx_bytes_per_second=None, l6_tx_bytes_per_second=None, cpu_utilization_percentage=None, hostname=None, id=None, obs_download_bytes_per_second=None, obs_upload_bytes_per_second=None, ops_per_second=None, rdma_rx_bytes_per_second=None, rdma_tx_bytes_per_second=None, read_bytes_per_second=None, read_latency_usecs=None, reads_per_second=None, write_bytes_per_second=None, write_latency_usecs=None, writes_per_second=None):  # noqa: E501
         """InlineResponse20076Data - a model defined in Swagger"""  # noqa: E501
-        self._response_count_length_required = None
+        self._l6_rx_bytes_per_second = None
+        self._l6_tx_bytes_per_second = None
+        self._cpu_utilization_percentage = None
+        self._hostname = None
+        self._id = None
+        self._obs_download_bytes_per_second = None
+        self._obs_upload_bytes_per_second = None
+        self._ops_per_second = None
+        self._rdma_rx_bytes_per_second = None
+        self._rdma_tx_bytes_per_second = None
+        self._read_bytes_per_second = None
+        self._read_latency_usecs = None
+        self._reads_per_second = None
+        self._write_bytes_per_second = None
+        self._write_latency_usecs = None
+        self._writes_per_second = None
         self.discriminator = None
-        if response_count_length_required is not None:
-            self.response_count_length_required = response_count_length_required
+        if l6_rx_bytes_per_second is not None:
+            self.l6_rx_bytes_per_second = l6_rx_bytes_per_second
+        if l6_tx_bytes_per_second is not None:
+            self.l6_tx_bytes_per_second = l6_tx_bytes_per_second
+        if cpu_utilization_percentage is not None:
+            self.cpu_utilization_percentage = cpu_utilization_percentage
+        if hostname is not None:
+            self.hostname = hostname
+        if id is not None:
+            self.id = id
+        if obs_download_bytes_per_second is not None:
+            self.obs_download_bytes_per_second = obs_download_bytes_per_second
+        if obs_upload_bytes_per_second is not None:
+            self.obs_upload_bytes_per_second = obs_upload_bytes_per_second
+        if ops_per_second is not None:
+            self.ops_per_second = ops_per_second
+        if rdma_rx_bytes_per_second is not None:
+            self.rdma_rx_bytes_per_second = rdma_rx_bytes_per_second
+        if rdma_tx_bytes_per_second is not None:
+            self.rdma_tx_bytes_per_second = rdma_tx_bytes_per_second
+        if read_bytes_per_second is not None:
+            self.read_bytes_per_second = read_bytes_per_second
+        if read_latency_usecs is not None:
+            self.read_latency_usecs = read_latency_usecs
+        if reads_per_second is not None:
+            self.reads_per_second = reads_per_second
+        if write_bytes_per_second is not None:
+            self.write_bytes_per_second = write_bytes_per_second
+        if write_latency_usecs is not None:
+            self.write_latency_usecs = write_latency_usecs
+        if writes_per_second is not None:
+            self.writes_per_second = writes_per_second
 
     @property
-    def response_count_length_required(self):
-        """Gets the response_count_length_required of this InlineResponse20076Data.  # noqa: E501
+    def l6_rx_bytes_per_second(self):
+        """Gets the l6_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
 
 
-        :return: The response_count_length_required of this InlineResponse20076Data.  # noqa: E501
-        :rtype: InlineResponse20076DataRESPONSECOUNTLENGTHREQUIRED
+        :return: The l6_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
         """
-        return self._response_count_length_required
+        return self._l6_rx_bytes_per_second
 
-    @response_count_length_required.setter
-    def response_count_length_required(self, response_count_length_required):
-        """Sets the response_count_length_required of this InlineResponse20076Data.
+    @l6_rx_bytes_per_second.setter
+    def l6_rx_bytes_per_second(self, l6_rx_bytes_per_second):
+        """Sets the l6_rx_bytes_per_second of this InlineResponse20076Data.
 
 
-        :param response_count_length_required: The response_count_length_required of this InlineResponse20076Data.  # noqa: E501
-        :type: InlineResponse20076DataRESPONSECOUNTLENGTHREQUIRED
+        :param l6_rx_bytes_per_second: The l6_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
         """
 
-        self._response_count_length_required = response_count_length_required
+        self._l6_rx_bytes_per_second = l6_rx_bytes_per_second
+
+    @property
+    def l6_tx_bytes_per_second(self):
+        """Gets the l6_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The l6_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._l6_tx_bytes_per_second
+
+    @l6_tx_bytes_per_second.setter
+    def l6_tx_bytes_per_second(self, l6_tx_bytes_per_second):
+        """Sets the l6_tx_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param l6_tx_bytes_per_second: The l6_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._l6_tx_bytes_per_second = l6_tx_bytes_per_second
+
+    @property
+    def cpu_utilization_percentage(self):
+        """Gets the cpu_utilization_percentage of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The cpu_utilization_percentage of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._cpu_utilization_percentage
+
+    @cpu_utilization_percentage.setter
+    def cpu_utilization_percentage(self, cpu_utilization_percentage):
+        """Sets the cpu_utilization_percentage of this InlineResponse20076Data.
+
+
+        :param cpu_utilization_percentage: The cpu_utilization_percentage of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._cpu_utilization_percentage = cpu_utilization_percentage
+
+    @property
+    def hostname(self):
+        """Gets the hostname of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The hostname of this InlineResponse20076Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this InlineResponse20076Data.
+
+
+        :param hostname: The hostname of this InlineResponse20076Data.  # noqa: E501
+        :type: str
+        """
+
+        self._hostname = hostname
+
+    @property
+    def id(self):
+        """Gets the id of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The id of this InlineResponse20076Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this InlineResponse20076Data.
+
+
+        :param id: The id of this InlineResponse20076Data.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def obs_download_bytes_per_second(self):
+        """Gets the obs_download_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The obs_download_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._obs_download_bytes_per_second
+
+    @obs_download_bytes_per_second.setter
+    def obs_download_bytes_per_second(self, obs_download_bytes_per_second):
+        """Sets the obs_download_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param obs_download_bytes_per_second: The obs_download_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._obs_download_bytes_per_second = obs_download_bytes_per_second
+
+    @property
+    def obs_upload_bytes_per_second(self):
+        """Gets the obs_upload_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The obs_upload_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._obs_upload_bytes_per_second
+
+    @obs_upload_bytes_per_second.setter
+    def obs_upload_bytes_per_second(self, obs_upload_bytes_per_second):
+        """Sets the obs_upload_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param obs_upload_bytes_per_second: The obs_upload_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._obs_upload_bytes_per_second = obs_upload_bytes_per_second
+
+    @property
+    def ops_per_second(self):
+        """Gets the ops_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The ops_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._ops_per_second
+
+    @ops_per_second.setter
+    def ops_per_second(self, ops_per_second):
+        """Sets the ops_per_second of this InlineResponse20076Data.
+
+
+        :param ops_per_second: The ops_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._ops_per_second = ops_per_second
+
+    @property
+    def rdma_rx_bytes_per_second(self):
+        """Gets the rdma_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The rdma_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._rdma_rx_bytes_per_second
+
+    @rdma_rx_bytes_per_second.setter
+    def rdma_rx_bytes_per_second(self, rdma_rx_bytes_per_second):
+        """Sets the rdma_rx_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param rdma_rx_bytes_per_second: The rdma_rx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._rdma_rx_bytes_per_second = rdma_rx_bytes_per_second
+
+    @property
+    def rdma_tx_bytes_per_second(self):
+        """Gets the rdma_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The rdma_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._rdma_tx_bytes_per_second
+
+    @rdma_tx_bytes_per_second.setter
+    def rdma_tx_bytes_per_second(self, rdma_tx_bytes_per_second):
+        """Sets the rdma_tx_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param rdma_tx_bytes_per_second: The rdma_tx_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._rdma_tx_bytes_per_second = rdma_tx_bytes_per_second
+
+    @property
+    def read_bytes_per_second(self):
+        """Gets the read_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The read_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._read_bytes_per_second
+
+    @read_bytes_per_second.setter
+    def read_bytes_per_second(self, read_bytes_per_second):
+        """Sets the read_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param read_bytes_per_second: The read_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._read_bytes_per_second = read_bytes_per_second
+
+    @property
+    def read_latency_usecs(self):
+        """Gets the read_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The read_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._read_latency_usecs
+
+    @read_latency_usecs.setter
+    def read_latency_usecs(self, read_latency_usecs):
+        """Sets the read_latency_usecs of this InlineResponse20076Data.
+
+
+        :param read_latency_usecs: The read_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._read_latency_usecs = read_latency_usecs
+
+    @property
+    def reads_per_second(self):
+        """Gets the reads_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The reads_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._reads_per_second
+
+    @reads_per_second.setter
+    def reads_per_second(self, reads_per_second):
+        """Sets the reads_per_second of this InlineResponse20076Data.
+
+
+        :param reads_per_second: The reads_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._reads_per_second = reads_per_second
+
+    @property
+    def write_bytes_per_second(self):
+        """Gets the write_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The write_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._write_bytes_per_second
+
+    @write_bytes_per_second.setter
+    def write_bytes_per_second(self, write_bytes_per_second):
+        """Sets the write_bytes_per_second of this InlineResponse20076Data.
+
+
+        :param write_bytes_per_second: The write_bytes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._write_bytes_per_second = write_bytes_per_second
+
+    @property
+    def write_latency_usecs(self):
+        """Gets the write_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The write_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._write_latency_usecs
+
+    @write_latency_usecs.setter
+    def write_latency_usecs(self, write_latency_usecs):
+        """Sets the write_latency_usecs of this InlineResponse20076Data.
+
+
+        :param write_latency_usecs: The write_latency_usecs of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._write_latency_usecs = write_latency_usecs
+
+    @property
+    def writes_per_second(self):
+        """Gets the writes_per_second of this InlineResponse20076Data.  # noqa: E501
+
+
+        :return: The writes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._writes_per_second
+
+    @writes_per_second.setter
+    def writes_per_second(self, writes_per_second):
+        """Sets the writes_per_second of this InlineResponse20076Data.
+
+
+        :param writes_per_second: The writes_per_second of this InlineResponse20076Data.  # noqa: E501
+        :type: float
+        """
+
+        self._writes_per_second = writes_per_second
 
     def to_dict(self):
         """Returns the model properties as a dict"""

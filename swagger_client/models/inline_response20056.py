@@ -28,66 +28,70 @@ class InlineResponse20056(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'session_id': 'str',
-        'buckets': 'list[str]'
+        'id': 'str',
+        'target': 'str'
     }
 
     attribute_map = {
-        'session_id': 'session_id',
-        'buckets': 'buckets'
+        'id': 'id',
+        'target': 'target'
     }
 
-    def __init__(self, session_id=None, buckets=None):  # noqa: E501
+    def __init__(self, id=None, target=None):  # noqa: E501
         """InlineResponse20056 - a model defined in Swagger"""  # noqa: E501
-        self._session_id = None
-        self._buckets = None
+        self._id = None
+        self._target = None
         self.discriminator = None
-        if session_id is not None:
-            self.session_id = session_id
-        if buckets is not None:
-            self.buckets = buckets
+        if id is not None:
+            self.id = id
+        if target is not None:
+            self.target = target
 
     @property
-    def session_id(self):
-        """Gets the session_id of this InlineResponse20056.  # noqa: E501
+    def id(self):
+        """Gets the id of this InlineResponse20056.  # noqa: E501
 
+        rule id  # noqa: E501
 
-        :return: The session_id of this InlineResponse20056.  # noqa: E501
+        :return: The id of this InlineResponse20056.  # noqa: E501
         :rtype: str
         """
-        return self._session_id
+        return self._id
 
-    @session_id.setter
-    def session_id(self, session_id):
-        """Sets the session_id of this InlineResponse20056.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this InlineResponse20056.
 
+        rule id  # noqa: E501
 
-        :param session_id: The session_id of this InlineResponse20056.  # noqa: E501
+        :param id: The id of this InlineResponse20056.  # noqa: E501
         :type: str
         """
 
-        self._session_id = session_id
+        self._id = id
 
     @property
-    def buckets(self):
-        """Gets the buckets of this InlineResponse20056.  # noqa: E501
+    def target(self):
+        """Gets the target of this InlineResponse20056.  # noqa: E501
 
+        target bucket  # noqa: E501
 
-        :return: The buckets of this InlineResponse20056.  # noqa: E501
-        :rtype: list[str]
+        :return: The target of this InlineResponse20056.  # noqa: E501
+        :rtype: str
         """
-        return self._buckets
+        return self._target
 
-    @buckets.setter
-    def buckets(self, buckets):
-        """Sets the buckets of this InlineResponse20056.
+    @target.setter
+    def target(self, target):
+        """Sets the target of this InlineResponse20056.
 
+        target bucket  # noqa: E501
 
-        :param buckets: The buckets of this InlineResponse20056.  # noqa: E501
-        :type: list[str]
+        :param target: The target of this InlineResponse20056.  # noqa: E501
+        :type: str
         """
 
-        self._buckets = buckets
+        self._target = target
 
     def to_dict(self):
         """Returns the model properties as a dict"""

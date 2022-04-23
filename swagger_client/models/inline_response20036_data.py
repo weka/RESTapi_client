@@ -28,66 +28,456 @@ class InlineResponse20036Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'params': 'InlineResponse20036DataParams',
-        'kms_type': 'str'
+        'base_dn': 'str',
+        'domain': 'str',
+        'enabled': 'bool',
+        'group_id_attribute': 'str',
+        'group_membership_attribute': 'str',
+        'group_object_class': 'str',
+        'ignore_start_tls_failure': 'bool',
+        'protocol_version': 'float',
+        'reader_username': 'str',
+        'role_groups': 'InlineResponse20036DataRoleGroups',
+        'server_timeout_secs': 'float',
+        'server_type': 'str',
+        'server_uri': 'str',
+        'start_tls': 'bool',
+        'user_id_attribute': 'str',
+        'user_object_class': 'str',
+        'user_revocation_attribute': 'str'
     }
 
     attribute_map = {
-        'params': 'params',
-        'kms_type': 'kms_type'
+        'base_dn': 'base_dn',
+        'domain': 'domain',
+        'enabled': 'enabled',
+        'group_id_attribute': 'group_id_attribute',
+        'group_membership_attribute': 'group_membership_attribute',
+        'group_object_class': 'group_object_class',
+        'ignore_start_tls_failure': 'ignore_start_tls_failure',
+        'protocol_version': 'protocol_version',
+        'reader_username': 'reader_username',
+        'role_groups': 'role_groups',
+        'server_timeout_secs': 'server_timeout_secs',
+        'server_type': 'server_type',
+        'server_uri': 'server_uri',
+        'start_tls': 'start_tls',
+        'user_id_attribute': 'user_id_attribute',
+        'user_object_class': 'user_object_class',
+        'user_revocation_attribute': 'user_revocation_attribute'
     }
 
-    def __init__(self, params=None, kms_type=None):  # noqa: E501
+    def __init__(self, base_dn=None, domain=None, enabled=None, group_id_attribute=None, group_membership_attribute=None, group_object_class=None, ignore_start_tls_failure=None, protocol_version=None, reader_username=None, role_groups=None, server_timeout_secs=None, server_type=None, server_uri=None, start_tls=None, user_id_attribute=None, user_object_class=None, user_revocation_attribute=None):  # noqa: E501
         """InlineResponse20036Data - a model defined in Swagger"""  # noqa: E501
-        self._params = None
-        self._kms_type = None
+        self._base_dn = None
+        self._domain = None
+        self._enabled = None
+        self._group_id_attribute = None
+        self._group_membership_attribute = None
+        self._group_object_class = None
+        self._ignore_start_tls_failure = None
+        self._protocol_version = None
+        self._reader_username = None
+        self._role_groups = None
+        self._server_timeout_secs = None
+        self._server_type = None
+        self._server_uri = None
+        self._start_tls = None
+        self._user_id_attribute = None
+        self._user_object_class = None
+        self._user_revocation_attribute = None
         self.discriminator = None
-        if params is not None:
-            self.params = params
-        if kms_type is not None:
-            self.kms_type = kms_type
+        if base_dn is not None:
+            self.base_dn = base_dn
+        if domain is not None:
+            self.domain = domain
+        if enabled is not None:
+            self.enabled = enabled
+        if group_id_attribute is not None:
+            self.group_id_attribute = group_id_attribute
+        if group_membership_attribute is not None:
+            self.group_membership_attribute = group_membership_attribute
+        if group_object_class is not None:
+            self.group_object_class = group_object_class
+        if ignore_start_tls_failure is not None:
+            self.ignore_start_tls_failure = ignore_start_tls_failure
+        if protocol_version is not None:
+            self.protocol_version = protocol_version
+        if reader_username is not None:
+            self.reader_username = reader_username
+        if role_groups is not None:
+            self.role_groups = role_groups
+        if server_timeout_secs is not None:
+            self.server_timeout_secs = server_timeout_secs
+        if server_type is not None:
+            self.server_type = server_type
+        if server_uri is not None:
+            self.server_uri = server_uri
+        if start_tls is not None:
+            self.start_tls = start_tls
+        if user_id_attribute is not None:
+            self.user_id_attribute = user_id_attribute
+        if user_object_class is not None:
+            self.user_object_class = user_object_class
+        if user_revocation_attribute is not None:
+            self.user_revocation_attribute = user_revocation_attribute
 
     @property
-    def params(self):
-        """Gets the params of this InlineResponse20036Data.  # noqa: E501
+    def base_dn(self):
+        """Gets the base_dn of this InlineResponse20036Data.  # noqa: E501
 
 
-        :return: The params of this InlineResponse20036Data.  # noqa: E501
-        :rtype: InlineResponse20036DataParams
-        """
-        return self._params
-
-    @params.setter
-    def params(self, params):
-        """Sets the params of this InlineResponse20036Data.
-
-
-        :param params: The params of this InlineResponse20036Data.  # noqa: E501
-        :type: InlineResponse20036DataParams
-        """
-
-        self._params = params
-
-    @property
-    def kms_type(self):
-        """Gets the kms_type of this InlineResponse20036Data.  # noqa: E501
-
-
-        :return: The kms_type of this InlineResponse20036Data.  # noqa: E501
+        :return: The base_dn of this InlineResponse20036Data.  # noqa: E501
         :rtype: str
         """
-        return self._kms_type
+        return self._base_dn
 
-    @kms_type.setter
-    def kms_type(self, kms_type):
-        """Sets the kms_type of this InlineResponse20036Data.
+    @base_dn.setter
+    def base_dn(self, base_dn):
+        """Sets the base_dn of this InlineResponse20036Data.
 
 
-        :param kms_type: The kms_type of this InlineResponse20036Data.  # noqa: E501
+        :param base_dn: The base_dn of this InlineResponse20036Data.  # noqa: E501
         :type: str
         """
 
-        self._kms_type = kms_type
+        self._base_dn = base_dn
+
+    @property
+    def domain(self):
+        """Gets the domain of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The domain of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this InlineResponse20036Data.
+
+
+        :param domain: The domain of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._domain = domain
+
+    @property
+    def enabled(self):
+        """Gets the enabled of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The enabled of this InlineResponse20036Data.  # noqa: E501
+        :rtype: bool
+        """
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this InlineResponse20036Data.
+
+
+        :param enabled: The enabled of this InlineResponse20036Data.  # noqa: E501
+        :type: bool
+        """
+
+        self._enabled = enabled
+
+    @property
+    def group_id_attribute(self):
+        """Gets the group_id_attribute of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The group_id_attribute of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._group_id_attribute
+
+    @group_id_attribute.setter
+    def group_id_attribute(self, group_id_attribute):
+        """Sets the group_id_attribute of this InlineResponse20036Data.
+
+
+        :param group_id_attribute: The group_id_attribute of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._group_id_attribute = group_id_attribute
+
+    @property
+    def group_membership_attribute(self):
+        """Gets the group_membership_attribute of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The group_membership_attribute of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._group_membership_attribute
+
+    @group_membership_attribute.setter
+    def group_membership_attribute(self, group_membership_attribute):
+        """Sets the group_membership_attribute of this InlineResponse20036Data.
+
+
+        :param group_membership_attribute: The group_membership_attribute of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._group_membership_attribute = group_membership_attribute
+
+    @property
+    def group_object_class(self):
+        """Gets the group_object_class of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The group_object_class of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._group_object_class
+
+    @group_object_class.setter
+    def group_object_class(self, group_object_class):
+        """Sets the group_object_class of this InlineResponse20036Data.
+
+
+        :param group_object_class: The group_object_class of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._group_object_class = group_object_class
+
+    @property
+    def ignore_start_tls_failure(self):
+        """Gets the ignore_start_tls_failure of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The ignore_start_tls_failure of this InlineResponse20036Data.  # noqa: E501
+        :rtype: bool
+        """
+        return self._ignore_start_tls_failure
+
+    @ignore_start_tls_failure.setter
+    def ignore_start_tls_failure(self, ignore_start_tls_failure):
+        """Sets the ignore_start_tls_failure of this InlineResponse20036Data.
+
+
+        :param ignore_start_tls_failure: The ignore_start_tls_failure of this InlineResponse20036Data.  # noqa: E501
+        :type: bool
+        """
+
+        self._ignore_start_tls_failure = ignore_start_tls_failure
+
+    @property
+    def protocol_version(self):
+        """Gets the protocol_version of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The protocol_version of this InlineResponse20036Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._protocol_version
+
+    @protocol_version.setter
+    def protocol_version(self, protocol_version):
+        """Sets the protocol_version of this InlineResponse20036Data.
+
+
+        :param protocol_version: The protocol_version of this InlineResponse20036Data.  # noqa: E501
+        :type: float
+        """
+
+        self._protocol_version = protocol_version
+
+    @property
+    def reader_username(self):
+        """Gets the reader_username of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The reader_username of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._reader_username
+
+    @reader_username.setter
+    def reader_username(self, reader_username):
+        """Sets the reader_username of this InlineResponse20036Data.
+
+
+        :param reader_username: The reader_username of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._reader_username = reader_username
+
+    @property
+    def role_groups(self):
+        """Gets the role_groups of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The role_groups of this InlineResponse20036Data.  # noqa: E501
+        :rtype: InlineResponse20036DataRoleGroups
+        """
+        return self._role_groups
+
+    @role_groups.setter
+    def role_groups(self, role_groups):
+        """Sets the role_groups of this InlineResponse20036Data.
+
+
+        :param role_groups: The role_groups of this InlineResponse20036Data.  # noqa: E501
+        :type: InlineResponse20036DataRoleGroups
+        """
+
+        self._role_groups = role_groups
+
+    @property
+    def server_timeout_secs(self):
+        """Gets the server_timeout_secs of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The server_timeout_secs of this InlineResponse20036Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._server_timeout_secs
+
+    @server_timeout_secs.setter
+    def server_timeout_secs(self, server_timeout_secs):
+        """Sets the server_timeout_secs of this InlineResponse20036Data.
+
+
+        :param server_timeout_secs: The server_timeout_secs of this InlineResponse20036Data.  # noqa: E501
+        :type: float
+        """
+
+        self._server_timeout_secs = server_timeout_secs
+
+    @property
+    def server_type(self):
+        """Gets the server_type of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The server_type of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._server_type
+
+    @server_type.setter
+    def server_type(self, server_type):
+        """Sets the server_type of this InlineResponse20036Data.
+
+
+        :param server_type: The server_type of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._server_type = server_type
+
+    @property
+    def server_uri(self):
+        """Gets the server_uri of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The server_uri of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._server_uri
+
+    @server_uri.setter
+    def server_uri(self, server_uri):
+        """Sets the server_uri of this InlineResponse20036Data.
+
+
+        :param server_uri: The server_uri of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._server_uri = server_uri
+
+    @property
+    def start_tls(self):
+        """Gets the start_tls of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The start_tls of this InlineResponse20036Data.  # noqa: E501
+        :rtype: bool
+        """
+        return self._start_tls
+
+    @start_tls.setter
+    def start_tls(self, start_tls):
+        """Sets the start_tls of this InlineResponse20036Data.
+
+
+        :param start_tls: The start_tls of this InlineResponse20036Data.  # noqa: E501
+        :type: bool
+        """
+
+        self._start_tls = start_tls
+
+    @property
+    def user_id_attribute(self):
+        """Gets the user_id_attribute of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The user_id_attribute of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._user_id_attribute
+
+    @user_id_attribute.setter
+    def user_id_attribute(self, user_id_attribute):
+        """Sets the user_id_attribute of this InlineResponse20036Data.
+
+
+        :param user_id_attribute: The user_id_attribute of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._user_id_attribute = user_id_attribute
+
+    @property
+    def user_object_class(self):
+        """Gets the user_object_class of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The user_object_class of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._user_object_class
+
+    @user_object_class.setter
+    def user_object_class(self, user_object_class):
+        """Sets the user_object_class of this InlineResponse20036Data.
+
+
+        :param user_object_class: The user_object_class of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._user_object_class = user_object_class
+
+    @property
+    def user_revocation_attribute(self):
+        """Gets the user_revocation_attribute of this InlineResponse20036Data.  # noqa: E501
+
+
+        :return: The user_revocation_attribute of this InlineResponse20036Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._user_revocation_attribute
+
+    @user_revocation_attribute.setter
+    def user_revocation_attribute(self, user_revocation_attribute):
+        """Sets the user_revocation_attribute of this InlineResponse20036Data.
+
+
+        :param user_revocation_attribute: The user_revocation_attribute of this InlineResponse20036Data.  # noqa: E501
+        :type: str
+        """
+
+        self._user_revocation_attribute = user_revocation_attribute
 
     def to_dict(self):
         """Returns the model properties as a dict"""

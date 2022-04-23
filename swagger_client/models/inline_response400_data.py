@@ -28,29 +28,50 @@ class InlineResponse400Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'error': 'str',
         'missing_params': 'list[str]',
-        'param': 'str',
-        'error': 'str'
+        'param': 'str'
     }
 
     attribute_map = {
+        'error': 'error',
         'missing_params': 'missing_params',
-        'param': 'param',
-        'error': 'error'
+        'param': 'param'
     }
 
-    def __init__(self, missing_params=None, param=None, error=None):  # noqa: E501
+    def __init__(self, error=None, missing_params=None, param=None):  # noqa: E501
         """InlineResponse400Data - a model defined in Swagger"""  # noqa: E501
+        self._error = None
         self._missing_params = None
         self._param = None
-        self._error = None
         self.discriminator = None
+        if error is not None:
+            self.error = error
         if missing_params is not None:
             self.missing_params = missing_params
         if param is not None:
             self.param = param
-        if error is not None:
-            self.error = error
+
+    @property
+    def error(self):
+        """Gets the error of this InlineResponse400Data.  # noqa: E501
+
+
+        :return: The error of this InlineResponse400Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this InlineResponse400Data.
+
+
+        :param error: The error of this InlineResponse400Data.  # noqa: E501
+        :type: str
+        """
+
+        self._error = error
 
     @property
     def missing_params(self):
@@ -93,27 +114,6 @@ class InlineResponse400Data(object):
         """
 
         self._param = param
-
-    @property
-    def error(self):
-        """Gets the error of this InlineResponse400Data.  # noqa: E501
-
-
-        :return: The error of this InlineResponse400Data.  # noqa: E501
-        :rtype: str
-        """
-        return self._error
-
-    @error.setter
-    def error(self, error):
-        """Sets the error of this InlineResponse400Data.
-
-
-        :param error: The error of this InlineResponse400Data.  # noqa: E501
-        :type: str
-        """
-
-        self._error = error
 
     def to_dict(self):
         """Returns the model properties as a dict"""

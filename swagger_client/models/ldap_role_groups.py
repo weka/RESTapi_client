@@ -30,32 +30,32 @@ class LdapRoleGroups(object):
     swagger_types = {
         'cluster_admin': 'str',
         'org_admin': 'str',
-        'regular': 'str',
-        'read_only': 'str'
+        'read_only': 'str',
+        'regular': 'str'
     }
 
     attribute_map = {
         'cluster_admin': 'ClusterAdmin',
         'org_admin': 'OrgAdmin',
-        'regular': 'Regular',
-        'read_only': 'ReadOnly'
+        'read_only': 'ReadOnly',
+        'regular': 'Regular'
     }
 
-    def __init__(self, cluster_admin=None, org_admin=None, regular=None, read_only=None):  # noqa: E501
+    def __init__(self, cluster_admin=None, org_admin=None, read_only=None, regular=None):  # noqa: E501
         """LdapRoleGroups - a model defined in Swagger"""  # noqa: E501
         self._cluster_admin = None
         self._org_admin = None
-        self._regular = None
         self._read_only = None
+        self._regular = None
         self.discriminator = None
         if cluster_admin is not None:
             self.cluster_admin = cluster_admin
         if org_admin is not None:
             self.org_admin = org_admin
-        if regular is not None:
-            self.regular = regular
         if read_only is not None:
             self.read_only = read_only
+        if regular is not None:
+            self.regular = regular
 
     @property
     def cluster_admin(self):
@@ -100,27 +100,6 @@ class LdapRoleGroups(object):
         self._org_admin = org_admin
 
     @property
-    def regular(self):
-        """Gets the regular of this LdapRoleGroups.  # noqa: E501
-
-
-        :return: The regular of this LdapRoleGroups.  # noqa: E501
-        :rtype: str
-        """
-        return self._regular
-
-    @regular.setter
-    def regular(self, regular):
-        """Sets the regular of this LdapRoleGroups.
-
-
-        :param regular: The regular of this LdapRoleGroups.  # noqa: E501
-        :type: str
-        """
-
-        self._regular = regular
-
-    @property
     def read_only(self):
         """Gets the read_only of this LdapRoleGroups.  # noqa: E501
 
@@ -140,6 +119,27 @@ class LdapRoleGroups(object):
         """
 
         self._read_only = read_only
+
+    @property
+    def regular(self):
+        """Gets the regular of this LdapRoleGroups.  # noqa: E501
+
+
+        :return: The regular of this LdapRoleGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._regular
+
+    @regular.setter
+    def regular(self, regular):
+        """Sets the regular of this LdapRoleGroups.
+
+
+        :param regular: The regular of this LdapRoleGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._regular = regular
 
     def to_dict(self):
         """Returns the model properties as a dict"""

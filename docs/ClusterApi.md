@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**update_cluster**](ClusterApi.md#update_cluster) | **PUT** /cluster | Update cluster
 
 # **create_cluster**
-> InlineResponse2009 create_cluster(body)
+> InlineResponse2005 create_cluster(body)
 
 Create cluster
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_cluster_status**
-> InlineResponse2008 get_cluster_status()
+> InlineResponse2004 get_cluster_status()
 
 Get cluster status
 
@@ -85,7 +85,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 

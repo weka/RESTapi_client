@@ -28,127 +28,64 @@ class InlineResponse20023Data0x0000092ddf3d00000(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'inode_id': 'float',
-        'total_bytes': 'float',
-        'owner': 'str',
         'data_blocks': 'float',
         'grace_seconds': 'float',
         'hard_limit_bytes': 'float',
-        'snap_view_vd': 'float',
+        'inode_id': 'float',
         'metadata_blocks': 'float',
+        'owner': 'str',
+        'snap_view_id': 'float',
         'soft_limit_bytes': 'float',
-        'status': 'str'
+        'status': 'str',
+        'total_nytes': 'float'
     }
 
     attribute_map = {
-        'inode_id': 'inode_id',
-        'total_bytes': 'total_bytes',
-        'owner': 'owner',
         'data_blocks': 'data_blocks',
         'grace_seconds': 'grace_seconds',
         'hard_limit_bytes': 'hard_limit_bytes',
-        'snap_view_vd': 'snap_view_vd',
+        'inode_id': 'inode_id',
         'metadata_blocks': 'metadata_blocks',
+        'owner': 'owner',
+        'snap_view_id': 'snap_view_id',
         'soft_limit_bytes': 'soft_limit_bytes',
-        'status': 'status'
+        'status': 'status',
+        'total_nytes': 'total_nytes'
     }
 
-    def __init__(self, inode_id=None, total_bytes=None, owner=None, data_blocks=None, grace_seconds=None, hard_limit_bytes=None, snap_view_vd=None, metadata_blocks=None, soft_limit_bytes=None, status=None):  # noqa: E501
+    def __init__(self, data_blocks=None, grace_seconds=None, hard_limit_bytes=None, inode_id=None, metadata_blocks=None, owner=None, snap_view_id=None, soft_limit_bytes=None, status=None, total_nytes=None):  # noqa: E501
         """InlineResponse20023Data0x0000092ddf3d00000 - a model defined in Swagger"""  # noqa: E501
-        self._inode_id = None
-        self._total_bytes = None
-        self._owner = None
         self._data_blocks = None
         self._grace_seconds = None
         self._hard_limit_bytes = None
-        self._snap_view_vd = None
+        self._inode_id = None
         self._metadata_blocks = None
+        self._owner = None
+        self._snap_view_id = None
         self._soft_limit_bytes = None
         self._status = None
+        self._total_nytes = None
         self.discriminator = None
-        if inode_id is not None:
-            self.inode_id = inode_id
-        if total_bytes is not None:
-            self.total_bytes = total_bytes
-        if owner is not None:
-            self.owner = owner
         if data_blocks is not None:
             self.data_blocks = data_blocks
         if grace_seconds is not None:
             self.grace_seconds = grace_seconds
         if hard_limit_bytes is not None:
             self.hard_limit_bytes = hard_limit_bytes
-        if snap_view_vd is not None:
-            self.snap_view_vd = snap_view_vd
+        if inode_id is not None:
+            self.inode_id = inode_id
         if metadata_blocks is not None:
             self.metadata_blocks = metadata_blocks
+        if owner is not None:
+            self.owner = owner
+        if snap_view_id is not None:
+            self.snap_view_id = snap_view_id
         if soft_limit_bytes is not None:
             self.soft_limit_bytes = soft_limit_bytes
         if status is not None:
             self.status = status
-
-    @property
-    def inode_id(self):
-        """Gets the inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-
-
-        :return: The inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :rtype: float
-        """
-        return self._inode_id
-
-    @inode_id.setter
-    def inode_id(self, inode_id):
-        """Sets the inode_id of this InlineResponse20023Data0x0000092ddf3d00000.
-
-
-        :param inode_id: The inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :type: float
-        """
-
-        self._inode_id = inode_id
-
-    @property
-    def total_bytes(self):
-        """Gets the total_bytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-
-
-        :return: The total_bytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :rtype: float
-        """
-        return self._total_bytes
-
-    @total_bytes.setter
-    def total_bytes(self, total_bytes):
-        """Sets the total_bytes of this InlineResponse20023Data0x0000092ddf3d00000.
-
-
-        :param total_bytes: The total_bytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :type: float
-        """
-
-        self._total_bytes = total_bytes
-
-    @property
-    def owner(self):
-        """Gets the owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-
-
-        :return: The owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :rtype: str
-        """
-        return self._owner
-
-    @owner.setter
-    def owner(self, owner):
-        """Sets the owner of this InlineResponse20023Data0x0000092ddf3d00000.
-
-
-        :param owner: The owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
-        :type: str
-        """
-
-        self._owner = owner
+        if total_nytes is not None:
+            self.total_nytes = total_nytes
 
     @property
     def data_blocks(self):
@@ -214,25 +151,25 @@ class InlineResponse20023Data0x0000092ddf3d00000(object):
         self._hard_limit_bytes = hard_limit_bytes
 
     @property
-    def snap_view_vd(self):
-        """Gets the snap_view_vd of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+    def inode_id(self):
+        """Gets the inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
 
 
-        :return: The snap_view_vd of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :return: The inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
         :rtype: float
         """
-        return self._snap_view_vd
+        return self._inode_id
 
-    @snap_view_vd.setter
-    def snap_view_vd(self, snap_view_vd):
-        """Sets the snap_view_vd of this InlineResponse20023Data0x0000092ddf3d00000.
+    @inode_id.setter
+    def inode_id(self, inode_id):
+        """Sets the inode_id of this InlineResponse20023Data0x0000092ddf3d00000.
 
 
-        :param snap_view_vd: The snap_view_vd of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :param inode_id: The inode_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
         :type: float
         """
 
-        self._snap_view_vd = snap_view_vd
+        self._inode_id = inode_id
 
     @property
     def metadata_blocks(self):
@@ -254,6 +191,48 @@ class InlineResponse20023Data0x0000092ddf3d00000(object):
         """
 
         self._metadata_blocks = metadata_blocks
+
+    @property
+    def owner(self):
+        """Gets the owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+
+
+        :return: The owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this InlineResponse20023Data0x0000092ddf3d00000.
+
+
+        :param owner: The owner of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :type: str
+        """
+
+        self._owner = owner
+
+    @property
+    def snap_view_id(self):
+        """Gets the snap_view_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+
+
+        :return: The snap_view_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :rtype: float
+        """
+        return self._snap_view_id
+
+    @snap_view_id.setter
+    def snap_view_id(self, snap_view_id):
+        """Sets the snap_view_id of this InlineResponse20023Data0x0000092ddf3d00000.
+
+
+        :param snap_view_id: The snap_view_id of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :type: float
+        """
+
+        self._snap_view_id = snap_view_id
 
     @property
     def soft_limit_bytes(self):
@@ -296,6 +275,27 @@ class InlineResponse20023Data0x0000092ddf3d00000(object):
         """
 
         self._status = status
+
+    @property
+    def total_nytes(self):
+        """Gets the total_nytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+
+
+        :return: The total_nytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :rtype: float
+        """
+        return self._total_nytes
+
+    @total_nytes.setter
+    def total_nytes(self, total_nytes):
+        """Sets the total_nytes of this InlineResponse20023Data0x0000092ddf3d00000.
+
+
+        :param total_nytes: The total_nytes of this InlineResponse20023Data0x0000092ddf3d00000.  # noqa: E501
+        :type: float
+        """
+
+        self._total_nytes = total_nytes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

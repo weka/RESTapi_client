@@ -28,45 +28,24 @@ class InlineResponse400(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'message': 'str',
-        'data': 'InlineResponse400Data'
+        'data': 'InlineResponse400Data',
+        'message': 'str'
     }
 
     attribute_map = {
-        'message': 'message',
-        'data': 'data'
+        'data': 'data',
+        'message': 'message'
     }
 
-    def __init__(self, message=None, data=None):  # noqa: E501
+    def __init__(self, data=None, message=None):  # noqa: E501
         """InlineResponse400 - a model defined in Swagger"""  # noqa: E501
-        self._message = None
         self._data = None
+        self._message = None
         self.discriminator = None
-        if message is not None:
-            self.message = message
         if data is not None:
             self.data = data
-
-    @property
-    def message(self):
-        """Gets the message of this InlineResponse400.  # noqa: E501
-
-
-        :return: The message of this InlineResponse400.  # noqa: E501
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        """Sets the message of this InlineResponse400.
-
-
-        :param message: The message of this InlineResponse400.  # noqa: E501
-        :type: str
-        """
-
-        self._message = message
+        if message is not None:
+            self.message = message
 
     @property
     def data(self):
@@ -88,6 +67,27 @@ class InlineResponse400(object):
         """
 
         self._data = data
+
+    @property
+    def message(self):
+        """Gets the message of this InlineResponse400.  # noqa: E501
+
+
+        :return: The message of this InlineResponse400.  # noqa: E501
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this InlineResponse400.
+
+
+        :param message: The message of this InlineResponse400.  # noqa: E501
+        :type: str
+        """
+
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

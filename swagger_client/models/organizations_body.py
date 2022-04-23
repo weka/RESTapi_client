@@ -29,35 +29,35 @@ class OrganizationsBody(object):
     """
     swagger_types = {
         'name': 'str',
-        'username': 'str',
         'password': 'str',
         'ssd_quota': 'float',
-        'total_quota': 'float'
+        'total_quota': 'float',
+        'username': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'username': 'username',
         'password': 'password',
         'ssd_quota': 'ssd_quota',
-        'total_quota': 'total_quota'
+        'total_quota': 'total_quota',
+        'username': 'username'
     }
 
-    def __init__(self, name=None, username=None, password=None, ssd_quota=None, total_quota=None):  # noqa: E501
+    def __init__(self, name=None, password=None, ssd_quota=None, total_quota=None, username=None):  # noqa: E501
         """OrganizationsBody - a model defined in Swagger"""  # noqa: E501
         self._name = None
-        self._username = None
         self._password = None
         self._ssd_quota = None
         self._total_quota = None
+        self._username = None
         self.discriminator = None
         self.name = name
-        self.username = username
         self.password = password
         if ssd_quota is not None:
             self.ssd_quota = ssd_quota
         if total_quota is not None:
             self.total_quota = total_quota
+        self.username = username
 
     @property
     def name(self):
@@ -83,31 +83,6 @@ class OrganizationsBody(object):
             raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
         self._name = name
-
-    @property
-    def username(self):
-        """Gets the username of this OrganizationsBody.  # noqa: E501
-
-        Username of organization admin  # noqa: E501
-
-        :return: The username of this OrganizationsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._username
-
-    @username.setter
-    def username(self, username):
-        """Sets the username of this OrganizationsBody.
-
-        Username of organization admin  # noqa: E501
-
-        :param username: The username of this OrganizationsBody.  # noqa: E501
-        :type: str
-        """
-        if username is None:
-            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
-
-        self._username = username
 
     @property
     def password(self):
@@ -179,6 +154,31 @@ class OrganizationsBody(object):
         """
 
         self._total_quota = total_quota
+
+    @property
+    def username(self):
+        """Gets the username of this OrganizationsBody.  # noqa: E501
+
+        Username of organization admin  # noqa: E501
+
+        :return: The username of this OrganizationsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        """Sets the username of this OrganizationsBody.
+
+        Username of organization admin  # noqa: E501
+
+        :param username: The username of this OrganizationsBody.  # noqa: E501
+        :type: str
+        """
+        if username is None:
+            raise ValueError("Invalid value for `username`, must not be `None`")  # noqa: E501
+
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

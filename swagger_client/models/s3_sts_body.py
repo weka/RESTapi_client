@@ -29,30 +29,30 @@ class S3StsBody(object):
     """
     swagger_types = {
         'access_key': 'str',
-        'secret_key': 'str',
         'duration': 'float',
-        'policy_file_content': 'str'
+        'policy_file_content': 'str',
+        'secret_key': 'str'
     }
 
     attribute_map = {
         'access_key': 'access_key',
-        'secret_key': 'secret_key',
         'duration': 'duration',
-        'policy_file_content': 'policy_file_content'
+        'policy_file_content': 'policy_file_content',
+        'secret_key': 'secret_key'
     }
 
-    def __init__(self, access_key=None, secret_key=None, duration=None, policy_file_content=None):  # noqa: E501
+    def __init__(self, access_key=None, duration=None, policy_file_content=None, secret_key=None):  # noqa: E501
         """S3StsBody - a model defined in Swagger"""  # noqa: E501
         self._access_key = None
-        self._secret_key = None
         self._duration = None
         self._policy_file_content = None
+        self._secret_key = None
         self.discriminator = None
         self.access_key = access_key
-        self.secret_key = secret_key
         self.duration = duration
         if policy_file_content is not None:
             self.policy_file_content = policy_file_content
+        self.secret_key = secret_key
 
     @property
     def access_key(self):
@@ -78,31 +78,6 @@ class S3StsBody(object):
             raise ValueError("Invalid value for `access_key`, must not be `None`")  # noqa: E501
 
         self._access_key = access_key
-
-    @property
-    def secret_key(self):
-        """Gets the secret_key of this S3StsBody.  # noqa: E501
-
-        Secret key (must be at least 8 characters long)  # noqa: E501
-
-        :return: The secret_key of this S3StsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._secret_key
-
-    @secret_key.setter
-    def secret_key(self, secret_key):
-        """Sets the secret_key of this S3StsBody.
-
-        Secret key (must be at least 8 characters long)  # noqa: E501
-
-        :param secret_key: The secret_key of this S3StsBody.  # noqa: E501
-        :type: str
-        """
-        if secret_key is None:
-            raise ValueError("Invalid value for `secret_key`, must not be `None`")  # noqa: E501
-
-        self._secret_key = secret_key
 
     @property
     def duration(self):
@@ -151,6 +126,31 @@ class S3StsBody(object):
         """
 
         self._policy_file_content = policy_file_content
+
+    @property
+    def secret_key(self):
+        """Gets the secret_key of this S3StsBody.  # noqa: E501
+
+        Secret key (must be at least 8 characters long)  # noqa: E501
+
+        :return: The secret_key of this S3StsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._secret_key
+
+    @secret_key.setter
+    def secret_key(self, secret_key):
+        """Sets the secret_key of this S3StsBody.
+
+        Secret key (must be at least 8 characters long)  # noqa: E501
+
+        :param secret_key: The secret_key of this S3StsBody.  # noqa: E501
+        :type: str
+        """
+        if secret_key is None:
+            raise ValueError("Invalid value for `secret_key`, must not be `None`")  # noqa: E501
+
+        self._secret_key = secret_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

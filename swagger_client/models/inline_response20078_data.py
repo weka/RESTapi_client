@@ -28,118 +28,222 @@ class InlineResponse20078Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'server_estimated_bytes': 'float',
-        'retention_secs': 'float',
-        'client_estimated_bytes': 'float',
-        'client_estimation_result_type': 'str'
+        'description': 'str',
+        'id': 'str',
+        'is_explicitly_paused': 'bool',
+        'params': 'InlineResponse20078Params',
+        'progress': 'float',
+        'state': 'str',
+        'type': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'server_estimated_bytes': 'server_estimated_bytes',
-        'retention_secs': 'retention_secs',
-        'client_estimated_bytes': 'client_estimated_bytes',
-        'client_estimation_result_type': 'client_estimation_result_type'
+        'description': 'description',
+        'id': 'id',
+        'is_explicitly_paused': 'is_explicitly_paused',
+        'params': 'params',
+        'progress': 'progress',
+        'state': 'state',
+        'type': 'type',
+        'uid': 'uid'
     }
 
-    def __init__(self, server_estimated_bytes=None, retention_secs=None, client_estimated_bytes=None, client_estimation_result_type=None):  # noqa: E501
+    def __init__(self, description=None, id=None, is_explicitly_paused=None, params=None, progress=None, state=None, type=None, uid=None):  # noqa: E501
         """InlineResponse20078Data - a model defined in Swagger"""  # noqa: E501
-        self._server_estimated_bytes = None
-        self._retention_secs = None
-        self._client_estimated_bytes = None
-        self._client_estimation_result_type = None
+        self._description = None
+        self._id = None
+        self._is_explicitly_paused = None
+        self._params = None
+        self._progress = None
+        self._state = None
+        self._type = None
+        self._uid = None
         self.discriminator = None
-        if server_estimated_bytes is not None:
-            self.server_estimated_bytes = server_estimated_bytes
-        if retention_secs is not None:
-            self.retention_secs = retention_secs
-        if client_estimated_bytes is not None:
-            self.client_estimated_bytes = client_estimated_bytes
-        if client_estimation_result_type is not None:
-            self.client_estimation_result_type = client_estimation_result_type
+        if description is not None:
+            self.description = description
+        if id is not None:
+            self.id = id
+        if is_explicitly_paused is not None:
+            self.is_explicitly_paused = is_explicitly_paused
+        if params is not None:
+            self.params = params
+        if progress is not None:
+            self.progress = progress
+        if state is not None:
+            self.state = state
+        if type is not None:
+            self.type = type
+        if uid is not None:
+            self.uid = uid
 
     @property
-    def server_estimated_bytes(self):
-        """Gets the server_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
+    def description(self):
+        """Gets the description of this InlineResponse20078Data.  # noqa: E501
 
 
-        :return: The server_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._server_estimated_bytes
-
-    @server_estimated_bytes.setter
-    def server_estimated_bytes(self, server_estimated_bytes):
-        """Sets the server_estimated_bytes of this InlineResponse20078Data.
-
-
-        :param server_estimated_bytes: The server_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
-        :type: float
-        """
-
-        self._server_estimated_bytes = server_estimated_bytes
-
-    @property
-    def retention_secs(self):
-        """Gets the retention_secs of this InlineResponse20078Data.  # noqa: E501
-
-
-        :return: The retention_secs of this InlineResponse20078Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._retention_secs
-
-    @retention_secs.setter
-    def retention_secs(self, retention_secs):
-        """Sets the retention_secs of this InlineResponse20078Data.
-
-
-        :param retention_secs: The retention_secs of this InlineResponse20078Data.  # noqa: E501
-        :type: float
-        """
-
-        self._retention_secs = retention_secs
-
-    @property
-    def client_estimated_bytes(self):
-        """Gets the client_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
-
-
-        :return: The client_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._client_estimated_bytes
-
-    @client_estimated_bytes.setter
-    def client_estimated_bytes(self, client_estimated_bytes):
-        """Sets the client_estimated_bytes of this InlineResponse20078Data.
-
-
-        :param client_estimated_bytes: The client_estimated_bytes of this InlineResponse20078Data.  # noqa: E501
-        :type: float
-        """
-
-        self._client_estimated_bytes = client_estimated_bytes
-
-    @property
-    def client_estimation_result_type(self):
-        """Gets the client_estimation_result_type of this InlineResponse20078Data.  # noqa: E501
-
-
-        :return: The client_estimation_result_type of this InlineResponse20078Data.  # noqa: E501
+        :return: The description of this InlineResponse20078Data.  # noqa: E501
         :rtype: str
         """
-        return self._client_estimation_result_type
+        return self._description
 
-    @client_estimation_result_type.setter
-    def client_estimation_result_type(self, client_estimation_result_type):
-        """Sets the client_estimation_result_type of this InlineResponse20078Data.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this InlineResponse20078Data.
 
 
-        :param client_estimation_result_type: The client_estimation_result_type of this InlineResponse20078Data.  # noqa: E501
+        :param description: The description of this InlineResponse20078Data.  # noqa: E501
         :type: str
         """
 
-        self._client_estimation_result_type = client_estimation_result_type
+        self._description = description
+
+    @property
+    def id(self):
+        """Gets the id of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The id of this InlineResponse20078Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this InlineResponse20078Data.
+
+
+        :param id: The id of this InlineResponse20078Data.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def is_explicitly_paused(self):
+        """Gets the is_explicitly_paused of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The is_explicitly_paused of this InlineResponse20078Data.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_explicitly_paused
+
+    @is_explicitly_paused.setter
+    def is_explicitly_paused(self, is_explicitly_paused):
+        """Sets the is_explicitly_paused of this InlineResponse20078Data.
+
+
+        :param is_explicitly_paused: The is_explicitly_paused of this InlineResponse20078Data.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_explicitly_paused = is_explicitly_paused
+
+    @property
+    def params(self):
+        """Gets the params of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The params of this InlineResponse20078Data.  # noqa: E501
+        :rtype: InlineResponse20078Params
+        """
+        return self._params
+
+    @params.setter
+    def params(self, params):
+        """Sets the params of this InlineResponse20078Data.
+
+
+        :param params: The params of this InlineResponse20078Data.  # noqa: E501
+        :type: InlineResponse20078Params
+        """
+
+        self._params = params
+
+    @property
+    def progress(self):
+        """Gets the progress of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The progress of this InlineResponse20078Data.  # noqa: E501
+        :rtype: float
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this InlineResponse20078Data.
+
+
+        :param progress: The progress of this InlineResponse20078Data.  # noqa: E501
+        :type: float
+        """
+
+        self._progress = progress
+
+    @property
+    def state(self):
+        """Gets the state of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The state of this InlineResponse20078Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this InlineResponse20078Data.
+
+
+        :param state: The state of this InlineResponse20078Data.  # noqa: E501
+        :type: str
+        """
+
+        self._state = state
+
+    @property
+    def type(self):
+        """Gets the type of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The type of this InlineResponse20078Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this InlineResponse20078Data.
+
+
+        :param type: The type of this InlineResponse20078Data.  # noqa: E501
+        :type: str
+        """
+
+        self._type = type
+
+    @property
+    def uid(self):
+        """Gets the uid of this InlineResponse20078Data.  # noqa: E501
+
+
+        :return: The uid of this InlineResponse20078Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this InlineResponse20078Data.
+
+
+        :param uid: The uid of this InlineResponse20078Data.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

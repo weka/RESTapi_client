@@ -28,107 +28,44 @@ class Alert(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'type': 'str',
-        'muted': 'bool',
-        'fmt': 'str',
         'action': 'str',
+        'fmt': 'str',
+        'muted': 'bool',
+        'params': 'object',
         'title': 'str',
-        'params': 'object'
+        'type': 'str'
     }
 
     attribute_map = {
-        'type': 'type',
-        'muted': 'muted',
-        'fmt': 'fmt',
         'action': 'action',
+        'fmt': 'fmt',
+        'muted': 'muted',
+        'params': 'params',
         'title': 'title',
-        'params': 'params'
+        'type': 'type'
     }
 
-    def __init__(self, type=None, muted=None, fmt=None, action=None, title=None, params=None):  # noqa: E501
+    def __init__(self, action=None, fmt=None, muted=None, params=None, title=None, type=None):  # noqa: E501
         """Alert - a model defined in Swagger"""  # noqa: E501
-        self._type = None
-        self._muted = None
-        self._fmt = None
         self._action = None
-        self._title = None
+        self._fmt = None
+        self._muted = None
         self._params = None
+        self._title = None
+        self._type = None
         self.discriminator = None
-        if type is not None:
-            self.type = type
-        if muted is not None:
-            self.muted = muted
-        if fmt is not None:
-            self.fmt = fmt
         if action is not None:
             self.action = action
-        if title is not None:
-            self.title = title
+        if fmt is not None:
+            self.fmt = fmt
+        if muted is not None:
+            self.muted = muted
         if params is not None:
             self.params = params
-
-    @property
-    def type(self):
-        """Gets the type of this Alert.  # noqa: E501
-
-
-        :return: The type of this Alert.  # noqa: E501
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this Alert.
-
-
-        :param type: The type of this Alert.  # noqa: E501
-        :type: str
-        """
-
-        self._type = type
-
-    @property
-    def muted(self):
-        """Gets the muted of this Alert.  # noqa: E501
-
-
-        :return: The muted of this Alert.  # noqa: E501
-        :rtype: bool
-        """
-        return self._muted
-
-    @muted.setter
-    def muted(self, muted):
-        """Sets the muted of this Alert.
-
-
-        :param muted: The muted of this Alert.  # noqa: E501
-        :type: bool
-        """
-
-        self._muted = muted
-
-    @property
-    def fmt(self):
-        """Gets the fmt of this Alert.  # noqa: E501
-
-
-        :return: The fmt of this Alert.  # noqa: E501
-        :rtype: str
-        """
-        return self._fmt
-
-    @fmt.setter
-    def fmt(self, fmt):
-        """Sets the fmt of this Alert.
-
-
-        :param fmt: The fmt of this Alert.  # noqa: E501
-        :type: str
-        """
-
-        self._fmt = fmt
+        if title is not None:
+            self.title = title
+        if type is not None:
+            self.type = type
 
     @property
     def action(self):
@@ -152,25 +89,46 @@ class Alert(object):
         self._action = action
 
     @property
-    def title(self):
-        """Gets the title of this Alert.  # noqa: E501
+    def fmt(self):
+        """Gets the fmt of this Alert.  # noqa: E501
 
 
-        :return: The title of this Alert.  # noqa: E501
+        :return: The fmt of this Alert.  # noqa: E501
         :rtype: str
         """
-        return self._title
+        return self._fmt
 
-    @title.setter
-    def title(self, title):
-        """Sets the title of this Alert.
+    @fmt.setter
+    def fmt(self, fmt):
+        """Sets the fmt of this Alert.
 
 
-        :param title: The title of this Alert.  # noqa: E501
+        :param fmt: The fmt of this Alert.  # noqa: E501
         :type: str
         """
 
-        self._title = title
+        self._fmt = fmt
+
+    @property
+    def muted(self):
+        """Gets the muted of this Alert.  # noqa: E501
+
+
+        :return: The muted of this Alert.  # noqa: E501
+        :rtype: bool
+        """
+        return self._muted
+
+    @muted.setter
+    def muted(self, muted):
+        """Sets the muted of this Alert.
+
+
+        :param muted: The muted of this Alert.  # noqa: E501
+        :type: bool
+        """
+
+        self._muted = muted
 
     @property
     def params(self):
@@ -192,6 +150,48 @@ class Alert(object):
         """
 
         self._params = params
+
+    @property
+    def title(self):
+        """Gets the title of this Alert.  # noqa: E501
+
+
+        :return: The title of this Alert.  # noqa: E501
+        :rtype: str
+        """
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        """Sets the title of this Alert.
+
+
+        :param title: The title of this Alert.  # noqa: E501
+        :type: str
+        """
+
+        self._title = title
+
+    @property
+    def type(self):
+        """Gets the type of this Alert.  # noqa: E501
+
+
+        :return: The type of this Alert.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Alert.
+
+
+        :param type: The type of this Alert.  # noqa: E501
+        :type: str
+        """
+
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

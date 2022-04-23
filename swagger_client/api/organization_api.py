@@ -42,7 +42,7 @@ class OrganizationApi(object):
 
         :param async_req bool
         :param OrganizationsBody body: (required)
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class OrganizationApi(object):
 
         :param async_req bool
         :param OrganizationsBody body: (required)
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -121,7 +121,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20054',  # noqa: E501
+            response_type='InlineResponse20052',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -231,7 +231,7 @@ class OrganizationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20052
+        :return: InlineResponse20053
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -251,7 +251,7 @@ class OrganizationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20052
+        :return: InlineResponse20053
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -299,7 +299,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20052',  # noqa: E501
+            response_type='InlineResponse20053',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -317,7 +317,7 @@ class OrganizationApi(object):
 
         :param async_req bool
         :param str uid: organization uid (required)
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -338,7 +338,7 @@ class OrganizationApi(object):
 
         :param async_req bool
         :param str uid: organization uid (required)
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -392,7 +392,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20054',  # noqa: E501
+            response_type='InlineResponse20052',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -409,7 +409,7 @@ class OrganizationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20053
+        :return: InlineResponse20051
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -429,7 +429,7 @@ class OrganizationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20053
+        :return: InlineResponse20051
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -477,7 +477,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20053',  # noqa: E501
+            response_type='InlineResponse20051',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -496,7 +496,7 @@ class OrganizationApi(object):
         :param async_req bool
         :param str uid: organization uid (required)
         :param UidLimitsBody body:
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -518,7 +518,7 @@ class OrganizationApi(object):
         :param async_req bool
         :param str uid: organization uid (required)
         :param UidLimitsBody body:
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -578,7 +578,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20054',  # noqa: E501
+            response_type='InlineResponse20052',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -597,7 +597,7 @@ class OrganizationApi(object):
         :param async_req bool
         :param str uid: organization uid (required)
         :param OrganizationsUidBody body:
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -619,7 +619,7 @@ class OrganizationApi(object):
         :param async_req bool
         :param str uid: organization uid (required)
         :param OrganizationsUidBody body:
-        :return: InlineResponse20054
+        :return: InlineResponse20052
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -679,7 +679,7 @@ class OrganizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20054',  # noqa: E501
+            response_type='InlineResponse20052',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

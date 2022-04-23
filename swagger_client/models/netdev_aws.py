@@ -28,50 +28,50 @@ class NetdevAws(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'netmask_bits': 'float',
+        'gateway': 'str',
         'ip': 'str',
-        'gateway': 'str'
+        'netmask_bits': 'float'
     }
 
     attribute_map = {
-        'netmask_bits': 'netmask_bits',
+        'gateway': 'gateway',
         'ip': 'ip',
-        'gateway': 'gateway'
+        'netmask_bits': 'netmask_bits'
     }
 
-    def __init__(self, netmask_bits=None, ip=None, gateway=None):  # noqa: E501
+    def __init__(self, gateway=None, ip=None, netmask_bits=None):  # noqa: E501
         """NetdevAws - a model defined in Swagger"""  # noqa: E501
-        self._netmask_bits = None
-        self._ip = None
         self._gateway = None
+        self._ip = None
+        self._netmask_bits = None
         self.discriminator = None
-        if netmask_bits is not None:
-            self.netmask_bits = netmask_bits
-        if ip is not None:
-            self.ip = ip
         if gateway is not None:
             self.gateway = gateway
+        if ip is not None:
+            self.ip = ip
+        if netmask_bits is not None:
+            self.netmask_bits = netmask_bits
 
     @property
-    def netmask_bits(self):
-        """Gets the netmask_bits of this NetdevAws.  # noqa: E501
+    def gateway(self):
+        """Gets the gateway of this NetdevAws.  # noqa: E501
 
 
-        :return: The netmask_bits of this NetdevAws.  # noqa: E501
-        :rtype: float
+        :return: The gateway of this NetdevAws.  # noqa: E501
+        :rtype: str
         """
-        return self._netmask_bits
+        return self._gateway
 
-    @netmask_bits.setter
-    def netmask_bits(self, netmask_bits):
-        """Sets the netmask_bits of this NetdevAws.
+    @gateway.setter
+    def gateway(self, gateway):
+        """Sets the gateway of this NetdevAws.
 
 
-        :param netmask_bits: The netmask_bits of this NetdevAws.  # noqa: E501
-        :type: float
+        :param gateway: The gateway of this NetdevAws.  # noqa: E501
+        :type: str
         """
 
-        self._netmask_bits = netmask_bits
+        self._gateway = gateway
 
     @property
     def ip(self):
@@ -95,25 +95,25 @@ class NetdevAws(object):
         self._ip = ip
 
     @property
-    def gateway(self):
-        """Gets the gateway of this NetdevAws.  # noqa: E501
+    def netmask_bits(self):
+        """Gets the netmask_bits of this NetdevAws.  # noqa: E501
 
 
-        :return: The gateway of this NetdevAws.  # noqa: E501
-        :rtype: str
+        :return: The netmask_bits of this NetdevAws.  # noqa: E501
+        :rtype: float
         """
-        return self._gateway
+        return self._netmask_bits
 
-    @gateway.setter
-    def gateway(self, gateway):
-        """Sets the gateway of this NetdevAws.
+    @netmask_bits.setter
+    def netmask_bits(self, netmask_bits):
+        """Sets the netmask_bits of this NetdevAws.
 
 
-        :param gateway: The gateway of this NetdevAws.  # noqa: E501
-        :type: str
+        :param netmask_bits: The netmask_bits of this NetdevAws.  # noqa: E501
+        :type: float
         """
 
-        self._gateway = gateway
+        self._netmask_bits = netmask_bits
 
     def to_dict(self):
         """Returns the model properties as a dict"""

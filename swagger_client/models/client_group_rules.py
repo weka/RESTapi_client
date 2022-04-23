@@ -28,34 +28,76 @@ class ClientGroupRules(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'type': 'str',
-        'uid': 'str',
+        'id': 'str',
         'rule': 'str',
-        'id': 'str'
+        'type': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'type': 'type',
-        'uid': 'uid',
+        'id': 'id',
         'rule': 'rule',
-        'id': 'id'
+        'type': 'type',
+        'uid': 'uid'
     }
 
-    def __init__(self, type=None, uid=None, rule=None, id=None):  # noqa: E501
+    def __init__(self, id=None, rule=None, type=None, uid=None):  # noqa: E501
         """ClientGroupRules - a model defined in Swagger"""  # noqa: E501
+        self._id = None
+        self._rule = None
         self._type = None
         self._uid = None
-        self._rule = None
-        self._id = None
         self.discriminator = None
+        if id is not None:
+            self.id = id
+        if rule is not None:
+            self.rule = rule
         if type is not None:
             self.type = type
         if uid is not None:
             self.uid = uid
-        if rule is not None:
-            self.rule = rule
-        if id is not None:
-            self.id = id
+
+    @property
+    def id(self):
+        """Gets the id of this ClientGroupRules.  # noqa: E501
+
+
+        :return: The id of this ClientGroupRules.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ClientGroupRules.
+
+
+        :param id: The id of this ClientGroupRules.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def rule(self):
+        """Gets the rule of this ClientGroupRules.  # noqa: E501
+
+
+        :return: The rule of this ClientGroupRules.  # noqa: E501
+        :rtype: str
+        """
+        return self._rule
+
+    @rule.setter
+    def rule(self, rule):
+        """Sets the rule of this ClientGroupRules.
+
+
+        :param rule: The rule of this ClientGroupRules.  # noqa: E501
+        :type: str
+        """
+
+        self._rule = rule
 
     @property
     def type(self):
@@ -98,48 +140,6 @@ class ClientGroupRules(object):
         """
 
         self._uid = uid
-
-    @property
-    def rule(self):
-        """Gets the rule of this ClientGroupRules.  # noqa: E501
-
-
-        :return: The rule of this ClientGroupRules.  # noqa: E501
-        :rtype: str
-        """
-        return self._rule
-
-    @rule.setter
-    def rule(self, rule):
-        """Sets the rule of this ClientGroupRules.
-
-
-        :param rule: The rule of this ClientGroupRules.  # noqa: E501
-        :type: str
-        """
-
-        self._rule = rule
-
-    @property
-    def id(self):
-        """Gets the id of this ClientGroupRules.  # noqa: E501
-
-
-        :return: The id of this ClientGroupRules.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ClientGroupRules.
-
-
-        :param id: The id of this ClientGroupRules.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

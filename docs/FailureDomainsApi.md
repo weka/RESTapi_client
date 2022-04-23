@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_single_failure_domain**](FailureDomainsApi.md#get_single_failure_domain) | **GET** /failureDomains/{uid} | Get single failure domain
 
 # **get_failure_domains**
-> InlineResponse20016 get_failure_domains(show_removed=show_removed)
+> InlineResponse20012 get_failure_domains(show_removed=show_removed)
 
 Get failure domains
 
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_single_failure_domain**
-> InlineResponse20017 get_single_failure_domain(uid)
+> InlineResponse20013 get_single_failure_domain(uid)
 
 Get single failure domain
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 

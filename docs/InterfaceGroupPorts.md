@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**host_uid** | **str** |  | [optional] 
 **host_id** | **str** |  | [optional] 
+**host_uid** | **str** |  | [optional] 
 **port** | **str** |  | [optional] 
 **status** | **str** |  | [optional] 
 

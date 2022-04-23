@@ -28,24 +28,19 @@ class InlineResponse20013(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Event]',
-        'next_token': 'str'
+        'data': 'FailureDomain'
     }
 
     attribute_map = {
-        'data': 'data',
-        'next_token': 'next_token'
+        'data': 'data'
     }
 
-    def __init__(self, data=None, next_token=None):  # noqa: E501
+    def __init__(self, data=None):  # noqa: E501
         """InlineResponse20013 - a model defined in Swagger"""  # noqa: E501
         self._data = None
-        self._next_token = None
         self.discriminator = None
         if data is not None:
             self.data = data
-        if next_token is not None:
-            self.next_token = next_token
 
     @property
     def data(self):
@@ -53,7 +48,7 @@ class InlineResponse20013(object):
 
 
         :return: The data of this InlineResponse20013.  # noqa: E501
-        :rtype: list[Event]
+        :rtype: FailureDomain
         """
         return self._data
 
@@ -63,31 +58,10 @@ class InlineResponse20013(object):
 
 
         :param data: The data of this InlineResponse20013.  # noqa: E501
-        :type: list[Event]
+        :type: FailureDomain
         """
 
         self._data = data
-
-    @property
-    def next_token(self):
-        """Gets the next_token of this InlineResponse20013.  # noqa: E501
-
-
-        :return: The next_token of this InlineResponse20013.  # noqa: E501
-        :rtype: str
-        """
-        return self._next_token
-
-    @next_token.setter
-    def next_token(self, next_token):
-        """Sets the next_token of this InlineResponse20013.
-
-
-        :param next_token: The next_token of this InlineResponse20013.  # noqa: E501
-        :type: str
-        """
-
-        self._next_token = next_token
 
     def to_dict(self):
         """Returns the model properties as a dict"""

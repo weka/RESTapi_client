@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**set_license**](LicenseApi.md#set_license) | **POST** /license | Set license
 
 # **get_license**
-> InlineResponse20039 get_license()
+> InlineResponse20037 get_license()
 
 Get license
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20039**](InlineResponse20039.md)
+[**InlineResponse20037**](InlineResponse20037.md)
 
 ### Authorization
 

@@ -28,44 +28,65 @@ class SmbDomain(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'domain_name': 'str',
         'id': 'str',
-        'uid': 'str',
         'idmap_backend': 'str',
         'mapping_from_id': 'float',
         'mapping_to_id': 'float',
-        'domain_name': 'str'
+        'uid': 'str'
     }
 
     attribute_map = {
+        'domain_name': 'domainName',
         'id': 'id',
-        'uid': 'uid',
         'idmap_backend': 'idmapBackend',
         'mapping_from_id': 'mappingFromId',
         'mapping_to_id': 'mappingToId',
-        'domain_name': 'domainName'
+        'uid': 'uid'
     }
 
-    def __init__(self, id=None, uid=None, idmap_backend=None, mapping_from_id=None, mapping_to_id=None, domain_name=None):  # noqa: E501
+    def __init__(self, domain_name=None, id=None, idmap_backend=None, mapping_from_id=None, mapping_to_id=None, uid=None):  # noqa: E501
         """SmbDomain - a model defined in Swagger"""  # noqa: E501
+        self._domain_name = None
         self._id = None
-        self._uid = None
         self._idmap_backend = None
         self._mapping_from_id = None
         self._mapping_to_id = None
-        self._domain_name = None
+        self._uid = None
         self.discriminator = None
+        if domain_name is not None:
+            self.domain_name = domain_name
         if id is not None:
             self.id = id
-        if uid is not None:
-            self.uid = uid
         if idmap_backend is not None:
             self.idmap_backend = idmap_backend
         if mapping_from_id is not None:
             self.mapping_from_id = mapping_from_id
         if mapping_to_id is not None:
             self.mapping_to_id = mapping_to_id
-        if domain_name is not None:
-            self.domain_name = domain_name
+        if uid is not None:
+            self.uid = uid
+
+    @property
+    def domain_name(self):
+        """Gets the domain_name of this SmbDomain.  # noqa: E501
+
+
+        :return: The domain_name of this SmbDomain.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        """Sets the domain_name of this SmbDomain.
+
+
+        :param domain_name: The domain_name of this SmbDomain.  # noqa: E501
+        :type: str
+        """
+
+        self._domain_name = domain_name
 
     @property
     def id(self):
@@ -87,27 +108,6 @@ class SmbDomain(object):
         """
 
         self._id = id
-
-    @property
-    def uid(self):
-        """Gets the uid of this SmbDomain.  # noqa: E501
-
-
-        :return: The uid of this SmbDomain.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this SmbDomain.
-
-
-        :param uid: The uid of this SmbDomain.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
 
     @property
     def idmap_backend(self):
@@ -173,25 +173,25 @@ class SmbDomain(object):
         self._mapping_to_id = mapping_to_id
 
     @property
-    def domain_name(self):
-        """Gets the domain_name of this SmbDomain.  # noqa: E501
+    def uid(self):
+        """Gets the uid of this SmbDomain.  # noqa: E501
 
 
-        :return: The domain_name of this SmbDomain.  # noqa: E501
+        :return: The uid of this SmbDomain.  # noqa: E501
         :rtype: str
         """
-        return self._domain_name
+        return self._uid
 
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this SmbDomain.
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this SmbDomain.
 
 
-        :param domain_name: The domain_name of this SmbDomain.  # noqa: E501
+        :param uid: The uid of this SmbDomain.  # noqa: E501
         :type: str
         """
 
-        self._domain_name = domain_name
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,52 +28,52 @@ class SmbActiveDirectoryBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'username': 'str',
+        'debug_mode': 'bool',
         'password': 'str',
-        'debug_mode': 'bool'
+        'username': 'str'
     }
 
     attribute_map = {
-        'username': 'username',
+        'debug_mode': 'debug_mode',
         'password': 'password',
-        'debug_mode': 'debug_mode'
+        'username': 'username'
     }
 
-    def __init__(self, username=None, password=None, debug_mode=None):  # noqa: E501
+    def __init__(self, debug_mode=None, password=None, username=None):  # noqa: E501
         """SmbActiveDirectoryBody - a model defined in Swagger"""  # noqa: E501
-        self._username = None
-        self._password = None
         self._debug_mode = None
+        self._password = None
+        self._username = None
         self.discriminator = None
-        if username is not None:
-            self.username = username
-        if password is not None:
-            self.password = password
         if debug_mode is not None:
             self.debug_mode = debug_mode
+        if password is not None:
+            self.password = password
+        if username is not None:
+            self.username = username
 
     @property
-    def username(self):
-        """Gets the username of this SmbActiveDirectoryBody.  # noqa: E501
+    def debug_mode(self):
+        """Gets the debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
 
-        The name of the administrator user to join the domain using it  # noqa: E501
+        Run the command in debug mode  # noqa: E501
 
-        :return: The username of this SmbActiveDirectoryBody.  # noqa: E501
-        :rtype: str
+        :return: The debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
+        :rtype: bool
         """
-        return self._username
+        return self._debug_mode
 
-    @username.setter
-    def username(self, username):
-        """Sets the username of this SmbActiveDirectoryBody.
+    @debug_mode.setter
+    def debug_mode(self, debug_mode):
+        """Sets the debug_mode of this SmbActiveDirectoryBody.
 
-        The name of the administrator user to join the domain using it  # noqa: E501
+        Run the command in debug mode  # noqa: E501
 
-        :param username: The username of this SmbActiveDirectoryBody.  # noqa: E501
-        :type: str
+        :param debug_mode: The debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
+        :type: bool
         """
 
-        self._username = username
+        self._debug_mode = debug_mode
 
     @property
     def password(self):
@@ -99,27 +99,27 @@ class SmbActiveDirectoryBody(object):
         self._password = password
 
     @property
-    def debug_mode(self):
-        """Gets the debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
+    def username(self):
+        """Gets the username of this SmbActiveDirectoryBody.  # noqa: E501
 
-        Run the command in debug mode  # noqa: E501
+        The name of the administrator user to join the domain using it  # noqa: E501
 
-        :return: The debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
-        :rtype: bool
+        :return: The username of this SmbActiveDirectoryBody.  # noqa: E501
+        :rtype: str
         """
-        return self._debug_mode
+        return self._username
 
-    @debug_mode.setter
-    def debug_mode(self, debug_mode):
-        """Sets the debug_mode of this SmbActiveDirectoryBody.
+    @username.setter
+    def username(self, username):
+        """Sets the username of this SmbActiveDirectoryBody.
 
-        Run the command in debug mode  # noqa: E501
+        The name of the administrator user to join the domain using it  # noqa: E501
 
-        :param debug_mode: The debug_mode of this SmbActiveDirectoryBody.  # noqa: E501
-        :type: bool
+        :param username: The username of this SmbActiveDirectoryBody.  # noqa: E501
+        :type: str
         """
 
-        self._debug_mode = debug_mode
+        self._username = username
 
     def to_dict(self):
         """Returns the model properties as a dict"""

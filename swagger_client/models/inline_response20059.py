@@ -28,42 +28,40 @@ class InlineResponse20059(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'target': 'str'
+        'data': 'InlineResponse20059Data'
     }
 
     attribute_map = {
-        'target': 'target'
+        'data': 'data'
     }
 
-    def __init__(self, target=None):  # noqa: E501
+    def __init__(self, data=None):  # noqa: E501
         """InlineResponse20059 - a model defined in Swagger"""  # noqa: E501
-        self._target = None
+        self._data = None
         self.discriminator = None
-        if target is not None:
-            self.target = target
+        if data is not None:
+            self.data = data
 
     @property
-    def target(self):
-        """Gets the target of this InlineResponse20059.  # noqa: E501
+    def data(self):
+        """Gets the data of this InlineResponse20059.  # noqa: E501
 
-        target bucket  # noqa: E501
 
-        :return: The target of this InlineResponse20059.  # noqa: E501
-        :rtype: str
+        :return: The data of this InlineResponse20059.  # noqa: E501
+        :rtype: InlineResponse20059Data
         """
-        return self._target
+        return self._data
 
-    @target.setter
-    def target(self, target):
-        """Sets the target of this InlineResponse20059.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this InlineResponse20059.
 
-        target bucket  # noqa: E501
 
-        :param target: The target of this InlineResponse20059.  # noqa: E501
-        :type: str
+        :param data: The data of this InlineResponse20059.  # noqa: E501
+        :type: InlineResponse20059Data
         """
 
-        self._target = target
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

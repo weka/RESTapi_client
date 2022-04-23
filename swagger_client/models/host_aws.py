@@ -28,50 +28,29 @@ class HostAws(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'instance_type': 'str',
         'availability_zone': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'instance_type': 'str'
     }
 
     attribute_map = {
-        'instance_type': 'instance_type',
         'availability_zone': 'availability_zone',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'instance_type': 'instance_type'
     }
 
-    def __init__(self, instance_type=None, availability_zone=None, instance_id=None):  # noqa: E501
+    def __init__(self, availability_zone=None, instance_id=None, instance_type=None):  # noqa: E501
         """HostAws - a model defined in Swagger"""  # noqa: E501
-        self._instance_type = None
         self._availability_zone = None
         self._instance_id = None
+        self._instance_type = None
         self.discriminator = None
-        if instance_type is not None:
-            self.instance_type = instance_type
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if instance_id is not None:
             self.instance_id = instance_id
-
-    @property
-    def instance_type(self):
-        """Gets the instance_type of this HostAws.  # noqa: E501
-
-
-        :return: The instance_type of this HostAws.  # noqa: E501
-        :rtype: str
-        """
-        return self._instance_type
-
-    @instance_type.setter
-    def instance_type(self, instance_type):
-        """Sets the instance_type of this HostAws.
-
-
-        :param instance_type: The instance_type of this HostAws.  # noqa: E501
-        :type: str
-        """
-
-        self._instance_type = instance_type
+        if instance_type is not None:
+            self.instance_type = instance_type
 
     @property
     def availability_zone(self):
@@ -114,6 +93,27 @@ class HostAws(object):
         """
 
         self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this HostAws.  # noqa: E501
+
+
+        :return: The instance_type of this HostAws.  # noqa: E501
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this HostAws.
+
+
+        :param instance_type: The instance_type of this HostAws.  # noqa: E501
+        :type: str
+        """
+
+        self._instance_type = instance_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

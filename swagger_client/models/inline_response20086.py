@@ -28,7 +28,7 @@ class InlineResponse20086(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'InlineResponse20086Data'
+        'data': 'float'
     }
 
     attribute_map = {
@@ -46,9 +46,10 @@ class InlineResponse20086(object):
     def data(self):
         """Gets the data of this InlineResponse20086.  # noqa: E501
 
+        Maximum uploaded bytes per second  # noqa: E501
 
         :return: The data of this InlineResponse20086.  # noqa: E501
-        :rtype: InlineResponse20086Data
+        :rtype: float
         """
         return self._data
 
@@ -56,9 +57,10 @@ class InlineResponse20086(object):
     def data(self, data):
         """Sets the data of this InlineResponse20086.
 
+        Maximum uploaded bytes per second  # noqa: E501
 
         :param data: The data of this InlineResponse20086.  # noqa: E501
-        :type: InlineResponse20086Data
+        :type: float
         """
 
         self._data = data

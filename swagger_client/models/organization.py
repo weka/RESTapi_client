@@ -28,70 +28,49 @@ class Organization(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'total_quota': 'float',
         'id': 'float',
-        'ssd_quota': 'float',
-        'ssd_allocated': 'float',
         'name': 'str',
+        'ssd_allocated': 'float',
+        'ssd_quota': 'float',
         'total_allocated': 'float',
+        'total_quota': 'float',
         'uid': 'str'
     }
 
     attribute_map = {
-        'total_quota': 'total_quota',
         'id': 'id',
-        'ssd_quota': 'ssd_quota',
-        'ssd_allocated': 'ssd_allocated',
         'name': 'name',
+        'ssd_allocated': 'ssd_allocated',
+        'ssd_quota': 'ssd_quota',
         'total_allocated': 'total_allocated',
+        'total_quota': 'total_quota',
         'uid': 'uid'
     }
 
-    def __init__(self, total_quota=None, id=None, ssd_quota=None, ssd_allocated=None, name=None, total_allocated=None, uid=None):  # noqa: E501
+    def __init__(self, id=None, name=None, ssd_allocated=None, ssd_quota=None, total_allocated=None, total_quota=None, uid=None):  # noqa: E501
         """Organization - a model defined in Swagger"""  # noqa: E501
-        self._total_quota = None
         self._id = None
-        self._ssd_quota = None
-        self._ssd_allocated = None
         self._name = None
+        self._ssd_allocated = None
+        self._ssd_quota = None
         self._total_allocated = None
+        self._total_quota = None
         self._uid = None
         self.discriminator = None
-        if total_quota is not None:
-            self.total_quota = total_quota
         if id is not None:
             self.id = id
-        if ssd_quota is not None:
-            self.ssd_quota = ssd_quota
-        if ssd_allocated is not None:
-            self.ssd_allocated = ssd_allocated
         if name is not None:
             self.name = name
+        if ssd_allocated is not None:
+            self.ssd_allocated = ssd_allocated
+        if ssd_quota is not None:
+            self.ssd_quota = ssd_quota
         if total_allocated is not None:
             self.total_allocated = total_allocated
+        if total_quota is not None:
+            self.total_quota = total_quota
         if uid is not None:
             self.uid = uid
-
-    @property
-    def total_quota(self):
-        """Gets the total_quota of this Organization.  # noqa: E501
-
-
-        :return: The total_quota of this Organization.  # noqa: E501
-        :rtype: float
-        """
-        return self._total_quota
-
-    @total_quota.setter
-    def total_quota(self, total_quota):
-        """Sets the total_quota of this Organization.
-
-
-        :param total_quota: The total_quota of this Organization.  # noqa: E501
-        :type: float
-        """
-
-        self._total_quota = total_quota
 
     @property
     def id(self):
@@ -115,25 +94,25 @@ class Organization(object):
         self._id = id
 
     @property
-    def ssd_quota(self):
-        """Gets the ssd_quota of this Organization.  # noqa: E501
+    def name(self):
+        """Gets the name of this Organization.  # noqa: E501
 
 
-        :return: The ssd_quota of this Organization.  # noqa: E501
-        :rtype: float
+        :return: The name of this Organization.  # noqa: E501
+        :rtype: str
         """
-        return self._ssd_quota
+        return self._name
 
-    @ssd_quota.setter
-    def ssd_quota(self, ssd_quota):
-        """Sets the ssd_quota of this Organization.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Organization.
 
 
-        :param ssd_quota: The ssd_quota of this Organization.  # noqa: E501
-        :type: float
+        :param name: The name of this Organization.  # noqa: E501
+        :type: str
         """
 
-        self._ssd_quota = ssd_quota
+        self._name = name
 
     @property
     def ssd_allocated(self):
@@ -157,25 +136,25 @@ class Organization(object):
         self._ssd_allocated = ssd_allocated
 
     @property
-    def name(self):
-        """Gets the name of this Organization.  # noqa: E501
+    def ssd_quota(self):
+        """Gets the ssd_quota of this Organization.  # noqa: E501
 
 
-        :return: The name of this Organization.  # noqa: E501
-        :rtype: str
+        :return: The ssd_quota of this Organization.  # noqa: E501
+        :rtype: float
         """
-        return self._name
+        return self._ssd_quota
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this Organization.
+    @ssd_quota.setter
+    def ssd_quota(self, ssd_quota):
+        """Sets the ssd_quota of this Organization.
 
 
-        :param name: The name of this Organization.  # noqa: E501
-        :type: str
+        :param ssd_quota: The ssd_quota of this Organization.  # noqa: E501
+        :type: float
         """
 
-        self._name = name
+        self._ssd_quota = ssd_quota
 
     @property
     def total_allocated(self):
@@ -197,6 +176,27 @@ class Organization(object):
         """
 
         self._total_allocated = total_allocated
+
+    @property
+    def total_quota(self):
+        """Gets the total_quota of this Organization.  # noqa: E501
+
+
+        :return: The total_quota of this Organization.  # noqa: E501
+        :rtype: float
+        """
+        return self._total_quota
+
+    @total_quota.setter
+    def total_quota(self, total_quota):
+        """Sets the total_quota of this Organization.
+
+
+        :param total_quota: The total_quota of this Organization.  # noqa: E501
+        :type: float
+        """
+
+        self._total_quota = total_quota
 
     @property
     def uid(self):

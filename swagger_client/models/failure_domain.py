@@ -28,76 +28,34 @@ class FailureDomain(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'str',
-        'uid': 'str',
         'drives': 'list[str]',
-        'hosts': 'list[str]'
+        'hosts': 'list[str]',
+        'id': 'str',
+        'uid': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'uid': 'uid',
         'drives': 'drives',
-        'hosts': 'hosts'
+        'hosts': 'hosts',
+        'id': 'id',
+        'uid': 'uid'
     }
 
-    def __init__(self, id=None, uid=None, drives=None, hosts=None):  # noqa: E501
+    def __init__(self, drives=None, hosts=None, id=None, uid=None):  # noqa: E501
         """FailureDomain - a model defined in Swagger"""  # noqa: E501
-        self._id = None
-        self._uid = None
         self._drives = None
         self._hosts = None
+        self._id = None
+        self._uid = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
-        if uid is not None:
-            self.uid = uid
         if drives is not None:
             self.drives = drives
         if hosts is not None:
             self.hosts = hosts
-
-    @property
-    def id(self):
-        """Gets the id of this FailureDomain.  # noqa: E501
-
-
-        :return: The id of this FailureDomain.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this FailureDomain.
-
-
-        :param id: The id of this FailureDomain.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def uid(self):
-        """Gets the uid of this FailureDomain.  # noqa: E501
-
-
-        :return: The uid of this FailureDomain.  # noqa: E501
-        :rtype: str
-        """
-        return self._uid
-
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this FailureDomain.
-
-
-        :param uid: The uid of this FailureDomain.  # noqa: E501
-        :type: str
-        """
-
-        self._uid = uid
+        if id is not None:
+            self.id = id
+        if uid is not None:
+            self.uid = uid
 
     @property
     def drives(self):
@@ -140,6 +98,48 @@ class FailureDomain(object):
         """
 
         self._hosts = hosts
+
+    @property
+    def id(self):
+        """Gets the id of this FailureDomain.  # noqa: E501
+
+
+        :return: The id of this FailureDomain.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this FailureDomain.
+
+
+        :param id: The id of this FailureDomain.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def uid(self):
+        """Gets the uid of this FailureDomain.  # noqa: E501
+
+
+        :return: The uid of this FailureDomain.  # noqa: E501
+        :rtype: str
+        """
+        return self._uid
+
+    @uid.setter
+    def uid(self, uid):
+        """Sets the uid of this FailureDomain.
+
+
+        :param uid: The uid of this FailureDomain.  # noqa: E501
+        :type: str
+        """
+
+        self._uid = uid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

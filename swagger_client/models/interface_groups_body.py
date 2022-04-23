@@ -28,32 +28,55 @@ class InterfaceGroupsBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'gateway': 'str',
         'name': 'str',
-        'type': 'str',
         'subnet': 'str',
-        'gateway': 'str'
+        'type': 'str'
     }
 
     attribute_map = {
+        'gateway': 'gateway',
         'name': 'name',
-        'type': 'type',
         'subnet': 'subnet',
-        'gateway': 'gateway'
+        'type': 'type'
     }
 
-    def __init__(self, name=None, type=None, subnet=None, gateway=None):  # noqa: E501
+    def __init__(self, gateway=None, name=None, subnet=None, type=None):  # noqa: E501
         """InterfaceGroupsBody - a model defined in Swagger"""  # noqa: E501
-        self._name = None
-        self._type = None
-        self._subnet = None
         self._gateway = None
+        self._name = None
+        self._subnet = None
+        self._type = None
         self.discriminator = None
-        self.name = name
-        self.type = type
-        if subnet is not None:
-            self.subnet = subnet
         if gateway is not None:
             self.gateway = gateway
+        self.name = name
+        if subnet is not None:
+            self.subnet = subnet
+        self.type = type
+
+    @property
+    def gateway(self):
+        """Gets the gateway of this InterfaceGroupsBody.  # noqa: E501
+
+        Gateway ip  # noqa: E501
+
+        :return: The gateway of this InterfaceGroupsBody.  # noqa: E501
+        :rtype: str
+        """
+        return self._gateway
+
+    @gateway.setter
+    def gateway(self, gateway):
+        """Sets the gateway of this InterfaceGroupsBody.
+
+        Gateway ip  # noqa: E501
+
+        :param gateway: The gateway of this InterfaceGroupsBody.  # noqa: E501
+        :type: str
+        """
+
+        self._gateway = gateway
 
     @property
     def name(self):
@@ -81,31 +104,6 @@ class InterfaceGroupsBody(object):
         self._name = name
 
     @property
-    def type(self):
-        """Gets the type of this InterfaceGroupsBody.  # noqa: E501
-
-        Group type. cli subnet type can be NFS  # noqa: E501
-
-        :return: The type of this InterfaceGroupsBody.  # noqa: E501
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this InterfaceGroupsBody.
-
-        Group type. cli subnet type can be NFS  # noqa: E501
-
-        :param type: The type of this InterfaceGroupsBody.  # noqa: E501
-        :type: str
-        """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
-
-        self._type = type
-
-    @property
     def subnet(self):
         """Gets the subnet of this InterfaceGroupsBody.  # noqa: E501
 
@@ -129,27 +127,29 @@ class InterfaceGroupsBody(object):
         self._subnet = subnet
 
     @property
-    def gateway(self):
-        """Gets the gateway of this InterfaceGroupsBody.  # noqa: E501
+    def type(self):
+        """Gets the type of this InterfaceGroupsBody.  # noqa: E501
 
-        Gateway ip  # noqa: E501
+        Group type. cli subnet type can be NFS  # noqa: E501
 
-        :return: The gateway of this InterfaceGroupsBody.  # noqa: E501
+        :return: The type of this InterfaceGroupsBody.  # noqa: E501
         :rtype: str
         """
-        return self._gateway
+        return self._type
 
-    @gateway.setter
-    def gateway(self, gateway):
-        """Sets the gateway of this InterfaceGroupsBody.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this InterfaceGroupsBody.
 
-        Gateway ip  # noqa: E501
+        Group type. cli subnet type can be NFS  # noqa: E501
 
-        :param gateway: The gateway of this InterfaceGroupsBody.  # noqa: E501
+        :param type: The type of this InterfaceGroupsBody.  # noqa: E501
         :type: str
         """
+        if type is None:
+            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
 
-        self._gateway = gateway
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

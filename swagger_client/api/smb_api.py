@@ -42,7 +42,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbDomainsBody body:
-        :return: InlineResponse20064
+        :return: InlineResponse20067
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbDomainsBody body:
-        :return: InlineResponse20064
+        :return: InlineResponse20067
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20064',  # noqa: E501
+            response_type='InlineResponse20067',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -135,7 +135,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbSharesBody body:
-        :return: InlineResponse20067
+        :return: InlineResponse20070
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -156,7 +156,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbSharesBody body:
-        :return: InlineResponse20067
+        :return: InlineResponse20070
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -210,7 +210,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20067',  # noqa: E501
+            response_type='InlineResponse20070',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -422,7 +422,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbActiveDirectoryBody body:
-        :return: InlineResponse20068
+        :return: InlineResponse20065
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -443,7 +443,7 @@ class SMBApi(object):
 
         :param async_req bool
         :param SmbActiveDirectoryBody body:
-        :return: InlineResponse20068
+        :return: InlineResponse20065
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -497,7 +497,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20068',  # noqa: E501
+            response_type='InlineResponse20065',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -809,7 +809,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20062
+        :return: InlineResponse20064
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -829,7 +829,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20062
+        :return: InlineResponse20064
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -877,7 +877,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20062',  # noqa: E501
+            response_type='InlineResponse20064',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -894,7 +894,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20061
+        :return: InlineResponse20059
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -914,7 +914,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20061
+        :return: InlineResponse20059
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -962,7 +962,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20061',  # noqa: E501
+            response_type='InlineResponse20059',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1359,7 +1359,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20063
+        :return: InlineResponse20066
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1379,7 +1379,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20063
+        :return: InlineResponse20066
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1427,7 +1427,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20063',  # noqa: E501
+            response_type='InlineResponse20066',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1444,7 +1444,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20065
+        :return: InlineResponse20068
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1464,7 +1464,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20065
+        :return: InlineResponse20068
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1512,7 +1512,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20065',  # noqa: E501
+            response_type='InlineResponse20068',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1529,7 +1529,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20066
+        :return: InlineResponse20069
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1549,7 +1549,7 @@ class SMBApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20066
+        :return: InlineResponse20069
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1597,7 +1597,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20066',  # noqa: E501
+            response_type='InlineResponse20069',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1709,7 +1709,7 @@ class SMBApi(object):
         :param async_req bool
         :param str uid: share uid (required)
         :param SharesUidBody body:
-        :return: InlineResponse20067
+        :return: InlineResponse20070
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1731,7 +1731,7 @@ class SMBApi(object):
         :param async_req bool
         :param str uid: share uid (required)
         :param SharesUidBody body:
-        :return: InlineResponse20067
+        :return: InlineResponse20070
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1791,7 +1791,7 @@ class SMBApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20067',  # noqa: E501
+            response_type='InlineResponse20070',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

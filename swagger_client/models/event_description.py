@@ -28,164 +28,59 @@ class EventDescription(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'dedup_parameters': 'list[str]',
-        'parameters': 'list[str]',
-        'severity': 'str',
-        'is_dedup_event': 'bool',
-        'permission': 'str',
         'category': 'str',
-        'type': 'str',
+        'dedup_parameters': 'list[str]',
         'description': 'str',
-        'format_string': 'str'
+        'format_string': 'str',
+        'is_dedup_event': 'bool',
+        'parameters': 'list[str]',
+        'permission': 'str',
+        'severity': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
-        'dedup_parameters': 'dedup_parameters',
-        'parameters': 'parameters',
-        'severity': 'severity',
-        'is_dedup_event': 'is_dedup_event',
-        'permission': 'permission',
         'category': 'category',
-        'type': 'type',
+        'dedup_parameters': 'dedup_parameters',
         'description': 'description',
-        'format_string': 'formatString'
+        'format_string': 'formatString',
+        'is_dedup_event': 'is_dedup_event',
+        'parameters': 'parameters',
+        'permission': 'permission',
+        'severity': 'severity',
+        'type': 'type'
     }
 
-    def __init__(self, dedup_parameters=None, parameters=None, severity=None, is_dedup_event=None, permission=None, category=None, type=None, description=None, format_string=None):  # noqa: E501
+    def __init__(self, category=None, dedup_parameters=None, description=None, format_string=None, is_dedup_event=None, parameters=None, permission=None, severity=None, type=None):  # noqa: E501
         """EventDescription - a model defined in Swagger"""  # noqa: E501
-        self._dedup_parameters = None
-        self._parameters = None
-        self._severity = None
-        self._is_dedup_event = None
-        self._permission = None
         self._category = None
-        self._type = None
+        self._dedup_parameters = None
         self._description = None
         self._format_string = None
+        self._is_dedup_event = None
+        self._parameters = None
+        self._permission = None
+        self._severity = None
+        self._type = None
         self.discriminator = None
-        if dedup_parameters is not None:
-            self.dedup_parameters = dedup_parameters
-        if parameters is not None:
-            self.parameters = parameters
-        if severity is not None:
-            self.severity = severity
-        if is_dedup_event is not None:
-            self.is_dedup_event = is_dedup_event
-        if permission is not None:
-            self.permission = permission
         if category is not None:
             self.category = category
-        if type is not None:
-            self.type = type
+        if dedup_parameters is not None:
+            self.dedup_parameters = dedup_parameters
         if description is not None:
             self.description = description
         if format_string is not None:
             self.format_string = format_string
-
-    @property
-    def dedup_parameters(self):
-        """Gets the dedup_parameters of this EventDescription.  # noqa: E501
-
-
-        :return: The dedup_parameters of this EventDescription.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._dedup_parameters
-
-    @dedup_parameters.setter
-    def dedup_parameters(self, dedup_parameters):
-        """Sets the dedup_parameters of this EventDescription.
-
-
-        :param dedup_parameters: The dedup_parameters of this EventDescription.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._dedup_parameters = dedup_parameters
-
-    @property
-    def parameters(self):
-        """Gets the parameters of this EventDescription.  # noqa: E501
-
-
-        :return: The parameters of this EventDescription.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._parameters
-
-    @parameters.setter
-    def parameters(self, parameters):
-        """Sets the parameters of this EventDescription.
-
-
-        :param parameters: The parameters of this EventDescription.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._parameters = parameters
-
-    @property
-    def severity(self):
-        """Gets the severity of this EventDescription.  # noqa: E501
-
-
-        :return: The severity of this EventDescription.  # noqa: E501
-        :rtype: str
-        """
-        return self._severity
-
-    @severity.setter
-    def severity(self, severity):
-        """Sets the severity of this EventDescription.
-
-
-        :param severity: The severity of this EventDescription.  # noqa: E501
-        :type: str
-        """
-
-        self._severity = severity
-
-    @property
-    def is_dedup_event(self):
-        """Gets the is_dedup_event of this EventDescription.  # noqa: E501
-
-
-        :return: The is_dedup_event of this EventDescription.  # noqa: E501
-        :rtype: bool
-        """
-        return self._is_dedup_event
-
-    @is_dedup_event.setter
-    def is_dedup_event(self, is_dedup_event):
-        """Sets the is_dedup_event of this EventDescription.
-
-
-        :param is_dedup_event: The is_dedup_event of this EventDescription.  # noqa: E501
-        :type: bool
-        """
-
-        self._is_dedup_event = is_dedup_event
-
-    @property
-    def permission(self):
-        """Gets the permission of this EventDescription.  # noqa: E501
-
-
-        :return: The permission of this EventDescription.  # noqa: E501
-        :rtype: str
-        """
-        return self._permission
-
-    @permission.setter
-    def permission(self, permission):
-        """Sets the permission of this EventDescription.
-
-
-        :param permission: The permission of this EventDescription.  # noqa: E501
-        :type: str
-        """
-
-        self._permission = permission
+        if is_dedup_event is not None:
+            self.is_dedup_event = is_dedup_event
+        if parameters is not None:
+            self.parameters = parameters
+        if permission is not None:
+            self.permission = permission
+        if severity is not None:
+            self.severity = severity
+        if type is not None:
+            self.type = type
 
     @property
     def category(self):
@@ -209,25 +104,25 @@ class EventDescription(object):
         self._category = category
 
     @property
-    def type(self):
-        """Gets the type of this EventDescription.  # noqa: E501
+    def dedup_parameters(self):
+        """Gets the dedup_parameters of this EventDescription.  # noqa: E501
 
 
-        :return: The type of this EventDescription.  # noqa: E501
-        :rtype: str
+        :return: The dedup_parameters of this EventDescription.  # noqa: E501
+        :rtype: list[str]
         """
-        return self._type
+        return self._dedup_parameters
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this EventDescription.
+    @dedup_parameters.setter
+    def dedup_parameters(self, dedup_parameters):
+        """Sets the dedup_parameters of this EventDescription.
 
 
-        :param type: The type of this EventDescription.  # noqa: E501
-        :type: str
+        :param dedup_parameters: The dedup_parameters of this EventDescription.  # noqa: E501
+        :type: list[str]
         """
 
-        self._type = type
+        self._dedup_parameters = dedup_parameters
 
     @property
     def description(self):
@@ -270,6 +165,111 @@ class EventDescription(object):
         """
 
         self._format_string = format_string
+
+    @property
+    def is_dedup_event(self):
+        """Gets the is_dedup_event of this EventDescription.  # noqa: E501
+
+
+        :return: The is_dedup_event of this EventDescription.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_dedup_event
+
+    @is_dedup_event.setter
+    def is_dedup_event(self, is_dedup_event):
+        """Sets the is_dedup_event of this EventDescription.
+
+
+        :param is_dedup_event: The is_dedup_event of this EventDescription.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_dedup_event = is_dedup_event
+
+    @property
+    def parameters(self):
+        """Gets the parameters of this EventDescription.  # noqa: E501
+
+
+        :return: The parameters of this EventDescription.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        """Sets the parameters of this EventDescription.
+
+
+        :param parameters: The parameters of this EventDescription.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._parameters = parameters
+
+    @property
+    def permission(self):
+        """Gets the permission of this EventDescription.  # noqa: E501
+
+
+        :return: The permission of this EventDescription.  # noqa: E501
+        :rtype: str
+        """
+        return self._permission
+
+    @permission.setter
+    def permission(self, permission):
+        """Sets the permission of this EventDescription.
+
+
+        :param permission: The permission of this EventDescription.  # noqa: E501
+        :type: str
+        """
+
+        self._permission = permission
+
+    @property
+    def severity(self):
+        """Gets the severity of this EventDescription.  # noqa: E501
+
+
+        :return: The severity of this EventDescription.  # noqa: E501
+        :rtype: str
+        """
+        return self._severity
+
+    @severity.setter
+    def severity(self, severity):
+        """Sets the severity of this EventDescription.
+
+
+        :param severity: The severity of this EventDescription.  # noqa: E501
+        :type: str
+        """
+
+        self._severity = severity
+
+    @property
+    def type(self):
+        """Gets the type of this EventDescription.  # noqa: E501
+
+
+        :return: The type of this EventDescription.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this EventDescription.
+
+
+        :param type: The type of this EventDescription.  # noqa: E501
+        :type: str
+        """
+
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

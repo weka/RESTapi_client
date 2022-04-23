@@ -28,182 +28,161 @@ class HostResourceData(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'mode': 'str',
-        'memory': 'float',
-        'format': 'float',
+        'auto_remove_timeout': 'float',
+        'backend_endpoints': 'list[HostResourceDataBackendEndpoints]',
         'bandwidth': 'float',
+        'dedicate_memory': 'bool',
+        'disable_numa_balancing': 'bool',
         'drives': 'list[str]',
         'failure_domain': 'str',
+        'format': 'float',
         'hardware_watchdog': 'bool',
-        'wait_io_nodes_timeout': 'float',
-        'backend_endpoints': 'list[HostResourceDataBackendEndpoints]',
-        'hostname': 'str',
-        'reserve_1g_hugepages': 'bool',
-        'net_devices': 'list[str]',
-        'dedicate_memory': 'bool',
-        'ips': 'list[str]',
-        'ui_enabled': 'bool',
-        'join_secret': 'list[str]',
-        'nodes': 'HostResourceDataNodes',
         'host_id': 'float',
-        'auto_remove_timeout': 'float',
-        'disable_numa_balancing': 'bool',
-        'mask_interrupts': 'bool'
+        'hostname': 'str',
+        'ips': 'list[str]',
+        'join_secret': 'list[str]',
+        'mask_interrupts': 'bool',
+        'memory': 'float',
+        'mode': 'str',
+        'net_devices': 'list[str]',
+        'nodes': 'HostResourceDataNodes',
+        'reserve_1g_hugepages': 'bool',
+        'ui_enabled': 'bool',
+        'wait_io_nodes_timeout': 'float'
     }
 
     attribute_map = {
-        'mode': 'mode',
-        'memory': 'memory',
-        'format': 'format',
+        'auto_remove_timeout': 'auto_remove_timeout',
+        'backend_endpoints': 'backend_endpoints',
         'bandwidth': 'bandwidth',
+        'dedicate_memory': 'dedicate_memory',
+        'disable_numa_balancing': 'disable_numa_balancing',
         'drives': 'drives',
         'failure_domain': 'failure_domain',
+        'format': 'format',
         'hardware_watchdog': 'hardware_watchdog',
-        'wait_io_nodes_timeout': 'wait_io_nodes_timeout',
-        'backend_endpoints': 'backend_endpoints',
-        'hostname': 'hostname',
-        'reserve_1g_hugepages': 'reserve_1g_hugepages',
-        'net_devices': 'net_devices',
-        'dedicate_memory': 'dedicate_memory',
-        'ips': 'ips',
-        'ui_enabled': 'ui_enabled',
-        'join_secret': 'join_secret',
-        'nodes': 'nodes',
         'host_id': 'host_id',
-        'auto_remove_timeout': 'auto_remove_timeout',
-        'disable_numa_balancing': 'disable_numa_balancing',
-        'mask_interrupts': 'mask_interrupts'
+        'hostname': 'hostname',
+        'ips': 'ips',
+        'join_secret': 'join_secret',
+        'mask_interrupts': 'mask_interrupts',
+        'memory': 'memory',
+        'mode': 'mode',
+        'net_devices': 'net_devices',
+        'nodes': 'nodes',
+        'reserve_1g_hugepages': 'reserve_1g_hugepages',
+        'ui_enabled': 'ui_enabled',
+        'wait_io_nodes_timeout': 'wait_io_nodes_timeout'
     }
 
-    def __init__(self, mode=None, memory=None, format=None, bandwidth=None, drives=None, failure_domain=None, hardware_watchdog=None, wait_io_nodes_timeout=None, backend_endpoints=None, hostname=None, reserve_1g_hugepages=None, net_devices=None, dedicate_memory=None, ips=None, ui_enabled=None, join_secret=None, nodes=None, host_id=None, auto_remove_timeout=None, disable_numa_balancing=None, mask_interrupts=None):  # noqa: E501
+    def __init__(self, auto_remove_timeout=None, backend_endpoints=None, bandwidth=None, dedicate_memory=None, disable_numa_balancing=None, drives=None, failure_domain=None, format=None, hardware_watchdog=None, host_id=None, hostname=None, ips=None, join_secret=None, mask_interrupts=None, memory=None, mode=None, net_devices=None, nodes=None, reserve_1g_hugepages=None, ui_enabled=None, wait_io_nodes_timeout=None):  # noqa: E501
         """HostResourceData - a model defined in Swagger"""  # noqa: E501
-        self._mode = None
-        self._memory = None
-        self._format = None
+        self._auto_remove_timeout = None
+        self._backend_endpoints = None
         self._bandwidth = None
+        self._dedicate_memory = None
+        self._disable_numa_balancing = None
         self._drives = None
         self._failure_domain = None
+        self._format = None
         self._hardware_watchdog = None
-        self._wait_io_nodes_timeout = None
-        self._backend_endpoints = None
-        self._hostname = None
-        self._reserve_1g_hugepages = None
-        self._net_devices = None
-        self._dedicate_memory = None
-        self._ips = None
-        self._ui_enabled = None
-        self._join_secret = None
-        self._nodes = None
         self._host_id = None
-        self._auto_remove_timeout = None
-        self._disable_numa_balancing = None
+        self._hostname = None
+        self._ips = None
+        self._join_secret = None
         self._mask_interrupts = None
+        self._memory = None
+        self._mode = None
+        self._net_devices = None
+        self._nodes = None
+        self._reserve_1g_hugepages = None
+        self._ui_enabled = None
+        self._wait_io_nodes_timeout = None
         self.discriminator = None
-        if mode is not None:
-            self.mode = mode
-        if memory is not None:
-            self.memory = memory
-        if format is not None:
-            self.format = format
+        if auto_remove_timeout is not None:
+            self.auto_remove_timeout = auto_remove_timeout
+        if backend_endpoints is not None:
+            self.backend_endpoints = backend_endpoints
         if bandwidth is not None:
             self.bandwidth = bandwidth
+        if dedicate_memory is not None:
+            self.dedicate_memory = dedicate_memory
+        if disable_numa_balancing is not None:
+            self.disable_numa_balancing = disable_numa_balancing
         if drives is not None:
             self.drives = drives
         if failure_domain is not None:
             self.failure_domain = failure_domain
+        if format is not None:
+            self.format = format
         if hardware_watchdog is not None:
             self.hardware_watchdog = hardware_watchdog
-        if wait_io_nodes_timeout is not None:
-            self.wait_io_nodes_timeout = wait_io_nodes_timeout
-        if backend_endpoints is not None:
-            self.backend_endpoints = backend_endpoints
-        if hostname is not None:
-            self.hostname = hostname
-        if reserve_1g_hugepages is not None:
-            self.reserve_1g_hugepages = reserve_1g_hugepages
-        if net_devices is not None:
-            self.net_devices = net_devices
-        if dedicate_memory is not None:
-            self.dedicate_memory = dedicate_memory
-        if ips is not None:
-            self.ips = ips
-        if ui_enabled is not None:
-            self.ui_enabled = ui_enabled
-        if join_secret is not None:
-            self.join_secret = join_secret
-        if nodes is not None:
-            self.nodes = nodes
         if host_id is not None:
             self.host_id = host_id
-        if auto_remove_timeout is not None:
-            self.auto_remove_timeout = auto_remove_timeout
-        if disable_numa_balancing is not None:
-            self.disable_numa_balancing = disable_numa_balancing
+        if hostname is not None:
+            self.hostname = hostname
+        if ips is not None:
+            self.ips = ips
+        if join_secret is not None:
+            self.join_secret = join_secret
         if mask_interrupts is not None:
             self.mask_interrupts = mask_interrupts
+        if memory is not None:
+            self.memory = memory
+        if mode is not None:
+            self.mode = mode
+        if net_devices is not None:
+            self.net_devices = net_devices
+        if nodes is not None:
+            self.nodes = nodes
+        if reserve_1g_hugepages is not None:
+            self.reserve_1g_hugepages = reserve_1g_hugepages
+        if ui_enabled is not None:
+            self.ui_enabled = ui_enabled
+        if wait_io_nodes_timeout is not None:
+            self.wait_io_nodes_timeout = wait_io_nodes_timeout
 
     @property
-    def mode(self):
-        """Gets the mode of this HostResourceData.  # noqa: E501
+    def auto_remove_timeout(self):
+        """Gets the auto_remove_timeout of this HostResourceData.  # noqa: E501
 
 
-        :return: The mode of this HostResourceData.  # noqa: E501
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this HostResourceData.
-
-
-        :param mode: The mode of this HostResourceData.  # noqa: E501
-        :type: str
-        """
-
-        self._mode = mode
-
-    @property
-    def memory(self):
-        """Gets the memory of this HostResourceData.  # noqa: E501
-
-
-        :return: The memory of this HostResourceData.  # noqa: E501
+        :return: The auto_remove_timeout of this HostResourceData.  # noqa: E501
         :rtype: float
         """
-        return self._memory
+        return self._auto_remove_timeout
 
-    @memory.setter
-    def memory(self, memory):
-        """Sets the memory of this HostResourceData.
+    @auto_remove_timeout.setter
+    def auto_remove_timeout(self, auto_remove_timeout):
+        """Sets the auto_remove_timeout of this HostResourceData.
 
 
-        :param memory: The memory of this HostResourceData.  # noqa: E501
+        :param auto_remove_timeout: The auto_remove_timeout of this HostResourceData.  # noqa: E501
         :type: float
         """
 
-        self._memory = memory
+        self._auto_remove_timeout = auto_remove_timeout
 
     @property
-    def format(self):
-        """Gets the format of this HostResourceData.  # noqa: E501
+    def backend_endpoints(self):
+        """Gets the backend_endpoints of this HostResourceData.  # noqa: E501
 
 
-        :return: The format of this HostResourceData.  # noqa: E501
-        :rtype: float
+        :return: The backend_endpoints of this HostResourceData.  # noqa: E501
+        :rtype: list[HostResourceDataBackendEndpoints]
         """
-        return self._format
+        return self._backend_endpoints
 
-    @format.setter
-    def format(self, format):
-        """Sets the format of this HostResourceData.
+    @backend_endpoints.setter
+    def backend_endpoints(self, backend_endpoints):
+        """Sets the backend_endpoints of this HostResourceData.
 
 
-        :param format: The format of this HostResourceData.  # noqa: E501
-        :type: float
+        :param backend_endpoints: The backend_endpoints of this HostResourceData.  # noqa: E501
+        :type: list[HostResourceDataBackendEndpoints]
         """
 
-        self._format = format
+        self._backend_endpoints = backend_endpoints
 
     @property
     def bandwidth(self):
@@ -225,6 +204,48 @@ class HostResourceData(object):
         """
 
         self._bandwidth = bandwidth
+
+    @property
+    def dedicate_memory(self):
+        """Gets the dedicate_memory of this HostResourceData.  # noqa: E501
+
+
+        :return: The dedicate_memory of this HostResourceData.  # noqa: E501
+        :rtype: bool
+        """
+        return self._dedicate_memory
+
+    @dedicate_memory.setter
+    def dedicate_memory(self, dedicate_memory):
+        """Sets the dedicate_memory of this HostResourceData.
+
+
+        :param dedicate_memory: The dedicate_memory of this HostResourceData.  # noqa: E501
+        :type: bool
+        """
+
+        self._dedicate_memory = dedicate_memory
+
+    @property
+    def disable_numa_balancing(self):
+        """Gets the disable_numa_balancing of this HostResourceData.  # noqa: E501
+
+
+        :return: The disable_numa_balancing of this HostResourceData.  # noqa: E501
+        :rtype: bool
+        """
+        return self._disable_numa_balancing
+
+    @disable_numa_balancing.setter
+    def disable_numa_balancing(self, disable_numa_balancing):
+        """Sets the disable_numa_balancing of this HostResourceData.
+
+
+        :param disable_numa_balancing: The disable_numa_balancing of this HostResourceData.  # noqa: E501
+        :type: bool
+        """
+
+        self._disable_numa_balancing = disable_numa_balancing
 
     @property
     def drives(self):
@@ -269,6 +290,27 @@ class HostResourceData(object):
         self._failure_domain = failure_domain
 
     @property
+    def format(self):
+        """Gets the format of this HostResourceData.  # noqa: E501
+
+
+        :return: The format of this HostResourceData.  # noqa: E501
+        :rtype: float
+        """
+        return self._format
+
+    @format.setter
+    def format(self, format):
+        """Sets the format of this HostResourceData.
+
+
+        :param format: The format of this HostResourceData.  # noqa: E501
+        :type: float
+        """
+
+        self._format = format
+
+    @property
     def hardware_watchdog(self):
         """Gets the hardware_watchdog of this HostResourceData.  # noqa: E501
 
@@ -288,216 +330,6 @@ class HostResourceData(object):
         """
 
         self._hardware_watchdog = hardware_watchdog
-
-    @property
-    def wait_io_nodes_timeout(self):
-        """Gets the wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
-
-
-        :return: The wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
-        :rtype: float
-        """
-        return self._wait_io_nodes_timeout
-
-    @wait_io_nodes_timeout.setter
-    def wait_io_nodes_timeout(self, wait_io_nodes_timeout):
-        """Sets the wait_io_nodes_timeout of this HostResourceData.
-
-
-        :param wait_io_nodes_timeout: The wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
-        :type: float
-        """
-
-        self._wait_io_nodes_timeout = wait_io_nodes_timeout
-
-    @property
-    def backend_endpoints(self):
-        """Gets the backend_endpoints of this HostResourceData.  # noqa: E501
-
-
-        :return: The backend_endpoints of this HostResourceData.  # noqa: E501
-        :rtype: list[HostResourceDataBackendEndpoints]
-        """
-        return self._backend_endpoints
-
-    @backend_endpoints.setter
-    def backend_endpoints(self, backend_endpoints):
-        """Sets the backend_endpoints of this HostResourceData.
-
-
-        :param backend_endpoints: The backend_endpoints of this HostResourceData.  # noqa: E501
-        :type: list[HostResourceDataBackendEndpoints]
-        """
-
-        self._backend_endpoints = backend_endpoints
-
-    @property
-    def hostname(self):
-        """Gets the hostname of this HostResourceData.  # noqa: E501
-
-
-        :return: The hostname of this HostResourceData.  # noqa: E501
-        :rtype: str
-        """
-        return self._hostname
-
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this HostResourceData.
-
-
-        :param hostname: The hostname of this HostResourceData.  # noqa: E501
-        :type: str
-        """
-
-        self._hostname = hostname
-
-    @property
-    def reserve_1g_hugepages(self):
-        """Gets the reserve_1g_hugepages of this HostResourceData.  # noqa: E501
-
-
-        :return: The reserve_1g_hugepages of this HostResourceData.  # noqa: E501
-        :rtype: bool
-        """
-        return self._reserve_1g_hugepages
-
-    @reserve_1g_hugepages.setter
-    def reserve_1g_hugepages(self, reserve_1g_hugepages):
-        """Sets the reserve_1g_hugepages of this HostResourceData.
-
-
-        :param reserve_1g_hugepages: The reserve_1g_hugepages of this HostResourceData.  # noqa: E501
-        :type: bool
-        """
-
-        self._reserve_1g_hugepages = reserve_1g_hugepages
-
-    @property
-    def net_devices(self):
-        """Gets the net_devices of this HostResourceData.  # noqa: E501
-
-
-        :return: The net_devices of this HostResourceData.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._net_devices
-
-    @net_devices.setter
-    def net_devices(self, net_devices):
-        """Sets the net_devices of this HostResourceData.
-
-
-        :param net_devices: The net_devices of this HostResourceData.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._net_devices = net_devices
-
-    @property
-    def dedicate_memory(self):
-        """Gets the dedicate_memory of this HostResourceData.  # noqa: E501
-
-
-        :return: The dedicate_memory of this HostResourceData.  # noqa: E501
-        :rtype: bool
-        """
-        return self._dedicate_memory
-
-    @dedicate_memory.setter
-    def dedicate_memory(self, dedicate_memory):
-        """Sets the dedicate_memory of this HostResourceData.
-
-
-        :param dedicate_memory: The dedicate_memory of this HostResourceData.  # noqa: E501
-        :type: bool
-        """
-
-        self._dedicate_memory = dedicate_memory
-
-    @property
-    def ips(self):
-        """Gets the ips of this HostResourceData.  # noqa: E501
-
-
-        :return: The ips of this HostResourceData.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._ips
-
-    @ips.setter
-    def ips(self, ips):
-        """Sets the ips of this HostResourceData.
-
-
-        :param ips: The ips of this HostResourceData.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._ips = ips
-
-    @property
-    def ui_enabled(self):
-        """Gets the ui_enabled of this HostResourceData.  # noqa: E501
-
-
-        :return: The ui_enabled of this HostResourceData.  # noqa: E501
-        :rtype: bool
-        """
-        return self._ui_enabled
-
-    @ui_enabled.setter
-    def ui_enabled(self, ui_enabled):
-        """Sets the ui_enabled of this HostResourceData.
-
-
-        :param ui_enabled: The ui_enabled of this HostResourceData.  # noqa: E501
-        :type: bool
-        """
-
-        self._ui_enabled = ui_enabled
-
-    @property
-    def join_secret(self):
-        """Gets the join_secret of this HostResourceData.  # noqa: E501
-
-
-        :return: The join_secret of this HostResourceData.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._join_secret
-
-    @join_secret.setter
-    def join_secret(self, join_secret):
-        """Sets the join_secret of this HostResourceData.
-
-
-        :param join_secret: The join_secret of this HostResourceData.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._join_secret = join_secret
-
-    @property
-    def nodes(self):
-        """Gets the nodes of this HostResourceData.  # noqa: E501
-
-
-        :return: The nodes of this HostResourceData.  # noqa: E501
-        :rtype: HostResourceDataNodes
-        """
-        return self._nodes
-
-    @nodes.setter
-    def nodes(self, nodes):
-        """Sets the nodes of this HostResourceData.
-
-
-        :param nodes: The nodes of this HostResourceData.  # noqa: E501
-        :type: HostResourceDataNodes
-        """
-
-        self._nodes = nodes
 
     @property
     def host_id(self):
@@ -521,46 +353,67 @@ class HostResourceData(object):
         self._host_id = host_id
 
     @property
-    def auto_remove_timeout(self):
-        """Gets the auto_remove_timeout of this HostResourceData.  # noqa: E501
+    def hostname(self):
+        """Gets the hostname of this HostResourceData.  # noqa: E501
 
 
-        :return: The auto_remove_timeout of this HostResourceData.  # noqa: E501
-        :rtype: float
+        :return: The hostname of this HostResourceData.  # noqa: E501
+        :rtype: str
         """
-        return self._auto_remove_timeout
+        return self._hostname
 
-    @auto_remove_timeout.setter
-    def auto_remove_timeout(self, auto_remove_timeout):
-        """Sets the auto_remove_timeout of this HostResourceData.
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this HostResourceData.
 
 
-        :param auto_remove_timeout: The auto_remove_timeout of this HostResourceData.  # noqa: E501
-        :type: float
+        :param hostname: The hostname of this HostResourceData.  # noqa: E501
+        :type: str
         """
 
-        self._auto_remove_timeout = auto_remove_timeout
+        self._hostname = hostname
 
     @property
-    def disable_numa_balancing(self):
-        """Gets the disable_numa_balancing of this HostResourceData.  # noqa: E501
+    def ips(self):
+        """Gets the ips of this HostResourceData.  # noqa: E501
 
 
-        :return: The disable_numa_balancing of this HostResourceData.  # noqa: E501
-        :rtype: bool
+        :return: The ips of this HostResourceData.  # noqa: E501
+        :rtype: list[str]
         """
-        return self._disable_numa_balancing
+        return self._ips
 
-    @disable_numa_balancing.setter
-    def disable_numa_balancing(self, disable_numa_balancing):
-        """Sets the disable_numa_balancing of this HostResourceData.
+    @ips.setter
+    def ips(self, ips):
+        """Sets the ips of this HostResourceData.
 
 
-        :param disable_numa_balancing: The disable_numa_balancing of this HostResourceData.  # noqa: E501
-        :type: bool
+        :param ips: The ips of this HostResourceData.  # noqa: E501
+        :type: list[str]
         """
 
-        self._disable_numa_balancing = disable_numa_balancing
+        self._ips = ips
+
+    @property
+    def join_secret(self):
+        """Gets the join_secret of this HostResourceData.  # noqa: E501
+
+
+        :return: The join_secret of this HostResourceData.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._join_secret
+
+    @join_secret.setter
+    def join_secret(self, join_secret):
+        """Sets the join_secret of this HostResourceData.
+
+
+        :param join_secret: The join_secret of this HostResourceData.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._join_secret = join_secret
 
     @property
     def mask_interrupts(self):
@@ -582,6 +435,153 @@ class HostResourceData(object):
         """
 
         self._mask_interrupts = mask_interrupts
+
+    @property
+    def memory(self):
+        """Gets the memory of this HostResourceData.  # noqa: E501
+
+
+        :return: The memory of this HostResourceData.  # noqa: E501
+        :rtype: float
+        """
+        return self._memory
+
+    @memory.setter
+    def memory(self, memory):
+        """Sets the memory of this HostResourceData.
+
+
+        :param memory: The memory of this HostResourceData.  # noqa: E501
+        :type: float
+        """
+
+        self._memory = memory
+
+    @property
+    def mode(self):
+        """Gets the mode of this HostResourceData.  # noqa: E501
+
+
+        :return: The mode of this HostResourceData.  # noqa: E501
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this HostResourceData.
+
+
+        :param mode: The mode of this HostResourceData.  # noqa: E501
+        :type: str
+        """
+
+        self._mode = mode
+
+    @property
+    def net_devices(self):
+        """Gets the net_devices of this HostResourceData.  # noqa: E501
+
+
+        :return: The net_devices of this HostResourceData.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._net_devices
+
+    @net_devices.setter
+    def net_devices(self, net_devices):
+        """Sets the net_devices of this HostResourceData.
+
+
+        :param net_devices: The net_devices of this HostResourceData.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._net_devices = net_devices
+
+    @property
+    def nodes(self):
+        """Gets the nodes of this HostResourceData.  # noqa: E501
+
+
+        :return: The nodes of this HostResourceData.  # noqa: E501
+        :rtype: HostResourceDataNodes
+        """
+        return self._nodes
+
+    @nodes.setter
+    def nodes(self, nodes):
+        """Sets the nodes of this HostResourceData.
+
+
+        :param nodes: The nodes of this HostResourceData.  # noqa: E501
+        :type: HostResourceDataNodes
+        """
+
+        self._nodes = nodes
+
+    @property
+    def reserve_1g_hugepages(self):
+        """Gets the reserve_1g_hugepages of this HostResourceData.  # noqa: E501
+
+
+        :return: The reserve_1g_hugepages of this HostResourceData.  # noqa: E501
+        :rtype: bool
+        """
+        return self._reserve_1g_hugepages
+
+    @reserve_1g_hugepages.setter
+    def reserve_1g_hugepages(self, reserve_1g_hugepages):
+        """Sets the reserve_1g_hugepages of this HostResourceData.
+
+
+        :param reserve_1g_hugepages: The reserve_1g_hugepages of this HostResourceData.  # noqa: E501
+        :type: bool
+        """
+
+        self._reserve_1g_hugepages = reserve_1g_hugepages
+
+    @property
+    def ui_enabled(self):
+        """Gets the ui_enabled of this HostResourceData.  # noqa: E501
+
+
+        :return: The ui_enabled of this HostResourceData.  # noqa: E501
+        :rtype: bool
+        """
+        return self._ui_enabled
+
+    @ui_enabled.setter
+    def ui_enabled(self, ui_enabled):
+        """Sets the ui_enabled of this HostResourceData.
+
+
+        :param ui_enabled: The ui_enabled of this HostResourceData.  # noqa: E501
+        :type: bool
+        """
+
+        self._ui_enabled = ui_enabled
+
+    @property
+    def wait_io_nodes_timeout(self):
+        """Gets the wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
+
+
+        :return: The wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
+        :rtype: float
+        """
+        return self._wait_io_nodes_timeout
+
+    @wait_io_nodes_timeout.setter
+    def wait_io_nodes_timeout(self, wait_io_nodes_timeout):
+        """Sets the wait_io_nodes_timeout of this HostResourceData.
+
+
+        :param wait_io_nodes_timeout: The wait_io_nodes_timeout of this HostResourceData.  # noqa: E501
+        :type: float
+        """
+
+        self._wait_io_nodes_timeout = wait_io_nodes_timeout
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,86 +28,130 @@ class FileSystemsBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'name': 'str',
+        'allow_no_kms': 'bool',
+        'auth_required': 'bool',
+        'encrypted': 'bool',
         'group_name': 'str',
-        'total_capacity': 'float',
+        'name': 'str',
         'obs_name': 'str',
         'ssd_capacity': 'float',
-        'thin_provision_min_ssd': 'float',
         'thin_provision_max_ssd': 'float',
-        'encrypted': 'bool',
-        'auth_required': 'bool',
-        'allow_no_kms': 'bool'
+        'thin_provision_min_ssd': 'float',
+        'total_capacity': 'float'
     }
 
     attribute_map = {
-        'name': 'name',
+        'allow_no_kms': 'allow_no_kms',
+        'auth_required': 'auth_required',
+        'encrypted': 'encrypted',
         'group_name': 'group_name',
-        'total_capacity': 'total_capacity',
+        'name': 'name',
         'obs_name': 'obs_name',
         'ssd_capacity': 'ssd_capacity',
-        'thin_provision_min_ssd': 'thin_provision_min_ssd',
         'thin_provision_max_ssd': 'thin_provision_max_ssd',
-        'encrypted': 'encrypted',
-        'auth_required': 'auth_required',
-        'allow_no_kms': 'allow_no_kms'
+        'thin_provision_min_ssd': 'thin_provision_min_ssd',
+        'total_capacity': 'total_capacity'
     }
 
-    def __init__(self, name=None, group_name=None, total_capacity=None, obs_name=None, ssd_capacity=None, thin_provision_min_ssd=None, thin_provision_max_ssd=None, encrypted=None, auth_required=None, allow_no_kms=None):  # noqa: E501
+    def __init__(self, allow_no_kms=None, auth_required=None, encrypted=None, group_name=None, name=None, obs_name=None, ssd_capacity=None, thin_provision_max_ssd=None, thin_provision_min_ssd=None, total_capacity=None):  # noqa: E501
         """FileSystemsBody - a model defined in Swagger"""  # noqa: E501
-        self._name = None
+        self._allow_no_kms = None
+        self._auth_required = None
+        self._encrypted = None
         self._group_name = None
-        self._total_capacity = None
+        self._name = None
         self._obs_name = None
         self._ssd_capacity = None
-        self._thin_provision_min_ssd = None
         self._thin_provision_max_ssd = None
-        self._encrypted = None
-        self._auth_required = None
-        self._allow_no_kms = None
+        self._thin_provision_min_ssd = None
+        self._total_capacity = None
         self.discriminator = None
-        self.name = name
+        if allow_no_kms is not None:
+            self.allow_no_kms = allow_no_kms
+        if auth_required is not None:
+            self.auth_required = auth_required
+        if encrypted is not None:
+            self.encrypted = encrypted
         self.group_name = group_name
-        self.total_capacity = total_capacity
+        self.name = name
         if obs_name is not None:
             self.obs_name = obs_name
         if ssd_capacity is not None:
             self.ssd_capacity = ssd_capacity
-        if thin_provision_min_ssd is not None:
-            self.thin_provision_min_ssd = thin_provision_min_ssd
         if thin_provision_max_ssd is not None:
             self.thin_provision_max_ssd = thin_provision_max_ssd
-        if encrypted is not None:
-            self.encrypted = encrypted
-        if auth_required is not None:
-            self.auth_required = auth_required
-        if allow_no_kms is not None:
-            self.allow_no_kms = allow_no_kms
+        if thin_provision_min_ssd is not None:
+            self.thin_provision_min_ssd = thin_provision_min_ssd
+        self.total_capacity = total_capacity
 
     @property
-    def name(self):
-        """Gets the name of this FileSystemsBody.  # noqa: E501
+    def allow_no_kms(self):
+        """Gets the allow_no_kms of this FileSystemsBody.  # noqa: E501
 
-        Filesystem name  # noqa: E501
+        Allow (insecurely) creating an encrypted filesystem without a KMS configured  # noqa: E501
 
-        :return: The name of this FileSystemsBody.  # noqa: E501
-        :rtype: str
+        :return: The allow_no_kms of this FileSystemsBody.  # noqa: E501
+        :rtype: bool
         """
-        return self._name
+        return self._allow_no_kms
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this FileSystemsBody.
+    @allow_no_kms.setter
+    def allow_no_kms(self, allow_no_kms):
+        """Sets the allow_no_kms of this FileSystemsBody.
 
-        Filesystem name  # noqa: E501
+        Allow (insecurely) creating an encrypted filesystem without a KMS configured  # noqa: E501
 
-        :param name: The name of this FileSystemsBody.  # noqa: E501
-        :type: str
+        :param allow_no_kms: The allow_no_kms of this FileSystemsBody.  # noqa: E501
+        :type: bool
         """
-        if name is None:
-            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
-        self._name = name
+        self._allow_no_kms = allow_no_kms
+
+    @property
+    def auth_required(self):
+        """Gets the auth_required of this FileSystemsBody.  # noqa: E501
+
+        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+
+        :return: The auth_required of this FileSystemsBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._auth_required
+
+    @auth_required.setter
+    def auth_required(self, auth_required):
+        """Sets the auth_required of this FileSystemsBody.
+
+        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+
+        :param auth_required: The auth_required of this FileSystemsBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._auth_required = auth_required
+
+    @property
+    def encrypted(self):
+        """Gets the encrypted of this FileSystemsBody.  # noqa: E501
+
+        Creates an encrypted filesystem  # noqa: E501
+
+        :return: The encrypted of this FileSystemsBody.  # noqa: E501
+        :rtype: bool
+        """
+        return self._encrypted
+
+    @encrypted.setter
+    def encrypted(self, encrypted):
+        """Sets the encrypted of this FileSystemsBody.
+
+        Creates an encrypted filesystem  # noqa: E501
+
+        :param encrypted: The encrypted of this FileSystemsBody.  # noqa: E501
+        :type: bool
+        """
+
+        self._encrypted = encrypted
 
     @property
     def group_name(self):
@@ -135,29 +179,29 @@ class FileSystemsBody(object):
         self._group_name = group_name
 
     @property
-    def total_capacity(self):
-        """Gets the total_capacity of this FileSystemsBody.  # noqa: E501
+    def name(self):
+        """Gets the name of this FileSystemsBody.  # noqa: E501
 
-        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Filesystem name  # noqa: E501
 
-        :return: The total_capacity of this FileSystemsBody.  # noqa: E501
-        :rtype: float
+        :return: The name of this FileSystemsBody.  # noqa: E501
+        :rtype: str
         """
-        return self._total_capacity
+        return self._name
 
-    @total_capacity.setter
-    def total_capacity(self, total_capacity):
-        """Sets the total_capacity of this FileSystemsBody.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this FileSystemsBody.
 
-        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
+        Filesystem name  # noqa: E501
 
-        :param total_capacity: The total_capacity of this FileSystemsBody.  # noqa: E501
-        :type: float
+        :param name: The name of this FileSystemsBody.  # noqa: E501
+        :type: str
         """
-        if total_capacity is None:
-            raise ValueError("Invalid value for `total_capacity`, must not be `None`")  # noqa: E501
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
 
-        self._total_capacity = total_capacity
+        self._name = name
 
     @property
     def obs_name(self):
@@ -206,29 +250,6 @@ class FileSystemsBody(object):
         self._ssd_capacity = ssd_capacity
 
     @property
-    def thin_provision_min_ssd(self):
-        """Gets the thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
-
-        Thin provisioned minimum SSD capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
-
-        :return: The thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
-        :rtype: float
-        """
-        return self._thin_provision_min_ssd
-
-    @thin_provision_min_ssd.setter
-    def thin_provision_min_ssd(self, thin_provision_min_ssd):
-        """Sets the thin_provision_min_ssd of this FileSystemsBody.
-
-        Thin provisioned minimum SSD capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
-
-        :param thin_provision_min_ssd: The thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
-        :type: float
-        """
-
-        self._thin_provision_min_ssd = thin_provision_min_ssd
-
-    @property
     def thin_provision_max_ssd(self):
         """Gets the thin_provision_max_ssd of this FileSystemsBody.  # noqa: E501
 
@@ -252,73 +273,52 @@ class FileSystemsBody(object):
         self._thin_provision_max_ssd = thin_provision_max_ssd
 
     @property
-    def encrypted(self):
-        """Gets the encrypted of this FileSystemsBody.  # noqa: E501
+    def thin_provision_min_ssd(self):
+        """Gets the thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
 
-        Creates an encrypted filesystem  # noqa: E501
+        Thin provisioned minimum SSD capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :return: The encrypted of this FileSystemsBody.  # noqa: E501
-        :rtype: bool
+        :return: The thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
+        :rtype: float
         """
-        return self._encrypted
+        return self._thin_provision_min_ssd
 
-    @encrypted.setter
-    def encrypted(self, encrypted):
-        """Sets the encrypted of this FileSystemsBody.
+    @thin_provision_min_ssd.setter
+    def thin_provision_min_ssd(self, thin_provision_min_ssd):
+        """Sets the thin_provision_min_ssd of this FileSystemsBody.
 
-        Creates an encrypted filesystem  # noqa: E501
+        Thin provisioned minimum SSD capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :param encrypted: The encrypted of this FileSystemsBody.  # noqa: E501
-        :type: bool
+        :param thin_provision_min_ssd: The thin_provision_min_ssd of this FileSystemsBody.  # noqa: E501
+        :type: float
         """
 
-        self._encrypted = encrypted
+        self._thin_provision_min_ssd = thin_provision_min_ssd
 
     @property
-    def auth_required(self):
-        """Gets the auth_required of this FileSystemsBody.  # noqa: E501
+    def total_capacity(self):
+        """Gets the total_capacity of this FileSystemsBody.  # noqa: E501
 
-        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :return: The auth_required of this FileSystemsBody.  # noqa: E501
-        :rtype: bool
+        :return: The total_capacity of this FileSystemsBody.  # noqa: E501
+        :rtype: float
         """
-        return self._auth_required
+        return self._total_capacity
 
-    @auth_required.setter
-    def auth_required(self, auth_required):
-        """Sets the auth_required of this FileSystemsBody.
+    @total_capacity.setter
+    def total_capacity(self, total_capacity):
+        """Sets the total_capacity of this FileSystemsBody.
 
-        Require the mounting user to be authenticated for mounting this filesystem. This flag is only effective in the root organization, users in non-root organizations must be authenticated to perform a mount operation  # noqa: E501
+        Total capacity (format - capacity in decimal or binary units - 11B, 1KB, 1MB, 1GB, 1TB, 1PB, 1EB, 1KiB, 1MiB, 1GiB, 1TiB, 1PiB, 1EiB)  # noqa: E501
 
-        :param auth_required: The auth_required of this FileSystemsBody.  # noqa: E501
-        :type: bool
+        :param total_capacity: The total_capacity of this FileSystemsBody.  # noqa: E501
+        :type: float
         """
+        if total_capacity is None:
+            raise ValueError("Invalid value for `total_capacity`, must not be `None`")  # noqa: E501
 
-        self._auth_required = auth_required
-
-    @property
-    def allow_no_kms(self):
-        """Gets the allow_no_kms of this FileSystemsBody.  # noqa: E501
-
-        Allow (insecurely) creating an encrypted filesystem without a KMS configured  # noqa: E501
-
-        :return: The allow_no_kms of this FileSystemsBody.  # noqa: E501
-        :rtype: bool
-        """
-        return self._allow_no_kms
-
-    @allow_no_kms.setter
-    def allow_no_kms(self, allow_no_kms):
-        """Sets the allow_no_kms of this FileSystemsBody.
-
-        Allow (insecurely) creating an encrypted filesystem without a KMS configured  # noqa: E501
-
-        :param allow_no_kms: The allow_no_kms of this FileSystemsBody.  # noqa: E501
-        :type: bool
-        """
-
-        self._allow_no_kms = allow_no_kms
+        self._total_capacity = total_capacity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

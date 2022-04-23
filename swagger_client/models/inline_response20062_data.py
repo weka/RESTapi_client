@@ -28,352 +28,274 @@ class InlineResponse20062Data(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'joined_domain_mapping_to_id': 'float',
-        'samba_hosts': 'list[str]',
-        'idmap_backend': 'str',
-        'samba_ips': 'list[str]',
-        'default_domain_mapping_to_id': 'float',
-        'domain_name': 'str',
-        'name': 'str',
-        'encryption': 'str',
-        'domain_joined': 'bool',
-        'joined_domain_mapping_from_id': 'float',
-        'domain_admin_username': 'str',
-        'default_domain_mapping_from_id': 'float',
-        'domain_netbios_name': 'str'
+        'common_name': 'str',
+        'content': 'str',
+        'country': 'str',
+        'email': 'str',
+        'enabled': 'bool',
+        'expired_date': 'str',
+        'locality': 'str',
+        'organization': 'str',
+        'organization_unit': 'str',
+        'state': 'str'
     }
 
     attribute_map = {
-        'joined_domain_mapping_to_id': 'joinedDomainMappingToId',
-        'samba_hosts': 'sambaHosts',
-        'idmap_backend': 'idmapBackend',
-        'samba_ips': 'sambaIps',
-        'default_domain_mapping_to_id': 'defaultDomainMappingToId',
-        'domain_name': 'domainName',
-        'name': 'name',
-        'encryption': 'encryption',
-        'domain_joined': 'domainJoined',
-        'joined_domain_mapping_from_id': 'joinedDomainMappingFromId',
-        'domain_admin_username': 'domainAdminUsername',
-        'default_domain_mapping_from_id': 'defaultDomainMappingFromId',
-        'domain_netbios_name': 'domainNetbiosName'
+        'common_name': 'common_name',
+        'content': 'content',
+        'country': 'country',
+        'email': 'email',
+        'enabled': 'enabled',
+        'expired_date': 'expired_date',
+        'locality': 'locality',
+        'organization': 'organization',
+        'organization_unit': 'organization_unit',
+        'state': 'state'
     }
 
-    def __init__(self, joined_domain_mapping_to_id=None, samba_hosts=None, idmap_backend=None, samba_ips=None, default_domain_mapping_to_id=None, domain_name=None, name=None, encryption=None, domain_joined=None, joined_domain_mapping_from_id=None, domain_admin_username=None, default_domain_mapping_from_id=None, domain_netbios_name=None):  # noqa: E501
+    def __init__(self, common_name=None, content=None, country=None, email=None, enabled=None, expired_date=None, locality=None, organization=None, organization_unit=None, state=None):  # noqa: E501
         """InlineResponse20062Data - a model defined in Swagger"""  # noqa: E501
-        self._joined_domain_mapping_to_id = None
-        self._samba_hosts = None
-        self._idmap_backend = None
-        self._samba_ips = None
-        self._default_domain_mapping_to_id = None
-        self._domain_name = None
-        self._name = None
-        self._encryption = None
-        self._domain_joined = None
-        self._joined_domain_mapping_from_id = None
-        self._domain_admin_username = None
-        self._default_domain_mapping_from_id = None
-        self._domain_netbios_name = None
+        self._common_name = None
+        self._content = None
+        self._country = None
+        self._email = None
+        self._enabled = None
+        self._expired_date = None
+        self._locality = None
+        self._organization = None
+        self._organization_unit = None
+        self._state = None
         self.discriminator = None
-        if joined_domain_mapping_to_id is not None:
-            self.joined_domain_mapping_to_id = joined_domain_mapping_to_id
-        if samba_hosts is not None:
-            self.samba_hosts = samba_hosts
-        if idmap_backend is not None:
-            self.idmap_backend = idmap_backend
-        if samba_ips is not None:
-            self.samba_ips = samba_ips
-        if default_domain_mapping_to_id is not None:
-            self.default_domain_mapping_to_id = default_domain_mapping_to_id
-        if domain_name is not None:
-            self.domain_name = domain_name
-        if name is not None:
-            self.name = name
-        if encryption is not None:
-            self.encryption = encryption
-        if domain_joined is not None:
-            self.domain_joined = domain_joined
-        if joined_domain_mapping_from_id is not None:
-            self.joined_domain_mapping_from_id = joined_domain_mapping_from_id
-        if domain_admin_username is not None:
-            self.domain_admin_username = domain_admin_username
-        if default_domain_mapping_from_id is not None:
-            self.default_domain_mapping_from_id = default_domain_mapping_from_id
-        if domain_netbios_name is not None:
-            self.domain_netbios_name = domain_netbios_name
+        if common_name is not None:
+            self.common_name = common_name
+        if content is not None:
+            self.content = content
+        if country is not None:
+            self.country = country
+        if email is not None:
+            self.email = email
+        if enabled is not None:
+            self.enabled = enabled
+        if expired_date is not None:
+            self.expired_date = expired_date
+        if locality is not None:
+            self.locality = locality
+        if organization is not None:
+            self.organization = organization
+        if organization_unit is not None:
+            self.organization_unit = organization_unit
+        if state is not None:
+            self.state = state
 
     @property
-    def joined_domain_mapping_to_id(self):
-        """Gets the joined_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
+    def common_name(self):
+        """Gets the common_name of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The joined_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._joined_domain_mapping_to_id
-
-    @joined_domain_mapping_to_id.setter
-    def joined_domain_mapping_to_id(self, joined_domain_mapping_to_id):
-        """Sets the joined_domain_mapping_to_id of this InlineResponse20062Data.
-
-
-        :param joined_domain_mapping_to_id: The joined_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
-        :type: float
-        """
-
-        self._joined_domain_mapping_to_id = joined_domain_mapping_to_id
-
-    @property
-    def samba_hosts(self):
-        """Gets the samba_hosts of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The samba_hosts of this InlineResponse20062Data.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._samba_hosts
-
-    @samba_hosts.setter
-    def samba_hosts(self, samba_hosts):
-        """Sets the samba_hosts of this InlineResponse20062Data.
-
-
-        :param samba_hosts: The samba_hosts of this InlineResponse20062Data.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._samba_hosts = samba_hosts
-
-    @property
-    def idmap_backend(self):
-        """Gets the idmap_backend of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The idmap_backend of this InlineResponse20062Data.  # noqa: E501
+        :return: The common_name of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._idmap_backend
+        return self._common_name
 
-    @idmap_backend.setter
-    def idmap_backend(self, idmap_backend):
-        """Sets the idmap_backend of this InlineResponse20062Data.
+    @common_name.setter
+    def common_name(self, common_name):
+        """Sets the common_name of this InlineResponse20062Data.
 
 
-        :param idmap_backend: The idmap_backend of this InlineResponse20062Data.  # noqa: E501
+        :param common_name: The common_name of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._idmap_backend = idmap_backend
+        self._common_name = common_name
 
     @property
-    def samba_ips(self):
-        """Gets the samba_ips of this InlineResponse20062Data.  # noqa: E501
+    def content(self):
+        """Gets the content of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The samba_ips of this InlineResponse20062Data.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._samba_ips
-
-    @samba_ips.setter
-    def samba_ips(self, samba_ips):
-        """Sets the samba_ips of this InlineResponse20062Data.
-
-
-        :param samba_ips: The samba_ips of this InlineResponse20062Data.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._samba_ips = samba_ips
-
-    @property
-    def default_domain_mapping_to_id(self):
-        """Gets the default_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The default_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._default_domain_mapping_to_id
-
-    @default_domain_mapping_to_id.setter
-    def default_domain_mapping_to_id(self, default_domain_mapping_to_id):
-        """Sets the default_domain_mapping_to_id of this InlineResponse20062Data.
-
-
-        :param default_domain_mapping_to_id: The default_domain_mapping_to_id of this InlineResponse20062Data.  # noqa: E501
-        :type: float
-        """
-
-        self._default_domain_mapping_to_id = default_domain_mapping_to_id
-
-    @property
-    def domain_name(self):
-        """Gets the domain_name of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The domain_name of this InlineResponse20062Data.  # noqa: E501
+        :return: The content of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._domain_name
+        return self._content
 
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this InlineResponse20062Data.
+    @content.setter
+    def content(self, content):
+        """Sets the content of this InlineResponse20062Data.
 
 
-        :param domain_name: The domain_name of this InlineResponse20062Data.  # noqa: E501
+        :param content: The content of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._domain_name = domain_name
+        self._content = content
 
     @property
-    def name(self):
-        """Gets the name of this InlineResponse20062Data.  # noqa: E501
+    def country(self):
+        """Gets the country of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The name of this InlineResponse20062Data.  # noqa: E501
+        :return: The country of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._name
+        return self._country
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this InlineResponse20062Data.
+    @country.setter
+    def country(self, country):
+        """Sets the country of this InlineResponse20062Data.
 
 
-        :param name: The name of this InlineResponse20062Data.  # noqa: E501
+        :param country: The country of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._name = name
+        self._country = country
 
     @property
-    def encryption(self):
-        """Gets the encryption of this InlineResponse20062Data.  # noqa: E501
+    def email(self):
+        """Gets the email of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The encryption of this InlineResponse20062Data.  # noqa: E501
+        :return: The email of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._encryption
+        return self._email
 
-    @encryption.setter
-    def encryption(self, encryption):
-        """Sets the encryption of this InlineResponse20062Data.
+    @email.setter
+    def email(self, email):
+        """Sets the email of this InlineResponse20062Data.
 
 
-        :param encryption: The encryption of this InlineResponse20062Data.  # noqa: E501
+        :param email: The email of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._encryption = encryption
+        self._email = email
 
     @property
-    def domain_joined(self):
-        """Gets the domain_joined of this InlineResponse20062Data.  # noqa: E501
+    def enabled(self):
+        """Gets the enabled of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The domain_joined of this InlineResponse20062Data.  # noqa: E501
+        :return: The enabled of this InlineResponse20062Data.  # noqa: E501
         :rtype: bool
         """
-        return self._domain_joined
+        return self._enabled
 
-    @domain_joined.setter
-    def domain_joined(self, domain_joined):
-        """Sets the domain_joined of this InlineResponse20062Data.
+    @enabled.setter
+    def enabled(self, enabled):
+        """Sets the enabled of this InlineResponse20062Data.
 
 
-        :param domain_joined: The domain_joined of this InlineResponse20062Data.  # noqa: E501
+        :param enabled: The enabled of this InlineResponse20062Data.  # noqa: E501
         :type: bool
         """
 
-        self._domain_joined = domain_joined
+        self._enabled = enabled
 
     @property
-    def joined_domain_mapping_from_id(self):
-        """Gets the joined_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
+    def expired_date(self):
+        """Gets the expired_date of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The joined_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._joined_domain_mapping_from_id
-
-    @joined_domain_mapping_from_id.setter
-    def joined_domain_mapping_from_id(self, joined_domain_mapping_from_id):
-        """Sets the joined_domain_mapping_from_id of this InlineResponse20062Data.
-
-
-        :param joined_domain_mapping_from_id: The joined_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
-        :type: float
-        """
-
-        self._joined_domain_mapping_from_id = joined_domain_mapping_from_id
-
-    @property
-    def domain_admin_username(self):
-        """Gets the domain_admin_username of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The domain_admin_username of this InlineResponse20062Data.  # noqa: E501
+        :return: The expired_date of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._domain_admin_username
+        return self._expired_date
 
-    @domain_admin_username.setter
-    def domain_admin_username(self, domain_admin_username):
-        """Sets the domain_admin_username of this InlineResponse20062Data.
+    @expired_date.setter
+    def expired_date(self, expired_date):
+        """Sets the expired_date of this InlineResponse20062Data.
 
 
-        :param domain_admin_username: The domain_admin_username of this InlineResponse20062Data.  # noqa: E501
+        :param expired_date: The expired_date of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._domain_admin_username = domain_admin_username
+        self._expired_date = expired_date
 
     @property
-    def default_domain_mapping_from_id(self):
-        """Gets the default_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
+    def locality(self):
+        """Gets the locality of this InlineResponse20062Data.  # noqa: E501
 
 
-        :return: The default_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
-        :rtype: float
-        """
-        return self._default_domain_mapping_from_id
-
-    @default_domain_mapping_from_id.setter
-    def default_domain_mapping_from_id(self, default_domain_mapping_from_id):
-        """Sets the default_domain_mapping_from_id of this InlineResponse20062Data.
-
-
-        :param default_domain_mapping_from_id: The default_domain_mapping_from_id of this InlineResponse20062Data.  # noqa: E501
-        :type: float
-        """
-
-        self._default_domain_mapping_from_id = default_domain_mapping_from_id
-
-    @property
-    def domain_netbios_name(self):
-        """Gets the domain_netbios_name of this InlineResponse20062Data.  # noqa: E501
-
-
-        :return: The domain_netbios_name of this InlineResponse20062Data.  # noqa: E501
+        :return: The locality of this InlineResponse20062Data.  # noqa: E501
         :rtype: str
         """
-        return self._domain_netbios_name
+        return self._locality
 
-    @domain_netbios_name.setter
-    def domain_netbios_name(self, domain_netbios_name):
-        """Sets the domain_netbios_name of this InlineResponse20062Data.
+    @locality.setter
+    def locality(self, locality):
+        """Sets the locality of this InlineResponse20062Data.
 
 
-        :param domain_netbios_name: The domain_netbios_name of this InlineResponse20062Data.  # noqa: E501
+        :param locality: The locality of this InlineResponse20062Data.  # noqa: E501
         :type: str
         """
 
-        self._domain_netbios_name = domain_netbios_name
+        self._locality = locality
+
+    @property
+    def organization(self):
+        """Gets the organization of this InlineResponse20062Data.  # noqa: E501
+
+
+        :return: The organization of this InlineResponse20062Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._organization
+
+    @organization.setter
+    def organization(self, organization):
+        """Sets the organization of this InlineResponse20062Data.
+
+
+        :param organization: The organization of this InlineResponse20062Data.  # noqa: E501
+        :type: str
+        """
+
+        self._organization = organization
+
+    @property
+    def organization_unit(self):
+        """Gets the organization_unit of this InlineResponse20062Data.  # noqa: E501
+
+
+        :return: The organization_unit of this InlineResponse20062Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._organization_unit
+
+    @organization_unit.setter
+    def organization_unit(self, organization_unit):
+        """Sets the organization_unit of this InlineResponse20062Data.
+
+
+        :param organization_unit: The organization_unit of this InlineResponse20062Data.  # noqa: E501
+        :type: str
+        """
+
+        self._organization_unit = organization_unit
+
+    @property
+    def state(self):
+        """Gets the state of this InlineResponse20062Data.  # noqa: E501
+
+
+        :return: The state of this InlineResponse20062Data.  # noqa: E501
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this InlineResponse20062Data.
+
+
+        :param state: The state of this InlineResponse20062Data.  # noqa: E501
+        :type: str
+        """
+
+        self._state = state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

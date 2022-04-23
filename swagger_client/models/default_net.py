@@ -28,52 +28,29 @@ class DefaultNet(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'range': 'str',
         'gateway': 'str',
-        'netmask': 'float'
+        'netmask': 'float',
+        'range': 'str'
     }
 
     attribute_map = {
-        'range': 'range',
         'gateway': 'gateway',
-        'netmask': 'netmask'
+        'netmask': 'netmask',
+        'range': 'range'
     }
 
-    def __init__(self, range=None, gateway=None, netmask=None):  # noqa: E501
+    def __init__(self, gateway=None, netmask=None, range=None):  # noqa: E501
         """DefaultNet - a model defined in Swagger"""  # noqa: E501
-        self._range = None
         self._gateway = None
         self._netmask = None
+        self._range = None
         self.discriminator = None
-        if range is not None:
-            self.range = range
         if gateway is not None:
             self.gateway = gateway
         if netmask is not None:
             self.netmask = netmask
-
-    @property
-    def range(self):
-        """Gets the range of this DefaultNet.  # noqa: E501
-
-        IP range (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
-
-        :return: The range of this DefaultNet.  # noqa: E501
-        :rtype: str
-        """
-        return self._range
-
-    @range.setter
-    def range(self, range):
-        """Sets the range of this DefaultNet.
-
-        IP range (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
-
-        :param range: The range of this DefaultNet.  # noqa: E501
-        :type: str
-        """
-
-        self._range = range
+        if range is not None:
+            self.range = range
 
     @property
     def gateway(self):
@@ -120,6 +97,29 @@ class DefaultNet(object):
         """
 
         self._netmask = netmask
+
+    @property
+    def range(self):
+        """Gets the range of this DefaultNet.  # noqa: E501
+
+        IP range (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
+
+        :return: The range of this DefaultNet.  # noqa: E501
+        :rtype: str
+        """
+        return self._range
+
+    @range.setter
+    def range(self, range):
+        """Sets the range of this DefaultNet.
+
+        IP range (format - A.B.C.D-E.F.G.H or A.B.C.D-F.G.H or A.B.C.D-G.H or A.B.C.D-H)  # noqa: E501
+
+        :param range: The range of this DefaultNet.  # noqa: E501
+        :type: str
+        """
+
+        self._range = range
 
     def to_dict(self):
         """Returns the model properties as a dict"""
