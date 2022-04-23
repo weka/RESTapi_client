@@ -12,7 +12,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "swagger-client"
+NAME = "wekarestapi"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -27,7 +27,7 @@ setup(
     name=NAME,
     version=VERSION,
     description="@weka-api",
-    author_email="",
+    author_email="vince@weka.io",
     url="",
     keywords=["Swagger", "@weka-api"],
     install_requires=REQUIRES,
