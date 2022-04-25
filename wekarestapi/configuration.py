@@ -27,9 +27,9 @@ class TypeWithDefault(type):
         super(TypeWithDefault, cls).__init__(name, bases, dct)
         cls._default = None
 
-    def __call__(cls):
+    def __call__(cls, **kwargs):
         if cls._default is None:
-            cls._default = type.__call__(cls)
+            cls._default = type.__call__(cls, **kwargs)
         return copy.copy(cls._default)
 
     def set_default(cls, default):
@@ -43,10 +43,17 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
     Do not edit the class manually.
     """
 
-    def __init__(self):
+    def __init__(self, hostname=None, port="14000", scheme="https", verify_ssl=False):
         """Constructor"""
         # Default Base url
-        self.host = "/api/v2"
+        self.hostname = hostname
+
+        self.port = port
+        self.scheme = scheme
+
+        self.host = f"{self.scheme}://{self.hostname}:{self.port}/api/v2"
+        self.auth_tokens = None
+
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
@@ -79,7 +86,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         # SSL/TLS verification
         # Set this to false to skip verifying SSL certificate when calling API
         # from https server.
-        self.verify_ssl = True
+        self.verify_ssl = verify_ssl
         # Set this to customize the certificate file to verify the peer.
         self.ssl_ca_cert = None
         # client certificate file

@@ -7,20 +7,16 @@ from pprint import pprint
 
 
 ###################################################
-config = wekarestapi.Configuration()
-config.host = "https://zweka01:14000/api/v2"
-config.verify_ssl = False
-config.auth_tokens = None
+config = wekarestapi.Configuration(hostname="vweka01")
 
 # create an instance of the API class
 api_client = wekarestapi.ApiClient(config)
-
 
 try:
     # login to system
     api_response = wekarestapi.LoginApi(api_client).login(
         wekarestapi.LoginBody(username="admin", password="Weka.io123", org="root"))
-    pprint(api_response)
+#    pprint(api_response)
     config.auth_tokens = api_response.data
 except ApiException as e:
     print("Exception when calling LoginApi->login: %s\n" % e)
