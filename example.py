@@ -44,7 +44,7 @@ except ApiException as e:
 
 print("##########################################################################################")
 try:
-    # get events
+    # get machines
     api_response = wekarestapi.MachinesApi(api_client).get_machines()
     pprint(api_response)
 except ApiException as e:
@@ -52,10 +52,10 @@ except ApiException as e:
 
 print("##########################################################################################")
 try:
-    # get events
+    # get cluster status
     api_response = wekarestapi.ClusterApi(api_client).get_cluster_status()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ClusterApi->get_cluster_api: %s\n" % e)
+    print("Exception when calling ClusterApi->get_cluster_status: %s\n" % e)
 
 print("run complete")
