@@ -14,40 +14,35 @@ config.auth_tokens = None
 
 # create an instance of the API class
 api_client = wekarestapi.ApiClient(config)
-api_instance = wekarestapi.LoginApi(api_client)
 
-body = wekarestapi.LoginBody(username="admin", password="Weka.io123", org="root") # LoginBody |
 
 try:
     # login to system
-    api_response = api_instance.login(body)
+    api_response = wekarestapi.LoginApi(api_client).login(
+        wekarestapi.LoginBody(username="admin", password="Weka.io123", org="root"))
     pprint(api_response)
-    #config.access_token = api_response.data.access_token
     config.auth_tokens = api_response.data
 except ApiException as e:
     print("Exception when calling LoginApi->login: %s\n" % e)
 
 print("##########################################################################################")
-alertsapi_instance = wekarestapi.AlertsApi(api_client)
 
 try:
     # get alerts
-    api_response = alertsapi_instance.get_alerts()
+    api_response = wekarestapi.AlertsApi(api_client).get_alerts()
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling AlertsApi->get_alerts: %s\n" % e)
 
 print("##########################################################################################")
-eventsapi_instance = wekarestapi.EventsApi(api_client)
 try:
     # get events
-    api_response = eventsapi_instance.get_events()
+    api_response = wekarestapi.EventsApi(api_client).get_events()
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling EventsApi->get_events: %s\n" % e)
 
 print("##########################################################################################")
-#eventsapi_instance = wekarestapi.EventsApi(api_client)
 try:
     # get events
     api_response = wekarestapi.MachinesApi(api_client).get_machines()
@@ -56,7 +51,6 @@ except ApiException as e:
     print("Exception when calling MachinesApi->get_machines: %s\n" % e)
 
 print("##########################################################################################")
-#eventsapi_instance = wekarestapi.EventsApi(api_client)
 try:
     # get events
     api_response = wekarestapi.ClusterApi(api_client).get_cluster_status()
