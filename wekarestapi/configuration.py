@@ -228,12 +228,12 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
 
         :return: The Auth Settings information dict.
         """
-        if self.access_token is None:
+        if self.auth_tokens is None:
             return {}
         else:
             return {
                 "bearerAuth": {
-                    "value": 'Bearer ' + self.access_token,
+                    "value": self.auth_tokens.token_type + ' ' + self.auth_tokens.access_token,
                     "in": "header",
                     "key": "Authorization"
                 }
